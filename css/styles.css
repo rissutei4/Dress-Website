@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #101010; }
+
+.header {
+  padding: 42px 52px 42px 52px;
+  background-color: rgba(38, 34, 34, 0.73);
+  width: 100%; }
+  .header .header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .header .header_container .burger-logo-elements {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      position: relative;
+      z-index: 3; }
+      .header .header_container .burger-logo-elements .burgerIcon {
+        margin-right: 46px; }
+        .header .header_container .burger-logo-elements .burgerIcon.openedMenu {
+          position: fixed;
+          z-index: 4; }
+        .header .header_container .burger-logo-elements .burgerIcon .TopLine, .header .header_container .burger-logo-elements .burgerIcon .BotLine, .header .header_container .burger-logo-elements .burgerIcon .MidLine {
+          width: 24px;
+          height: 3px;
+          border-radius: 10px;
+          background-color: white;
+          margin-bottom: 5px;
+          cursor: pointer;
+          transition: 0.5s linear; }
+        .header .header_container .burger-logo-elements .burgerIcon .TopLine.openedMenu {
+          transform: translate3d(0px, 4px, 0px) rotateZ(45deg);
+          transform-style: preserve-3d; }
+        .header .header_container .burger-logo-elements .burgerIcon .BotLine.openedMenu {
+          transform: translate3d(0px, -4px, 0px) rotateZ(-45deg);
+          transform-style: preserve-3d; }
+        .header .header_container .burger-logo-elements .burgerIcon .MidLine {
+          width: 13px; }
+          .header .header_container .burger-logo-elements .burgerIcon .MidLine.openedMenu {
+            display: none; }
+      .header .header_container .burger-logo-elements .logoIcon {
+        width: 200px;
+        height: auto;
+        display: flex;
+        align-items: flex-end; }
+        .header .header_container .burger-logo-elements .logoIcon.openedMenu {
+          position: fixed;
+          z-index: 4;
+          left: 7%;
+          top: 3%; }
+        .header .header_container .burger-logo-elements .logoIcon a {
+          max-width: 100%;
+          height: 100%; }
+          .header .header_container .burger-logo-elements .logoIcon a img {
+            max-width: 100%;
+            height: 100%; }
+    .header .header_container .burger-container-wrapper {
+      position: fixed;
+      display: none;
+      height: 100%;
+      max-width: 450px;
+      z-index: 2;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #050505E8; }
+      .header .header_container .burger-container-wrapper .nav-content-container {
+        position: absolute;
+        list-style-type: none;
+        top: 124px;
+        left: 61px; }
+        .header .header_container .burger-container-wrapper .nav-content-container .nav-items {
+          margin-bottom: 25px;
+          cursor: pointer; }
+          .header .header_container .burger-container-wrapper .nav-content-container .nav-items a {
+            font-size: 34px;
+            color: #F6FCFB;
+            animation: ease-out 300ms; }
+            .header .header_container .burger-container-wrapper .nav-content-container .nav-items a:hover {
+              color: #81d8d0;
+              text-decoration: none; }
+      .header .header_container .burger-container-wrapper.openedMenu {
+        display: block; }
+    .header .header_container .language-switcher .langbtn {
+      background-color: transparent;
+      color: white;
+      border: none;
+      font-size: 25px; }
+    .header .header_container .language-switcher .languageCont {
+      list-style-type: none; }
+      .header .header_container .language-switcher .languageCont li {
+        display: none; }
+
+.CarouselSection .owl-carousel .slide .leftSlidePart .slideHeading {
+  max-width: 538px; }
+  .CarouselSection .owl-carousel .slide .leftSlidePart .slideHeading h3 {
+    color: #F6FCFB;
+    margin-bottom: 72px; }
+  .CarouselSection .owl-carousel .slide .leftSlidePart .slideHeading p {
+    color: #FAEFEF;
+    margin-bottom: 123px; }
+  .CarouselSection .owl-carousel .slide .leftSlidePart .slideHeading .moreBtn {
+    color: #FFFAFA;
+    border: 1px solid #81D8D0;
+    border-radius: 50px;
+    padding: 15px 70px 15px 70px;
+    transition: linear 300ms; }
+    .CarouselSection .owl-carousel .slide .leftSlidePart .slideHeading .moreBtn:hover {
+      background-color: #81d8d0;
+      text-decoration: none; }
+.CarouselSection .owl-carousel .slide .rightSlidePart {
+  position: relative; }
+  .CarouselSection .owl-carousel .slide .rightSlidePart .gradientBlock {
+    position: absolute;
+    top: 25%;
+    right: 27%;
+    z-index: 0;
+    background: rgba(255, 253, 253, 0.49);
+    filter: blur(107.5px);
+    width: 250px;
+    height: 250px; }
+  .CarouselSection .owl-carousel .slide .rightSlidePart .modelImage {
+    position: relative;
+    z-index: 1; }
+  .CarouselSection .owl-carousel .slide .rightSlidePart .buyButton .circle {
+    position: absolute;
+    width: 264px;
+    height: 264px;
+    top: 55%;
+    left: 55%;
+    z-index: 4;
+    background: #81D8D08F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; }
+    .CarouselSection .owl-carousel .slide .rightSlidePart .buyButton .circle a {
+      color: #FFFFFF;
+      font-size: 25px;
+      text-align: center; }
+
+/*# sourceMappingURL=styles.css.map */
