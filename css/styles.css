@@ -22,7 +22,7 @@ body {
         .header .header_container .burger-logo-elements .burgerIcon.openedMenu {
           position: fixed;
           z-index: 4;
-          top: 11%; }
+          top: 9%; }
         .header .header_container .burger-logo-elements .burgerIcon .TopLine, .header .header_container .burger-logo-elements .burgerIcon .BotLine, .header .header_container .burger-logo-elements .burgerIcon .MidLine {
           width: 24px;
           height: 3px;
