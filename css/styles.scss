@@ -5,7 +5,7 @@ body {
 }
 
 .header {
-  padding: 42px 52px 42px 52px;
+  padding: 12px 52px 12px 52px;
   background-color: rgba(38, 34, 34, 0.73);
   width: 100%;
 
@@ -213,11 +213,22 @@ body {
             align-items: center;
             justify-content: center;
             border-radius: 50%;
+            transition: 0.3s linear;
+
+            &:hover{
+              background: rgba(129, 216, 208, 0.75);
+
+              a{
+                text-decoration: none;
+                transform: scale(1.5);
+              }
+            }
 
             a {
               color: #FFFFFF;
               font-size: 25px;
               text-align: center;
+              transition: 0.5s ease-in-out;
             }
           }
         }
