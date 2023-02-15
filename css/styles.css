@@ -44,7 +44,8 @@ body {
         width: 200px;
         height: auto;
         display: flex;
-        align-items: flex-end; }
+        align-items: flex-end;
+        padding-bottom: 26px; }
         .header .header_container .burger-logo-elements .logoIcon.openedMenu {
           position: fixed;
           z-index: 4;

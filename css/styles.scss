@@ -65,6 +65,8 @@ body {
         height: auto;
         display: flex;
         align-items: flex-end;
+        padding-bottom: 26px;
+
 
         &.openedMenu{
           position: fixed;
