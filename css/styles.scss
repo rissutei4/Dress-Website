@@ -25,7 +25,8 @@ body {
 
       .burgerIcon {
         margin-right: 46px;
-        &.openedMenu{
+
+        &.openedMenu {
           position: fixed;
           z-index: 4;
           top: 9%;
@@ -69,7 +70,7 @@ body {
         padding-bottom: 26px;
 
 
-        &.openedMenu{
+        &.openedMenu {
           position: fixed;
           z-index: 4;
           left: 7%;
@@ -135,12 +136,33 @@ body {
         color: white;
         border: none;
         font-size: 25px;
+        position: relative;
+
+        &:hover + .sub-menu{
+          display: flex;
+        }
       }
 
-      .languageCont {
+      .sub-menu {
         list-style-type: none;
-        li{
-          display: none;
+        display: none;
+        flex-direction: column;
+        padding-left: 0;
+        position: absolute;
+        width: 100px;
+        background: rgba(136, 130, 130, 0.06);
+        border-radius: 5px;
+        z-index: 5;
+
+        li {
+          font-size: 23px;
+          text-align: center;
+          width: 100%;
+          transition: 0.5s linear;
+
+          &:hover {
+            background: #81D8D094;
+          }
         }
       }
     }
@@ -216,10 +238,10 @@ body {
             border-radius: 50%;
             transition: 0.3s linear;
 
-            &:hover{
+            &:hover {
               background: rgba(129, 216, 208, 0.75);
 
-              a{
+              a {
                 text-decoration: none;
                 transform: scale(1.5);
               }

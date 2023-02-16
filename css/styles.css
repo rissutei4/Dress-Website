@@ -90,11 +90,27 @@ body {
       background-color: transparent;
       color: white;
       border: none;
-      font-size: 25px; }
-    .header .header_container .language-switcher .languageCont {
-      list-style-type: none; }
-      .header .header_container .language-switcher .languageCont li {
-        display: none; }
+      font-size: 25px;
+      position: relative; }
+      .header .header_container .language-switcher .langbtn:hover + .sub-menu {
+        display: flex; }
+    .header .header_container .language-switcher .sub-menu {
+      list-style-type: none;
+      display: none;
+      flex-direction: column;
+      padding-left: 0;
+      position: absolute;
+      width: 100px;
+      background: rgba(136, 130, 130, 0.06);
+      border-radius: 5px;
+      z-index: 5; }
+      .header .header_container .language-switcher .sub-menu li {
+        font-size: 23px;
+        text-align: center;
+        width: 100%;
+        transition: 0.5s linear; }
+        .header .header_container .language-switcher .sub-menu li:hover {
+          background: #81D8D094; }
 
 .CarouselSection .owl-carousel .slide .leftSlidePart .slideHeading {
   max-width: 538px; }
