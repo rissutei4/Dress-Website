@@ -8,6 +8,13 @@ body {
   padding: 12px 52px 12px 52px;
   background-color: rgba(38, 34, 34, 0.73);
   width: 100%;
+  transition: all 0.4s linear;
+
+  &.sticky-nav {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+  }
 
   .header_container {
     display: flex;
@@ -138,9 +145,6 @@ body {
         font-size: 25px;
         position: relative;
 
-        &:hover + .sub-menu{
-          display: flex;
-        }
       }
 
       .sub-menu {
@@ -150,9 +154,10 @@ body {
         padding-left: 0;
         position: absolute;
         width: 100px;
-        background: rgba(136, 130, 130, 0.06);
+        background: rgba(151, 145, 145, 0.06);
         border-radius: 5px;
         z-index: 5;
+
 
         li {
           font-size: 23px;
@@ -163,7 +168,15 @@ body {
           &:hover {
             background: #81D8D094;
           }
+
+          &.active {
+            background: #81D8D094;
+          }
         }
+      }
+
+      &:hover .sub-menu {
+        display: flex;
       }
     }
 
@@ -171,8 +184,11 @@ body {
 }
 
 .CarouselSection {
+  margin-bottom: 151px;
+
   .owl-carousel {
     .slide {
+      transform: rotate(-360deg);
 
       .leftSlidePart {
         .slideHeading {
@@ -221,6 +237,8 @@ body {
         .modelImage {
           position: relative;
           z-index: 1;
+          max-height: 929px;
+          margin-top: 29px;
         }
 
         .buyButton {
@@ -252,6 +270,116 @@ body {
               font-size: 25px;
               text-align: center;
               transition: 0.5s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+
+
+    .owl-dots {
+      transform: rotate(90deg);
+      position: absolute;
+      bottom: 38px;
+      left: -7%;
+      bottom: 65%;
+
+      span {
+        width: 14px;
+        height: 14px;
+        background-color: transparent;
+        border-radius: 50%;
+        border: 1px solid #FFFEFE;
+        display: inline-block;
+        transition: 0.3s;
+      }
+
+      & .active span {
+        background-color: #81D8D0;
+        border: 1px solid #FFFEFE;
+        width: 14px;
+        height: 14px;
+        display: inline-block;
+        text-align: center;
+
+      }
+
+      button:nth-child(2) {
+        margin: 0 0 0 99px;
+      }
+
+      button:nth-child(3) {
+        margin: 0 99px 0 99px;
+      }
+    }
+  }
+
+}
+
+.ItemsInStock {
+  .container {
+    ul {
+      li.nav-item {
+        margin-right: 78px;
+
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        button.nav-link {
+          background-color: transparent;
+          border-radius: 0;
+          color: #FFFFFF;
+          border-bottom: 1px solid #FFFFFF;
+          transition: 0.3s linear;
+
+          &.active {
+            background-color: transparent;
+            border-radius: 0;
+            padding-bottom: 0;
+            border-bottom: 1px solid #0DFCE6;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  border-top: 1px solid #FFFFFF;
+  margin-bottom: 94px;
+
+
+  .container {
+    padding-top: 19px;
+
+
+    .footer-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .logoIcon {
+        width: 340px;
+        height: auto;
+        margin-bottom: 58px;
+      }
+
+      .SocialMedias {
+
+        .socialsList {
+          list-style-type: none;
+
+          li {
+            margin-right: 60px;
+            height: 53px;
+            width: 53px;
+            transition: 0.3s linear;
+
+            &:hover {
+              transform: translateY(-5px);
             }
           }
         }
