@@ -205,21 +205,81 @@ body {
     .CarouselSection .owl-carousel .owl-dots button:nth-child(3) {
       margin: 0 99px 0 99px; }
 
-.ItemsInStock .container ul li.nav-item {
-  margin-right: 78px; }
-  .ItemsInStock .container ul li.nav-item:last-of-type {
-    margin-right: 0; }
-  .ItemsInStock .container ul li.nav-item button.nav-link {
-    background-color: transparent;
-    border-radius: 0;
-    color: #FFFFFF;
-    border-bottom: 1px solid #FFFFFF;
-    transition: 0.3s linear; }
-    .ItemsInStock .container ul li.nav-item button.nav-link.active {
+.ItemsInStock .container ul {
+  margin-bottom: 52px !important; }
+  .ItemsInStock .container ul li.nav-item {
+    margin-right: 78px; }
+    .ItemsInStock .container ul li.nav-item:last-of-type {
+      margin-right: 0; }
+    .ItemsInStock .container ul li.nav-item button.nav-link {
       background-color: transparent;
       border-radius: 0;
-      padding-bottom: 0;
-      border-bottom: 1px solid #0DFCE6; }
+      color: #FFFFFF;
+      border-bottom: 1px solid #FFFFFF;
+      transition: 0.3s linear; }
+      .ItemsInStock .container ul li.nav-item button.nav-link.active {
+        background-color: transparent;
+        border-radius: 0;
+        padding-bottom: 0;
+        border-bottom: 1px solid #0DFCE6; }
+.ItemsInStock .container #pills-tabContent {
+  margin-bottom: 190px; }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card {
+    position: relative;
+    margin-bottom: 125px; }
+    .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card.hidden-prod {
+      display: none; }
+    .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .shownCards {
+      display: block; }
+    .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card:hover .product-overlay {
+      opacity: 1; }
+    .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-image {
+      width: 340px; }
+    .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay {
+      width: 100%;
+      position: absolute;
+      top: 60%;
+      padding: 18px 38px;
+      background: #101010C2;
+      opacity: 0;
+      color: white;
+      height: 40%;
+      transition: opacity 0.4s ease-in-out; }
+      .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading {
+        max-width: 100%;
+        margin-bottom: 15px; }
+        .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading p {
+          margin-bottom: 5px !important;
+          color: #5E5E5E; }
+        .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading h4 {
+          color: #FFF9F9; }
+      .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .price-sizes-container .divider {
+        border-left: 1px solid #FFF9F9; }
+      .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .price-sizes-container .sizes {
+        padding-left: 28px; }
+        .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .price-sizes-container .sizes h4 {
+          font-size: 16px !important;
+          margin-bottom: 14px;
+          color: #5E5E5E; }
+        .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .price-sizes-container .sizes ul {
+          list-style-type: none;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          padding-left: 0 !important;
+          margin-bottom: 0 !important; }
+          .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .price-sizes-container .sizes ul li {
+            margin-right: 16px;
+            max-height: 22px; }
+  .ItemsInStock .container #pills-tabContent #load-more {
+    background-color: transparent;
+    padding: 8px 12px;
+    color: #FFF9F9;
+    border: 1px solid #81D8D0;
+    text-transform: uppercase;
+    transition: 0.5s linear; }
+    .ItemsInStock .container #pills-tabContent #load-more:hover {
+      background-color: #81D8D0; }
 
 footer {
   border-top: 1px solid #FFFFFF;

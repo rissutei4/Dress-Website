@@ -183,6 +183,7 @@ body {
   }
 }
 
+
 .CarouselSection {
   margin-bottom: 151px;
 
@@ -319,6 +320,8 @@ body {
 .ItemsInStock {
   .container {
     ul {
+      margin-bottom: 52px !important;
+
       li.nav-item {
         margin-right: 78px;
 
@@ -343,8 +346,105 @@ body {
         }
       }
     }
+
+    #pills-tabContent {
+      margin-bottom: 190px;
+
+      .product-cards-cont {
+        .product-card {
+          position: relative;
+          margin-bottom: 125px;
+
+          &.hidden-prod {
+            display: none;
+          }
+
+          .shownCards {
+            display: block;
+          }
+
+          &:hover .product-overlay {
+            opacity: 1;
+          }
+
+          .product-image {
+            width: 340px;
+          }
+
+          .product-overlay {
+            width: 100%;
+            position: absolute;
+            top: 60%;
+            padding: 18px 38px;
+            background: #101010C2;
+            opacity: 0;
+            color: white;
+            height: 40%;
+            transition: opacity 0.4s ease-in-out;
+
+            .product-heading {
+              max-width: 100%;
+              margin-bottom: 15px;
+
+              p {
+                margin-bottom: 5px !important;
+                color: #5E5E5E;
+              }
+
+              h4 {
+                color: #FFF9F9;
+              }
+            }
+
+            .price-sizes-container {
+              .divider {
+                border-left: 1px solid #FFF9F9;
+              }
+
+              .sizes {
+                padding-left: 28px;
+
+                h4 {
+                  font-size: 16px !important;
+                  margin-bottom: 14px;
+                  color: #5E5E5E;
+                }
+
+                ul {
+                  list-style-type: none;
+                  display: flex;
+                  flex-wrap: wrap;
+                  flex-direction: row;
+                  padding-left: 0 !important;
+                  margin-bottom: 0 !important;
+
+                  li {
+                    margin-right: 16px;
+                    max-height: 22px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      #load-more {
+        background-color: transparent;
+        padding: 8px 12px;
+        color: #FFF9F9;
+        border: 1px solid #81D8D0;
+        text-transform: uppercase;
+        transition: 0.5s linear;
+
+        &:hover {
+          background-color: #81D8D0;
+        }
+      }
+    }
   }
 }
+
 
 footer {
   border-top: 1px solid #FFFFFF;

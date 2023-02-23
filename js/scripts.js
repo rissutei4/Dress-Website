@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $(".owl-carousel").owlCarousel({
         items: 1,
-        nav:true,
+        nav: true,
         navText: [" ", " "],
     });
 });
@@ -56,3 +56,23 @@ window.onscroll = function () {
     }
 }
 
+//Load More button
+const loadMoreButton = document.getElementById('load-more');
+const productList = document.querySelector('.product-cards-cont');
+const hiddenProducts = Array.from(document.querySelectorAll('.hidden-prod'));
+
+loadMoreButton.addEventListener('click', () => {
+    // Take the next 6 hidden products
+    const nextProducts = hiddenProducts.splice(0, 6);
+
+    // Show the next 6 hidden products
+    nextProducts.forEach(product => {
+        product.classList.remove('hidden-prod');
+        product.classList.add('shownCards');
+    });
+
+    // Hide the "Load More" button if there are no more hidden products
+    if (hiddenProducts.length === 0) {
+        loadMoreButton.style.display = 'none';
+    }
+});
