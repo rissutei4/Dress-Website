@@ -1,7 +1,20 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #101010; }
+  background-color: #101010;
+  font-family: 'Rubik', sans-serif; }
+
+h3 {
+  font-weight: 600; }
+
+p {
+  font-weight: 500; }
+
+li p {
+  font-weight: 300; }
+
+h4 {
+  font-weight: 400; }
 
 .header {
   padding: 12px 52px 12px 52px;
@@ -96,33 +109,42 @@ body {
       color: white;
       border: none;
       font-size: 25px;
-      position: relative; }
+      position: relative;
+      transition: 0.6s ease-in-out;
+      border: 1px solid #81D8D0; }
+      .header .header_container .language-switcher .langbtn:hover {
+        color: #FFFFFF;
+        background-color: #81D8D0; }
     .header .header_container .language-switcher .sub-menu {
       list-style-type: none;
       display: none;
       flex-direction: column;
       padding-left: 0;
       position: absolute;
-      width: 100px;
+      width: 140px;
       background: rgba(151, 145, 145, 0.06);
       border-radius: 5px;
       z-index: 5; }
+      .header .header_container .language-switcher .sub-menu.show {
+        display: flex; }
       .header .header_container .language-switcher .sub-menu li {
         font-size: 23px;
         text-align: center;
         width: 100%;
-        transition: 0.5s linear; }
+        transition: 0.5s linear;
+        color: white; }
         .header .header_container .language-switcher .sub-menu li:hover {
           background: #81D8D094; }
         .header .header_container .language-switcher .sub-menu li.active {
           background: #81D8D094; }
-    .header .header_container .language-switcher:hover .sub-menu {
-      display: flex; }
 
 .CarouselSection {
   margin-bottom: 151px; }
   .CarouselSection .owl-carousel .slide {
     transform: rotate(-360deg); }
+    .CarouselSection .owl-carousel .slide.secondsl .row {
+      padding-top: 43px;
+      padding-bottom: 43px; }
     .CarouselSection .owl-carousel .slide .leftSlidePart .slideHeading {
       max-width: 538px; }
       .CarouselSection .owl-carousel .slide .leftSlidePart .slideHeading h3 {
@@ -154,13 +176,13 @@ body {
       .CarouselSection .owl-carousel .slide .rightSlidePart .modelImage {
         position: relative;
         z-index: 1;
-        max-height: 929px;
+        height: 569px;
         margin-top: 29px; }
       .CarouselSection .owl-carousel .slide .rightSlidePart .buyButton .circle {
         position: absolute;
         width: 264px;
         height: 264px;
-        top: 55%;
+        top: 50%;
         left: 55%;
         z-index: 4;
         background: #81D8D08F;
@@ -168,7 +190,8 @@ body {
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        transition: 0.3s linear; }
+        transition: 0.3s linear;
+        font-weight: 600; }
         .CarouselSection .owl-carousel .slide .rightSlidePart .buyButton .circle:hover {
           background: rgba(129, 216, 208, 0.75); }
           .CarouselSection .owl-carousel .slide .rightSlidePart .buyButton .circle:hover a {
@@ -184,7 +207,7 @@ body {
     position: absolute;
     bottom: 38px;
     left: -7%;
-    bottom: 65%; }
+    bottom: 54%; }
     .CarouselSection .owl-carousel .owl-dots span {
       width: 14px;
       height: 14px;
@@ -205,8 +228,14 @@ body {
     .CarouselSection .owl-carousel .owl-dots button:nth-child(3) {
       margin: 0 99px 0 99px; }
 
+.ItemsInStock .container .filters-mobile {
+  display: none; }
 .ItemsInStock .container ul {
-  margin-bottom: 52px !important; }
+  margin-bottom: 52px !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
   .ItemsInStock .container ul li.nav-item {
     margin-right: 78px; }
     .ItemsInStock .container ul li.nav-item:last-of-type {
@@ -253,10 +282,12 @@ body {
           color: #5E5E5E; }
         .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading h4 {
           color: #FFF9F9; }
+      .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .price-sizes-container .price p {
+        font-weight: 300; }
       .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .price-sizes-container .divider {
         border-left: 1px solid #FFF9F9; }
       .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .price-sizes-container .sizes {
-        padding-left: 28px; }
+        padding-left: 20px; }
         .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .price-sizes-container .sizes h4 {
           font-size: 16px !important;
           margin-bottom: 14px;
@@ -271,14 +302,14 @@ body {
           .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .price-sizes-container .sizes ul li {
             margin-right: 16px;
             max-height: 22px; }
-  .ItemsInStock .container #pills-tabContent #load-more {
+  .ItemsInStock .container #pills-tabContent button.load-more {
     background-color: transparent;
     padding: 8px 12px;
     color: #FFF9F9;
     border: 1px solid #81D8D0;
     text-transform: uppercase;
     transition: 0.5s linear; }
-    .ItemsInStock .container #pills-tabContent #load-more:hover {
+    .ItemsInStock .container #pills-tabContent button.load-more:hover {
       background-color: #81D8D0; }
 
 footer {

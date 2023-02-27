@@ -1,4 +1,118 @@
-body {
-  margin: 0; }
+@media only screen and (max-width: 1024px) {
+  .header .header_container .burger-logo-elements .logoIcon.openedMenu {
+    left: 10%; }
+  .header .header_container .burger-container-wrapper .nav-content-container {
+    top: 105px; }
+
+  .CarouselSection .owl-carousel .slide .rightSlidePart .buyButton .circle {
+    left: 43%;
+    top: 43%; }
+  .CarouselSection .owl-carousel .owl-dots {
+    left: -15%; }
+
+  .ItemsInStock #pills-tabContent .product-cards-cont .product-card .product-overlay {
+    padding: 18px 22px !important;
+    top: 50% !important;
+    height: 50% !important; }
+    .ItemsInStock #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading {
+      margin-bottom: 10px !important; }
+  .ItemsInStock #pills-tabContent .product-cards-cont .product-card .product-image {
+    width: 280px !important; }
+  .ItemsInStock .container ul li.nav-item {
+    margin-right: 50px; } }
+@media only screen and (max-width: 768px) {
+  .header .header_container .burger-logo-elements .logoIcon.openedMenu {
+    left: 13%; }
+
+  .CarouselSection .owl-carousel .slide {
+    padding-top: 43px;
+    padding-bottom: 43px;
+    overflow: hidden; }
+    .CarouselSection .owl-carousel .slide .leftSlidePart .slideHeading p {
+      margin-bottom: 93px; }
+    .CarouselSection .owl-carousel .slide .leftSlidePart .slideHeading h3 {
+      margin-bottom: 42px; }
+    .CarouselSection .owl-carousel .slide .rightSlidePart .modelImage {
+      height: 100%; }
+    .CarouselSection .owl-carousel .slide .rightSlidePart .buyButton .circle {
+      left: 38%;
+      width: 204px;
+      height: 204px;
+      top: 43%; }
+  .CarouselSection .owl-carousel .owl-dots {
+    left: -21% !important;
+    bottom: 56% !important; }
+
+  .ItemsInStock .container ul.filters-mobile li.nav-item {
+    margin-right: 40px; } }
+@media only screen and (max-width: 426px) {
+  .header {
+    padding: 12px 22px 12px 22px; }
+    .header .header_container .burger-logo-elements .burgerIcon {
+      margin-right: 20px; }
+    .header .header_container .burger-logo-elements .logoIcon {
+      width: 130px;
+      padding-bottom: 20px; }
+      .header .header_container .burger-logo-elements .logoIcon.openedMenu {
+        top: 5%;
+        left: 24%; }
+
+  .CarouselSection .owl-carousel .slide {
+    padding-bottom: 83px; }
+  .CarouselSection .owl-carousel .leftSlidePart {
+    width: 50%; }
+    .CarouselSection .owl-carousel .leftSlidePart h3 {
+      margin-bottom: 17px !important; }
+    .CarouselSection .owl-carousel .leftSlidePart p {
+      margin-bottom: 25px !important; }
+    .CarouselSection .owl-carousel .leftSlidePart .moreBtn {
+      margin-bottom: 47px;
+      padding: 12px 35px !important; }
+  .CarouselSection .owl-carousel .rightSlidePart {
+    width: 50%; }
+    .CarouselSection .owl-carousel .rightSlidePart .gradientBlock {
+      width: 34px !important;
+      height: 54px !important; }
+    .CarouselSection .owl-carousel .rightSlidePart .modelImage {
+      height: 219px !important;
+      margin-top: 29px;
+      width: 207px; }
+    .CarouselSection .owl-carousel .rightSlidePart .buyButton {
+      display: none; }
+  .CarouselSection .owl-carousel .owl-dots {
+    transform: none;
+    left: 16% !important;
+    bottom: 12% !important; }
+    .CarouselSection .owl-carousel .owl-dots button {
+      margin: 0 29px 0 !important; }
+
+  .ItemsInStock .container .filters-mobile {
+    display: block;
+    padding: 33px 10px;
+    width: 190px; }
+    .ItemsInStock .container .filters-mobile button {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border: none;
+      background: none;
+      color: #ffffff;
+      text-transform: uppercase; }
+      .ItemsInStock .container .filters-mobile button h5 {
+        margin-right: 20px;
+        margin-bottom: 0; }
+  .ItemsInStock .container ul.filters-mobile-cont {
+    flex-direction: column;
+    align-items: flex-start;
+    display: none; }
+    .ItemsInStock .container ul.filters-mobile-cont.show-mobile {
+      display: flex !important; }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-image {
+    width: 160px !important; }
+
+  footer .container .footer-content .SocialMedias .socialsList {
+    padding: 0; }
+    footer .container .footer-content .SocialMedias .socialsList li {
+      margin-right: 20px; } }
 
 /*# sourceMappingURL=media-query.css.map */

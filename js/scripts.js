@@ -1,8 +1,11 @@
 $(document).ready(function () {
     $(".owl-carousel").owlCarousel({
         items: 1,
-        nav: true,
+        nav: false,
         navText: [" ", " "],
+        animateOut: 'fadeOutUp',
+        animateIn: 'fadeInDown',
+        smartSpeed: 100,
     });
 });
 //Open Burger Menu/Close Menu
@@ -44,7 +47,22 @@ langToggler.forEach(element => {
     })
 });
 
+//Language button shows languages
+const button = document.querySelector('.langbtn');
+const dropdownContent = document.querySelector('.sub-menu');
+const dropdownLinks = document.querySelectorAll('.sub-menu li');
 
+button.addEventListener('click', () => {
+    dropdownContent.classList.toggle('show');
+});
+
+dropdownLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        dropdownContent.classList.remove('show');
+    });
+});
+
+//all sticky headers
 window.onscroll = function () {
     let stickyheader = document.querySelector('.header');
     if (window.pageYOffset > 1) {
@@ -56,23 +74,34 @@ window.onscroll = function () {
     }
 }
 
+
 //Load More button
-const loadMoreButton = document.getElementById('load-more');
-const productList = document.querySelector('.product-cards-cont');
-const hiddenProducts = Array.from(document.querySelectorAll('.hidden-prod'));
+function handleLoadMoreClick(event) {
+    const container = event.target.closest('.product-cards-cont');
+    const loadMoreButton = container.querySelector('.load-more');
+    const hiddenCards = container.querySelectorAll('.hidden-prod');
 
-loadMoreButton.addEventListener('click', () => {
-    // Take the next 6 hidden products
-    const nextProducts = hiddenProducts.splice(0, 6);
+    for (let i = 0; i < Math.min(hiddenCards.length, 3); i++) {
+        hiddenCards[i].classList.add('shownCards');
+        hiddenCards[i].classList.remove('hidden-prod');
+    }
 
-    // Show the next 6 hidden products
-    nextProducts.forEach(product => {
-        product.classList.remove('hidden-prod');
-        product.classList.add('shownCards');
-    });
-
-    // Hide the "Load More" button if there are no more hidden products
-    if (hiddenProducts.length === 0) {
+    if (container.querySelectorAll('.hidden-prod').length === 0) {
         loadMoreButton.style.display = 'none';
     }
+}
+
+const loadMoreButtons = document.querySelectorAll('.load-more');
+
+loadMoreButtons.forEach(button => {
+    button.addEventListener('click', handleLoadMoreClick);
+});
+
+//Mobile Filters
+const filterButton = document.querySelector('.filters-mobile');
+const filterDropdownContent = document.querySelector('.filters-mobile-cont');
+
+filterButton.addEventListener('click', () => {
+    filterButton.classList.toggle('show-mobile');
+    filterDropdownContent.classList.toggle('show-mobile');
 });
