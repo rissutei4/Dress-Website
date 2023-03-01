@@ -276,13 +276,19 @@
       }
 
       .product-overlay {
-        top: 0 !important;
-        height: 100% !important;
+        top: 0% !important;
+        height: 78px !important;
         padding: 5px !important;
+        opacity: 1 !important;
 
         .divider {
-          border-left: none !important;
-          border-top: 1px solid #FFFFFF;
+          border-left: 1px solid #FFFFFF;
+        }
+
+        .price {
+          p {
+            font-size: 10px;
+          }
         }
 
         .sizes {
