@@ -38,14 +38,7 @@ function toggleMenu() {
 burgIcon.addEventListener("click", toggleMenu);
 
 
-langToggler = document.querySelector(".sub-menu").querySelectorAll("li");
-console.log(langToggler);
-langToggler.forEach(element => {
-    element.addEventListener("click", function () {
-        langToggler.forEach(ul => ul.classList.remove("active"))
-        this.classList.add("active");
-    })
-});
+
 
 //Language button shows languages
 const button = document.querySelector('.langbtn');
@@ -61,14 +54,38 @@ dropdownLinks.forEach(link => {
         dropdownContent.classList.remove('show');
     });
 });
-// Get the active language element
-const activeLanguageElem = document.querySelector('.languageElem.active');
+function updateLanguageSwitcher() {
+    // Get the active language element
+    const activeLanguageElem = document.querySelector('.languageElem.active');
 
-// Get the language switcher button
-const langSwitcherButton = document.querySelector('.langbtn');
+    // Get the language switcher button
+    const langSwitcherButton = document.querySelector('.langbtn');
 
-// Set the text content of the button to the active language
-langSwitcherButton.textContent = activeLanguageElem.textContent;
+    // Set the text content of the button to the active language
+    langSwitcherButton.textContent = activeLanguageElem.textContent;
+}
+
+// Call the function initially to set the initial active language
+updateLanguageSwitcher();
+
+// Get all the language elements
+const languageElems = document.querySelectorAll('.languageElem');
+
+// Add a click event listener to each language element
+languageElems.forEach((languageElem) => {
+    languageElem.addEventListener('click', () => {
+        // Remove the active class from all language elements
+        languageElems.forEach((elem) => {
+            elem.classList.remove('active');
+        });
+
+        // Add the active class to the clicked language element
+        languageElem.classList.add('active');
+
+        // Update the language switcher button
+        updateLanguageSwitcher();
+    });
+});
 
 
 //all sticky headers

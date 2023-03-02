@@ -139,6 +139,10 @@ h4 {
           margin-bottom: 25px;
           cursor: pointer;
 
+          .mobile-menu-dress-pic {
+            display: none;
+          }
+
           a {
             font-size: 34px;
             color: #F6FCFB;
@@ -472,7 +476,7 @@ h4 {
                   margin-bottom: 0 !important;
 
                   li {
-                    margin-right: 16px;
+                    margin-right: 14px;
                     max-height: 22px;
                   }
                 }

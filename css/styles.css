@@ -95,6 +95,8 @@ h4 {
         .header .header_container .burger-container-wrapper .nav-content-container .nav-items {
           margin-bottom: 25px;
           cursor: pointer; }
+          .header .header_container .burger-container-wrapper .nav-content-container .nav-items .mobile-menu-dress-pic {
+            display: none; }
           .header .header_container .burger-container-wrapper .nav-content-container .nav-items a {
             font-size: 34px;
             color: #F6FCFB;
@@ -300,7 +302,7 @@ h4 {
           padding-left: 0 !important;
           margin-bottom: 0 !important; }
           .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .price-sizes-container .sizes ul li {
-            margin-right: 16px;
+            margin-right: 14px;
             max-height: 22px; }
   .ItemsInStock .container #pills-tabContent button.load-more {
     background-color: transparent;
