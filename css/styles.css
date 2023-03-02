@@ -110,18 +110,17 @@ h4 {
       border: none;
       font-size: 25px;
       position: relative;
-      transition: 0.6s ease-in-out;
-      border: 1px solid #81D8D0; }
+      transition: 0.6s ease-in-out; }
       .header .header_container .language-switcher .langbtn:hover {
-        color: #FFFFFF;
-        background-color: #81D8D0; }
+        color: #81D8D0DE; }
     .header .header_container .language-switcher .sub-menu {
       list-style-type: none;
       display: none;
       flex-direction: column;
       padding-left: 0;
       position: absolute;
-      width: 140px;
+      right: 30px;
+      width: 100px;
       background: rgba(151, 145, 145, 0.06);
       border-radius: 5px;
       z-index: 5; }
@@ -289,7 +288,7 @@ h4 {
       .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .price-sizes-container .sizes {
         padding-left: 20px; }
         .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .price-sizes-container .sizes h4 {
-          font-size: 16px !important;
+          font-size: 16px;
           margin-bottom: 14px;
           color: #5E5E5E; }
         .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .price-sizes-container .sizes ul {

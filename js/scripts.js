@@ -61,6 +61,15 @@ dropdownLinks.forEach(link => {
         dropdownContent.classList.remove('show');
     });
 });
+// Get the active language element
+const activeLanguageElem = document.querySelector('.languageElem.active');
+
+// Get the language switcher button
+const langSwitcherButton = document.querySelector('.langbtn');
+
+// Set the text content of the button to the active language
+langSwitcherButton.textContent = activeLanguageElem.textContent;
+
 
 //all sticky headers
 window.onscroll = function () {
