@@ -267,7 +267,7 @@ h4 {
       width: 100%;
       position: absolute;
       top: 60%;
-      padding: 18px 38px;
+      padding: 18px 30px;
       background: #101010C2;
       opacity: 0;
       color: white;
@@ -282,6 +282,7 @@ h4 {
         .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading h4 {
           color: #FFF9F9; }
       .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .price-sizes-container .price p {
+        font-size: 13px;
         font-weight: 300; }
       .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .price-sizes-container .divider {
         border-left: 1px solid #FFF9F9; }
