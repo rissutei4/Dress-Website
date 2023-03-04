@@ -87,17 +87,36 @@ languageElems.forEach((languageElem) => {
 });
 
 
-//all sticky headers
-window.onscroll = function () {
-    let stickyheader = document.querySelector('.header');
-    if (window.pageYOffset > 1) {
-//sticky header
-        stickyheader.classList.add("sticky-nav");
+window.addEventListener('scroll', () => {
+    const stickyheader = document.querySelector('.header');
+    const burgerContainer = document.querySelector('.burger-container-wrapper');
+    const body = document.querySelector('body');
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth <= 425) {
+        // Disable scrolling on small screens
+        body.classList.remove('scroll-enabled');
+        body.style.overflow = 'hidden';
+
+        if (burgerContainer.classList.contains('openedMenu')) {
+            body.classList.remove('scroll-enabled');
+            stickyheader.classList.remove('sticky-nav')
+            body.style.overflow = 'hidden';
+        } else {
+            body.classList.add('scroll-enabled');
+            body.style.overflow = '';
+        }
     } else {
-//normal header
-        stickyheader.classList.remove("sticky-nav");
+        // Enable scrolling on larger screens
+        if (window.pageYOffset > 1) {
+            stickyheader.classList.add('sticky-nav');
+        } else {
+            stickyheader.classList.remove('sticky-nav');
+        }
+
     }
-}
+});
+
 
 
 //Load More button
@@ -160,27 +179,3 @@ if (window.innerWidth <= 426) {
         });
     });
 }
-
-//Remove scroll with mobile
-// select the .burger-container-wrapper element
-const burgerContainer = document.querySelector('.burger-container-wrapper');
-
-// select the body element
-const body = document.querySelector('body');
-
-// add a class to the body to indicate that scrolling is enabled
-body.classList.add('scroll-enabled');
-
-// add an event listener to the burgerContainer that listens for changes to the "active" class
-burgerContainer.addEventListener('change', () => {
-    // if the "active" class is present on the burgerContainer element
-    if (burgerContainer.classList.contains('openedMenu')) {
-        // disable scrolling on the body element
-        body.classList.remove('scroll-enabled');
-        body.style.overflow = 'hidden';
-    } else {
-        // otherwise, enable scrolling on the body element
-        body.classList.add('scroll-enabled');
-        body.style.overflow = '';
-    }
-});
