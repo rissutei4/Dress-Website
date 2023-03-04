@@ -120,18 +120,52 @@
   .header {
     padding: 12px 22px 12px 22px;
 
-    .header_container .burger-logo-elements {
-      .burgerIcon {
-        margin-right: 20px;
+
+    .header_container {
+
+
+      .burger-logo-elements {
+        .burgerIcon {
+          margin-right: 20px;
+        }
+
+        .logoIcon {
+          width: 130px;
+          padding-bottom: 20px;
+
+          &.openedMenu {
+            top: 5%;
+            left: 24%;
+
+          }
+        }
       }
 
-      .logoIcon {
-        width: 130px;
-        padding-bottom: 20px;
+      .burger-container-wrapper {
+        background: #0D0C0C;
+        padding: 0 6px 0;
+        overflow-x: hidden;
+        overflow-y: scroll;
 
-        &.openedMenu {
-          top: 5%;
-          left: 24%;
+        .nav-content-container {
+          position: relative !important;
+          left: 0 !important;
+          padding-left: 0 !important;
+
+          .nav-items {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #000000;
+
+            .mobile-menu-dress-pic {
+              display: block;
+
+              img {
+                width: 126px;
+              }
+            }
+          }
         }
       }
     }
@@ -404,7 +438,9 @@
 }
 
 @media only screen and (max-width: 361px) {
-
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-image {
+    width: 135px !important;
+  }
 }
 
 @media only screen and (max-width: 321px) {

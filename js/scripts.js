@@ -38,8 +38,6 @@ function toggleMenu() {
 burgIcon.addEventListener("click", toggleMenu);
 
 
-
-
 //Language button shows languages
 const button = document.querySelector('.langbtn');
 const dropdownContent = document.querySelector('.sub-menu');
@@ -54,6 +52,7 @@ dropdownLinks.forEach(link => {
         dropdownContent.classList.remove('show');
     });
 });
+
 function updateLanguageSwitcher() {
     // Get the active language element
     const activeLanguageElem = document.querySelector('.languageElem.active');
@@ -124,8 +123,7 @@ loadMoreButtons.forEach(button => {
 });
 
 //Mobile Filters
-if (window.innerWidth <= 426)
-{
+if (window.innerWidth <= 426) {
     const filterBlock = document.querySelector('.filters-mobile');
     const filterButton = document.querySelector('.filtersClick');
     const filterDropdownContent = document.querySelector('.filters-mobile-cont');
@@ -162,3 +160,27 @@ if (window.innerWidth <= 426)
         });
     });
 }
+
+//Remove scroll with mobile
+// select the .burger-container-wrapper element
+const burgerContainer = document.querySelector('.burger-container-wrapper');
+
+// select the body element
+const body = document.querySelector('body');
+
+// add a class to the body to indicate that scrolling is enabled
+body.classList.add('scroll-enabled');
+
+// add an event listener to the burgerContainer that listens for changes to the "active" class
+burgerContainer.addEventListener('change', () => {
+    // if the "active" class is present on the burgerContainer element
+    if (burgerContainer.classList.contains('openedMenu')) {
+        // disable scrolling on the body element
+        body.classList.remove('scroll-enabled');
+        body.style.overflow = 'hidden';
+    } else {
+        // otherwise, enable scrolling on the body element
+        body.classList.add('scroll-enabled');
+        body.style.overflow = '';
+    }
+});
