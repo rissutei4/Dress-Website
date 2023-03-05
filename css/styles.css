@@ -87,6 +87,8 @@ h4 {
       left: 0;
       right: 0;
       background-color: #050505E8; }
+      .header .header_container .burger-container-wrapper .mobile-header-opened {
+        display: none; }
       .header .header_container .burger-container-wrapper .nav-content-container {
         position: absolute;
         list-style-type: none;

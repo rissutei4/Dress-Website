@@ -15,6 +15,7 @@ const topLine = document.querySelector(".TopLine");
 const botLine = document.querySelector(".BotLine");
 const midLine = document.querySelector(".MidLine");
 const logoIcon = document.querySelector(".logoIcon");
+const stickyheader = document.querySelector('.header');
 
 function toggleMenu() {
     if (burgCont.classList.contains("openedMenu")) {
@@ -24,6 +25,10 @@ function toggleMenu() {
         botLine.classList.remove("openedMenu");
         midLine.classList.remove("openedMenu");
         logoIcon.classList.remove("openedMenu");
+        if(screenWidth <= 425) {
+            stickyheader.classList.add('sticky-nav');
+        }
+
 
     } else {
         burgIcon.classList.add("openedMenu");
@@ -32,6 +37,7 @@ function toggleMenu() {
         botLine.classList.add("openedMenu");
         midLine.classList.add("openedMenu");
         logoIcon.classList.add("openedMenu");
+        stickyheader.classList.remove('sticky-nav');
     }
 }
 
@@ -86,36 +92,23 @@ languageElems.forEach((languageElem) => {
     });
 });
 
-
-window.addEventListener('scroll', () => {
+window.onscroll = () => {
     const stickyheader = document.querySelector('.header');
     const burgerContainer = document.querySelector('.burger-container-wrapper');
     const body = document.querySelector('body');
     const screenWidth = window.innerWidth;
-
-    if (screenWidth <= 425) {
-        // Disable scrolling on small screens
+    if (window.scrollY > 1 && screenWidth <= 425) {
         body.classList.remove('scroll-enabled');
-        body.style.overflow = 'hidden';
-
-        if (burgerContainer.classList.contains('openedMenu')) {
-            body.classList.remove('scroll-enabled');
-            stickyheader.classList.remove('sticky-nav')
-            body.style.overflow = 'hidden';
+        if(burgerContainer.classList.value.includes('openedMenu')) {
+            console.log(stickyheader.classList);
+            stickyheader.classList.remove('sticky-nav');
         } else {
-            body.classList.add('scroll-enabled');
-            body.style.overflow = '';
+            stickyheader.classList.add('sticky-nav');
         }
     } else {
-        // Enable scrolling on larger screens
-        if (window.pageYOffset > 1) {
-            stickyheader.classList.add('sticky-nav');
-        } else {
-            stickyheader.classList.remove('sticky-nav');
-        }
-
+        stickyheader.classList.remove('sticky-nav');
     }
-});
+};
 
 
 

@@ -61,6 +61,8 @@
       padding: 0 6px 0;
       overflow-x: hidden;
       overflow-y: scroll; }
+      .header .header_container .burger-container-wrapper .mobile-header-opened {
+        display: none; }
       .header .header_container .burger-container-wrapper .nav-content-container {
         position: relative !important;
         left: 0 !important;
