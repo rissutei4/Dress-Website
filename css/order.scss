@@ -72,3 +72,44 @@ body {
     }
   }
 }
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 992px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 426px) {
+  .forms-container {
+    background: transparent;
+    border: 0;
+    padding: 52px 22px;
+    margin-bottom: 116px;
+
+    .contactForm {
+      .form-group {
+        button {
+          padding: 11px 8px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 376px) {
+
+}
+
+@media only screen and (max-width: 361px) {
+
+}
+
+@media only screen and (max-width: 320px) {
+
+}
