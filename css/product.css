@@ -261,7 +261,8 @@ h4 {
           font-size: 25px;
           color: #FFFFFF; }
       .product .prod-container .product-description .colors-sizes .colors {
-        margin-bottom: 39px; }
+        margin-bottom: 39px;
+        display: flex; }
         .product .prod-container .product-description .colors-sizes .colors .color.active .color-circle {
           border: 1px solid #81D8D0DE;
           border-radius: 50px;
@@ -278,7 +279,8 @@ h4 {
           width: 56px;
           height: 56px;
           display: flex;
-          align-items: center; }
+          align-items: center;
+          margin-right: 45px; }
           .product .prod-container .product-description .colors-sizes .colors .color .color-circle span {
             display: inline-block;
             width: 40px;
@@ -286,6 +288,8 @@ h4 {
             background: #C9CCD5;
             border-radius: 50%;
             box-sizing: border-box; }
+            .product .prod-container .product-description .colors-sizes .colors .color .color-circle span.color-2 {
+              background: #D8B69A; }
       .product .prod-container .product-description .colors-sizes .sizes {
         max-width: 616px; }
         .product .prod-container .product-description .colors-sizes .sizes .container-sizes {
@@ -316,7 +320,7 @@ h4 {
               .product .prod-container .product-description .colors-sizes .sizes .container-sizes ul li p {
                 font-family: 'Rubik';
                 font-weight: 300;
-                font-size: 31px;
+                font-size: 25px;
                 color: #FFFFFF; }
       .product .prod-container .product-description .orderProductButton button {
         border: 1px solid rgba(140, 231, 222, 0.89);
@@ -332,5 +336,52 @@ h4 {
           background: transparent; }
     .product .prod-container .mobile-enable {
       display: none; }
+  .product .secondary-information-block .three-tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 90px;
+    max-width: 794px; }
+    .product .secondary-information-block .three-tabs ul.nav-pills {
+      margin-bottom: 74px !important; }
+      .product .secondary-information-block .three-tabs ul.nav-pills li.nav-item {
+        margin-right: 56px; }
+        .product .secondary-information-block .three-tabs ul.nav-pills li.nav-item .nav-link {
+          background-color: transparent;
+          border-radius: 0;
+          color: #FFFFFF;
+          border-bottom: 1px solid #FFFFFF;
+          transition: 0.3s linear; }
+          .product .secondary-information-block .three-tabs ul.nav-pills li.nav-item .nav-link.active {
+            padding-bottom: 0;
+            border-bottom: 1px solid #81D8D0; }
+    .product .secondary-information-block .three-tabs #pills-tabContent .tab-pane#podrobnosti {
+      max-height: 600px;
+      overflow: hidden; }
+      .product .secondary-information-block .three-tabs #pills-tabContent .tab-pane#podrobnosti ul.text-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; }
+        .product .secondary-information-block .three-tabs #pills-tabContent .tab-pane#podrobnosti ul.text-list li {
+          max-width: 345px;
+          font-size: 18px;
+          margin-bottom: 10px;
+          margin-right: 25px;
+          color: #F3E9E9; }
+    .product .secondary-information-block .three-tabs #pills-tabContent .tab-pane p {
+      font-weight: 400;
+      font-size: 18px;
+      color: #FFFCFC;
+      text-align: center; }
+  .product .secondary-information-block .additional-images .block-of-images {
+    display: flex;
+    flex-direction: row; }
+    .product .secondary-information-block .additional-images .block-of-images .additional-image {
+      margin-bottom: 128px;
+      margin-right: 60px;
+      max-height: 508px;
+      max-width: 400px; }
+      .product .secondary-information-block .additional-images .block-of-images .additional-image img {
+        height: 100%; }
 
 /*# sourceMappingURL=product.css.map */

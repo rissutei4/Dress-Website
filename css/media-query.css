@@ -1,238 +1,68 @@
-@media only screen and (max-width: 1024px) {
-  .header .header_container .burger-logo-elements .logoIcon.openedMenu {
-    left: 10%; }
-  .header .header_container .burger-container-wrapper .nav-content-container {
-    top: 105px; }
+/*
+Error: Invalid CSS after "...      .lanngbtn": expected "{", was "}"
+        on line 209 of media-query.scss
 
-  .CarouselSection .owl-carousel .slide .rightSlidePart .buyButton .circle {
-    left: 43%;
-    top: 43%; }
-  .CarouselSection .owl-carousel .owl-dots {
-    left: -15%; }
+204:             }
+205:           }
+206: 
+207:           .language-switcher-mobile {
+208:             .lanngbtn
+209:           }
+210:         }
+211: 
+212: 
+213:         .nav-content-container {
+214:           padding: 0 6px 0;
 
-  .ItemsInStock #pills-tabContent .product-cards-cont .product-card .product-overlay {
-    padding: 18px 22px !important;
-    top: 50% !important;
-    height: 50% !important; }
-    .ItemsInStock #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading {
-      margin-bottom: 10px !important; }
-  .ItemsInStock #pills-tabContent .product-cards-cont .product-card .product-image {
-    width: 280px !important; }
-  .ItemsInStock .container ul li.nav-item {
-    margin-right: 50px; } }
-@media only screen and (max-width: 768px) {
-  .header .header_container .burger-logo-elements .logoIcon.openedMenu {
-    left: 13%; }
-
-  .CarouselSection .owl-carousel .slide {
-    padding-top: 43px;
-    padding-bottom: 43px;
-    overflow: hidden; }
-    .CarouselSection .owl-carousel .slide .leftSlidePart .slideHeading p {
-      margin-bottom: 93px; }
-    .CarouselSection .owl-carousel .slide .leftSlidePart .slideHeading h3 {
-      margin-bottom: 42px; }
-    .CarouselSection .owl-carousel .slide .rightSlidePart .modelImage {
-      height: 100%; }
-    .CarouselSection .owl-carousel .slide .rightSlidePart .buyButton .circle {
-      left: 38%;
-      width: 204px;
-      height: 204px;
-      top: 43%; }
-  .CarouselSection .owl-carousel .owl-dots {
-    left: -21% !important;
-    bottom: 56% !important; }
-
-  .ItemsInStock .container ul.filters-mobile li.nav-item {
-    margin-right: 40px; } }
-@media only screen and (max-width: 426px) {
-  .header {
-    padding: 12px 22px 12px 22px; }
-    .header .header_container .burger-logo-elements .burgerIcon {
-      margin-right: 20px; }
-    .header .header_container .burger-logo-elements .logoIcon {
-      width: 130px;
-      padding-bottom: 20px; }
-      .header .header_container .burger-logo-elements .logoIcon.openedMenu {
-        top: 5%;
-        left: 24%; }
-    .header .header_container .burger-container-wrapper {
-      background: #0D0C0C;
-      padding: 0 6px 0;
-      overflow-x: hidden;
-      overflow-y: scroll; }
-      .header .header_container .burger-container-wrapper .mobile-header-opened {
-        display: none; }
-      .header .header_container .burger-container-wrapper .nav-content-container {
-        position: relative !important;
-        left: 0 !important;
-        padding-left: 0 !important; }
-        .header .header_container .burger-container-wrapper .nav-content-container .nav-items {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border: 1px solid #000000; }
-          .header .header_container .burger-container-wrapper .nav-content-container .nav-items .mobile-menu-dress-pic {
-            display: block; }
-            .header .header_container .burger-container-wrapper .nav-content-container .nav-items .mobile-menu-dress-pic img {
-              width: 126px; }
-
-  .CarouselSection .owl-carousel .slide {
-    padding-bottom: 83px; }
-  .CarouselSection .owl-carousel .leftSlidePart {
-    width: 50%; }
-    .CarouselSection .owl-carousel .leftSlidePart h3 {
-      margin-bottom: 17px !important; }
-    .CarouselSection .owl-carousel .leftSlidePart p {
-      margin-bottom: 25px !important; }
-    .CarouselSection .owl-carousel .leftSlidePart .moreBtn {
-      margin-bottom: 47px;
-      padding: 12px 35px !important; }
-  .CarouselSection .owl-carousel .rightSlidePart {
-    width: 50%; }
-    .CarouselSection .owl-carousel .rightSlidePart .gradientBlock {
-      width: 34px !important;
-      height: 54px !important; }
-    .CarouselSection .owl-carousel .rightSlidePart .modelImage {
-      height: 219px !important;
-      margin-top: 29px;
-      width: 207px; }
-    .CarouselSection .owl-carousel .rightSlidePart .buyButton {
-      display: none; }
-  .CarouselSection .owl-carousel .owl-dots {
-    transform: none;
-    left: 16% !important;
-    bottom: 12% !important; }
-    .CarouselSection .owl-carousel .owl-dots button {
-      margin: 0 29px 0 !important; }
-
-  .ItemsInStock .container .filters-mobile {
-    display: block;
-    padding-bottom: 18px; }
-    .ItemsInStock .container .filters-mobile img {
-      transition: 0.3s linear; }
-    .ItemsInStock .container .filters-mobile.show-mobile img {
-      transform: rotateZ(180deg); }
-    .ItemsInStock .container .filters-mobile button {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      padding: 10px 33px;
-      width: 290px;
-      position: relative;
-      border: none;
-      background: none;
-      color: #ffffff;
-      text-transform: uppercase; }
-      .ItemsInStock .container .filters-mobile button.show-mobile {
-        background: #527471;
-        border-radius: 10px 10px 0 0; }
-      .ItemsInStock .container .filters-mobile button h5 {
-        margin-right: 20px;
-        margin-bottom: 0;
-        font-weight: 300; }
-  .ItemsInStock .container ul.filters-mobile-cont {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    width: 290px;
-    display: none;
-    border-radius: 0 0 10px 10px;
-    position: absolute;
-    bottom: -320px;
-    left: 15px;
-    z-index: 10;
-    padding-left: 10px;
-    padding-right: 31px; }
-    .ItemsInStock .container ul.filters-mobile-cont li.nav-item {
-      margin: 0;
-      padding: 10px 0; }
-      .ItemsInStock .container ul.filters-mobile-cont li.nav-item button {
-        border-bottom: none !important;
-        margin: 0;
-        padding: 0;
-        font-weight: 300;
-        text-transform: uppercase;
-        font-size: 16px; }
-    .ItemsInStock .container ul.filters-mobile-cont.show-mobile {
-      display: flex !important;
-      background: #363333; }
-  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card {
-    margin-bottom: 47px; }
-    .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-image {
-      width: 168px !important; }
-    .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay {
-      top: 45% !important;
-      height: 55% !important;
-      padding: 5px !important;
-      opacity: 1 !important; }
-      .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .divider {
-        border-left: 1px solid #FFFFFF; }
-      .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading h4 {
-        padding-left: 10px !important;
-        font-size: 13px; }
-      .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .right-side {
-        display: flex;
-        align-items: center; }
-        .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .right-side .price p {
-          font-size: 10px; }
-      .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .sizes {
-        padding-left: 0 !important; }
-        .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .sizes h4 {
-          margin-top: 0;
-          margin-bottom: 6px !important;
-          font-size: 8px !important; }
-        .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .sizes ul li {
-          font-size: 9px;
-          margin-right: 5px !important; }
-      .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading {
-        margin-top: 15px; }
-        .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading h4 {
-          padding-left: 17px; }
-        .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading p {
-          display: none; }
-
-  footer .container .footer-content .SocialMedias .socialsList {
-    padding: 0; }
-    footer .container .footer-content .SocialMedias .socialsList li {
-      margin-right: 20px; } }
-@media only screen and (max-width: 376px) {
-  .header .header_container .burger-container-wrapper .nav-content-container {
-    left: 47px !important; }
-
-  .CarouselSection {
-    margin-bottom: 0 !important; }
-    .CarouselSection .owl-carousel .rightSlidePart .modelImage {
-      width: 181px !important; }
-
-  .CarouselSection .owl-carousel .owl-dots {
-    left: 12% !important; }
-    .CarouselSection .owl-carousel .owl-dots button {
-      margin: 0 23px 0 !important; }
-
-  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-image {
-    width: 143px !important; }
-
-  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay {
-    top: 36% !important;
-    height: 64% !important; }
-    .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .right-side p {
-      font-size: 7px !important; }
-    .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading {
-      margin-top: 0;
-      margin-bottom: 0; }
-      .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading h4 {
-        margin-top: 3px !important;
-        margin-bottom: 2px !important; }
-
-  footer .container .footer-content .logoIcon {
-    width: 220px; }
-  footer .container .footer-content .SocialMedias .socialsList li {
-    width: 43px;
-    height: 43px;
-    margin-right: 15px; } }
-@media only screen and (max-width: 361px) {
-  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-image {
-    width: 135px !important; } }
-
-/*# sourceMappingURL=media-query.css.map */
+Backtrace:
+media-query.scss:209
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:688:in `block'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:421:in `media_directive'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:234:in `special_directive'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:209:in `directive'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+C:/Ruby30-x64/bin/sass:23:in `load'
+C:/Ruby30-x64/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...      .lanngbtn\": expected \"{\", was \"}\"\A         on line 209 of media-query.scss\A \A 204:             }\A 205:           }\A 206: \A 207:           .language-switcher-mobile {\A 208:             .lanngbtn\A 209:           }\A 210:         }\A 211: \A 212: \A 213:         .nav-content-container {\A 214:           padding: 0 6px 0;"; }

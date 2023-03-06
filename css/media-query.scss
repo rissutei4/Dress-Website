@@ -117,6 +117,7 @@
 }
 
 @media only screen and (max-width: 426px) {
+
   .header {
     padding: 12px 22px 12px 22px;
 
@@ -145,19 +146,74 @@
 
       .burger-container-wrapper {
         background: #0D0C0C;
-        padding: 0 6px 0;
         overflow-x: hidden;
         overflow-y: scroll;
 
         .mobile-header-opened {
-          display: none;
+          display: block;
+          padding: 12px 22px 12px 22px;
+          background-color: rgba(38, 34, 34, 0.73);
+          width: 100%;
+          transition: all 0.4s linear;
+
+          .burger-logo-elements-mobile {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: relative;
+            z-index: 3;
+
+            .burgerIconMobile {
+              margin-right: 22px;
+
+              .TopLine {
+                width: 24px;
+                height: 3px;
+                border-radius: 10px;
+                background-color: white;
+                margin-bottom: 5px;
+                cursor: pointer;
+                transition: 0.5s linear;
+                transform: translate3d(0px, 4px, 0px) rotateZ(45deg);
+                transform-style: preserve-3d;
+              }
+
+              .MidLine {
+                display: none;
+              }
+
+              .BotLine {
+                width: 24px;
+                height: 3px;
+                border-radius: 10px;
+                background-color: white;
+                margin-bottom: 5px;
+                cursor: pointer;
+                transition: 0.5s linear;
+                transform: translate3d(0px, -4px, 0px) rotateZ(-45deg);
+                transform-style: preserve-3d;
+              }
+            }
+
+            .logoIcon {
+              width: 130px;
+              padding-bottom: 20px;
+              height: auto;
+              display: flex;
+              align-items: flex-end;
+            }
+          }
+
+          .language-switcher-mobile {
+            .lanngbtn
+          }
         }
 
 
         .nav-content-container {
+          padding: 0 6px 0;
           position: relative !important;
           left: 0 !important;
-          padding-left: 0 !important;
 
           .nav-items {
             display: flex;

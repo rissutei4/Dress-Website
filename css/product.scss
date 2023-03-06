@@ -70,6 +70,7 @@ h4 {
       .colors-sizes {
         .colors {
           margin-bottom: 39px;
+          display: flex;
 
           .color {
             &.active {
@@ -97,6 +98,7 @@ h4 {
               height: 56px;
               display: flex;
               align-items: center;
+              margin-right: 45px;
 
               span {
                 display: inline-block;
@@ -105,6 +107,10 @@ h4 {
                 background: #C9CCD5;
                 border-radius: 50%;
                 box-sizing: border-box;
+
+                &.color-2 {
+                  background: #D8B69A;
+                }
               }
             }
           }
@@ -146,7 +152,7 @@ h4 {
                 p {
                   font-family: 'Rubik';
                   font-weight: 300;
-                  font-size: 31px;
+                  font-size: 25px;
                   color: #FFFFFF;
                 }
               }
@@ -176,6 +182,91 @@ h4 {
 
     .mobile-enable {
       display: none;
+    }
+  }
+
+  .secondary-information-block {
+    .three-tabs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 90px;
+      max-width: 794px;
+
+      ul.nav-pills {
+        margin-bottom: 74px !important;
+
+
+        li.nav-item {
+          margin-right: 56px;
+
+          .nav-link {
+            background-color: transparent;
+            border-radius: 0;
+            color: #FFFFFF;
+            border-bottom: 1px solid #FFFFFF;
+            transition: 0.3s linear;
+
+            &.active {
+              padding-bottom: 0;
+              border-bottom: 1px solid #81D8D0;
+            }
+          }
+        }
+      }
+
+      #pills-tabContent {
+
+        .tab-pane {
+          &#podrobnosti {
+            max-height: 600px;
+            overflow: hidden;
+
+            ul.text-list {
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+
+              li {
+                max-width: 345px;
+                font-size: 18px;
+                margin-bottom: 10px;
+                margin-right: 25px;
+                color: #F3E9E9;
+              }
+            }
+          }
+
+
+          p {
+            font-weight: 400;
+            font-size: 18px;
+            color: #FFFCFC;
+            text-align: center;
+          }
+        }
+      }
+
+
+    }
+
+    .additional-images {
+      .block-of-images {
+        display: flex;
+        flex-direction: row;
+
+
+        .additional-image {
+          margin-bottom: 128px;
+          margin-right: 60px;
+          max-height: 508px;
+          max-width: 400px;
+
+          img {
+            height: 100%;
+          }
+        }
+      }
     }
   }
 }
