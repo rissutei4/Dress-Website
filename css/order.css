@@ -223,166 +223,53 @@ body {
   background-color: #101010;
   font-family: 'Rubik', sans-serif; }
 
-h3 {
-  font-weight: 600; }
-
-p {
-  font-weight: 500; }
-
-li p {
-  font-weight: 300; }
-
-h4 {
-  font-weight: 400; }
-
-.product {
-  margin-top: 91px; }
-  .product .prod-container {
-    max-width: 1586px;
-    margin-left: 200px;
-    margin-right: 37px; }
-    .product .prod-container .product-image {
-      max-width: 694px;
-      height: auto;
-      margin-bottom: 94px; }
-    .product .prod-container .product-description {
-      margin-top: 20px; }
-      .product .prod-container .product-description .product-name p {
-        font-size: 22px;
-        color: #5E5E5E;
-        margin-bottom: 17px; }
-      .product .prod-container .product-description .product-name h4 {
-        font-size: 30px;
-        color: #FFF9F9;
-        margin-bottom: 23px; }
-      .product .prod-container .product-description .price {
-        margin-bottom: 39px; }
-        .product .prod-container .product-description .price p {
-          font-weight: 300;
-          font-size: 25px;
-          color: #FFFFFF; }
-      .product .prod-container .product-description .colors-sizes .colors {
-        margin-bottom: 39px;
-        display: flex; }
-        .product .prod-container .product-description .colors-sizes .colors .color.active .color-circle {
-          border: 1px solid #81D8D0DE;
-          border-radius: 50px;
-          padding: 7px; }
-        .product .prod-container .product-description .colors-sizes .colors .color .color-name span {
-          font-weight: 400;
-          font-size: 20px;
-          color: #FFFFFF;
-          display: block;
-          margin-bottom: 10px;
-          font-family: 'Rubik';
-          font-style: normal; }
-        .product .prod-container .product-description .colors-sizes .colors .color .color-circle {
-          width: 56px;
-          height: 56px;
-          display: flex;
-          align-items: center;
-          margin-right: 45px; }
-          .product .prod-container .product-description .colors-sizes .colors .color .color-circle span {
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            background: #C9CCD5;
-            border-radius: 50%;
-            box-sizing: border-box; }
-            .product .prod-container .product-description .colors-sizes .colors .color .color-circle span.color-2 {
-              background: #D8B69A; }
-      .product .prod-container .product-description .colors-sizes .sizes {
-        max-width: 616px; }
-        .product .prod-container .product-description .colors-sizes .sizes .container-sizes {
-          width: 100%;
-          border-top: 1px solid #81D8D0DE; }
-          .product .prod-container .product-description .colors-sizes .sizes .container-sizes h4 {
-            margin-top: 38px;
-            font-weight: 300;
-            font-size: 28px;
-            color: #FFFFFF;
-            margin-bottom: 74px; }
-          .product .prod-container .product-description .colors-sizes .sizes .container-sizes ul {
-            list-style-type: none;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            margin-bottom: 66px; }
-            .product .prod-container .product-description .colors-sizes .sizes .container-sizes ul li {
-              margin-right: 80px;
-              width: 47px;
-              height: 47px;
-              line-height: 47px;
-              background: #101010;
-              box-shadow: 0px 3px 16px rgba(253, 239, 239, 0.25);
-              border-radius: 50%;
-              display: flex;
-              justify-content: center; }
-              .product .prod-container .product-description .colors-sizes .sizes .container-sizes ul li p {
-                font-family: 'Rubik';
-                font-weight: 300;
-                font-size: 25px;
-                color: #FFFFFF; }
-      .product .prod-container .product-description .orderProductButton button {
-        border: 1px solid rgba(140, 231, 222, 0.89);
-        padding: 24px 94px;
-        background: #81D8D0E3;
-        font-family: 'Rubik';
-        font-weight: 300;
-        font-size: 26px;
-        transition: 0.3s linear;
-        color: rgba(248, 255, 254, 0.87); }
-        .product .prod-container .product-description .orderProductButton button:hover {
-          border: 1px solid #FFFFFF;
-          background: transparent; }
-    .product .prod-container .mobile-enable {
-      display: none; }
-  .product .secondary-information-block .three-tabs {
+.forms-container {
+  margin-top: 63px;
+  background: #151414;
+  border: 1px solid #FFFEFE;
+  padding: 52px 194px;
+  margin-bottom: 316px; }
+  .forms-container .forms-heading {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-bottom: 90px;
-    max-width: 794px; }
-    .product .secondary-information-block .three-tabs ul.nav-pills {
-      margin-bottom: 74px !important; }
-      .product .secondary-information-block .three-tabs ul.nav-pills li.nav-item {
-        margin-right: 56px; }
-        .product .secondary-information-block .three-tabs ul.nav-pills li.nav-item .nav-link {
-          background-color: transparent;
-          border-radius: 0;
-          color: #FFFFFF;
-          border-bottom: 1px solid #FFFFFF;
-          transition: 0.3s linear; }
-          .product .secondary-information-block .three-tabs ul.nav-pills li.nav-item .nav-link.active {
-            padding-bottom: 0;
-            border-bottom: 1px solid #81D8D0; }
-    .product .secondary-information-block .three-tabs #pills-tabContent .tab-pane#podrobnosti {
-      max-height: 600px;
-      overflow: hidden; }
-      .product .secondary-information-block .three-tabs #pills-tabContent .tab-pane#podrobnosti ul.text-list {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap; }
-        .product .secondary-information-block .three-tabs #pills-tabContent .tab-pane#podrobnosti ul.text-list li {
-          max-width: 345px;
-          font-size: 18px;
-          margin-bottom: 10px;
-          margin-right: 25px;
-          color: #F3E9E9; }
-    .product .secondary-information-block .three-tabs #pills-tabContent .tab-pane p {
-      font-weight: 400;
-      font-size: 18px;
-      color: #FFFCFC;
-      text-align: center; }
-  .product .secondary-information-block .additional-images .block-of-images {
-    display: flex;
-    flex-direction: row; }
-    .product .secondary-information-block .additional-images .block-of-images .additional-image {
-      margin-bottom: 128px;
-      margin-right: 60px;
-      max-height: 508px;
-      max-width: 400px; }
-      .product .secondary-information-block .additional-images .block-of-images .additional-image img {
-        height: 100%; }
+    align-items: center; }
+    .forms-container .forms-heading h4 {
+      font-weight: 300;
+      font-size: 40px;
+      text-transform: uppercase;
+      color: rgba(235, 247, 246, 0.87);
+      margin-bottom: 34px; }
+    .forms-container .forms-heading p {
+      font-weight: 300;
+      font-size: 27px;
+      text-align: center;
+      color: #C3BABA;
+      margin-bottom: 66px; }
+  .forms-container .contactForm .form-group input {
+    background: #131313;
+    border: 1px solid #FFFFFF;
+    border-radius: 0;
+    padding: 28px 16px;
+    font-size: 23px;
+    font-family: 'Rubik';
+    font-weight: 300;
+    margin-bottom: 22px;
+    color: #7B7575; }
+  .forms-container .contactForm .form-group button {
+    border: 1px solid rgba(140, 231, 222, 0.89);
+    padding: 26px 94px;
+    text-transform: uppercase;
+    background: rgba(129, 216, 208, 0.87);
+    font-family: 'Rubik';
+    font-weight: 300;
+    font-size: 26px;
+    transition: 0.3s linear;
+    color: rgba(248, 255, 254, 0.87);
+    border-radius: 0;
+    width: 100%;
+    margin-top: 34px; }
+    .forms-container .contactForm .form-group button:hover {
+      border: 1px solid #FFFFFF;
+      background: transparent; }
 
-/*# sourceMappingURL=product.css.map */
+/*# sourceMappingURL=order.css.map */

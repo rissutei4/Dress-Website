@@ -11,8 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/header-yes_footer.css">
-
+    <link rel="stylesheet" href="./css/order.css">
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/animate.css">
@@ -45,7 +44,7 @@
         <div class="burger-container-wrapper">
             <div class="mobile-header-opened">
                 <div class="burger-logo-elements-mobile">
-                    <div class="burgerIcon">
+                    <div class="burgerIconMobile">
                         <div class="TopLine"></div>
                         <div class="MidLine"></div>
                         <div class="BotLine"></div>
@@ -106,7 +105,7 @@
     </div>
 </nav>
 
-<div class="forms-container">
+<div class="forms-container container">
     <div class="forms-heading">
         <h4>Žiadosť</h4>
         <p>Zanechajte, prosím, prihlášku, aby sme vás mohli kontaktovať ohľadom vašej objednávky</p>
@@ -114,36 +113,31 @@
     <div class="contactForm">
         <form action="">
             <div class="row">
-                <div class="col-md">
+                <div class="col-md-12">
 
                     <div class="form-group">
-                        <input type="text" class="form-control" id="nameInput" aria-describedby="nameInput" placeholder="Name *">
+                        <input type="text" class="form-control" id="nameInput" aria-describedby="nameInput"
+                               placeholder="Vaše meno a priezvisko">
                     </div>
 
                     <div class="form-group">
-                        <input type="email" class="form-control" id="emailInput" aria-describedby="emailInput" placeholder="Email *">
+                        <input type="email" class="form-control" id="emailInput" aria-describedby="emailInput"
+                               placeholder="Telefónne číslo">
                     </div>
 
                     <div class="form-group">
-                        <input type="text" class="form-control" id="subjectInput" aria-describedby="subjectInput" placeholder="Subject *">
+                        <input type="text" class="form-control" id="subjectInput" aria-describedby="subjectInput"
+                               placeholder="E-mailová adresa">
                     </div>
-
-                </div>
-                <div class="col-md">
-                    <div class="form-group">
-                        <textarea class="form-control" id="textArea" rows="5" placeholder="Message"></textarea>
-                    </div>
-                    <div class="form-group text-right">
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn btn-primary">podať žiadosť</button>
                     </div>
                 </div>
             </div>
-
         </form>
     </div>
 </div>
-
-
+</div>
 
 
 <script src="https://code.jquery.com/jquery-3.6.3.min.js"
