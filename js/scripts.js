@@ -61,7 +61,7 @@ function toggleMenuMobile() {
         logoIcon.classList.remove("openedMenu");
         logoElems.style.display = 'flex'
         if (window.innerWidth <= 425 && !burgCont.classList.value.includes('openedMenu')) {
-            logoElems.style.display = 'block'
+            logoElems.style.display = 'flex'
         }
     }
 }
@@ -195,19 +195,51 @@ if (window.innerWidth <= 426) {
     });
 }
 
-function activateColor() {
-    const colors = document.querySelector('.colors');
 
-    colors.addEventListener('click', (event) => {
-        const colorCircle = event.target.closest('.color-circle');
-        if (colorCircle) {
-            const color = colorCircle.parentNode;
-            const activeColor = colors.querySelector('.color.active');
-            activeColor.classList.remove('active');
-            color.classList.add('active');
-        }
+//Mobile Language button shows languages
+const LangBtnMobile = document.querySelector('.language-switcher-mobile .langbtnMobile');
+const dropdownContentMobile = document.querySelector('.language-switcher-mobile .sub-menu');
+const dropdownLinksMobile = document.querySelectorAll('.language-switcher-mobile .sub-menu li');
+
+LangBtnMobile.addEventListener('click', () => {
+    dropdownContentMobile.classList.toggle('show');
+});
+
+dropdownLinksMobile.forEach(link => {
+    link.addEventListener('click', () => {
+        dropdownContentMobile.classList.remove('show');
     });
+});
+
+function updateLanguageSwitcherMobile() {
+    // Get the active language element
+    const activeLanguageElemMob = document.querySelector('.language-switcher-mobile .sub-menu .languageElem.active');
+
+    // Get the language switcher button
+    const langSwitcherButtonMobile = document.querySelector('.language-switcher-mobile .langbtnMobile');
+
+    // Set the text content of the button to the active language
+    langSwitcherButtonMobile.textContent = activeLanguageElemMob.textContent;
 }
 
-activateColor();
+// Call the function initially to set the initial active language
+updateLanguageSwitcherMobile();
 
+// Get all the language elements
+const languageElemsMobile = document.querySelectorAll('.language-switcher-mobile .sub-menu .languageElem');
+
+// Add a click event listener to each language element
+languageElemsMobile.forEach((languageElem) => {
+    languageElem.addEventListener('click', () => {
+        // Remove the active class from all language elements
+        languageElemsMobile.forEach((elem) => {
+            elem.classList.remove('active');
+        });
+
+        // Add the active class to the clicked language element
+        languageElem.classList.add('active');
+
+        // Update the language switcher button
+        updateLanguageSwitcher();
+    });
+});
