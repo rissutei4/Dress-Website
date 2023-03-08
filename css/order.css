@@ -3,8 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #101010;
-  font-family: 'Alex Brush', cursive;
-  font-family: 'Rubik', sans-serif; }
+  font-family: 'Alex Brush', cursive; }
 
 h3 {
   font-weight: 600; }
@@ -289,7 +288,7 @@ footer {
               width: 126px; } }
 @media only screen and (max-width: 376px) {
   .header .header_container .burger-container-wrapper .nav-content-container {
-    left: 47px !important; }
+    left: 0 !important; }
 
   footer .container .footer-content .logoIcon {
     width: 220px; }

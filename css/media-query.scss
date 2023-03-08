@@ -62,7 +62,8 @@
       }
 
       .product-image {
-        width: 280px !important;
+        max-width: 280px !important;
+        width: 100%;
       }
     }
 
@@ -300,6 +301,7 @@
 
             a {
               margin-right: 24px;
+              text-align: center !important;
             }
 
 
@@ -377,6 +379,7 @@
     .filters-mobile {
       display: block;
       padding-bottom: 18px;
+      position: relative;
 
       img {
         transition: 0.3s linear;
@@ -422,7 +425,7 @@
       display: none;
       border-radius: 0 0 10px 10px;
       position: absolute;
-      bottom: -300px;
+      bottom: -215px;
       left: 15px;
       z-index: 10;
       padding-left: 10px;
@@ -457,7 +460,8 @@
 
 
       .product-image {
-        width: 167px !important;
+        max-width: 167px !important;
+        width: 100% !important;
       }
 
       .product-overlay {
@@ -537,7 +541,7 @@
 
 @media only screen and (max-width: 376px) {
   .header .header_container .burger-container-wrapper .nav-content-container {
-    left: 47px !important;
+    left: 0 !important;
   }
   .CarouselSection {
     margin-bottom: 0 !important;
@@ -555,7 +559,7 @@
   }
 
   .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-image {
-    width: 143px !important;
+    max-width: 143px !important;
   }
   .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay {
     top: 36% !important;

@@ -128,10 +128,12 @@ window.onscroll = () => {
         } else {
             stickyheaderY.classList.add('sticky-nav');
         }
+    } else if (window.scrollY > 1 && screenWidth > 425) {
+        stickyheaderY.classList.add('sticky-nav');
     } else {
         stickyheaderY.classList.remove('sticky-nav');
     }
-};
+}
 
 
 //Load More button

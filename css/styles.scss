@@ -424,7 +424,9 @@ h4 {
           }
 
           .product-image {
-            width: 340px;
+            max-width: 340px;
+            position: relative;
+            width: 100%;
           }
 
           .product-overlay {

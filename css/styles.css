@@ -267,7 +267,9 @@ h4 {
     .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card:hover .product-overlay {
       opacity: 1; }
     .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-image {
-      width: 340px; }
+      max-width: 340px;
+      position: relative;
+      width: 100%; }
     .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay {
       width: 100%;
       position: absolute;
