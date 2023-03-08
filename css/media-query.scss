@@ -376,6 +376,8 @@
   }
 
   .ItemsInStock .container {
+    position: relative;
+
     .filters-mobile {
       display: block;
       padding-bottom: 18px;
@@ -425,7 +427,7 @@
       display: none;
       border-radius: 0 0 10px 10px;
       position: absolute;
-      bottom: -215px;
+      top: 2.5%;
       left: 15px;
       z-index: 10;
       padding-left: 10px;
@@ -579,9 +581,6 @@
       }
     }
   }
-  .ItemsInStock .container ul.filters-mobile-cont {
-    bottom: -275px;
-  }
   footer .container .footer-content {
     .logoIcon {
       width: 220px;
@@ -598,9 +597,6 @@
 @media only screen and (max-width: 361px) {
   .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-image {
     width: 135px !important;
-  }
-  .ItemsInStock .container ul.filters-mobile-cont {
-    bottom: -275px;
   }
 }
 

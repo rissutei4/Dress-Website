@@ -205,93 +205,95 @@
       .CarouselSection .owl-carousel .owl-dots button {
         margin: 0 29px 0 !important; }
 
-  .ItemsInStock .container .filters-mobile {
-    display: block;
-    padding-bottom: 18px;
+  .ItemsInStock .container {
     position: relative; }
-    .ItemsInStock .container .filters-mobile img {
-      transition: 0.3s linear; }
-    .ItemsInStock .container .filters-mobile.show-mobile img {
-      transform: rotateZ(180deg); }
-    .ItemsInStock .container .filters-mobile button {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      padding: 10px 33px;
-      width: 290px;
-      position: relative;
-      border: none;
-      background: none;
-      color: #ffffff;
-      text-transform: uppercase; }
-      .ItemsInStock .container .filters-mobile button.show-mobile {
-        background: #527471;
-        border-radius: 10px 10px 0 0; }
-      .ItemsInStock .container .filters-mobile button h5 {
-        margin-right: 20px;
-        margin-bottom: 0;
-        font-weight: 300; }
-  .ItemsInStock .container ul.filters-mobile-cont {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    width: 290px;
-    display: none;
-    border-radius: 0 0 10px 10px;
-    position: absolute;
-    bottom: -215px;
-    left: 15px;
-    z-index: 10;
-    padding-left: 10px;
-    padding-right: 31px; }
-    .ItemsInStock .container ul.filters-mobile-cont li.nav-item {
-      margin: 0;
-      padding: 10px 0; }
-      .ItemsInStock .container ul.filters-mobile-cont li.nav-item button {
-        border-bottom: none !important;
-        margin: 0;
-        padding: 0;
-        font-weight: 300;
-        text-transform: uppercase;
-        font-size: 16px; }
-    .ItemsInStock .container ul.filters-mobile-cont.show-mobile {
-      display: flex !important;
-      background: #363333; }
-  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card {
-    margin-bottom: 47px; }
-    .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-image {
-      max-width: 167px !important;
-      width: 100% !important; }
-    .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay {
-      top: 45% !important;
-      height: 56% !important;
-      padding: 5px !important;
-      opacity: 1 !important; }
-      .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .divider {
-        border-left: 1px solid #FFFFFF; }
-      .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading h4 {
-        padding-left: 10px !important;
-        font-size: 13px; }
-      .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .right-side {
+    .ItemsInStock .container .filters-mobile {
+      display: block;
+      padding-bottom: 18px;
+      position: relative; }
+      .ItemsInStock .container .filters-mobile img {
+        transition: 0.3s linear; }
+      .ItemsInStock .container .filters-mobile.show-mobile img {
+        transform: rotateZ(180deg); }
+      .ItemsInStock .container .filters-mobile button {
         display: flex;
-        align-items: center; }
-        .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .right-side .price p {
-          font-size: 10px; }
-      .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .sizes {
-        padding-left: 0 !important; }
-        .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .sizes h4 {
-          margin-top: 0;
-          margin-bottom: 6px !important;
-          font-size: 8px !important; }
-        .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .sizes ul li {
-          font-size: 9px;
-          margin-right: 5px !important; }
-      .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading {
-        margin-top: 15px; }
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 33px;
+        width: 290px;
+        position: relative;
+        border: none;
+        background: none;
+        color: #ffffff;
+        text-transform: uppercase; }
+        .ItemsInStock .container .filters-mobile button.show-mobile {
+          background: #527471;
+          border-radius: 10px 10px 0 0; }
+        .ItemsInStock .container .filters-mobile button h5 {
+          margin-right: 20px;
+          margin-bottom: 0;
+          font-weight: 300; }
+    .ItemsInStock .container ul.filters-mobile-cont {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      width: 290px;
+      display: none;
+      border-radius: 0 0 10px 10px;
+      position: absolute;
+      top: 2.5%;
+      left: 15px;
+      z-index: 10;
+      padding-left: 10px;
+      padding-right: 31px; }
+      .ItemsInStock .container ul.filters-mobile-cont li.nav-item {
+        margin: 0;
+        padding: 10px 0; }
+        .ItemsInStock .container ul.filters-mobile-cont li.nav-item button {
+          border-bottom: none !important;
+          margin: 0;
+          padding: 0;
+          font-weight: 300;
+          text-transform: uppercase;
+          font-size: 16px; }
+      .ItemsInStock .container ul.filters-mobile-cont.show-mobile {
+        display: flex !important;
+        background: #363333; }
+    .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card {
+      margin-bottom: 47px; }
+      .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-image {
+        max-width: 167px !important;
+        width: 100% !important; }
+      .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay {
+        top: 45% !important;
+        height: 56% !important;
+        padding: 5px !important;
+        opacity: 1 !important; }
+        .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .divider {
+          border-left: 1px solid #FFFFFF; }
         .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading h4 {
-          padding-left: 17px; }
-        .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading p {
-          display: none; }
+          padding-left: 10px !important;
+          font-size: 13px; }
+        .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .right-side {
+          display: flex;
+          align-items: center; }
+          .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .right-side .price p {
+            font-size: 10px; }
+        .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .sizes {
+          padding-left: 0 !important; }
+          .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .sizes h4 {
+            margin-top: 0;
+            margin-bottom: 6px !important;
+            font-size: 8px !important; }
+          .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .sizes ul li {
+            font-size: 9px;
+            margin-right: 5px !important; }
+        .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading {
+          margin-top: 15px; }
+          .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading h4 {
+            padding-left: 17px; }
+          .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading p {
+            display: none; }
 
   footer .container .footer-content .SocialMedias .socialsList {
     padding: 0; }
@@ -326,9 +328,6 @@
         margin-top: 3px !important;
         margin-bottom: 2px !important; }
 
-  .ItemsInStock .container ul.filters-mobile-cont {
-    bottom: -275px; }
-
   footer .container .footer-content .logoIcon {
     width: 220px; }
   footer .container .footer-content .SocialMedias .socialsList li {
@@ -337,9 +336,6 @@
     margin-right: 15px; } }
 @media only screen and (max-width: 361px) {
   .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-image {
-    width: 135px !important; }
-
-  .ItemsInStock .container ul.filters-mobile-cont {
-    bottom: -275px; } }
+    width: 135px !important; } }
 
 /*# sourceMappingURL=media-query.css.map */
