@@ -245,3 +245,6 @@ languageElemsMobile.forEach((languageElem) => {
         updateLanguageSwitcher();
     });
 });
+
+
+

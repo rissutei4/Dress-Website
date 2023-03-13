@@ -112,38 +112,46 @@
     <div class="prod-container">
         <!-- Laptop part -->
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 col-12">
                 <div class="product-image">
                     <img src="images/prod-pic-1.png" class="img-fluid" alt="">
                 </div>
+                <div class="carousel-mobile-dots">
+                    <span class="active"></span>
+                </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-12 remove-relative">
                 <div class="product-description">
-                    <div class="product-name">
-                        <p>Svadobné šaty</p>
-                        <h4>Beidseitiges Midikleid aus Satin</h4>
-                    </div>
-                    <div class="price">
-                        <p>800,00 €</p>
+                    <div class="mobile-price-prod-name">
+                        <div class="product-name">
+                            <p>Svadobné šaty</p>
+                            <h4>Beidseitiges Midikleid aus Satin</h4>
+                        </div>
+                        <div class="price">
+                            <p>800,00 €</p>
+                        </div>
                     </div>
                     <div class="colors-sizes">
                         <div class="colors">
-                            <div class="color active">
-                                <div class="color-name">
-                                    <span>Biely</span>
-                                </div>
-                                <div class="color-circle">
-                                    <span></span>
-                                </div>
+                            <div class="color-name-mobile">
+                                    <p>Dostupné farba:</p>
                             </div>
-                            <div class="color">
-                                <div class="color-name">
-                                    <span>Zlatý</span>
+                                <div class="color active">
+                                    <div class="color-name">
+                                        <span>Biely</span>
+                                    </div>
+                                    <div class="color-circle">
+                                        <span></span>
+                                    </div>
                                 </div>
-                                <div class="color-circle">
-                                    <span class="color-2"></span>
+                                <div class="color">
+                                    <div class="color-name">
+                                        <span>Zlatý</span>
+                                    </div>
+                                    <div class="color-circle">
+                                        <span class="color-2"></span>
+                                    </div>
                                 </div>
-                            </div>
                         </div>
                         <div class="sizes">
                             <div class="container-sizes">
@@ -257,38 +265,6 @@
                 </div>
             </div>
         </div>
-
-
-        <!-- Mobile part -->
-        <div class="owl-carousel mobile-enable">
-            <div class="slide">
-                <div class="container-fluid">
-                    <div class="col-md-12">
-                        <div class="slider-image">
-                            <img src="images/prod-pic-1.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="container-fluid">
-                    <div class="col-md-12">
-                        <div class="slider-image">
-                            <img src="images/prod-pic-2.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="container-fluid">
-                    <div class="col-md-12">
-                        <div class="slider-image">
-                            <img src="images/prod-pic-3.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
 </div>
@@ -329,5 +305,58 @@
 <script src="js/owl.carousel.min.js"></script>
 <script src="./js/scripts.js"></script>
 <script src="./js/product-page.js"></script>
+<script>
+    const productImage = document.querySelector('.product-image img');
+    const additionalImages = document.querySelectorAll('.additional-images img');
+
+    // Store the initial product image source
+    const initialProductImageSrc = productImage.src;
+
+    // Create a new function to reset the product image source to the initial value
+    function resetProductImage() {
+        productImage.src = initialProductImageSrc;
+    }
+
+    const carouselDotsContainer = document.querySelector('.carousel-mobile-dots');
+    let dotsHTML = '';
+    for (let i = 0; i < additionalImages.length + 1; i++) {
+        dotsHTML += '<span></span>';
+    }
+    carouselDotsContainer.innerHTML = dotsHTML;
+
+    const carouselDots = document.querySelectorAll('.carousel-mobile-dots span');
+
+    let currentImageIndex = 0;
+
+    carouselDots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            currentImageIndex = index;
+            if (index === 0) {
+                resetProductImage(); // Reset the product image to the initial source
+            } else {
+                productImage.src = additionalImages[index - 1].src;
+            }
+            carouselDots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentImageIndex);
+            });
+        });
+    });
+
+    additionalImages.forEach(img => {
+        img.addEventListener('click', (event) => {
+            const clickedImageSrc = event.target.getAttribute('src');
+            const mainImage = document.querySelector('.product-image img');
+            const mainImageSrc = mainImage.getAttribute('src');
+            mainImage.setAttribute('src', clickedImageSrc);
+            event.target.setAttribute('src', mainImageSrc);
+
+            window.scrollTo({
+                top: 0, behavior: 'smooth'
+            });
+        });
+    });
+
+    carouselDots[currentImageIndex].classList.add('active');
+</script>
 </body>
 </html>
