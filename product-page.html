@@ -122,6 +122,11 @@
             </div>
             <div class="col-md-6 col-12 remove-relative">
                 <div class="product-description">
+                    <div class="mob-chevron-button">
+                        <button class="mobile-chevron"><img src="images/chevron-up.svg" class="img-fluid" alt="">
+                        </button>
+
+                    </div>
                     <div class="mobile-price-prod-name">
                         <div class="product-name">
                             <p>Svadobné šaty</p>
@@ -134,24 +139,24 @@
                     <div class="colors-sizes">
                         <div class="colors">
                             <div class="color-name-mobile">
-                                    <p>Dostupné farba:</p>
+                                <p>Dostupné farba:</p>
                             </div>
-                                <div class="color active">
-                                    <div class="color-name">
-                                        <span>Biely</span>
-                                    </div>
-                                    <div class="color-circle">
-                                        <span></span>
-                                    </div>
+                            <div class="color active">
+                                <div class="color-name">
+                                    <span>Biely</span>
                                 </div>
-                                <div class="color">
-                                    <div class="color-name">
-                                        <span>Zlatý</span>
-                                    </div>
-                                    <div class="color-circle">
-                                        <span class="color-2"></span>
-                                    </div>
+                                <div class="color-circle">
+                                    <span></span>
                                 </div>
+                            </div>
+                            <div class="color">
+                                <div class="color-name">
+                                    <span>Zlatý</span>
+                                </div>
+                                <div class="color-circle">
+                                    <span class="color-2"></span>
+                                </div>
+                            </div>
                         </div>
                         <div class="sizes">
                             <div class="container-sizes">
@@ -357,6 +362,80 @@
     });
 
     carouselDots[currentImageIndex].classList.add('active');
+
+    // Get references to the necessary elements
+    window.onload = function () {
+        // Get references to the necessary elements
+        const chevronButton = document.querySelector('.mobile-chevron');
+        const orderProductButton = document.querySelector('.orderProductButton');
+        const secondaryInfoBlock = document.querySelector('.secondary-information-block');
+        const prodDescr = document.querySelector('.product-description');
+
+        // Add a click event listener to the chevron button
+        chevronButton.addEventListener('click', () => {
+            // Check if the viewport width is less than or equal to 425px
+            if (window.innerWidth <= 440) {
+                // Toggle the active class on the orderProduct button and secondary information block
+                orderProductButton.classList.toggle('active');
+                secondaryInfoBlock.classList.toggle('active');
+                prodDescr.classList.toggle('active');
+
+                // Rotate the chevron button 180 degrees
+                const chevronImg = chevronButton.querySelector('img');
+                chevronImg.style.transform = `rotate(${chevronImg.style.transform === 'rotate(180deg)' ? '0deg' : '180deg'})`;
+            }
+        });
+    };
+
+    const tabLinks = document.querySelectorAll('.nav-link');
+    const tabContent = document.querySelectorAll('.tab-pane');
+
+    const isMobile = window.innerWidth <= 440; // Check if screen resolution is 440px or less
+
+    if (isMobile) {
+        tabContent.forEach((content) => {
+            content.classList.add('active', 'show'); // add active and show classes to all tab-panes
+        });
+    }
+
+    tabLinks.forEach((link, index) => {
+        link.addEventListener('click', () => {
+            if (isMobile) {
+                tabContent.forEach((content) => {
+                    content.classList.remove('active', 'show'); // remove active and show classes from all tab-panes
+                });
+            }
+
+            // show the clicked tab content
+            tabContent[index].classList.add('active', 'show');
+        });
+    });
+
+    // wrap each li and its corresponding content in a container
+    const tabContentWrapper = document.createElement('div');
+    tabContentWrapper.classList.add('tab-content-wrapper');
+
+    tabLinks.forEach((link, index) => {
+        const listItem = link.parentNode;
+        const content = tabContent[index];
+
+        // create a container for the list item and content
+        const itemWrapper = document.createElement('div');
+        itemWrapper.classList.add('item-wrapper');
+
+        // append the list item and content to the container
+        itemWrapper.appendChild(listItem);
+        itemWrapper.appendChild(content);
+
+        // append the container to the wrapper
+        tabContentWrapper.appendChild(itemWrapper);
+    });
+
+    // insert the wrapper into the DOM
+    const tabContainer = document.querySelector('.three-tabs');
+    tabContainer.appendChild(tabContentWrapper);
+
+
 </script>
 </body>
 </html>

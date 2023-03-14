@@ -339,6 +339,8 @@ h4 {
           background-color: #81D8D0; }
     .product .prod-container .product-description {
       margin-top: 20px; }
+      .product .prod-container .product-description .mob-chevron-button {
+        display: none; }
       .product .prod-container .product-description .mobile-price-prod-name .product-name p {
         font-size: 22px;
         color: #5E5E5E;
@@ -564,12 +566,25 @@ h4 {
     background: #EFEBEB;
     border-radius: 39px 39px 0 0;
     padding: 20px; }
+    .product-description.active {
+      top: 8%; }
+    .product-description .mob-chevron-button {
+      display: flex !important;
+      justify-content: center; }
+      .product-description .mob-chevron-button .mobile-chevron {
+        border: none;
+        width: 47px;
+        height: 27px; }
+        .product-description .mob-chevron-button .mobile-chevron img {
+          height: 100%; }
 
   .secondary-information-block {
     background: #EFEBEB;
-    display: none; }
+    display: none;
+    margin-top: 0 !important; }
     .secondary-information-block.active {
-      display: block; }
+      display: block;
+      position: relative; }
 
   .mobile-price-prod-name {
     display: flex;
@@ -638,6 +653,24 @@ h4 {
   .orderProductButton {
     display: none !important; }
     .orderProductButton.active {
-      display: block !important; } }
+      display: block !important; }
+    .orderProductButton .order-btn {
+      background: #639A95;
+      border-radius: 16px;
+      width: 100%;
+      padding: 8px 24px; }
+
+  .three-tabs ul {
+    list-style: none;
+    padding: 0; }
+
+  .three-tabs ul li {
+    margin-bottom: 10px; }
+
+  .tab-pane {
+    display: none; }
+
+  .tab-pane.active {
+    display: block; } }
 
 /*# sourceMappingURL=product.css.map */
