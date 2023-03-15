@@ -29,6 +29,7 @@ h4 {
   margin-top: 91px;
 
   .prod-container {
+    overflow: hidden;
     max-width: 1586px;
     margin-left: 200px;
     margin-right: 37px;
@@ -220,6 +221,7 @@ h4 {
   }
 
   .secondary-information-block {
+
     .three-tabs {
       display: flex;
       flex-direction: column;
@@ -439,11 +441,11 @@ h4 {
     background: #EFEBEB;
     display: none;
     margin-top: 0 !important;
+    padding: 0 20px;
 
     &.active {
       display: block;
       position: relative;
-
     }
   }
 
@@ -576,6 +578,29 @@ h4 {
 
   .tab-pane.active {
     display: block;
+  }
+  .item-wrapper {
+    p {
+      color: #5E5959;
+    }
+
+    li.nav-item {
+      list-style: none;
+
+      a {
+        color: #000000;
+        font-size: 16px !important;
+      }
+    }
+
+    ul {
+      list-style-type: disc;
+    }
+  }
+
+  .col-md-6, .col-12 {
+    margin: 0 !important;
+    padding: 0;
   }
 
 }
