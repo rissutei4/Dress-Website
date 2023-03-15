@@ -31,7 +31,7 @@ h4 {
     flex-direction: row;
     align-items: center;
     position: relative;
-    z-index: 3; }
+    z-index: 46; }
     .header .burger-logo-elements .burgerIcon {
       margin-right: 46px; }
       .header .burger-logo-elements .burgerIcon.openedMenu {
