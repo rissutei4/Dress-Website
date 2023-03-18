@@ -274,7 +274,7 @@ footer {
           justify-content: center;
           border: 1px solid #000000; }
           .header .header_container .burger-container-wrapper .nav-content-container .nav-items:nth-last-child(-n+2) {
-            font-family: 'Alex Brush';
+            font-family: 'Alex Brush', sans-serif;
             font-weight: 400;
             color: #FFFFFF;
             padding: 49px 0; }
