@@ -30,7 +30,6 @@ h4 {
   background-color: rgba(38, 34, 34, 0.73);
   width: 100%;
   -webkit-transition: all 0.4s linear;
-  -moz-transition: all 0.4s linear;
   -o-transition: all 0.4s linear;
   transition: all 0.4s linear;
 
@@ -72,17 +71,23 @@ h4 {
         background-color: white;
         margin-bottom: 5px;
         cursor: pointer;
+        -webkit-transition: 0.5s linear;
+        -o-transition: 0.5s linear;
         transition: 0.5s linear;
       }
 
       .TopLine.openedMenu {
+        -webkit-transform: translate3d(0px, 4px, 0px) rotateZ(45deg);
         transform: translate3d(0px, 4px, 0px) rotateZ(45deg);
+        -webkit-transform-style: preserve-3d;
         transform-style: preserve-3d;
 
       }
 
       .BotLine.openedMenu {
+        -webkit-transform: translate3d(0px, -4px, 0px) rotateZ(-45deg);
         transform: translate3d(0px, -4px, 0px) rotateZ(-45deg);
+        -webkit-transform-style: preserve-3d;
         transform-style: preserve-3d;
       }
 
@@ -98,7 +103,11 @@ h4 {
     .logoIcon {
       width: 200px;
       height: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
       align-items: flex-end;
       padding-bottom: 26px;
 
@@ -123,8 +132,14 @@ h4 {
   }
 
   .header_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 
 
@@ -161,6 +176,7 @@ h4 {
           a {
             font-size: 34px;
             color: #F6FCFB;
+            -webkit-animation: ease-out 300ms;
             animation: ease-out 300ms;
 
             &:hover {
@@ -183,6 +199,8 @@ h4 {
         border: none;
         font-size: 25px;
         position: relative;
+        -webkit-transition: 0.6s ease-in-out;
+        -o-transition: 0.6s ease-in-out;
         transition: 0.6s ease-in-out;
 
         &:hover {
@@ -193,6 +211,9 @@ h4 {
       .sub-menu {
         list-style-type: none;
         display: none;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         padding-left: 0;
         position: absolute;
@@ -204,6 +225,8 @@ h4 {
         z-index: 5;
 
         &.show {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
         }
 
@@ -212,6 +235,8 @@ h4 {
           font-size: 23px;
           text-align: center;
           width: 100%;
+          -webkit-transition: 0.5s linear;
+          -o-transition: 0.5s linear;
           transition: 0.5s linear;
           color: white;
 
@@ -240,9 +265,18 @@ footer {
 
 
     .footer-content {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
 
       .logoIcon {
@@ -260,9 +294,13 @@ footer {
             margin-right: 60px;
             height: 53px;
             width: 53px;
+            -webkit-transition: 0.3s linear;
+            -o-transition: 0.3s linear;
             transition: 0.3s linear;
 
             &:hover {
+              -webkit-transform: translateY(-5px);
+              -ms-transform: translateY(-5px);
               transform: translateY(-5px);
             }
           }
@@ -339,17 +377,32 @@ footer {
         overflow-y: scroll;
 
         .mobile-header-opened {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
           align-items: center;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
           justify-content: space-between;
           padding: 12px 22px 12px 22px;
           background-color: rgba(38, 34, 34, 0.73);
           width: 100%;
+          -webkit-transition: all 0.4s linear;
+          -o-transition: all 0.4s linear;
           transition: all 0.4s linear;
 
           .burger-logo-elements-mobile {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
             flex-direction: row;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
             position: relative;
             z-index: 3;
@@ -364,8 +417,12 @@ footer {
                 background-color: white;
                 margin-bottom: 5px;
                 cursor: pointer;
+                -webkit-transition: 0.5s linear;
+                -o-transition: 0.5s linear;
                 transition: 0.5s linear;
+                -webkit-transform: translate3d(0px, 4px, 0px) rotateZ(45deg);
                 transform: translate3d(0px, 4px, 0px) rotateZ(45deg);
+                -webkit-transform-style: preserve-3d;
                 transform-style: preserve-3d;
               }
 
@@ -380,8 +437,12 @@ footer {
                 background-color: white;
                 margin-bottom: 5px;
                 cursor: pointer;
+                -webkit-transition: 0.5s linear;
+                -o-transition: 0.5s linear;
                 transition: 0.5s linear;
+                -webkit-transform: translate3d(0px, -4px, 0px) rotateZ(-45deg);
                 transform: translate3d(0px, -4px, 0px) rotateZ(-45deg);
+                -webkit-transform-style: preserve-3d;
                 transform-style: preserve-3d;
               }
             }
@@ -390,7 +451,11 @@ footer {
               width: 130px;
               padding-bottom: 20px;
               height: auto;
+              display: -webkit-box;
+              display: -ms-flexbox;
               display: flex;
+              -webkit-box-align: end;
+              -ms-flex-align: end;
               align-items: flex-end;
             }
           }
@@ -402,6 +467,8 @@ footer {
               border: none;
               font-size: 25px;
               position: relative;
+              -webkit-transition: 0.6s ease-in-out;
+              -o-transition: 0.6s ease-in-out;
               transition: 0.6s ease-in-out;
 
               &:hover {
@@ -412,6 +479,9 @@ footer {
             .sub-menu {
               list-style-type: none;
               display: none;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: column;
               flex-direction: column;
               padding-left: 0;
               position: absolute;
@@ -422,6 +492,8 @@ footer {
               z-index: 5;
 
               &.show {
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
               }
 
@@ -429,6 +501,8 @@ footer {
                 font-size: 23px;
                 text-align: center;
                 width: 100%;
+                -webkit-transition: 0.5s linear;
+                -o-transition: 0.5s linear;
                 transition: 0.5s linear;
                 color: white;
 
@@ -448,8 +522,14 @@ footer {
           top: 14px;
 
           .nav-items {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
             justify-content: center;
             border: 1px solid #000000;
 
