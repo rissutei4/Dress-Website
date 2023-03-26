@@ -755,7 +755,8 @@ h4 {
     .mobile-price-prod-name .product-name {
       width: 60%; }
       .mobile-price-prod-name .product-name h4 {
-        margin-bottom: 13px !important; }
+        margin-bottom: 13px !important;
+        color: #5E5E5E !important; }
       .mobile-price-prod-name .product-name p {
         font-size: 16px !important;
         margin-bottom: 2px; }
