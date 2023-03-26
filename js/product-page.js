@@ -1,5 +1,4 @@
-window.onload = function () {
-    function activateColor() {
+ function activateColor() {
         const colors = document.querySelector('.colors');
 
         colors.addEventListener('click', (event) => {
@@ -136,5 +135,3 @@ window.onload = function () {
         const tabContainer = document.querySelector('.three-tabs');
         tabContainer.appendChild(tabContentWrapper);
     }
-
-}

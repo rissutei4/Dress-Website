@@ -208,6 +208,4 @@ window.onload = function () {
             updateLanguageSwitcher();
         });
     });
-
-
-}
+};
