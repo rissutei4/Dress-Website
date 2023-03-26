@@ -21,14 +21,24 @@ h4 {
   padding: 12px 52px 12px 52px;
   background-color: rgba(38, 34, 34, 0.73);
   width: 100%;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
   transition: all 0.4s linear; }
   .header.sticky-nav {
     position: fixed;
     top: 0;
     z-index: 10; }
   .header .burger-logo-elements {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     position: relative;
     z-index: 46; }
