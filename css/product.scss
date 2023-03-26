@@ -1,4 +1,5 @@
 @import "header-yes_footer";
+@import "disable.css";
 
 body {
   margin: 0;
@@ -97,6 +98,8 @@ h4 {
       .colors-sizes {
         .colors {
           margin-bottom: 39px;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
 
           .color-name-mobile {
@@ -127,7 +130,11 @@ h4 {
             .color-circle {
               width: 56px;
               height: 56px;
+              display: -webkit-box;
+              display: -ms-flexbox;
               display: flex;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
               align-items: center;
               margin-right: 45px;
 
@@ -137,6 +144,7 @@ h4 {
                 height: 40px;
                 background: #C9CCD5;
                 border-radius: 50%;
+                -webkit-box-sizing: border-box;
                 box-sizing: border-box;
 
                 &.color-2 {
@@ -164,10 +172,20 @@ h4 {
 
             ul {
               list-style-type: none;
+              display: -webkit-box;
+              display: -ms-flexbox;
               display: flex;
+              -webkit-box-orient: horizontal;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: row;
               flex-direction: row;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
               align-items: center;
+              -ms-flex-wrap: wrap;
               flex-wrap: wrap;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
               justify-content: center;
               margin-bottom: 66px;
               padding: 0;
@@ -178,9 +196,14 @@ h4 {
                 height: 47px;
                 line-height: 47px;
                 background: #101010;
+                -webkit-box-shadow: 0px 3px 16px rgba(253, 239, 239, 0.25);
                 box-shadow: 0px 3px 16px rgba(253, 239, 239, 0.25);
                 border-radius: 50%;
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
                 justify-content: center;
                 margin-bottom: 12px;
 
@@ -204,6 +227,8 @@ h4 {
           font-family: 'Rubik';
           font-weight: 300;
           font-size: 26px;
+          -webkit-transition: 0.3s linear;
+          -o-transition: 0.3s linear;
           transition: 0.3s linear;
           color: rgba(248, 255, 254, 0.87);
 
@@ -223,8 +248,15 @@ h4 {
   .secondary-information-block {
 
     .three-tabs {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       margin-bottom: 90px;
       max-width: 794px;
@@ -241,6 +273,8 @@ h4 {
             border-radius: 0;
             color: #FFFFFF;
             border-bottom: 1px solid #FFFFFF;
+            -webkit-transition: 0.3s linear;
+            -o-transition: 0.3s linear;
             transition: 0.3s linear;
 
             &.active {
@@ -259,8 +293,14 @@ h4 {
             overflow: hidden;
 
             ul.text-list {
+              display: -webkit-box;
+              display: -ms-flexbox;
               display: flex;
+              -webkit-box-orient: horizontal;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: row;
               flex-direction: row;
+              -ms-flex-wrap: wrap;
               flex-wrap: wrap;
 
               li {
@@ -288,7 +328,12 @@ h4 {
 
     .additional-images {
       .block-of-images {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
 
 
@@ -322,8 +367,15 @@ h4 {
 
         ul {
           list-style-type: none;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
           flex-direction: row;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
           align-items: center;
           margin-bottom: 36px;
           padding: 0;
@@ -342,6 +394,8 @@ h4 {
         font-family: 'Rubik', sans-serif;
         font-weight: 300;
         font-size: 26px;
+        -webkit-transition: 0.3s linear;
+        -o-transition: 0.3s linear;
         transition: 0.3s linear;
         color: rgba(248, 255, 254, 0.87);
       }
@@ -405,6 +459,8 @@ h4 {
     position: absolute;
     top: 35%;
     right: -15%;
+    -webkit-transform: rotateZ(90deg);
+    -ms-transform: rotate(90deg);
     transform: rotateZ(90deg);
   }
   .remove-relative {
@@ -424,7 +480,11 @@ h4 {
     }
 
     .mob-chevron-button {
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
       display: flex !important;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
 
       .mobile-chevron {
@@ -451,7 +511,11 @@ h4 {
   }
 
   .mobile-price-prod-name {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: flex-end;
 
     .product-name {
@@ -479,7 +543,12 @@ h4 {
     }
   }
   .colors {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     margin-bottom: 17px !important;
 
@@ -520,6 +589,8 @@ h4 {
   }
   .sizes {
     .container-sizes {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       border-top: none !important;
       margin-bottom: 0;
@@ -539,6 +610,7 @@ h4 {
           height: 31px !important;
           line-height: 31px !important;
           background: #EFEBEB !important;
+          -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25) !important;
           box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25) !important;
 
           p {
