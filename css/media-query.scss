@@ -5,6 +5,8 @@
     top: 8%;
   }
   .CarouselSection .owl-carousel .owl-dots {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
     transform: rotate(90deg);
     position: absolute;
     bottom: 38px;
@@ -15,6 +17,8 @@
 
 @media only screen and (max-width: 1300px) {
   .CarouselSection .owl-carousel .owl-dots {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
     transform: rotate(90deg);
     position: absolute;
     bottom: 38px;
@@ -26,6 +30,8 @@
 @media only screen and (max-width: 1230px) {
 
   .CarouselSection .owl-carousel .owl-dots {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
     transform: rotate(90deg);
     position: absolute;
     bottom: 38px;
@@ -188,17 +194,32 @@
         overflow-y: scroll;
 
         .mobile-header-opened {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
           align-items: center;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
           justify-content: space-between;
           padding: 12px 22px 12px 22px;
           background-color: rgba(38, 34, 34, 0.73);
           width: 100%;
+          -webkit-transition: all 0.4s linear;
+          -o-transition: all 0.4s linear;
           transition: all 0.4s linear;
 
           .burger-logo-elements-mobile {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
             flex-direction: row;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
             position: relative;
             z-index: 3;
@@ -213,8 +234,12 @@
                 background-color: white;
                 margin-bottom: 5px;
                 cursor: pointer;
+                -webkit-transition: 0.5s linear;
+                -o-transition: 0.5s linear;
                 transition: 0.5s linear;
+                -webkit-transform: translate3d(0px, 4px, 0px) rotateZ(45deg);
                 transform: translate3d(0px, 4px, 0px) rotateZ(45deg);
+                -webkit-transform-style: preserve-3d;
                 transform-style: preserve-3d;
               }
 
@@ -229,8 +254,12 @@
                 background-color: white;
                 margin-bottom: 5px;
                 cursor: pointer;
+                -webkit-transition: 0.5s linear;
+                -o-transition: 0.5s linear;
                 transition: 0.5s linear;
+                -webkit-transform: translate3d(0px, -4px, 0px) rotateZ(-45deg);
                 transform: translate3d(0px, -4px, 0px) rotateZ(-45deg);
+                -webkit-transform-style: preserve-3d;
                 transform-style: preserve-3d;
               }
             }
@@ -239,7 +268,11 @@
               width: 130px;
               padding-bottom: 20px;
               height: auto;
+              display: -webkit-box;
+              display: -ms-flexbox;
               display: flex;
+              -webkit-box-align: end;
+              -ms-flex-align: end;
               align-items: flex-end;
             }
           }
@@ -251,6 +284,8 @@
               border: none;
               font-size: 25px;
               position: relative;
+              -webkit-transition: 0.6s ease-in-out;
+              -o-transition: 0.6s ease-in-out;
               transition: 0.6s ease-in-out;
 
               &:hover {
@@ -261,6 +296,9 @@
             .sub-menu {
               list-style-type: none;
               display: none;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: column;
               flex-direction: column;
               padding-left: 0;
               position: absolute;
@@ -271,6 +309,8 @@
               z-index: 5;
 
               &.show {
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
               }
 
@@ -278,6 +318,8 @@
                 font-size: 23px;
                 text-align: center;
                 width: 100%;
+                -webkit-transition: 0.5s linear;
+                -o-transition: 0.5s linear;
                 transition: 0.5s linear;
                 color: white;
 
@@ -297,8 +339,14 @@
           top: 14px;
 
           .nav-items {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
             justify-content: center;
             border: 1px solid #000000;
 
@@ -379,6 +427,8 @@
       }
 
       .owl-dots {
+        -webkit-transform: none;
+        -ms-transform: none;
         transform: none;
         left: 16% !important;
         bottom: 12% !important;
@@ -399,19 +449,30 @@
       position: relative;
 
       img {
+        -webkit-transition: 0.3s linear;
+        -o-transition: 0.3s linear;
         transition: 0.3s linear;
       }
 
 
       &.show-mobile {
         img {
+          -webkit-transform: rotateZ(180deg);
+          -ms-transform: rotate(180deg);
           transform: rotateZ(180deg);
         }
       }
 
       button {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         padding: 10px 33px;
         width: 290px;
@@ -435,8 +496,15 @@
     }
 
     ul.filters-mobile-cont {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
       align-items: flex-start;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
       width: 290px;
       display: none;
@@ -467,6 +535,8 @@
       }
 
       &.show-mobile {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
         display: flex !important;
         background: #363333;
       }
@@ -500,7 +570,11 @@
         }
 
         .right-side {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
           align-items: center;
 
           .price {
