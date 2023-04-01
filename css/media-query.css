@@ -307,10 +307,11 @@
         .ItemsInStock .container .filters-mobile button.show-mobile {
           background: #527471;
           border-radius: 10px 10px 0 0; }
-        .ItemsInStock .container .filters-mobile button h5 {
+        .ItemsInStock .container .filters-mobile button span {
           margin-right: 20px;
           margin-bottom: 0;
-          font-weight: 300; }
+          font-weight: 300;
+          font-size: 1.25rem; }
     .ItemsInStock .container ul.filters-mobile-cont {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
