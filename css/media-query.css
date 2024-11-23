@@ -1,9 +1,4 @@
 @media only screen and (max-width: 2570px) {
-  .header .burger-logo-elements .burgerIcon.openedMenu {
-    position: fixed;
-    z-index: 4;
-    top: 8%; }
-
   .CarouselSection .owl-carousel .owl-dots {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
@@ -11,14 +6,18 @@
     position: absolute;
     bottom: 38px;
     left: -4%;
-    bottom: 54%; } }
+    bottom: 54%;
+  }
+}
 @media only screen and (max-width: 1356px) {
   .CarouselSection .owl-carousel .owl-dots {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
     position: absolute;
-    left: -9% !important; } }
+    left: -9% !important;
+  }
+}
 @media only screen and (max-width: 1300px) {
   .CarouselSection .owl-carousel .owl-dots {
     -webkit-transform: rotate(90deg);
@@ -27,410 +26,291 @@
     position: absolute;
     bottom: 38px;
     left: -11%;
-    bottom: 54%; } }
+    bottom: 54%;
+  }
+}
 @media only screen and (max-width: 1230px) {
   .CarouselSection .owl-carousel .owl-dots {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
     position: absolute;
-    left: -13% !important; } }
+    left: -13% !important;
+  }
+}
 @media only screen and (max-width: 1024px) {
-  .header .header_container .burger-logo-elements .logoIcon.openedMenu {
-    left: 10%; }
-  .header .header_container .burger-container-wrapper .nav-content-container {
-    top: 105px; }
-
   .CarouselSection .owl-carousel .slide .rightSlidePart .buyButton .circle {
     left: 43%;
-    top: 43%; }
+    top: 43%;
+  }
   .CarouselSection .owl-carousel .owl-dots {
-    left: -15%; }
-
+    left: -15%;
+  }
   .ItemsInStock #pills-tabContent .product-cards-cont .product-card .product-overlay {
     padding: 18px 22px !important;
     top: 50% !important;
-    height: 50% !important; }
-    .ItemsInStock #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading {
-      margin-bottom: 10px !important; }
+    height: 50% !important;
+  }
+  .ItemsInStock #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading {
+    margin-bottom: 10px !important;
+  }
   .ItemsInStock #pills-tabContent .product-cards-cont .product-card .product-image {
     max-width: 280px !important;
-    width: 100%; }
+    width: 100%;
+  }
   .ItemsInStock .container ul li.nav-item {
-    margin-right: 50px; } }
+    margin-right: 50px;
+  }
+}
 @media only screen and (max-width: 768px) {
-  .header .header_container .burger-logo-elements .logoIcon.openedMenu {
-    left: 13%; }
-
   .CarouselSection .owl-carousel .slide {
     padding-top: 43px;
     padding-bottom: 43px;
-    overflow: hidden; }
-    .CarouselSection .owl-carousel .slide .leftSlidePart .slideHeading p {
-      margin-bottom: 93px; }
-    .CarouselSection .owl-carousel .slide .leftSlidePart .slideHeading h3 {
-      margin-bottom: 42px; }
-    .CarouselSection .owl-carousel .slide .rightSlidePart .modelImage {
-      height: 100%; }
-    .CarouselSection .owl-carousel .slide .rightSlidePart .buyButton .circle {
-      left: 38%;
-      width: 204px;
-      height: 204px;
-      top: 43%; }
+    overflow: hidden;
+  }
+  .CarouselSection .owl-carousel .slide .leftSlidePart .slideHeading p {
+    margin-bottom: 93px;
+  }
+  .CarouselSection .owl-carousel .slide .leftSlidePart .slideHeading h3 {
+    margin-bottom: 42px;
+  }
+  .CarouselSection .owl-carousel .slide .rightSlidePart .modelImage {
+    height: 100%;
+  }
+  .CarouselSection .owl-carousel .slide .rightSlidePart .buyButton .circle {
+    left: 38%;
+    width: 204px;
+    height: 204px;
+    top: 43%;
+  }
   .CarouselSection .owl-carousel .owl-dots {
     left: -21% !important;
-    bottom: 56% !important; }
-
+    bottom: 56% !important;
+  }
   .ItemsInStock .container ul.filters-mobile li.nav-item {
-    margin-right: 40px; } }
+    margin-right: 40px;
+  }
+}
 @media only screen and (max-width: 426px) {
-  .header {
-    padding: 12px 22px 12px 22px; }
-    .header .header_container .burger-logo-elements .burgerIcon {
-      margin-right: 20px; }
-    .header .header_container .burger-logo-elements .logoIcon {
-      width: 130px;
-      padding-bottom: 20px; }
-      .header .header_container .burger-logo-elements .logoIcon.openedMenu {
-        top: 5%;
-        left: 24%; }
-    .header .header_container .burger-container-wrapper {
-      background: #0D0C0C;
-      overflow-x: hidden;
-      overflow-y: scroll; }
-      .header .header_container .burger-container-wrapper .mobile-header-opened {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        padding: 12px 22px 12px 22px;
-        background-color: rgba(38, 34, 34, 0.73);
-        width: 100%;
-        -webkit-transition: all 0.4s linear;
-        -o-transition: all 0.4s linear;
-        transition: all 0.4s linear; }
-        .header .header_container .burger-container-wrapper .mobile-header-opened .burger-logo-elements-mobile {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: horizontal;
-          -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-          flex-direction: row;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          align-items: center;
-          position: relative;
-          z-index: 3; }
-          .header .header_container .burger-container-wrapper .mobile-header-opened .burger-logo-elements-mobile .burgerIconMobile {
-            margin-right: 22px; }
-            .header .header_container .burger-container-wrapper .mobile-header-opened .burger-logo-elements-mobile .burgerIconMobile .TopLine {
-              width: 24px;
-              height: 3px;
-              border-radius: 10px;
-              background-color: white;
-              margin-bottom: 5px;
-              cursor: pointer;
-              -webkit-transition: 0.5s linear;
-              -o-transition: 0.5s linear;
-              transition: 0.5s linear;
-              -webkit-transform: translate3d(0px, 4px, 0px) rotateZ(45deg);
-              transform: translate3d(0px, 4px, 0px) rotateZ(45deg);
-              -webkit-transform-style: preserve-3d;
-              transform-style: preserve-3d; }
-            .header .header_container .burger-container-wrapper .mobile-header-opened .burger-logo-elements-mobile .burgerIconMobile .MidLine {
-              display: none; }
-            .header .header_container .burger-container-wrapper .mobile-header-opened .burger-logo-elements-mobile .burgerIconMobile .BotLine {
-              width: 24px;
-              height: 3px;
-              border-radius: 10px;
-              background-color: white;
-              margin-bottom: 5px;
-              cursor: pointer;
-              -webkit-transition: 0.5s linear;
-              -o-transition: 0.5s linear;
-              transition: 0.5s linear;
-              -webkit-transform: translate3d(0px, -4px, 0px) rotateZ(-45deg);
-              transform: translate3d(0px, -4px, 0px) rotateZ(-45deg);
-              -webkit-transform-style: preserve-3d;
-              transform-style: preserve-3d; }
-          .header .header_container .burger-container-wrapper .mobile-header-opened .burger-logo-elements-mobile .logoIcon {
-            width: 130px;
-            padding-bottom: 20px;
-            height: auto;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: end;
-            -ms-flex-align: end;
-            align-items: flex-end; }
-        .header .header_container .burger-container-wrapper .mobile-header-opened .language-switcher-mobile .langbtnMobile {
-          background-color: transparent;
-          color: white;
-          border: none;
-          font-size: 25px;
-          position: relative;
-          -webkit-transition: 0.6s ease-in-out;
-          -o-transition: 0.6s ease-in-out;
-          transition: 0.6s ease-in-out; }
-          .header .header_container .burger-container-wrapper .mobile-header-opened .language-switcher-mobile .langbtnMobile:hover {
-            color: #81D8D0DE; }
-        .header .header_container .burger-container-wrapper .mobile-header-opened .language-switcher-mobile .sub-menu {
-          list-style-type: none;
-          display: none;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-          flex-direction: column;
-          padding-left: 0;
-          position: absolute;
-          right: 30px;
-          width: 100px;
-          background: rgba(151, 145, 145, 0.06);
-          border-radius: 5px;
-          z-index: 5; }
-          .header .header_container .burger-container-wrapper .mobile-header-opened .language-switcher-mobile .sub-menu.show {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex; }
-          .header .header_container .burger-container-wrapper .mobile-header-opened .language-switcher-mobile .sub-menu li.languageElem {
-            font-size: 23px;
-            text-align: center;
-            width: 100%;
-            -webkit-transition: 0.5s linear;
-            -o-transition: 0.5s linear;
-            transition: 0.5s linear;
-            color: white; }
-            .header .header_container .burger-container-wrapper .mobile-header-opened .language-switcher-mobile .sub-menu li.languageElem.active {
-              background: #81D8D094; }
-      .header .header_container .burger-container-wrapper .nav-content-container {
-        padding: 0 6px 0;
-        position: relative !important;
-        left: 0 !important;
-        top: 14px; }
-        .header .header_container .burger-container-wrapper .nav-content-container .nav-items {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          align-items: center;
-          -webkit-box-pack: center;
-          -ms-flex-pack: center;
-          justify-content: center;
-          border: 1px solid #000000; }
-          .header .header_container .burger-container-wrapper .nav-content-container .nav-items:nth-last-child(-n+2) {
-            font-family: 'Alex Brush';
-            font-weight: 400;
-            color: #FFFFFF;
-            padding: 49px 0; }
-            .header .header_container .burger-container-wrapper .nav-content-container .nav-items:nth-last-child(-n+2) a {
-              font-size: 43px; }
-          .header .header_container .burger-container-wrapper .nav-content-container .nav-items a {
-            margin-right: 24px;
-            text-align: center !important; }
-          .header .header_container .burger-container-wrapper .nav-content-container .nav-items .mobile-menu-dress-pic {
-            display: block; }
-            .header .header_container .burger-container-wrapper .nav-content-container .nav-items .mobile-menu-dress-pic img {
-              width: 126px; }
-
   .CarouselSection {
-    margin-bottom: 22px; }
-    .CarouselSection .owl-carousel .slide {
-      padding-bottom: 83px; }
-    .CarouselSection .owl-carousel .leftSlidePart {
-      width: 50%; }
-      .CarouselSection .owl-carousel .leftSlidePart h3 {
-        margin-bottom: 17px !important; }
-      .CarouselSection .owl-carousel .leftSlidePart p {
-        margin-bottom: 25px !important; }
-      .CarouselSection .owl-carousel .leftSlidePart .moreBtn {
-        margin-bottom: 47px;
-        padding: 12px 35px !important; }
-    .CarouselSection .owl-carousel .rightSlidePart {
-      width: 50%; }
-      .CarouselSection .owl-carousel .rightSlidePart .gradientBlock {
-        width: 34px !important;
-        height: 54px !important; }
-      .CarouselSection .owl-carousel .rightSlidePart .modelImage {
-        height: 219px !important;
-        margin-top: 29px;
-        width: 207px; }
-      .CarouselSection .owl-carousel .rightSlidePart .buyButton {
-        display: none; }
-    .CarouselSection .owl-carousel .owl-dots {
-      -webkit-transform: none;
-      -ms-transform: none;
-      transform: none;
-      left: 16% !important;
-      bottom: 12% !important; }
-      .CarouselSection .owl-carousel .owl-dots button {
-        margin: 0 29px 0 !important; }
-
-  .ItemsInStock .container {
-    position: relative; }
-    .ItemsInStock .container .filters-mobile {
-      display: block;
-      padding-bottom: 18px;
-      position: relative; }
-      .ItemsInStock .container .filters-mobile img {
-        -webkit-transition: 0.3s linear;
-        -o-transition: 0.3s linear;
-        transition: 0.3s linear; }
-      .ItemsInStock .container .filters-mobile.show-mobile img {
-        -webkit-transform: rotateZ(180deg);
-        -ms-transform: rotate(180deg);
-        transform: rotateZ(180deg); }
-      .ItemsInStock .container .filters-mobile button {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        padding: 10px 33px;
-        width: 290px;
-        position: relative;
-        border: none;
-        background: none;
-        color: #ffffff;
-        text-transform: uppercase; }
-        .ItemsInStock .container .filters-mobile button.show-mobile {
-          background: #527471;
-          border-radius: 10px 10px 0 0; }
-        .ItemsInStock .container .filters-mobile button span {
-          margin-right: 20px;
-          margin-bottom: 0;
-          font-weight: 300;
-          font-size: 1.25rem; }
-    .ItemsInStock .container ul.filters-mobile-cont {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-align: start;
-      -ms-flex-align: start;
-      align-items: flex-start;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      width: 290px;
-      display: none;
-      border-radius: 0 0 10px 10px;
-      position: absolute;
-      top: 2.5%;
-      left: 15px;
-      z-index: 10;
-      padding-left: 10px;
-      padding-right: 31px; }
-      .ItemsInStock .container ul.filters-mobile-cont li.nav-item {
-        margin: 0;
-        padding: 10px 0; }
-        .ItemsInStock .container ul.filters-mobile-cont li.nav-item button {
-          border-bottom: none !important;
-          margin: 0;
-          padding: 0;
-          font-weight: 300;
-          text-transform: uppercase;
-          font-size: 16px; }
-      .ItemsInStock .container ul.filters-mobile-cont.show-mobile {
-        display: -webkit-box !important;
-        display: -ms-flexbox !important;
-        display: flex !important;
-        background: #363333; }
-    .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card {
-      margin-bottom: 47px; }
-      .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-image {
-        max-width: 167px !important;
-        width: 100% !important; }
-      .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay {
-        top: 45% !important;
-        height: 56% !important;
-        padding: 5px !important;
-        opacity: 1 !important; }
-        .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .divider {
-          border-left: 1px solid #FFFFFF; }
-        .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading h4 {
-          padding-left: 10px !important;
-          font-size: 13px; }
-        .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .right-side {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          align-items: center; }
-          .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .right-side .price p {
-            font-size: 10px; }
-        .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .sizes {
-          padding-left: 0 !important; }
-          .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .sizes h4 {
-            margin-top: 0;
-            margin-bottom: 6px !important;
-            font-size: 8px !important; }
-          .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .sizes ul li {
-            font-size: 9px;
-            margin-right: 5px !important; }
-        .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading {
-          margin-top: 15px; }
-          .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading h4 {
-            padding-left: 17px; }
-          .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading p {
-            display: none; }
-
-  footer .container .footer-content .SocialMedias .socialsList {
-    padding: 0; }
-    footer .container .footer-content .SocialMedias .socialsList li {
-      margin-right: 20px; } }
-@media only screen and (max-width: 400px) {
-  footer .container .footer-content .SocialMedias .socialsList li {
-    margin-right: 24px !important; } }
-@media only screen and (max-width: 376px) {
-  .header .header_container .burger-container-wrapper .nav-content-container {
-    left: 0 !important; }
-
-  .CarouselSection {
-    margin-bottom: 0 !important; }
-    .CarouselSection .owl-carousel .rightSlidePart .modelImage {
-      width: 181px !important; }
-
+    margin-bottom: 22px;
+  }
+  .CarouselSection .owl-carousel .slide {
+    padding-bottom: 83px;
+  }
+  .CarouselSection .owl-carousel .leftSlidePart {
+    width: 50%;
+  }
+  .CarouselSection .owl-carousel .leftSlidePart h3 {
+    margin-bottom: 17px !important;
+  }
+  .CarouselSection .owl-carousel .leftSlidePart p {
+    margin-bottom: 25px !important;
+  }
+  .CarouselSection .owl-carousel .leftSlidePart .moreBtn {
+    margin-bottom: 47px;
+    padding: 12px 35px !important;
+  }
+  .CarouselSection .owl-carousel .rightSlidePart {
+    width: 50%;
+  }
+  .CarouselSection .owl-carousel .rightSlidePart .gradientBlock {
+    width: 34px !important;
+    height: 54px !important;
+  }
+  .CarouselSection .owl-carousel .rightSlidePart .modelImage {
+    height: 219px !important;
+    margin-top: 29px;
+    width: 207px;
+  }
+  .CarouselSection .owl-carousel .rightSlidePart .buyButton {
+    display: none;
+  }
   .CarouselSection .owl-carousel .owl-dots {
-    left: 12% !important; }
-    .CarouselSection .owl-carousel .owl-dots button {
-      margin: 0 23px 0 !important; }
-
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    left: 16% !important;
+    bottom: 12% !important;
+  }
+  .CarouselSection .owl-carousel .owl-dots button {
+    margin: 0 29px 0 !important;
+  }
+  .ItemsInStock .container {
+    position: relative;
+  }
+  .ItemsInStock .container .filters-mobile {
+    display: block;
+    position: relative;
+  }
+  .ItemsInStock .container .filters-mobile img {
+    -webkit-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+  }
+  .ItemsInStock .container .filters-mobile.show-mobile img {
+    -webkit-transform: rotateZ(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotateZ(180deg);
+  }
+  .ItemsInStock .container .filters-mobile button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px 8px;
+    width: 290px;
+    position: relative;
+    border: none;
+    background: none;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  .ItemsInStock .container .filters-mobile button.show-mobile {
+    background: #527471;
+    border-radius: 10px 10px 0 0;
+  }
+  .ItemsInStock .container .filters-mobile button span {
+    margin-right: 20px;
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 1.25rem;
+  }
+  .ItemsInStock .container ul.filters-mobile-cont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 290px;
+    display: none;
+    border-radius: 0 0 10px 10px;
+    z-index: 10;
+    padding-left: 10px;
+    padding-right: 31px;
+    margin-bottom: 0 !important;
+  }
+  .ItemsInStock .container ul.filters-mobile-cont li.nav-item {
+    margin: 0;
+    padding: 10px 0;
+  }
+  .ItemsInStock .container ul.filters-mobile-cont li.nav-item button {
+    border-bottom: none !important;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  .ItemsInStock .container ul.filters-mobile-cont.show-mobile {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    background: #363333;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card {
+    margin-bottom: 47px;
+    overflow: hidden;
+    height: 260px !important;
+  }
   .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-image {
-    max-width: 143px !important; }
-
+    max-width: 167px !important;
+    height: 260px !important;
+    width: 100% !important;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay {
+    top: 45% !important;
+    height: 56% !important;
+    padding: 5px !important;
+    opacity: 1 !important;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .divider {
+    border-left: 1px solid #FFFFFF;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading h4 {
+    padding-left: 10px !important;
+    font-size: 13px;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .right-side {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .right-side .price p {
+    font-size: 10px;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .sizes {
+    padding-left: 0 !important;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .sizes h4 {
+    margin-top: 0;
+    margin-bottom: 6px !important;
+    font-size: 8px !important;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .sizes ul li {
+    font-size: 9px;
+    margin-right: 5px !important;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading {
+    margin-top: 15px;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading h4 {
+    padding-left: 17px;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading p {
+    display: none;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .CarouselSection {
+    margin-bottom: 0 !important;
+  }
+  .CarouselSection .owl-carousel .rightSlidePart .modelImage {
+    width: 181px !important;
+  }
+  .CarouselSection .owl-carousel .owl-dots {
+    left: 12% !important;
+  }
+  .CarouselSection .owl-carousel .owl-dots button {
+    margin: 0 23px 0 !important;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-image {
+    max-width: 143px !important;
+  }
   .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay {
     top: 36% !important;
-    height: 64% !important; }
-    .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .right-side p {
-      font-size: 7px !important; }
-    .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading {
-      margin-top: 0;
-      margin-bottom: 0; }
-      .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading h4 {
-        margin-top: 3px !important;
-        margin-bottom: 2px !important; }
-
-  footer .container .footer-content .logoIcon {
-    width: 220px; }
-  footer .container .footer-content .SocialMedias .socialsList li {
-    width: 43px;
-    height: 43px;
-    margin-right: 15px !important; } }
+    height: 64% !important;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .right-side p {
+    font-size: 7px !important;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading h4 {
+    margin-top: 3px !important;
+    margin-bottom: 2px !important;
+  }
+}
 @media only screen and (max-width: 361px) {
   .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-image {
-    width: 135px !important; } }
+    width: 135px !important;
+  }
+}
 
 /*# sourceMappingURL=media-query.css.map */

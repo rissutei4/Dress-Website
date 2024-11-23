@@ -1,211 +1,141 @@
-window.onload = function () {
+"use strict";
+//Menu
+const burgerContainer = document.querySelector('.burger-container-wrapper');
+const burgerIcon = document.querySelector(".burgerIcon");
+const burgerIconMobile = document.querySelector(".burgerIconMobile");
+const burgerLines = burgerIcon.querySelectorAll(".line");
+const logoIcon = document.querySelector(".logoIcon");
+const stickyHeader = document.querySelector('.header');
+const logoElems = document.querySelector('.burger-logo-elements');
 
-    $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
-            items: 1,
-            nav: false,
-            navText: [" ", " "],
-            animateOut: 'fadeOutUp',
-            animateIn: 'fadeInDown',
-            smartSpeed: 100,
-        });
+//Scroll
+const body = document.querySelector('body');
+const screenWidth = window.innerWidth;
+//Language Btn
+const langSwitcherbtn = document.querySelector('.langbtn');
+const dropdownContent = document.querySelector('.sub-menu');
+const dropdownLinks = document.querySelectorAll('.sub-menu li');
+const activeLanguageElem = document.querySelector('.sub-menu li.active');
+//Load More
+const loadMoreButtons = document.querySelectorAll('.load-more');
+function toggleMenu() {
+    const isMenuOpen = burgerContainer.classList.contains("openedMenu");
+    // Toggle menu state
+    burgerContainer.classList.toggle("openedMenu", !isMenuOpen);
+    burgerIcon.classList.toggle("openedMenu", !isMenuOpen);
+    burgerIconMobile.classList.toggle("openedMenu", !isMenuOpen);
+    burgerLines.forEach(line => {
+        line.classList.toggle("openedMenu", !isMenuOpen);
     });
-//Open Burger Menu/Close Menu
-    const burgCont = document.querySelector(".burger-container-wrapper");
-    const burgIcon = document.querySelector(".burgerIcon");
-    const topLine = document.querySelector(".TopLine");
-    const botLine = document.querySelector(".BotLine");
-    const midLine = document.querySelector(".MidLine");
-    const logoIcon = document.querySelector(".logoIcon");
-    const stickyheader = document.querySelector('.header');
-    const logoElems = document.querySelector('.burger-logo-elements');
+    logoIcon.classList.toggle("openedMenu", !isMenuOpen);
+    logoElems.classList.toggle("openedMenu", !isMenuOpen);
 
-    function toggleMenu() {
-        if (burgCont.classList.contains("openedMenu")) {
-            burgIcon.classList.remove("openedMenu");
-            burgCont.classList.remove("openedMenu");
-            topLine.classList.remove("openedMenu");
-            botLine.classList.remove("openedMenu");
-            midLine.classList.remove("openedMenu");
-            logoIcon.classList.remove("openedMenu");
-            stickyheader.classList.add('sticky-nav');
-            if (window.innerWidth <= 425 && !burgCont.classList.value.includes('openedMenu')) {
-                logoElems.style.display = 'block'
-            }
-        } else {
-            burgIcon.classList.add("openedMenu");
-            burgCont.classList.add("openedMenu");
-            topLine.classList.add("openedMenu");
-            botLine.classList.add("openedMenu");
-            midLine.classList.add("openedMenu");
-            logoIcon.classList.add("openedMenu");
-            stickyheader.classList.remove('sticky-nav');
-            if (window.innerWidth <= 426 && burgCont.classList.value.includes('openedMenu')) {
-                logoElems.style.display = 'none'
-            }
+    if (isMenuOpen) {
+        // Menu closing
+        if (window.scrollY > 1) {
+            stickyHeader.classList.add('sticky-nav');
+        }
+        if (window.innerWidth <= 432) {
+            logoElems.style.display = 'flex';
+        }
+    } else {
+        // Menu opening
+        if (window.scrollY <= 1) {
+            stickyHeader.classList.remove('sticky-nav');
+        }
+        if (window.innerWidth <= 433) {
+            logoElems.style.display = 'none';
         }
     }
+}
 
-    burgIcon.addEventListener("click", toggleMenu);
+// Event listeners for both desktop and mobile burger icons
+burgerIcon.addEventListener("click", toggleMenu);
+burgerIconMobile.addEventListener("click", toggleMenu);
 
-    const burgContMobile = document.querySelector(".burger-container-wrapper");
-    const burgIconMobile = document.querySelector(".burgerIconMobile");
+const languageSwitcher = function () {
+    // Set initial button text to the currently active language
+    langSwitcherbtn.textContent = activeLanguageElem.textContent;
 
-    function toggleMenuMobile() {
-        if (burgContMobile.classList.contains("openedMenu")) {
-            burgIcon.classList.remove("openedMenu");
-            burgContMobile.classList.remove("openedMenu");
-            burgIcon.classList.remove("openedMenu");
-            burgCont.classList.remove("openedMenu");
-            topLine.classList.remove("openedMenu");
-            botLine.classList.remove("openedMenu");
-            midLine.classList.remove("openedMenu");
-            logoIcon.classList.remove("openedMenu");
-            logoElems.style.display = 'flex'
-            if (window.innerWidth <= 425 && !burgCont.classList.value.includes('openedMenu')) {
-                logoElems.style.display = 'flex'
-            }
-        }
-    }
-
-    burgIconMobile.addEventListener("click", toggleMenuMobile);
-
-//Language button shows languages
-    const button = document.querySelector('.langbtn');
-    const dropdownContent = document.querySelector('.sub-menu');
-    const dropdownLinks = document.querySelectorAll('.sub-menu li');
-
-    button.addEventListener('click', () => {
+    // Toggle the dropdown menu when the button is clicked
+    langSwitcherbtn.addEventListener('click', (event) => {
         dropdownContent.classList.toggle('show');
+        event.stopPropagation(); // Prevent the click from bubbling up to the document
     });
 
+    // Add click event listeners to each language option
     dropdownLinks.forEach(link => {
-        link.addEventListener('click', () => {
+        link.addEventListener('click', (event) => {
+            // Close the dropdown menu
             dropdownContent.classList.remove('show');
-        });
-    });
 
-    function updateLanguageSwitcher() {
-        // Get the active language element
-        const activeLanguageElem = document.querySelector('.languageElem.active');
-
-        // Get the language switcher button
-        const langSwitcherButton = document.querySelector('.langbtn');
-
-        // Set the text content of the button to the active language
-        langSwitcherButton.textContent = activeLanguageElem.textContent;
-    }
-
-// Call the function initially to set the initial active language
-    updateLanguageSwitcher();
-
-// Get all the language elements
-    const languageElems = document.querySelectorAll('.languageElem');
-
-// Add a click event listener to each language element
-    languageElems.forEach((languageElem) => {
-        languageElem.addEventListener('click', () => {
-            // Remove the active class from all language elements
-            languageElems.forEach((elem) => {
-                elem.classList.remove('active');
-            });
-
-            // Add the active class to the clicked language element
-            languageElem.classList.add('active');
-
-            // Update the language switcher button
-            updateLanguageSwitcher();
-        });
-    });
-
-    window.onscroll = () => {
-        const stickyheaderY = document.querySelector('.header');
-        const burgerContainer = document.querySelector('.burger-container-wrapper');
-        const body = document.querySelector('body');
-        const screenWidth = window.innerWidth;
-        if (window.scrollY > 1 && screenWidth <= 425) {
-            body.classList.remove('scroll-enabled');
-            if (burgerContainer.classList.value.includes('openedMenu')) {
-                stickyheaderY.classList.remove('sticky-nav');
-            } else {
-                stickyheaderY.classList.add('sticky-nav');
+            // Remove 'active' from the previously active element
+            const currentActiveElem = document.querySelector('.sub-menu li.active');
+            if (currentActiveElem) {
+                currentActiveElem.classList.remove('active');
             }
-        } else if (window.scrollY > 1 && screenWidth > 425) {
-            stickyheaderY.classList.add('sticky-nav');
+
+            // Add 'active' to the clicked element
+            link.classList.add('active');
+
+            // Update button text with the newly active language
+            langSwitcherbtn.textContent = link.textContent;
+
+            event.stopPropagation(); // Prevent the click from bubbling up to the document
+        });
+    });
+
+    // Close the dropdown when clicking outside of it
+    document.addEventListener('click', () => {
+        dropdownContent.classList.remove('show');
+    });
+}
+
+languageSwitcher()
+// Define a function to handle scroll events
+function handleScroll() {
+    if (window.scrollY > 1 && screenWidth <= 425) {
+        body.classList.remove('scroll-enabled');
+        if (burgerContainer.classList.value.includes('openedMenu')) {
+            stickyHeader.classList.remove('sticky-nav');
         } else {
-            stickyheaderY.classList.remove('sticky-nav');
+            stickyHeader.classList.add('sticky-nav');
         }
+    } else if (window.scrollY > 1 && screenWidth > 425) {
+        stickyHeader.classList.add('sticky-nav');
+    } else {
+        stickyHeader.classList.remove('sticky-nav');
     }
+}
 
+// Attach the function to the scroll event
+window.onscroll = handleScroll;
 
-//Load More button
-    function handleLoadMoreClick(event) {
-        const container = event.target.closest('.product-cards-cont');
-        const loadMoreButton = container.querySelector('.load-more');
-        const hiddenCards = container.querySelectorAll('.hidden-prod');
-
-        for (let i = 0; i < Math.min(hiddenCards.length, 3); i++) {
-            hiddenCards[i].classList.add('shownCards');
-            hiddenCards[i].classList.remove('hidden-prod');
-        }
-
-        if (container.querySelectorAll('.hidden-prod').length === 0) {
-            loadMoreButton.style.display = 'none';
-        }
-    }
-
-    const loadMoreButtons = document.querySelectorAll('.load-more');
-
+// Call the function once immediately to set the sticky-nav class correctly
+handleScroll();
+window.addEventListener('load', function () {
     loadMoreButtons.forEach(button => {
-        button.addEventListener('click', handleLoadMoreClick);
+        const productContainer = event.target.closest('.product-cards-cont');
+        const hiddenCards = productContainer.querySelectorAll('.hidden-prod');
+        if (hiddenCards.length === 0) {
+            button.style.display = 'none';
+        }
     });
+});
 
-
-//Mobile Language button shows languages
-    const LangBtnMobile = document.querySelector('.language-switcher-mobile .langbtnMobile');
-    const dropdownContentMobile = document.querySelector('.language-switcher-mobile .sub-menu');
-    const dropdownLinksMobile = document.querySelectorAll('.language-switcher-mobile .sub-menu li');
-
-    LangBtnMobile.addEventListener('click', () => {
-        dropdownContentMobile.classList.toggle('show');
-    });
-
-    dropdownLinksMobile.forEach(link => {
-        link.addEventListener('click', () => {
-            dropdownContentMobile.classList.remove('show');
-        });
-    });
-
-    function updateLanguageSwitcherMobile() {
-        // Get the active language element
-        const activeLanguageElemMob = document.querySelector('.language-switcher-mobile .sub-menu .languageElem.active');
-
-        // Get the language switcher button
-        const langSwitcherButtonMobile = document.querySelector('.language-switcher-mobile .langbtnMobile');
-
-        // Set the text content of the button to the active language
-        langSwitcherButtonMobile.textContent = activeLanguageElemMob.textContent;
+function handleLoadMoreClick(event) {
+    const productContainer = event.target.closest('.product-cards-cont');
+    const hiddenCards = productContainer.querySelectorAll('.hidden-prod');
+    for (let i = 0; i < Math.min(hiddenCards.length, 3); i++) {
+        hiddenCards[i].classList.add('shownCards');
+        hiddenCards[i].classList.remove('hidden-prod');
     }
 
-// Call the function initially to set the initial active language
-    updateLanguageSwitcherMobile();
+    if (productContainer.querySelectorAll('.hidden-prod').length === 0) {
+        event.target.style.display = 'none';
+    }
+}
 
-// Get all the language elements
-    const languageElemsMobile = document.querySelectorAll('.language-switcher-mobile .sub-menu .languageElem');
-
-// Add a click event listener to each language element
-    languageElemsMobile.forEach((languageElem) => {
-        languageElem.addEventListener('click', () => {
-            // Remove the active class from all language elements
-            languageElemsMobile.forEach((elem) => {
-                elem.classList.remove('active');
-            });
-
-            // Add the active class to the clicked language element
-            languageElem.classList.add('active');
-
-            // Update the language switcher button
-            updateLanguageSwitcher();
-        });
-    });
-};
+loadMoreButtons.forEach(button => {
+    button.addEventListener('click', handleLoadMoreClick);
+});

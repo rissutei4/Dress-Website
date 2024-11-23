@@ -1,9 +1,4 @@
 @media only screen and (max-width: 2570px) {
-  .header .burger-logo-elements .burgerIcon.openedMenu {
-    position: fixed;
-    z-index: 4;
-    top: 8%;
-  }
   .CarouselSection .owl-carousel .owl-dots {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
@@ -50,24 +45,6 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .header {
-    .header_container {
-      .burger-logo-elements {
-        .logoIcon.openedMenu {
-          left: 10%;
-        }
-      }
-
-      .burger-container-wrapper {
-        .nav-content-container {
-          top: 105px;
-        }
-
-        &.openedMenu {
-        }
-      }
-    }
-  }
   .CarouselSection .owl-carousel {
     .slide .rightSlidePart .buyButton .circle {
       left: 43%;
@@ -105,16 +82,6 @@
 
 
 @media only screen and (max-width: 768px) {
-  .header {
-    .header_container {
-      .burger-logo-elements {
-        .logoIcon.openedMenu {
-          left: 13%;
-        }
-      }
-    }
-  }
-
   .CarouselSection .owl-carousel {
 
 
@@ -169,225 +136,6 @@
 }
 
 @media only screen and (max-width: 426px) {
-
-  .header {
-    padding: 12px 22px 12px 22px;
-
-
-    .header_container {
-
-
-      .burger-logo-elements {
-
-        .burgerIcon {
-          margin-right: 20px;
-        }
-
-        .logoIcon {
-          width: 130px;
-          padding-bottom: 20px;
-
-          &.openedMenu {
-            top: 5%;
-            left: 24%;
-
-          }
-        }
-      }
-
-
-      .burger-container-wrapper {
-        background: #0D0C0C;
-        overflow-x: hidden;
-        overflow-y: scroll;
-
-        .mobile-header-opened {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          align-items: center;
-          -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-          justify-content: space-between;
-          padding: 12px 22px 12px 22px;
-          background-color: rgba(38, 34, 34, 0.73);
-          width: 100%;
-          -webkit-transition: all 0.4s linear;
-          -o-transition: all 0.4s linear;
-          transition: all 0.4s linear;
-
-          .burger-logo-elements-mobile {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: horizontal;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-            flex-direction: row;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            position: relative;
-            z-index: 3;
-
-            .burgerIconMobile {
-              margin-right: 22px;
-
-              .TopLine {
-                width: 24px;
-                height: 3px;
-                border-radius: 10px;
-                background-color: white;
-                margin-bottom: 5px;
-                cursor: pointer;
-                -webkit-transition: 0.5s linear;
-                -o-transition: 0.5s linear;
-                transition: 0.5s linear;
-                -webkit-transform: translate3d(0px, 4px, 0px) rotateZ(45deg);
-                transform: translate3d(0px, 4px, 0px) rotateZ(45deg);
-                -webkit-transform-style: preserve-3d;
-                transform-style: preserve-3d;
-              }
-
-              .MidLine {
-                display: none;
-              }
-
-              .BotLine {
-                width: 24px;
-                height: 3px;
-                border-radius: 10px;
-                background-color: white;
-                margin-bottom: 5px;
-                cursor: pointer;
-                -webkit-transition: 0.5s linear;
-                -o-transition: 0.5s linear;
-                transition: 0.5s linear;
-                -webkit-transform: translate3d(0px, -4px, 0px) rotateZ(-45deg);
-                transform: translate3d(0px, -4px, 0px) rotateZ(-45deg);
-                -webkit-transform-style: preserve-3d;
-                transform-style: preserve-3d;
-              }
-            }
-
-            .logoIcon {
-              width: 130px;
-              padding-bottom: 20px;
-              height: auto;
-              display: -webkit-box;
-              display: -ms-flexbox;
-              display: flex;
-              -webkit-box-align: end;
-              -ms-flex-align: end;
-              align-items: flex-end;
-            }
-          }
-
-          .language-switcher-mobile {
-            .langbtnMobile {
-              background-color: transparent;
-              color: white;
-              border: none;
-              font-size: 25px;
-              position: relative;
-              -webkit-transition: 0.6s ease-in-out;
-              -o-transition: 0.6s ease-in-out;
-              transition: 0.6s ease-in-out;
-
-              &:hover {
-                color: #81D8D0DE;
-              }
-            }
-
-            .sub-menu {
-              list-style-type: none;
-              display: none;
-              -webkit-box-orient: vertical;
-              -webkit-box-direction: normal;
-              -ms-flex-direction: column;
-              flex-direction: column;
-              padding-left: 0;
-              position: absolute;
-              right: 30px;
-              width: 100px;
-              background: rgba(151, 145, 145, 0.06);
-              border-radius: 5px;
-              z-index: 5;
-
-              &.show {
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-              }
-
-              li.languageElem {
-                font-size: 23px;
-                text-align: center;
-                width: 100%;
-                -webkit-transition: 0.5s linear;
-                -o-transition: 0.5s linear;
-                transition: 0.5s linear;
-                color: white;
-
-                &.active {
-                  background: #81D8D094;
-                }
-              }
-            }
-          }
-        }
-
-
-        .nav-content-container {
-          padding: 0 6px 0;
-          position: relative !important;
-          left: 0 !important;
-          top: 14px;
-
-          .nav-items {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-            border: 1px solid #000000;
-
-            &:nth-last-child(-n+2) {
-              font-family: 'Alex Brush';
-              font-weight: 400;
-
-              color: #FFFFFF;
-              padding: 49px 0;
-
-              a {
-                font-size: 43px;
-              }
-            }
-
-            a {
-              margin-right: 24px;
-              text-align: center !important;
-            }
-
-
-            .mobile-menu-dress-pic {
-              display: block;
-
-              img {
-                width: 126px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
 
   .CarouselSection {
     margin-bottom: 22px;
@@ -453,7 +201,6 @@
 
     .filters-mobile {
       display: block;
-      padding-bottom: 18px;
       position: relative;
 
       img {
@@ -482,7 +229,7 @@
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        padding: 10px 33px;
+        padding: 10px 8px;
         width: 290px;
         position: relative;
         border: none;
@@ -518,12 +265,10 @@
       width: 290px;
       display: none;
       border-radius: 0 0 10px 10px;
-      position: absolute;
-      top: 2.5%;
-      left: 15px;
       z-index: 10;
       padding-left: 10px;
       padding-right: 31px;
+      margin-bottom: 0 !important;
 
       li.nav-item {
         margin: 0;
@@ -553,10 +298,12 @@
 
     #pills-tabContent .product-cards-cont .product-card {
       margin-bottom: 47px;
-
+      overflow: hidden;
+      height: 260px !important;
 
       .product-image {
         max-width: 167px !important;
+        height: 260px !important;
         width: 100% !important;
       }
 
@@ -587,8 +334,6 @@
           align-items: center;
 
           .price {
-
-
             p {
               font-size: 10px;
             }
@@ -628,26 +373,9 @@
     }
   }
 
-
-  footer .container .footer-content .SocialMedias .socialsList {
-    padding: 0;
-
-    li {
-      margin-right: 20px;
-    }
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  footer .container .footer-content .SocialMedias .socialsList li {
-    margin-right: 24px !important;
-  }
 }
 
 @media only screen and (max-width: 376px) {
-  .header .header_container .burger-container-wrapper .nav-content-container {
-    left: 0 !important;
-  }
   .CarouselSection {
     margin-bottom: 0 !important;
 
@@ -684,25 +412,10 @@
       }
     }
   }
-  footer .container .footer-content {
-    .logoIcon {
-      width: 220px;
-    }
-
-    .SocialMedias .socialsList li {
-      width: 43px;
-      height: 43px;
-      margin-right: 15px !important;
-    }
-  }
 }
 
 @media only screen and (max-width: 361px) {
   .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-image {
     width: 135px !important;
   }
-}
-
-@media only screen and (max-width: 321px) {
-
 }

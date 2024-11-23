@@ -1,5 +1,5 @@
-@import "header-yes_footer.css";
-@import "media-query.css";
+@import "disable.css";
+@import "./header-footer.css";
 
 body {
   margin: 0;
@@ -31,7 +31,6 @@ h4 {
   .bg-image {
     position: relative;
     z-index: 0;
-    background-image: url('../images/kamianets_podilskyi_fortress.png');
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
@@ -86,6 +85,7 @@ h4 {
 }
 
 .about-section {
+  padding: 10px 0 10px;
   .photo-wrapper {
     margin-top: 24px;
   }
@@ -156,13 +156,6 @@ h4 {
   }
   .back-image-sect .container.theflexes .text-block p {
     font-size: 50px;
-  }
-  footer .container .footer-content .SocialMedias .socialsList {
-    padding: 0;
-
-    li {
-      margin-right: 30px !important;
-    }
   }
 }
 

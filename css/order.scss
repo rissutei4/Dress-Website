@@ -1,4 +1,3 @@
-@import "header-yes_footer";
 @import "disable.css";
 
 body {
@@ -56,13 +55,17 @@ body {
         font-weight: 300;
         margin-bottom: 22px;
         color: #7B7575;
+
+        &::placeholder {
+          color: #7B7575 !important;
+        }
       }
 
       button {
         border: 1px solid rgba(140, 231, 222, 0.89);
         padding: 26px 94px;
         text-transform: uppercase;
-        background: rgba(129, 216, 208, 0.87);
+        background: rgba(129, 216, 208, 0.87) !important;
         font-family: 'Rubik';
         font-weight: 300;
         font-size: 26px;
@@ -73,13 +76,24 @@ body {
         border-radius: 0;
         width: 100%;
         margin-top: 34px;
+        line-height: 2%;
 
         &:hover {
           border: 1px solid #FFFFFF;
-          background: transparent;
+          background: transparent !important;
         }
       }
     }
+  }
+
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
   }
 }
 
@@ -104,6 +118,13 @@ body {
 
     .contactForm {
       .form-group {
+
+        input {
+          &::placeholder {
+            color: #7B7575 !important;
+          }
+        }
+
         button {
           padding: 11px 8px;
         }
