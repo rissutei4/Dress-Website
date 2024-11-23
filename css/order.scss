@@ -1,85 +1,93 @@
 @import "disable.css";
 
+// Variables
+$background-color: #101010;
+$form-background-color: #151414;
+$border-color: #FFFEFE;
+$heading-color: rgba(235, 247, 246, 0.87);
+$text-color: #C3BABA;
+$input-background: #131313;
+$white-color: #FFFFFF;
+$placeholder-color: #7B7575;
+$accent-border-color: rgba(140, 231, 222, 0.89);
+$accent-background-color: rgba(129, 216, 208, 0.87);
+$button-text-color: rgba(248, 255, 254, 0.87);
+
+$font-family: 'Rubik', sans-serif;
+
+// Base font size assumption: 16px
+
 body {
   margin: 0;
   padding: 0;
-  background-color: #101010;
-  font-family: 'Rubik', sans-serif;
+  background-color: $background-color;
+  font-family: $font-family;
 }
 
 .forms-container {
-  margin-top: 63px;
-  background: #151414;
-  border: 1px solid #FFFEFE;
-  padding: 52px 194px;
-  margin-bottom: 316px;
+  margin-top: 3.9375rem; // 63px
+  background: $form-background-color;
+  border: 0.0625rem solid $border-color; // 1px
+  padding: 3.25rem 12.125rem; // 52px 194px
+  margin-bottom: 19.75rem; // 316px
 
   .forms-heading {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
 
     h4 {
       font-weight: 300;
-      font-size: 40px;
+      font-size: 2.5rem; // 40px
       text-transform: uppercase;
-      color: rgba(235, 247, 246, 0.87);
-      margin-bottom: 34px;
+      color: $heading-color;
+      margin-bottom: 2.125rem; // 34px
     }
 
     p {
       font-weight: 300;
-      font-size: 27px;
+      font-size: 1.6875rem; // 27px
       text-align: center;
-      color: #C3BABA;
-      margin-bottom: 66px;
+      color: $text-color;
+      margin-bottom: 4.125rem; // 66px
     }
   }
 
   .contactForm {
     .form-group {
       input {
-        background: #131313;
-        border: 1px solid #FFFFFF;
+        background: $input-background;
+        border: 0.0625rem solid $white-color; // 1px
         border-radius: 0;
-        padding: 28px 16px;
-        font-size: 23px;
-        font-family: 'Rubik';
+        padding: 1.75rem 1rem; // 28px 16px
+        font-size: 1.4375rem; // 23px
+        font-family: $font-family;
         font-weight: 300;
-        margin-bottom: 22px;
-        color: #7B7575;
+        margin-bottom: 1.375rem; // 22px
+        color: $placeholder-color;
 
         &::placeholder {
-          color: #7B7575 !important;
+          color: $placeholder-color !important;
         }
       }
 
       button {
-        border: 1px solid rgba(140, 231, 222, 0.89);
-        padding: 26px 94px;
+        border: 0.0625rem solid $accent-border-color; // 1px
+        padding: 1.625rem 5.875rem; // 26px 94px
         text-transform: uppercase;
-        background: rgba(129, 216, 208, 0.87) !important;
-        font-family: 'Rubik';
+        background: $accent-background-color !important;
+        font-family: $font-family;
         font-weight: 300;
-        font-size: 26px;
-        -webkit-transition: 0.3s linear;
-        -o-transition: 0.3s linear;
+        font-size: 1.625rem; // 26px
         transition: 0.3s linear;
-        color: rgba(248, 255, 254, 0.87);
+        color: $button-text-color;
         border-radius: 0;
         width: 100%;
-        margin-top: 34px;
+        margin-top: 2.125rem; // 34px
         line-height: 2%;
 
         &:hover {
-          border: 1px solid #FFFFFF;
+          border: 0.0625rem solid $white-color; // 1px
           background: transparent !important;
         }
       }
@@ -97,36 +105,37 @@ body {
   }
 }
 
+// Media Queries
 @media only screen and (max-width: 1024px) {
-
+  // Add styles for screen widths up to 1024px if needed
 }
 
 @media only screen and (max-width: 992px) {
-
+  // Add styles for screen widths up to 992px if needed
 }
 
 @media only screen and (max-width: 768px) {
-
+  // Extra media query header for 768px as requested
+  // Add styles for screen widths up to 768px if needed
 }
 
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 440px) {
   .forms-container {
     background: transparent;
     border: 0;
-    padding: 52px 22px;
-    margin-bottom: 116px;
+    padding: 3.25rem 1.375rem; // 52px 22px
+    margin-bottom: 7.25rem; // 116px
 
     .contactForm {
       .form-group {
-
         input {
           &::placeholder {
-            color: #7B7575 !important;
+            color: $placeholder-color !important;
           }
         }
 
         button {
-          padding: 11px 8px;
+          padding: 0.6875rem 0.5rem; // 11px 8px
         }
       }
     }
@@ -134,13 +143,13 @@ body {
 }
 
 @media only screen and (max-width: 376px) {
-
+  // Add styles for screen widths up to 376px if needed
 }
 
 @media only screen and (max-width: 361px) {
-
+  // Add styles for screen widths up to 361px if needed
 }
 
 @media only screen and (max-width: 320px) {
-
+  // Add styles for screen widths up to 320px if needed
 }

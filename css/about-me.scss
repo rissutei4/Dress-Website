@@ -1,32 +1,41 @@
 @import "disable.css";
 @import "./header-footer.css";
 
+// Variables
+$background-color: #101010;
+$font-family-primary: 'Rubik', sans-serif;
+$font-family-secondary: 'Alex Brush', cursive;
+$white-color: #FFFFFF;
+$overlay-color: rgba(66, 69, 72, 0.72);
+$accent-color: rgba(129, 216, 208, 0.87);
+$additional-section-bg: #81D8D0DE;
+
+// Base Styles
 body {
   margin: 0;
   padding: 0;
-  background-color: #101010;
-  font-family: 'Alex Brush', cursive;
-  font-family: 'Rubik', sans-serif;
+  background-color: $background-color;
+  font-family: $font-family-secondary;
+  font-family: $font-family-primary;
 }
 
 h3 {
   font-weight: 600;
 }
 
-p {
-  font-weight: 500;
-}
-
-li {
-  p {
-    font-weight: 300;
-  }
-}
-
 h4 {
   font-weight: 400;
 }
 
+p {
+  font-weight: 500;
+}
+
+li p {
+  font-weight: 300;
+}
+
+// Back Image Section
 .back-image-sect {
   .bg-image {
     position: relative;
@@ -36,16 +45,12 @@ h4 {
     height: 100vh;
     width: 100%;
     max-width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     background-size: cover;
 
     &:before {
-      background: rgba(66, 69, 72, 0.72);
+      background: $overlay-color;
       content: "";
       position: absolute;
       top: 0;
@@ -57,55 +62,50 @@ h4 {
   }
 
   .container.theflexes {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     z-index: 1;
 
     .logo {
-      width: 60%;
+      width: 55%;
     }
 
     .text-block {
       p {
-        font-family: 'Alex Brush', cursive;
-        color: #FFFFFF;
-        font-size: 100px;
+        font-family: $font-family-secondary;
+        color: $white-color;
+        font-size: 6.25rem; // 100px
         text-align: center;
       }
     }
   }
 }
 
+// About Section
 .about-section {
-  padding: 10px 0 10px;
+  padding: 0.625rem 0; // 10px 0
+
   .photo-wrapper {
-    margin-top: 24px;
+    margin-top: 1.5rem; // 24px
   }
 
   .contact-info {
-    color: #FFFFFF;
+    color: $white-color;
 
     h4 {
-      font-family: 'Rubik', serif;
+      font-family: $font-family-primary;
       font-weight: 600;
       text-transform: uppercase;
-      margin-bottom: 12px;
+      margin-bottom: 0.75rem; // 12px
     }
 
     hr {
       width: 30%;
-      height: 3px;
-      background: rgba(129, 216, 208, 0.87);
+      height: 0.1875rem; // 3px
+      background: $accent-color;
       margin-left: 0;
-      margin-bottom: 22px;
+      margin-bottom: 1.375rem; // 22px
     }
 
     p {
@@ -114,13 +114,14 @@ h4 {
   }
 }
 
+// Additional Section
 .additional-section {
-  background: #81D8D0DE;
-  padding: 60px 0;
+  background: $additional-section-bg;
+  padding: 3.75rem 0; // 60px 0
 
   h4 {
     font-weight: 500;
-    margin-bottom: 35px;
+    margin-bottom: 2.1875rem; // 35px
   }
 
   p {
@@ -129,55 +130,48 @@ h4 {
   }
 
   .image-end-page {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
   }
 }
 
-@media only screen and (max-width: 1024px) {
-
-}
-
-@media only screen and (max-width: 992px) {
-
-}
-
-@media only screen and (max-width: 767px) {
-
+// Media Queries
+@media only screen and (max-width: 768px) {
+  .back-image-sect .container.theflexes .text-block p{
+    font-size: 5rem;
+  }
 }
 
 @media only screen and (max-width: 450px) {
   .about-section {
-    padding: 45px 0;
+    padding: 2.8125rem 0; // 45px 0
   }
+
   .back-image-sect .container.theflexes .text-block p {
-    font-size: 50px;
+    font-size: 3.125rem; // 50px
   }
 }
 
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 440px) {
   .about-section {
-    padding: 45px 0;
+    padding: 2.8125rem 0; // 45px 0
   }
+
   .back-image-sect .container.theflexes .text-block p {
-    font-size: 50px;
+    font-size: 3.125rem; // 50px
   }
 }
 
 @media only screen and (max-width: 376px) {
   .back-image-sect .container.theflexes .text-block p {
-    font-size: 40px;
+    font-size: 2.5rem; // 40px
   }
 }
 
 @media only screen and (max-width: 360px) {
-
+  // Styles for screen widths up to 360px
 }
 
 @media only screen and (max-width: 320px) {
-
+  // Styles for screen widths up to 320px
 }
