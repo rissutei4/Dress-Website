@@ -26,8 +26,10 @@
     <script defer src="js/owl.carousel.min.js"></script>
     <script defer src="./js/owl-car-settings.js"></script>
     <script defer src="./js/mobile-filter.js"></script>
-    <script defer src="./js/scripts.js"></script>
-    <title>Fajna Dress Template</title>
+    <script defer src="./js/header.js"></script>
+    <script defer type="module" src="./js/product-arrays.js"></script>
+    <script defer type="module" src="./js/scripts.js"></script>
+    <title>Fajna</title>
 </head>
 <body>
 <header>
@@ -41,7 +43,7 @@
                 </div>
                 <div class="logoIcon">
                     <a href="index.html">
-                        <img src="./images/logo.svg" class="img-fluid" alt="WebsiteLogo">
+                        <img src="images/misc/logo.svg" class="img-fluid" alt="WebsiteLogo">
                     </a>
                 </div>
             </div>
@@ -64,7 +66,7 @@
                         </div>
                         <div class="logoIcon">
                             <a href="index.html">
-                                <img src="./images/logo.svg" class="img-fluid" alt="WebsiteLogo">
+                                <img src="images/misc/logo.svg" class="img-fluid" alt="WebsiteLogo">
                             </a>
                         </div>
                     </div>
@@ -83,31 +85,46 @@
                     <li class="nav-items">
                         <a href="index.html">Večerné šaty</a>
                         <div class="mobile-menu-dress-pic">
-                            <img src="images/girlSlider.png" alt="">
+                            <picture>
+                                <source srcset="images/index/girlSlider.png" media="(max-width: 490px)" type="image/png">
+                                <img src="" alt="Večerné šaty" loading="lazy">
+                            </picture>
                         </div>
                     </li>
                     <li class="nav-items">
                         <a href="index.html">Svadobné šaty</a>
                         <div class="mobile-menu-dress-pic">
-                            <img src="images/girlSlider2.png" alt="">
+                            <picture>
+                                <source srcset="images/index/girlSlider2.png" media="(max-width: 490px)" type="image/png">
+                                <img src="" alt="Svadobné šaty" loading="lazy">
+                            </picture>
                         </div>
                     </li>
                     <li class="nav-items">
                         <a href="index.html">Detské šaty</a>
                         <div class="mobile-menu-dress-pic">
-                            <img src="images/girlSlider3.png" alt="">
+                            <picture>
+                                <source srcset="images/index/girlSlider3.png" media="(max-width: 490px)" type="image/png">
+                                <img src="" alt="Detské šaty" loading="lazy">
+                            </picture>
                         </div>
                     </li>
                     <li class="nav-items">
                         <a href="index.html">Dámsky kostým</a>
                         <div class="mobile-menu-dress-pic">
-                            <img src="images/girlSlider4.png" alt="">
+                            <picture>
+                                <source srcset="images/index/girlSlider4.png" media="(max-width: 490px)" type="image/png">
+                                <img src="" alt="Dámsky kostým" loading="lazy">
+                            </picture>
                         </div>
                     </li>
                     <li class="nav-items">
                         <a href="index.html">Príslušenstvo</a>
                         <div class="mobile-menu-dress-pic">
-                            <img src="images/Prislusenstvo.png" alt="">
+                            <picture>
+                                <source srcset="images/index/Prislusenstvo.png" media="(max-width: 490px)" type="image/png">
+                                <img src="" alt="Príslušenstvo" loading="lazy">
+                            </picture>
                         </div>
                     </li>
                     <li class="nav-items">
@@ -138,7 +155,7 @@
                     <div class="col-md-6 col-xs-6 rightSlidePart">
                         <div class="gradientBlock"></div>
                         <div class="modelImage">
-                            <img src="images/girlSlider.png" class="img-fluid" alt="modelImage">
+                            <img src="images/index/girlSlider.png" class="img-fluid" alt="modelImage">
                         </div>
                         <div class="buyButton">
                             <div class="circle">
@@ -149,7 +166,7 @@
                 </div>
             </div>
         </div>
-        <div class="slide secondsl">
+        <div class="slide">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-6 leftSlidePart">
@@ -163,7 +180,7 @@
                     <div class="col-md-6 rightSlidePart">
                         <div class="gradientBlock"></div>
                         <div class="modelImage">
-                            <img src="images/girlSlider2.png" class="img-fluid" alt="modelImage">
+                            <img src="images/index/girlSlider2.png" loading="lazy" class="img-fluid" alt="modelImage">
                         </div>
                         <div class="buyButton">
                             <div class="circle">
@@ -188,7 +205,7 @@
                     <div class="col-md-6 rightSlidePart">
                         <div class="gradientBlock"></div>
                         <div class="modelImage">
-                            <img src="images/girlSlider3.png" class="img-fluid" alt="modelImage">
+                            <img src="images/index/girlSlider3.png" loading="lazy" class="img-fluid" alt="modelImage">
                         </div>
                         <div class="buyButton">
                             <div class="circle">
@@ -213,7 +230,7 @@
                     <div class="col-md-6 rightSlidePart">
                         <div class="gradientBlock"></div>
                         <div class="modelImage">
-                            <img src="images/girlSlider4.png" class="img-fluid" alt="modelImage">
+                            <img src="images/index/girlSlider4.png" loading="lazy" class="img-fluid" alt="modelImage">
                         </div>
                         <div class="buyButton">
                             <div class="circle">
@@ -232,13 +249,14 @@
             <div class="filters-mobile">
                 <button class="filtersClick">
                     <span>FILTERS</span>
-                    <img src="images/chevron-down.svg" class="img-fluid" alt="">
+                    <img src="images/misc/chevron-down.svg" class="img-fluid" alt="">
                 </button>
             </div>
             <!--CATEGORIES-->
             <ul class="nav nav-pills mb-3 filters-mobile-cont" id="pills-tabs" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="wedding-dress-tab" data-toggle="pill" data-target="#wedding-dress"
+                    <button class="nav-link active" id="wedding-dress-tab" data-toggle="pill"
+                            data-target="#wedding-dress"
                             type="button" role="tab" data-filter="svadobne-saty" aria-controls="wedding-dress"
                             aria-selected="false">Svadobné šaty
                     </button>
@@ -273,102 +291,10 @@
         </div>
         <!--CATEGORIES CONTENT-->
         <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="wedding-dress" role="tabpanel" aria-labelledby="wedding-dress-tab">
+            <div class="tab-pane fade show active" id="wedding-dress" role="tabpanel"
+                 aria-labelledby="wedding-dress-tab">
                 <div class="container product-cards-cont">
                     <div class="row">
-                        <div class="col-lg-4 col-md-6 col-6">
-                            <a href="product-page.html">
-                                <div class="product-card shownCards">
-                                    <div class="product-image">
-                                        <img src="images/productCard1.png" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="product-overlay">
-                                        <div class="product-heading">
-                                            <p>Svadobné šaty</p>
-                                            <h4>Rozi</h4>
-                                        </div>
-                                        <div class="price-sizes-container container">
-                                            <div class="row flex-md-row flex-row align-items-md-center align-items-flex-start">
-                                                <div class="col-xl-4 col-md-5 col-6 d-flex">
-                                                    <div class="right-side">
-
-                                                        <div class="price">
-                                                            <p>450,00 €</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-8 col-md-7 col-6 divider">
-                                                    <div class="sizes">
-                                                        <h4>Dostupné veľkosti:</h4>
-                                                        <ul>
-                                                            <li>
-                                                                <p>36</p>
-                                                            </li>
-                                                            <li>
-                                                                <p>38</p>
-                                                            </li>
-                                                            <li>
-                                                                <p>40</p>
-                                                            </li>
-                                                            <li>
-                                                                <p>42</p>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-
-                        <div class="col-lg-4 col-md-6 col-6">
-                            <div class="product-card hidden-prod">
-                                <div class="product-image">
-                                    <img src="images/productCard3.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="product-overlay">
-                                    <div class="product-heading">
-                                        <p>Svadobné šaty</p>
-                                        <h4>Rozi</h4>
-                                    </div>
-                                    <div class="price-sizes-container container">
-                                        <div class="row flex-md-row flex-row align-items-md-center align-items-flex-start">
-                                            <div class="col-xl-4 col-md-5 col-6 d-flex">
-                                                <div class="right-side">
-
-                                                    <div class="price">
-                                                        <p>450,00 €</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-8 col-md-7 col-6 divider">
-                                                <div class="sizes">
-                                                    <h4>Dostupné veľkosti:</h4>
-                                                    <ul>
-                                                        <li>
-                                                            <p>36</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>38</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>40</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>42</p>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                     <div class="loadMoreButton d-flex justify-content-center">
                         <button class="load-more">Load more</button>
@@ -379,99 +305,6 @@
             <div class="tab-pane fade" id="evening-dress">
                 <div class="container product-cards-cont">
                     <div class="row">
-                        <div class="col-lg-4 col-md-6 col-6">
-                            <div class="product-card shownCards">
-                                <div class="product-image">
-                                    <img src="images/productCard1.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="product-overlay">
-                                    <div class="product-heading">
-                                        <p>Svadobné šaty</p>
-                                        <h4>Rozi</h4>
-                                    </div>
-                                    <div class="price-sizes-container container">
-                                        <div class="row flex-md-row flex-row align-items-md-center align-items-flex-start">
-                                            <div class="col-xl-4 col-md-5 col-6 d-flex">
-                                                <div class="right-side">
-
-                                                    <div class="price">
-                                                        <p>450,00 €</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-8 col-md-7 col-6 divider">
-                                                <div class="sizes">
-                                                    <h4>Dostupné veľkosti:</h4>
-                                                    <ul>
-                                                        <li>
-                                                            <p>36</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>38</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>40</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>42</p>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-6">
-                            <div class="product-card hidden-prod">
-                                <div class="product-image">
-                                    <img src="images/productCard3.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="product-overlay">
-                                    <div class="product-heading">
-                                        <p>Svadobné šaty</p>
-                                        <h4>Rozi</h4>
-                                    </div>
-                                    <div class="price-sizes-container container">
-                                        <div class="row flex-md-row flex-row align-items-md-center align-items-flex-start">
-                                            <div class="col-xl-4 col-md-5 col-6 d-flex">
-                                                <div class="right-side">
-
-                                                    <div class="price">
-                                                        <p>450,00 €</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-8 col-md-7 col-6 divider">
-                                                <div class="sizes">
-                                                    <h4>Dostupné veľkosti:</h4>
-                                                    <ul>
-                                                        <li>
-                                                            <p>36</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>38</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>40</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>42</p>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="loadMoreButton d-flex justify-content-center">
-                        <button class="load-more">Load more</button>
                     </div>
 
                 </div>
@@ -479,99 +312,6 @@
             <div class="tab-pane fade" id="childrens-dress" role="tabpanel" aria-labelledby="childrens-dress-tab">
                 <div class="container product-cards-cont">
                     <div class="row">
-                        <div class="col-lg-4 col-md-6 col-6">
-                            <div class="product-card shownCards">
-                                <div class="product-image">
-                                    <img src="images/productCard1.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="product-overlay">
-                                    <div class="product-heading">
-                                        <p>Svadobné šaty</p>
-                                        <h4>Rozi</h4>
-                                    </div>
-                                    <div class="price-sizes-container container">
-                                        <div class="row flex-md-row flex-row align-items-md-center align-items-flex-start">
-                                            <div class="col-xl-4 col-md-5 col-6 d-flex">
-                                                <div class="right-side">
-
-                                                    <div class="price">
-                                                        <p>450,00 €</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-8 col-md-7 col-6 divider">
-                                                <div class="sizes">
-                                                    <h4>Dostupné veľkosti:</h4>
-                                                    <ul>
-                                                        <li>
-                                                            <p>36</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>38</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>40</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>42</p>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-6">
-                            <div class="product-card hidden-prod">
-                                <div class="product-image">
-                                    <img src="images/productCard3.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="product-overlay">
-                                    <div class="product-heading">
-                                        <p>Svadobné šaty</p>
-                                        <h4>Rozi</h4>
-                                    </div>
-                                    <div class="price-sizes-container container">
-                                        <div class="row flex-md-row flex-row align-items-md-center align-items-flex-start">
-                                            <div class="col-xl-4 col-md-5 col-6 d-flex">
-                                                <div class="right-side">
-
-                                                    <div class="price">
-                                                        <p>450,00 €</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-8 col-md-7 col-6 divider">
-                                                <div class="sizes">
-                                                    <h4>Dostupné veľkosti:</h4>
-                                                    <ul>
-                                                        <li>
-                                                            <p>36</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>38</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>40</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>42</p>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="loadMoreButton d-flex justify-content-center">
-                        <button class="load-more">Load more</button>
                     </div>
 
                 </div>
@@ -579,99 +319,6 @@
             <div class="tab-pane fade" id="women-suit" role="tabpanel" aria-labelledby="women-suit-tab">
                 <div class="container product-cards-cont">
                     <div class="row">
-                        <div class="col-lg-4 col-md-6 col-6">
-                            <div class="product-card shownCards">
-                                <div class="product-image">
-                                    <img src="images/productCard1.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="product-overlay">
-                                    <div class="product-heading">
-                                        <p>Svadobné šaty</p>
-                                        <h4>Rozi</h4>
-                                    </div>
-                                    <div class="price-sizes-container container">
-                                        <div class="row flex-md-row flex-row align-items-md-center align-items-flex-start">
-                                            <div class="col-xl-4 col-md-5 col-6 d-flex">
-                                                <div class="right-side">
-
-                                                    <div class="price">
-                                                        <p>450,00 €</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-8 col-md-7 col-6 divider">
-                                                <div class="sizes">
-                                                    <h4>Dostupné veľkosti:</h4>
-                                                    <ul>
-                                                        <li>
-                                                            <p>36</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>38</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>40</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>42</p>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-6">
-                            <div class="product-card hidden-prod">
-                                <div class="product-image">
-                                    <img src="images/productCard3.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="product-overlay">
-                                    <div class="product-heading">
-                                        <p>Svadobné šaty</p>
-                                        <h4>Rozi</h4>
-                                    </div>
-                                    <div class="price-sizes-container container">
-                                        <div class="row flex-md-row flex-row align-items-md-center align-items-flex-start">
-                                            <div class="col-xl-4 col-md-5 col-6 d-flex">
-                                                <div class="right-side">
-
-                                                    <div class="price">
-                                                        <p>450,00 €</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-8 col-md-7 col-6 divider">
-                                                <div class="sizes">
-                                                    <h4>Dostupné veľkosti:</h4>
-                                                    <ul>
-                                                        <li>
-                                                            <p>36</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>38</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>40</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>42</p>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="loadMoreButton d-flex justify-content-center">
-                        <button class="load-more">Load more</button>
                     </div>
 
                 </div>
@@ -679,100 +326,8 @@
             <div class="tab-pane fade" id="accesories" role="tabpanel" aria-labelledby="accesories-tab">
                 <div class="container product-cards-cont">
                     <div class="row">
-                        <div class="col-lg-4 col-md-6 col-6">
-                            <div class="product-card shownCards">
-                                <div class="product-image">
-                                    <img src="images/productCard1.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="product-overlay">
-                                    <div class="product-heading">
-                                        <p>Svadobné šaty</p>
-                                        <h4>Rozi</h4>
-                                    </div>
-                                    <div class="price-sizes-container container">
-                                        <div class="row flex-md-row flex-row align-items-md-center align-items-flex-start">
-                                            <div class="col-xl-4 col-md-5 col-6 d-flex">
-                                                <div class="right-side">
-
-                                                    <div class="price">
-                                                        <p>450,00 €</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-8 col-md-7 col-6 divider">
-                                                <div class="sizes">
-                                                    <h4>Dostupné veľkosti:</h4>
-                                                    <ul>
-                                                        <li>
-                                                            <p>36</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>38</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>40</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>42</p>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-6">
-                            <div class="product-card hidden-prod">
-                                <div class="product-image">
-                                    <img src="images/productCard3.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="product-overlay">
-                                    <div class="product-heading">
-                                        <p>Svadobné šaty</p>
-                                        <h4>Rozi</h4>
-                                    </div>
-                                    <div class="price-sizes-container container">
-                                        <div class="row flex-md-row flex-row align-items-md-center align-items-flex-start">
-                                            <div class="col-xl-4 col-md-5 col-6 d-flex">
-                                                <div class="right-side">
-
-                                                    <div class="price">
-                                                        <p>450,00 €</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-8 col-md-7 col-6 divider">
-                                                <div class="sizes">
-                                                    <h4>Dostupné veľkosti:</h4>
-                                                    <ul>
-                                                        <li>
-                                                            <p>36</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>38</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>40</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>42</p>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
-                    <div class="loadMoreButton d-flex justify-content-center">
-                        <button class="load-more">Load more</button>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -783,7 +338,7 @@
     <div class="bg-image">
         <div class="container theflexes">
             <div class="logo">
-                <img src="images/logo.svg" class="img-fluid" alt="Logo">
+                <img src="images/misc/logo.svg" class="img-fluid" alt="Logo">
             </div>
             <div class="text-block">
                 <p>Pretože sú z Ukrajiny</p>
@@ -796,7 +351,7 @@
         <div class="row">
             <div class="col-md-6 order-md-1 col-12 order-2">
                 <div class="photo-wrapper">
-                    <img src="./images/aboutAnastasi.png" class="img-fluid" alt="photo of Nastia">
+                    <img src="images/about/aboutAnastasi.png" class="img-fluid" alt="photo of Nastia">
                 </div>
             </div>
             <div class="col-md-6 col-12 d-flex align-items-center">
@@ -855,16 +410,21 @@
         <div class="footer-content">
             <div class="logoIcon">
                 <a href="index.html">
-                    <img src="./images/logo.svg" class="img-fluid" alt="WebsiteLogo">
+                    <img src="images/misc/logo.svg" loading="lazy" class="img-fluid" alt="WebsiteLogo">
                 </a>
             </div>
             <div class="SocialMedias">
                 <ul class="socialsList d-flex flex-direction-row">
-                    <li><a href="#"><img src="./images/facebook.svg" class="img-fluid" alt="WebsiteLogo"></a></li>
-                    <li><a href="#"><img src="./images/instagram.svg" class="img-fluid" alt="WebsiteLogo"></a></li>
-                    <li><a href="#"><img src="./images/telegram.svg" class="img-fluid" alt="WebsiteLogo"></a></li>
-                    <li><a href="#"><img src="./images/whataspp.svg" class="img-fluid" alt="WebsiteLogo"></a></li>
-                    <li><a href="#"><img src="./images/viber.svg" class="img-fluid" alt="WebsiteLogo"></a></li>
+                    <li><a href="#"><img src="images/misc/facebook.svg" loading="lazy" class="img-fluid"
+                                         alt="WebsiteLogo"></a></li>
+                    <li><a href="#"><img src="images/misc/instagram.svg" loading="lazy" class="img-fluid"
+                                         alt="WebsiteLogo"></a></li>
+                    <li><a href="#"><img src="images/misc/telegram.svg" loading="lazy" class="img-fluid"
+                                         alt="WebsiteLogo"></a></li>
+                    <li><a href="#"><img src="images/misc/whataspp.svg" loading="lazy" class="img-fluid"
+                                         alt="WebsiteLogo"></a></li>
+                    <li><a href="#"><img src="images/misc/viber.svg" loading="lazy" class="img-fluid"
+                                         alt="WebsiteLogo"></a></li>
                 </ul>
             </div>
         </div>

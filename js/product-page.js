@@ -1,12 +1,15 @@
 // ====================================================
 // Main Constants and DOM Elements
 // ====================================================
+//Imports
+import {weddingDresses} from './product-arrays.js';
 
 // Main DOM elements
 const colors = document.querySelector('.colors');
 const colorGroup = document.querySelector('.color-group');
+const primaryImageContainer = document.querySelector('.product-image');
 const productImage = document.querySelector('.product-image img');
-const additionalImages = document.querySelectorAll('.additional-images img');
+const additionalImagesContainer = document.querySelector('.block-of-images');
 const carouselDotsContainer = document.querySelector('.carousel-mobile-dots');
 const chevronButton = document.querySelector('.mobile-chevron');
 const orderProductButton = document.querySelector('.orderProductButton');
@@ -16,21 +19,239 @@ const tabLinks = document.querySelectorAll('.three-tabs .nav-link');
 const tabContent = document.querySelectorAll('.three-tabs .tab-content .tab-pane');
 const mobChevronButton = document.querySelector('.mob-chevron-button');
 const secondaryBlock = document.querySelector('.secondary-information-block');
-const productImgReal = document.querySelector('.product-image');
-const imageContainer = document.querySelector('.product-image');
+const isMobile = window.innerWidth <= 432;
 
 // Variables
 let colorDivs = []; // Array to hold color divs
-const initialProductImageSrc = productImage ? productImage.src : ''; // Store initial product image source
 let currentImageIndex = 0; // Index to track current image in carousel
+let allImages = []; // Array to hold all images including primary and additional images
+let initialPrimaryImageSrc = '';
+// ====================================================
+// Filling the page with info from array
+// ====================================================
+async function loadProductPage() {
+    return new Promise((resolve, reject) => {
+        try {
+            // Your logic to load the product page
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = parseInt(urlParams.get('id'));
+
+            if (!productId) {
+                console.error("No product ID found in URL.");
+                reject("No product ID found.");
+                return;
+            }
+
+            const allProducts = [...weddingDresses];
+            const product = allProducts.find(p => p.id === productId);
+
+            if (!product) {
+                console.error(`Product with ID ${productId} not found.`);
+                reject("Product not found.");
+                return;
+            }
+
+            // 3. Dynamically update the page content
+            // Update product name
+            document.querySelector('.product-name h4').textContent = product.name;
+
+            // Update product price
+            document.querySelector('.price p').textContent = `${product.price} €`;
+
+            // Update product description
+            document.querySelector('#popis').innerHTML = `<p>${product.description}</p>`;
+
+            // Update product details
+            const detailsList = document.querySelector('#podrobnosti ul');
+            detailsList.innerHTML = product.details
+                .split('!')
+                .map(detail => `<li>${detail}</li>`)
+                .join('');
+
+            document.querySelector('#dodanie p').textContent = product.extra;
+
+            // Update colors
+            const colorsList = document.querySelector('.color-group');
+            colorsList.innerHTML = product.colors
+                .map(color => `<div class="color">
+                            <div class="color-name">
+                                <span>${color}</span>
+                            </div>
+                            <div class="color-circle">
+                                <span class="color-${color}"></span>
+                            </div>
+                        </div>`)
+                .join('');
+            colorsList.firstChild.classList.add("active");
+
+            // Update primary image
+            primaryImageContainer.innerHTML = `<img src="${product.primaryImage}" class="img-fluid active" alt="">`;
+            initialPrimaryImageSrc = product.primaryImage;
+
+            // Update additional images
+            additionalImagesContainer.innerHTML = product.secondaryImages
+                .map(img => `<div class="additional-image"><img src="${img}" loading="lazy" class="img-fluid secondary" alt=""></div>`)
+                .join('');
+
+            // Update available sizes
+            const sizesList = document.querySelector('.container-sizes ul');
+            sizesList.innerHTML = product.sizes
+                .map(size => `<li><p>${size}</p></li>`)
+                .join('');
+            resolve();
+
+            moveImagesToContainer();
+        } catch (error) {
+            reject(error); // Handle unexpected errors
+        }
+    })
+}
+document.addEventListener('DOMContentLoaded', () => {
+    loadProductPage()
+        .then(() => {
+            // Actions that depend on the loaded product page
+            setupAdditionalImagesClick();
+            initializeCarousel();
+            activateColor();
+            adjustCarouselDotsPosition();
+            adjustTabsForMobile();
+            updateColorsVisibility();
+        })
+        .catch(error => {
+            console.error("Error loading product page:", error);
+        });
+});
+
+// ====================================================
+// Carousel Functionality
+// ====================================================
+function initializeCarousel() {
+    // Dynamically fetch primary and additional images
+    const additionalImages = Array.from(document.querySelectorAll('img.secondary'));
+    const additionalImageSources = additionalImages.map(img => img.src);
+
+    // Preload all images (primary + additional)
+    allImages = [initialPrimaryImageSrc, ...additionalImageSources].map(src => {
+        if (src) { // Ensure src is valid
+            const img = new Image();
+            img.src = src;
+            return img; // Preloaded Image object
+        }
+        return null; // Fallback for invalid sources
+    }).filter(Boolean); // Remove null values
+
+    if (allImages.length === 0) {
+        console.error("No images available for the carousel.");
+        return;
+    }
+
+    // Set the initial product image
+    productImage.src = allImages[0].src;
+
+    // Create carousel dots
+    createCarouselDots();
+
+    // Setup dot click events
+    setupCarouselDots();
+
+    // Adjust dots position
+    adjustCarouselDotsPosition();
+}
+
+/**
+ * Creates carousel dots based on the number of images.
+ */
+
+function moveImagesToContainer(){
+    if(isMobile){
+        additionalImagesContainer.querySelectorAll("img").forEach((img) => {
+            primaryImageContainer.appendChild(img);
+        })
+        primaryImageContainer.querySelectorAll(".secondary").forEach((secondaryImage) => {
+            secondaryImage.classList.add('hidden');
+        })
+    }
+}
+function createCarouselDots() {
+    // Clear existing dots
+    carouselDotsContainer.innerHTML = '';
+
+    // Create dot for each image
+    allImages.forEach((_, index) => {
+        const dot = document.createElement('span');
+        dot.dataset.index = index;
+        carouselDotsContainer.appendChild(dot);
+    });
+
+    // Set first dot as active
+    carouselDotsContainer.firstChild.classList.add('active');
+
+    console.log(allImages)
+}
+
+/**
+ * Sets up event listeners for carousel dots to update images.
+ */
+function setupCarouselDots() {
+    const carouselDots = carouselDotsContainer.querySelectorAll('span');
+    const productImages = Array.from(primaryImageContainer.querySelectorAll('img'));
+
+    carouselDots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            if (!productImages[index]) {
+                console.error(`Image at index ${index} is not found.`);
+                return;
+            }
+
+            // Update active dot
+            carouselDots.forEach(d => d.classList.remove('active'))
+            dot.classList.add('active');
+
+            // Update active image
+            productImages.forEach(img=>{
+                img.classList.remove('active');
+                img.classList.add('hidden')
+            })
+            productImages[index].classList.remove('hidden');
+        });
+    });
+}
+
+//=========================
+// Handles click events on additional images to swap with the main image.
+//=========================
+function setupAdditionalImagesClick() {
+    additionalImagesContainer.addEventListener('click', event => {
+        const clickedImage = event.target.closest('img');
+        if (clickedImage) {
+            const clickedImageSrc = clickedImage.getAttribute('src');
+            const mainImageIndex = allImages.findIndex(img => img.src === clickedImageSrc);
+
+            if (mainImageIndex === -1 || !allImages[mainImageIndex] || !allImages[mainImageIndex].src) {
+                console.error(`Clicked image not found in preloaded images.`);
+                return;
+            }
+
+            // Update the main product image
+            productImage.src = allImages[mainImageIndex].src;
+
+            // Update carousel dots
+            const carouselDots = carouselDotsContainer.querySelectorAll('span');
+            carouselDots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === mainImageIndex);
+            });
+
+            // Scroll to top smoothly
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    });
+}
+
+
 
 // ====================================================
 // Color Selection Functionality
 // ====================================================
-
-/**
- * Activates the selected color and updates the UI.
- */
 function activateColor() {
     if (colors) {
         colors.addEventListener('click', event => {
@@ -46,9 +267,6 @@ function activateColor() {
         });
     }
 }
-
-// Initialize color activation
-activateColor();
 
 // Initialize colorDivs from colorGroup
 if (colorGroup) {
@@ -79,111 +297,16 @@ function updateColorsVisibility() {
     }
 }
 
-// Run once on page load
-updateColorsVisibility();
-
 // Update on window resize
 window.addEventListener('resize', updateColorsVisibility);
-
-// ====================================================
-// Image Carousel Functionality
-// ====================================================
-
-/**
- * Preloads additional images for smoother transitions.
- */
-function preloadImages() {
-    additionalImages.forEach(img => {
-        const newImage = new Image();
-        newImage.src = img.src;
-    });
-}
-
-// Preload images
-preloadImages();
-
-/**
- * Resets the main product image to its initial source.
- */
-function resetProductImage() {
-    productImage.src = initialProductImageSrc;
-}
-
-/**
- * Creates carousel dots based on the number of images.
- */
-function createCarouselDots() {
-    let dotsHTML = '';
-    const totalDots = additionalImages.length + 1; // Include initial product image
-    for (let i = 0; i < totalDots; i++) {
-        dotsHTML += '<span></span>';
-    }
-    carouselDotsContainer.innerHTML = dotsHTML;
-}
-
-// Initialize carousel dots
-createCarouselDots();
-
-// Select the carousel dots
-const carouselDots = document.querySelectorAll('.carousel-mobile-dots span');
-
-/**
- * Updates the active dot in the carousel.
- */
-function updateActiveDot() {
-    carouselDots.forEach((dot, index) => {
-        dot.classList.toggle('active', index === currentImageIndex);
-    });
-}
-
-/**
- * Sets up event listeners for carousel dots to update images.
- */
-function setupCarouselDots() {
-    carouselDots.forEach((dot, index) => {
-        dot.addEventListener('click', () => {
-            currentImageIndex = index;
-            if (index === 0) {
-                resetProductImage();
-            } else {
-                productImage.src = additionalImages[index - 1].src;
-            }
-            updateActiveDot();
-        });
-    });
-}
-
-// Initialize carousel functionality
-setupCarouselDots();
-updateActiveDot(); // Set initial active dot
-
-/**
- * Handles click events on additional images to swap with the main image.
- */
-function setupAdditionalImagesClick() {
-    additionalImages.forEach(img => {
-        img.addEventListener('click', event => {
-            const clickedImageSrc = event.target.getAttribute('src');
-            const mainImageSrc = productImage.getAttribute('src');
-            productImage.setAttribute('src', clickedImageSrc);
-            event.target.setAttribute('src', mainImageSrc);
-
-            // Scroll to top smoothly
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-    });
-}
-
-// Setup click events on additional images
-setupAdditionalImagesClick();
 
 /**
  * Adjusts the position of carousel dots based on the carousel size.
  */
 function adjustCarouselDotsPosition() {
-    if (!imageContainer || !carouselDotsContainer) return;
+    if (!primaryImageContainer || !carouselDotsContainer) return;
 
-    const carouselRect = imageContainer.getBoundingClientRect();
+    const carouselRect = primaryImageContainer.getBoundingClientRect();
     // Adjust right position of dots based on carousel width
     const calculatedRight = Math.max(-carouselRect.width * 0.18, -50); // Adjust multiplier or set a min value
 
@@ -197,17 +320,13 @@ window.addEventListener('resize', adjustCarouselDotsPosition);
 // ====================================================
 // Mobile View Functionality
 // ====================================================
-
-/**
- * Toggles the visibility of product details and adjusts UI elements for mobile view.
- */
 function toggleMobileView() {
     if (window.innerWidth <= 440) {
         // Toggle active classes
         orderProductButton.classList.toggle('active');
         secondaryInfoBlock.classList.toggle('active');
         prodDescr.classList.toggle('active');
-        imageContainer.classList.toggle('kill-margin');
+        primaryImageContainer.classList.toggle('kill-margin');
 
         // Update colors visibility
         updateColorsVisibility();
@@ -226,7 +345,6 @@ chevronButton.addEventListener('click', toggleMobileView);
  * Adjusts tabs for mobile devices by stacking content and removing unnecessary links.
  */
 function adjustTabsForMobile() {
-    const isMobile = window.innerWidth <= 432;
     if (isMobile) {
         tabContent.forEach(content => {
             content.classList.add('active', 'show');
@@ -263,20 +381,18 @@ function adjustTabsForMobile() {
     }
 }
 
-// Run adjustTabsForMobile on page load
-adjustTabsForMobile();
 
 /**
  * Adjusts the product image size and visibility when the mobile chevron button is clicked.
  */
 function handleMobileChevronClick() {
     if (secondaryBlock.classList.contains('active')) {
-        productImgReal.style.overflow = 'hidden';
-        productImgReal.style.height = '470px';
+        primaryImageContainer.style.overflow = 'hidden';
+        primaryImageContainer.style.height = '470px';
     } else {
-        productImgReal.style.marginBottom = '94px';
-        productImgReal.style.overflow = 'auto';
-        productImgReal.style.height = 'auto';
+        primaryImageContainer.style.marginBottom = '94px';
+        primaryImageContainer.style.overflow = 'auto';
+        primaryImageContainer.style.height = 'auto';
     }
 }
 

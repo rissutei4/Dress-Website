@@ -42,7 +42,12 @@ p {
 li p {
   font-weight: 300;
 }
-
+.hidden{
+  display: none;
+}
+.active{
+  display: block;
+}
 // Product Section
 .product {
   margin-top: 5.6875rem; // 91px
@@ -144,6 +149,7 @@ li p {
                 display: block;
                 margin-bottom: 0.625rem; // 10px
                 font-family: $font-family;
+                text-transform: capitalize;
               }
 
               .color-circle {
@@ -626,6 +632,7 @@ li p {
     .item-wrapper {
       p {
         color: $mobile-font-color-gray;
+        word-wrap: break-word;
       }
 
       li.nav-item {
