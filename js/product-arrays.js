@@ -74,12 +74,12 @@ function createProductCard(product) {
 
 //Wedding
 const wedding1 = new Dress('Dress #1', 950, [36, 38, 40, 42, 44, 43, 49], ["gold", "yellow", "white", "blue"], "some" +
-    " realllllllllllllllllllllllllllly looong yaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapp session", "Even bigger yapp sessiossssssssssssssssssssn!Big Big", "yap yap", 43, "/images/products/prod-pic-1.png", ["/images/products/productCard2.png", "/images/products/productCard3.png"], "wedding-dress");
+    " realllllllllllllllllllllllllllly looong yaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapp session", "Even bigger yapp sessiossssssssssssssssssssn!Big Big", "yap yap", 43, "./images/products/prod-pic-1.png", ["./images/products/productCard2.png", "./images/products/productCard3.png"], "wedding-dress");
 const wedding2 = new Dress('Dress #2', 90, [36, 38, 40, 42, 44, 43, 49], ["gold", "yellow", "white", "blue"], "some" +
-    " realllllllllllllllllllllllllllly looong yaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapp session", "Even bigger yapp session!Big Big!", "yap yap", 43, "/images/products/prod-pic-1.png", ["/images/products/prod-pic-2.png", "/images/products/prod-pic-3.png"], "wedding-dress");
+    " realllllllllllllllllllllllllllly looong yaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapp session", "Even bigger yapp session!Big Big!", "yap yap", 43, "./images/products/prod-pic-1.png", ["./images/products/prod-pic-2.png", "./images/products/prod-pic-3.png"], "wedding-dress");
 const wedding3 = new Dress('My Bride', 190, [36, 38, 40, 42, 44, 43, 49], ["gold", "yellow", "white", "blue"], "some" +
     " realllllllllllllllllllllllllllly looong yaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapp session", "Even bigger" +
-    " yapp session!Big Big!", "yap yap", 409, "/images/products/prod-pic-1.png", ["/images/products/prod-pic-2.png", "/images/products/prod-pic-3.png"], "wedding-dress");
+    " yapp session!Big Big!", "yap yap", 409, "./images/products/prod-pic-1.png", ["./images/products/prod-pic-2.png", "./images/products/prod-pic-3.png"], "wedding-dress");
 
 //Evening
 
