@@ -8,7 +8,6 @@ import {weddingDresses} from './product-arrays.js';
 const colors = document.querySelector('.colors');
 const colorGroup = document.querySelector('.color-group');
 const primaryImageContainer = document.querySelector('.product-image');
-const productImage = document.querySelector('.product-image img');
 const additionalImagesContainer = document.querySelector('.block-of-images');
 const carouselDotsContainer = document.querySelector('.carousel-mobile-dots');
 const chevronButton = document.querySelector('.mobile-chevron');
@@ -85,7 +84,8 @@ async function loadProductPage() {
             colorsList.firstChild.classList.add("active");
 
             // Update primary image
-            primaryImageContainer.innerHTML = `<img src="${product.primaryImage}" class="img-fluid active" alt="">`;
+            const primaryImage = `<img src="${product.primaryImage}" class="img-fluid active" alt="">`;
+            primaryImageContainer.innerHTML = primaryImage;
             initialPrimaryImageSrc = product.primaryImage;
 
             // Update additional images
@@ -106,6 +106,7 @@ async function loadProductPage() {
         }
     })
 }
+
 document.addEventListener('DOMContentLoaded', () => {
     loadProductPage()
         .then(() => {
@@ -145,9 +146,6 @@ function initializeCarousel() {
         return;
     }
 
-    // Set the initial product image
-    productImage.src = allImages[0].src;
-
     // Create carousel dots
     createCarouselDots();
 
@@ -162,8 +160,8 @@ function initializeCarousel() {
  * Creates carousel dots based on the number of images.
  */
 
-function moveImagesToContainer(){
-    if(isMobile){
+function moveImagesToContainer() {
+    if (isMobile) {
         additionalImagesContainer.querySelectorAll("img").forEach((img) => {
             primaryImageContainer.appendChild(img);
         })
@@ -172,6 +170,7 @@ function moveImagesToContainer(){
         })
     }
 }
+
 function createCarouselDots() {
     // Clear existing dots
     carouselDotsContainer.innerHTML = '';
@@ -208,7 +207,7 @@ function setupCarouselDots() {
             dot.classList.add('active');
 
             // Update active image
-            productImages.forEach(img=>{
+            productImages.forEach(img => {
                 img.classList.remove('active');
                 img.classList.add('hidden')
             })
@@ -222,31 +221,18 @@ function setupCarouselDots() {
 //=========================
 function setupAdditionalImagesClick() {
     additionalImagesContainer.addEventListener('click', event => {
+        const productImage = document.querySelector('.product-image img');
         const clickedImage = event.target.closest('img');
         if (clickedImage) {
-            const clickedImageSrc = clickedImage.getAttribute('src');
-            const mainImageIndex = allImages.findIndex(img => img.src === clickedImageSrc);
-
-            if (mainImageIndex === -1 || !allImages[mainImageIndex] || !allImages[mainImageIndex].src) {
-                console.error(`Clicked image not found in preloaded images.`);
-                return;
-            }
-
-            // Update the main product image
-            productImage.src = allImages[mainImageIndex].src;
-
-            // Update carousel dots
-            const carouselDots = carouselDotsContainer.querySelectorAll('span');
-            carouselDots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === mainImageIndex);
-            });
-
+            console.log(clickedImage.closest("div"));
+            const clickedContainer = clickedImage.closest("div");
+            clickedContainer.appendChild(productImage);
+            primaryImageContainer.appendChild(clickedImage);
             // Scroll to top smoothly
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            window.scrollTo({top: 0, behavior: 'smooth'});
         }
     });
 }
-
 
 
 // ====================================================
