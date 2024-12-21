@@ -1,10 +1,10 @@
 "use strict";
 import {Dress, weddingDresses} from "./product-arrays.js";
+import {checkPageAndChangeContent, addLanguagePrefixToLinks} from "./translation-manager.js";
 
+checkPageAndChangeContent()
 //Load More
 const loadMoreButtons = document.querySelectorAll('.load-more');
-
-
 //Loading Dress inside the product cards
 weddingDresses.forEach(dress => {
     dress.placeCardInCategory(dress);
@@ -37,3 +37,5 @@ function handleLoadMoreClick(event) {
 loadMoreButtons.forEach(button => {
     button.addEventListener('click', handleLoadMoreClick);
 });
+
+addLanguagePrefixToLinks()

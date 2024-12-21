@@ -1,8 +1,11 @@
+"use strict"
 // ====================================================
 // Main Constants and DOM Elements
 // ====================================================
 //Imports
 import {weddingDresses} from './product-arrays.js';
+import {translations} from "./translations-arrays.js";
+import {addLanguagePrefixToLinks, searchChecker} from "./translation-manager.js";
 
 // Main DOM elements
 const colors = document.querySelector('.colors');
@@ -18,6 +21,7 @@ const tabLinks = document.querySelectorAll('.three-tabs .nav-link');
 const tabContent = document.querySelectorAll('.three-tabs .tab-content .tab-pane');
 const mobChevronButton = document.querySelector('.mob-chevron-button');
 const secondaryBlock = document.querySelector('.secondary-information-block');
+const orderProdBtn = document.querySelector('.order-btn');
 const isMobile = window.innerWidth <= 432;
 
 // Variables
@@ -32,6 +36,10 @@ async function loadProductPage() {
     return new Promise((resolve, reject) => {
         try {
             // Your logic to load the product page
+            const {languageId} = searchChecker(); // Get the current language
+            const clothTranslations = translations.productsTranslations[languageId];
+            const productColorTranslations = clothTranslations.colors;
+
             const urlParams = new URLSearchParams(window.location.search);
             const productId = parseInt(urlParams.get('id'));
 
@@ -50,15 +58,32 @@ async function loadProductPage() {
                 return;
             }
 
+            //Labels
+            const translatedDressType = clothTranslations[product.dressType];
+            const translatedAvailableSizes = clothTranslations["available-sizes"];
+            const translatedAvailableColors = clothTranslations["available-colors"];
+            const translatedDescriptionLabel = clothTranslations["description"];
+            const translatedDetailsLabel = clothTranslations["details"];
+            const translatedExtraLabel = clothTranslations["extra"];
+            const translatedOrderBtn = clothTranslations["order-btn"];
+
             // 3. Dynamically update the page content
+
+            orderProdBtn.textContent = translatedOrderBtn.toUpperCase();
+
+            document.querySelector("[href='#popis']").textContent = translatedDescriptionLabel.toUpperCase();
+            document.querySelector("[href='#podrobnosti']").textContent = translatedDetailsLabel.toUpperCase();
+            document.querySelector("[href='#dodanie']").textContent = translatedExtraLabel.toUpperCase();
             // Update product name
+            document.querySelector('.product-name p').textContent = translatedDressType;
             document.querySelector('.product-name h4').textContent = product.name;
 
             // Update product price
             document.querySelector('.price p').textContent = `${product.price} €`;
 
             // Update product description
-            document.querySelector('#popis').innerHTML = `<p>${product.description}</p>`;
+            console.log(languageId)
+            document.querySelector('#popis').innerHTML = `<p>${product.description[languageId]}</p>`;
 
             // Update product details
             const detailsList = document.querySelector('#podrobnosti ul');
@@ -70,17 +95,21 @@ async function loadProductPage() {
             document.querySelector('#dodanie p').textContent = product.extra;
 
             // Update colors
+            document.querySelector(".color-name-mobile p").textContent = translatedAvailableColors;
+
             const colorsList = document.querySelector('.color-group');
             colorsList.innerHTML = product.colors
-                .map(color => `<div class="color">
-                            <div class="color-name">
-                                <span>${color}</span>
-                            </div>
-                            <div class="color-circle">
-                                <span class="color-${color}"></span>
-                            </div>
-                        </div>`)
-                .join('');
+                .map(color => {
+                    const translatedColor = productColorTranslations[color]
+                    return `<div class="color">
+                    <div class="color-name">
+                        <span>${translatedColor}</span>
+                    </div>
+                    <div class="color-circle">
+                        <span class="color-${color}"></span>
+                    </div>
+                </div>`;
+                }).join('');
             colorsList.firstChild.classList.add("active");
 
             // Update primary image
@@ -89,6 +118,7 @@ async function loadProductPage() {
             initialPrimaryImageSrc = product.primaryImage;
 
             // Update additional images
+            document.querySelector(".container-sizes h4").textContent = translatedAvailableSizes;
             additionalImagesContainer.innerHTML = product.secondaryImages
                 .map(img => `<div class="additional-image"><img src="${img}" loading="lazy" class="img-fluid secondary" alt=""></div>`)
                 .join('');
@@ -384,3 +414,4 @@ function handleMobileChevronClick() {
 
 // Event listener for mobile chevron button
 mobChevronButton.addEventListener('click', handleMobileChevronClick);
+addLanguagePrefixToLinks()

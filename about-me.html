@@ -19,12 +19,12 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
             crossorigin="anonymous"></script>
-    <script defer src="./js/scripts.js"></script>
+    <script defer type="module" src="./js/header.js"></script>
 </head>
 <body>
 <header>
-    <nav class="header">
-        <div class="header_container">
+    <nav class="header-nav-bar">
+        <div class="visible-elements">
             <div class="burger-logo-elements">
                 <div class="burgerIcon">
                     <div class="line"></div>
@@ -33,98 +33,102 @@
                 </div>
                 <div class="logoIcon">
                     <a href="index.html">
-                        <img src="images/misc/logo.svg" class="img-fluid" alt="WebsiteLogo">
+                        <img src="images/misc/logo.svg" class="img-fluid" alt="WebsiteLogo"
+                             data-translate-alt="website-logo">
                     </a>
                 </div>
             </div>
             <div class="language-switcher">
-                <button class="langbtn"></button>
+                <button class="langbtn">ENG</button>
                 <ul class="sub-menu">
-                    <li class="languageElem active">ENG</li>
-                    <li class="languageElem">DEU</li>
-                    <li class="languageElem">SVK</li>
-                    <li class="languageElem">UKR</li>
-                </ul>
-            </div>
-            <div class="burger-container-wrapper">
-                <div class="mobile-header-opened">
-                    <div class="burger-logo-elements-mobile">
-                        <div class="burgerIconMobile">
-                            <div class="TopLine"></div>
-                            <div class="MidLine"></div>
-                            <div class="BotLine"></div>
-                        </div>
-                        <div class="logoIcon">
-                            <a href="index.html">
-                                <img src="images/misc/logo.svg" class="img-fluid" alt="WebsiteLogo">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="language-switcher-mobile">
-                        <button class="langbtnMobile">
-                        </button>
-                        <ul class="sub-menu">
-                            <li class="languageElem active">ENG</li>
-                            <li class="languageElem">DEU</li>
-                            <li class="languageElem">SVK</li>
-                            <li class="languageElem">UKR</li>
-                        </ul>
-                    </div>
-                </div>
-                <ul class="nav-content-container">
-                    <li class="nav-items">
-                        <a href="index.html">Večerné šaty</a>
-                        <div class="mobile-menu-dress-pic">
-                            <picture>
-                                <source srcset="images/index/girlSlider.png" media="(max-width: 490px)" type="image/png">
-                                <img src="" alt="Večerné šaty" loading="lazy">
-                            </picture>
-                        </div>
+                    <li class="languageElem">
+                        <a href="index.html">
+                            ENG
+                        </a>
                     </li>
-                    <li class="nav-items">
-                        <a href="index.html">Svadobné šaty</a>
-                        <div class="mobile-menu-dress-pic">
-                            <picture>
-                                <source srcset="images/index/girlSlider2.png" media="(max-width: 490px)" type="image/png">
-                                <img src="" alt="Svadobné šaty" loading="lazy">
-                            </picture>
-                        </div>
+                    <li class="languageElem">
+                        <a href="index.html?lang=deu">
+                            DEU
+                        </a>
                     </li>
-                    <li class="nav-items">
-                        <a href="index.html">Detské šaty</a>
-                        <div class="mobile-menu-dress-pic">
-                            <picture>
-                                <source srcset="images/index/girlSlider3.png" media="(max-width: 490px)" type="image/png">
-                                <img src="" alt="Detské šaty" loading="lazy">
-                            </picture>
-                        </div>
+                    <li class="languageElem">
+                        <a href="index.html?lang=svk">
+                            SVK
+                        </a>
                     </li>
-                    <li class="nav-items">
-                        <a href="index.html">Dámsky kostým</a>
-                        <div class="mobile-menu-dress-pic">
-                            <picture>
-                                <source srcset="images/index/girlSlider4.png" media="(max-width: 490px)" type="image/png">
-                                <img src="" alt="Dámsky kostým" loading="lazy">
-                            </picture>
-                        </div>
-                    </li>
-                    <li class="nav-items">
-                        <a href="index.html">Príslušenstvo</a>
-                        <div class="mobile-menu-dress-pic">
-                            <picture>
-                                <source srcset="images/index/Prislusenstvo.png" media="(max-width: 490px)" type="image/png">
-                                <img src="" alt="Príslušenstvo" loading="lazy">
-                            </picture>
-                        </div>
-                    </li>
-                    <li class="nav-items">
-                        <a href="order-page.html">Objednať</a>
-                    </li>
-                    <li class="nav-items">
-                        <a href="about-me.html">O mene</a>
+                    <li class="languageElem">
+                        <a href="index.html?lang=ukr">
+                            UKR
+                        </a>
                     </li>
                 </ul>
             </div>
+        </div>
+        <div class="menu-container-wrapper">
+            <ul class="nav-list-container">
+                <li class="nav-items">
+                    <a data-lang-link href="index.html" data-translate="evening-dress-category">Evening Dresses</a>
+                    <div class="mobile-menu-dress-pic">
+                        <picture>
+                            <source srcset="images/index/girlSlider.png" media="(max-width: 490px)"
+                                    type="image/png">
+                            <img src="images/index/girlSlider.png" alt="Evening Dresses" loading="lazy"
+                                 data-translate-alt="alt_evening_dresses">
+                        </picture>
+                    </div>
+                </li>
+                <li class="nav-items">
+                    <a data-lang-link href="index.html" data-translate="wedding-dress-category">Wedding Dresses</a>
+                    <div class="mobile-menu-dress-pic">
+                        <picture>
+                            <source srcset="images/index/girlSlider2.png" media="(max-width: 490px)"
+                                    type="image/png">
+                            <img src="images/index/girlSlider2.png" alt="Wedding Dresses" loading="lazy"
+                                 data-translate-alt="alt_wedding_dresses">
+                        </picture>
+                    </div>
+                </li>
+                <li class="nav-items">
+                    <a data-lang-link href="index.html" data-translate="childrens-dress-category">Children's
+                        Dresses</a>
+                    <div class="mobile-menu-dress-pic">
+                        <picture>
+                            <source srcset="images/index/girlSlider3.png" media="(max-width: 490px)"
+                                    type="image/png">
+                            <img src="images/index/girlSlider3.png" alt="Children's Dresses" loading="lazy"
+                                 data-translate-alt="alt_childrens_dresses">
+                        </picture>
+                    </div>
+                </li>
+                <li class="nav-items">
+                    <a data-lang-link href="index.html" data-translate="women-suit-category">Women's Suits</a>
+                    <div class="mobile-menu-dress-pic">
+                        <picture>
+                            <source srcset="images/index/girlSlider4.png" media="(max-width: 490px)"
+                                    type="image/png">
+                            <img src="images/index/girlSlider4.png" alt="Women's Suits" loading="lazy"
+                                 data-translate-alt="alt_women_suit">
+                        </picture>
+                    </div>
+                </li>
+                <li class="nav-items">
+                    <a data-lang-link href="index.html" data-translate="accessories-category">Accessories</a>
+                    <div class="mobile-menu-dress-pic">
+                        <picture>
+                            <source srcset="images/index/Prislusenstvo.png" media="(max-width: 490px)"
+                                    type="image/png">
+                            <img src="images/index/Prislusenstvo.png" alt="Accessories" loading="lazy"
+                                 data-translate-alt="alt_accessories">
+                        </picture>
+                    </div>
+                </li>
+                <li class="nav-items">
+                    <a data-lang-link href="order-page.html" data-translate="nav_order">Order</a>
+                </li>
+                <li class="nav-items">
+                    <a data-lang-link href="about-me.html" data-translate="nav_about_me">About Me</a>
+                </li>
+            </ul>
         </div>
     </nav>
 </header>
@@ -132,10 +136,10 @@
     <div class="bg-image">
         <div class="container theflexes">
             <div class="logo">
-                <img src="images/misc/logo.svg" class="img-fluid" alt="Logo">
+                <img src="images/misc/logo.svg" class="img-fluid" alt="Company Logo" data-translate-alt="company-logo">
             </div>
             <div class="text-block">
-                <p>Pretože sú z Ukrajiny</p>
+                <p data-translate="hero-text">Embracing Heritage and Craftsmanship from Ukraine</p>
             </div>
         </div>
     </div>
@@ -145,18 +149,17 @@
         <div class="row">
             <div class="col-md-6 order-md-1 col-12 order-2">
                 <div class="photo-wrapper">
-                    <img src="images/about/aboutAnastasi.png" class="img-fluid" alt="photo of Nastia">
+                    <img src="images/about/aboutAnastasi.png" class="img-fluid" alt="Photo of Anastasia" data-translate-alt="nastia-photo">
                 </div>
             </div>
             <div class="col-md-6 col-12 d-flex align-items-center">
                 <div class="contact-info">
-                    <h4>Contact Information</h4>
+                    <h4 data-translate="contact-info-title">Contact Information</h4>
                     <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor dui sit amet tincidunt
-                        suscipit. Donec id eros id dolor tincidunt congue vitae vel sapien.</p>
-                    <p>Telephone: 123-456-7890</p>
-                    <p>Email: your-email@example.com</p>
-                    <p>Address: 123 Main St, Anytown, USA</p>
+                    <p data-translate="contact-description">Connect with us to bring your dream dress to life. Our dedicated team is here to assist you every step of the way.</p>
+                    <p data-translate="telephone-label">Telephone: +4218729128</p>
+                    <p data-translate="email-label">Email: fajna@gmail.com</p>
+                    <p data-translate="address-label">Address: Bratislava, Slovakia</p>
                 </div>
             </div>
         </div>
@@ -167,63 +170,60 @@
         <div class="row">
             <div class="col-md-12 order-md-2 col-12 order-1">
                 <div class="block-text-1">
-                    <h4 class="text-center">Natasha Azariy je slovenská módna značka svadobných, spoločenských a
-                        detských šiat, ktorá pôsobí na celom Slovensku, v Poľsku ale aj v Českej republike už od roku
-                        2012, keď sa v malej dielni ušili prvé svadobné šaty NATASHA AZARIY.</h4>
-                    <p>- Tím profesionálnych dizajnérov a krajčírov.
-                        - Súkromná výstavba vzorov a individuálny prístup.
-                        - Navrhovanie a šitie šiat podľa predstáv zákazníkov.
-                        - Kvalitné látky a šitie za dostupnú cenu, ktorú si môže dovoliť každý.
-                        - Individuálny výber látok z celého sveta pre každého zákazníka.
-                        - Bezplatné poradenstvo, záruka kvality a zodpovednosť za výsledok.
-                        - Služba "sos nevesta" - v nepredvídaných situáciách a iných živloch Vám ušijeme šaty do 48
-                        hodín.
-
-                        Svadobné šaty od Natasha Azariy si objednáte on-line cez internet. Prípadne osobne na pobočke:
-                        Bratislava, Svidník, alebo na partnerskom mieste v Hlohovci.
-
-                        Zákazník k nám môže prísť s konkrétnou predstavou svojich vysnívaných šiat, alebo má možnosť
-                        vybrať si niektoré z našich už navrhnutých modelov, prípadne nakombinovať si jednotlivé modely
-                        presne podľa svojho želania a vkusu. Konečný model ušijeme presne na mieru.
-
-                        Ak sa rozhodnete vytvoriť si unikátny image a jedinečné svadobné šaty, tak táto voľba je pre
-                        Vás.</p>
+                    <h4 class="text-center" data-translate="brand-description-title">Fajna is a Ukrainian fashion brand
+                        specializing in wedding, evening, and children's dresses, proudly serving customers
+                        throughout Slovakia, Austria, Ukraine since 2012, when the first FAJNA wedding dress
+                        was crafted
+                        in our small atelier.</h4>
+                    <p data-translate="brand-description-details">
+                    <ul class="extra-text">
+                        <li>A <span>team of professional designers</span> and <span>tailors</span>.</li>
+                        <li><span>Private pattern development</span> and <span>personalized approach</span>.</li>
+                        <li>Designing and tailoring dresses based on <span>customer visions</span>.</li>
+                        <li><span>Quality fabrics</span> and <span>stitching</span> at <span>affordable prices</span> everyone can afford.</li>
+                        <li>Individual selection of <span>fabrics from around the world</span> for each customer.</li>
+                        <li><span>Free consultation</span>, <span>quality guarantee</span>, and <span>responsibility</span> for the result.</li>
+                        <li><span>"SOS Bride" service</span> - in <span>unexpected situations</span> and <span>emergencies</span>, we will tailor dresses within <span>48 hours</span>.</li>
+                    </ul>
+                    You can order Fajna's wedding dresses online or visit us in person at our branches: Bratislava,
+                    Svidník, or at our partner location in Hlohovec.
+                    Customers can come to us with a specific vision of their dream dresses or have the option to choose from our already designed models, or combine individual models precisely according to their wishes and taste. We will tailor the final model to measure.
+                    If you decide to create a unique image and one-of-a-kind wedding dresses, this choice is for you.
+                    </p>
                 </div>
-                <div class="block-text-2">
-                    <h4>Heading 2</h4>
-                </div>
-                <div class="image-end-page">
-                    <img src="your-photo-url.jpg" alt="Your Photo">
-                </div>
+                <!--                <div class="block-text-2">-->
+                <!--                    <h4 data-translate="secondary-heading"></h4>-->
+                <!--                </div>-->
+                <!--                <div class="image-end-page">-->
+                <!--                    <img src="your-photo-url.jpg" alt="Your Photo" data-translate-alt="end-page-photo">-->
+                <!--                </div>-->
             </div>
         </div>
     </div>
 </div>
-
 <footer>
     <div class="container">
         <div class="footer-content">
             <div class="logoIcon">
                 <a href="index.html">
-                    <img src="images/misc/logo.svg" loading="lazy" class="img-fluid" alt="WebsiteLogo">
+                    <img src="images/misc/logo.svg" loading="lazy" class="img-fluid" alt="WebsiteLogo" data-translate-alt="website-logo">
                 </a>
             </div>
             <div class="SocialMedias">
                 <ul class="socialsList d-flex flex-direction-row">
                     <li><a href="#"><img src="images/misc/facebook.svg" loading="lazy" class="img-fluid"
-                                         alt="WebsiteLogo"></a></li>
+                                         alt="Facebook" data-translate-alt="facebook-link"></a></li>
                     <li><a href="#"><img src="images/misc/instagram.svg" loading="lazy" class="img-fluid"
-                                         alt="WebsiteLogo"></a></li>
+                                         alt="Instagram" data-translate-alt="instagram-link"></a></li>
                     <li><a href="#"><img src="images/misc/telegram.svg" loading="lazy" class="img-fluid"
-                                         alt="WebsiteLogo"></a></li>
+                                         alt="Telegram" data-translate-alt="telegram-link"></a></li>
                     <li><a href="#"><img src="images/misc/whataspp.svg" loading="lazy" class="img-fluid"
-                                         alt="WebsiteLogo"></a></li>
+                                         alt="WhatsApp" data-translate-alt="whatsapp-link"></a></li>
                     <li><a href="#"><img src="images/misc/viber.svg" loading="lazy" class="img-fluid"
-                                         alt="WebsiteLogo"></a></li>
+                                         alt="Viber" data-translate-alt="viber-link"></a></li>
                 </ul>
             </div>
         </div>
-
     </div>
 </footer>
 </body>

@@ -26,15 +26,15 @@
     <script defer src="js/owl.carousel.min.js"></script>
     <script defer src="./js/owl-car-settings.js"></script>
     <script defer src="./js/mobile-filter.js"></script>
-    <script defer src="./js/header.js"></script>
+    <script defer type="module" src="js/header.js"></script>
     <script defer type="module" src="./js/product-arrays.js"></script>
-    <script defer type="module" src="./js/scripts.js"></script>
-    <title>Fajna</title>
+    <script defer type="module" src="js/index.js"></script>
+    <title>Fajna - your dress stop!</title>
 </head>
 <body>
 <header>
-    <nav class="header">
-        <div class="header_container">
+    <nav class="header-nav-bar">
+        <div class="visible-elements">
             <div class="burger-logo-elements">
                 <div class="burgerIcon">
                     <div class="line"></div>
@@ -43,102 +43,105 @@
                 </div>
                 <div class="logoIcon">
                     <a href="index.html">
-                        <img src="images/misc/logo.svg" class="img-fluid" alt="WebsiteLogo">
+                        <img src="images/misc/logo.svg" class="img-fluid" alt="WebsiteLogo"
+                             data-translate-alt="website-logo">
                     </a>
                 </div>
             </div>
             <div class="language-switcher">
-                <button class="langbtn"></button>
+                <button class="langbtn">ENG</button>
                 <ul class="sub-menu">
-                    <li class="languageElem active">ENG</li>
-                    <li class="languageElem">DEU</li>
-                    <li class="languageElem">SVK</li>
-                    <li class="languageElem">UKR</li>
-                </ul>
-            </div>
-            <div class="burger-container-wrapper">
-                <div class="mobile-header-opened">
-                    <div class="burger-logo-elements-mobile">
-                        <div class="burgerIconMobile">
-                            <div class="TopLine"></div>
-                            <div class="MidLine"></div>
-                            <div class="BotLine"></div>
-                        </div>
-                        <div class="logoIcon">
-                            <a href="index.html">
-                                <img src="images/misc/logo.svg" class="img-fluid" alt="WebsiteLogo">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="language-switcher-mobile">
-                        <button class="langbtnMobile">
-                        </button>
-                        <ul class="sub-menu">
-                            <li class="languageElem active">ENG</li>
-                            <li class="languageElem">DEU</li>
-                            <li class="languageElem">SVK</li>
-                            <li class="languageElem">UKR</li>
-                        </ul>
-                    </div>
-                </div>
-                <ul class="nav-content-container">
-                    <li class="nav-items">
-                        <a href="index.html">Večerné šaty</a>
-                        <div class="mobile-menu-dress-pic">
-                            <picture>
-                                <source srcset="images/index/girlSlider.png" media="(max-width: 490px)" type="image/png">
-                                <img src="" alt="Večerné šaty" loading="lazy">
-                            </picture>
-                        </div>
+                    <li class="languageElem">
+                        <a href="index.html">
+                            ENG
+                        </a>
                     </li>
-                    <li class="nav-items">
-                        <a href="index.html">Svadobné šaty</a>
-                        <div class="mobile-menu-dress-pic">
-                            <picture>
-                                <source srcset="images/index/girlSlider2.png" media="(max-width: 490px)" type="image/png">
-                                <img src="" alt="Svadobné šaty" loading="lazy">
-                            </picture>
-                        </div>
+                    <li class="languageElem">
+                        <a href="index.html?lang=deu">
+                            DEU
+                        </a>
                     </li>
-                    <li class="nav-items">
-                        <a href="index.html">Detské šaty</a>
-                        <div class="mobile-menu-dress-pic">
-                            <picture>
-                                <source srcset="images/index/girlSlider3.png" media="(max-width: 490px)" type="image/png">
-                                <img src="" alt="Detské šaty" loading="lazy">
-                            </picture>
-                        </div>
+                    <li class="languageElem">
+                        <a href="index.html?lang=svk">
+                            SVK
+                        </a>
                     </li>
-                    <li class="nav-items">
-                        <a href="index.html">Dámsky kostým</a>
-                        <div class="mobile-menu-dress-pic">
-                            <picture>
-                                <source srcset="images/index/girlSlider4.png" media="(max-width: 490px)" type="image/png">
-                                <img src="" alt="Dámsky kostým" loading="lazy">
-                            </picture>
-                        </div>
-                    </li>
-                    <li class="nav-items">
-                        <a href="index.html">Príslušenstvo</a>
-                        <div class="mobile-menu-dress-pic">
-                            <picture>
-                                <source srcset="images/index/Prislusenstvo.png" media="(max-width: 490px)" type="image/png">
-                                <img src="" alt="Príslušenstvo" loading="lazy">
-                            </picture>
-                        </div>
-                    </li>
-                    <li class="nav-items">
-                        <a href="order-page.html">Objednať</a>
-                    </li>
-                    <li class="nav-items">
-                        <a href="about-me.html">O mene</a>
+                    <li class="languageElem">
+                        <a href="index.html?lang=ukr">
+                            UKR
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
+        <div class="menu-container-wrapper">
+            <ul class="nav-list-container">
+                <li class="nav-items">
+                    <a data-lang-link href="index.html" data-translate="evening-dress-category">Evening Dresses</a>
+                    <div class="mobile-menu-dress-pic">
+                        <picture>
+                            <source srcset="images/index/girlSlider.png" media="(max-width: 490px)"
+                                    type="image/png">
+                            <img src="images/index/girlSlider.png" alt="Evening Dresses" loading="lazy"
+                                 data-translate-alt="alt_evening_dresses">
+                        </picture>
+                    </div>
+                </li>
+                <li class="nav-items">
+                    <a data-lang-link href="index.html" data-translate="wedding-dress-category">Wedding Dresses</a>
+                    <div class="mobile-menu-dress-pic">
+                        <picture>
+                            <source srcset="images/index/girlSlider2.png" media="(max-width: 490px)"
+                                    type="image/png">
+                            <img src="images/index/girlSlider2.png" alt="Wedding Dresses" loading="lazy"
+                                 data-translate-alt="alt_wedding_dresses">
+                        </picture>
+                    </div>
+                </li>
+                <li class="nav-items">
+                    <a data-lang-link href="index.html" data-translate="childrens-dress-category">Children's
+                        Dresses</a>
+                    <div class="mobile-menu-dress-pic">
+                        <picture>
+                            <source srcset="images/index/girlSlider3.png" media="(max-width: 490px)"
+                                    type="image/png">
+                            <img src="images/index/girlSlider3.png" alt="Children's Dresses" loading="lazy"
+                                 data-translate-alt="alt_childrens_dresses">
+                        </picture>
+                    </div>
+                </li>
+                <li class="nav-items">
+                    <a data-lang-link href="index.html" data-translate="women-suit-category">Women's Suits</a>
+                    <div class="mobile-menu-dress-pic">
+                        <picture>
+                            <source srcset="images/index/girlSlider4.png" media="(max-width: 490px)"
+                                    type="image/png">
+                            <img src="images/index/girlSlider4.png" alt="Women's Suits" loading="lazy"
+                                 data-translate-alt="alt_women_suit">
+                        </picture>
+                    </div>
+                </li>
+                <li class="nav-items">
+                    <a data-lang-link href="index.html" data-translate="accessories-category">Accessories</a>
+                    <div class="mobile-menu-dress-pic">
+                        <picture>
+                            <source srcset="images/index/Prislusenstvo.png" media="(max-width: 490px)"
+                                    type="image/png">
+                            <img src="images/index/Prislusenstvo.png" alt="Accessories" loading="lazy"
+                                 data-translate-alt="alt_accessories">
+                        </picture>
+                    </div>
+                </li>
+                <li class="nav-items">
+                    <a data-lang-link href="order-page.html" data-translate="nav_order">Order</a>
+                </li>
+                <li class="nav-items">
+                    <a data-lang-link href="about-me.html" data-translate="nav_about_me">About Me</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 </header>
-
 <section class="CarouselSection" id="shop-part">
     <div class="owl-carousel">
         <div class="slide">
@@ -146,95 +149,102 @@
                 <div class="row align-items-center">
                     <div class="col-md-6 col-xs-6 leftSlidePart">
                         <div class="slideHeading">
-                            <h3>Svadobne Saty</h3>
-                            <p>Keďže interaktívne prototypy sú len súčasťou širšieho obrazu, len prispievajú k
-                                rozdeleniu frakcií a sú objektívne kontrolované príslušnými orgánmi.</p>
-                            <a href="#categories" class="moreBtn">Viac</a>
+                            <h3 data-translate="slide_wedding_dresses">Wedding Dresses</h3>
+                            <p data-translate="slide_wedding_description">Our wedding dresses are crafted with love and
+                                precision, ensuring you look stunning on your special day.</p>
+                            <a href="#categories" class="moreBtn" data-translate="slide_more">Learn More</a>
                         </div>
                     </div>
                     <div class="col-md-6 col-xs-6 rightSlidePart">
                         <div class="gradientBlock"></div>
                         <div class="modelImage">
-                            <img src="images/index/girlSlider.png" class="img-fluid" alt="modelImage">
+                            <img src="images/index/girlSlider.png" class="img-fluid"
+                                 alt="Model showcasing Wedding Dresses" data-translate-alt="alt_model_image">
                         </div>
                         <div class="buyButton">
                             <div class="circle">
-                                <a href="#">Objednať</a>
+                                <a href="#" data-translate="slide_order">Order Now</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="slide">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-6 leftSlidePart">
                         <div class="slideHeading">
-                            <h3>Detské šaty</h3>
-                            <p>Keďže interaktívne prototypy sú len súčasťou širšieho obrazu, len prispievajú k
-                                rozdeleniu frakcií a sú objektívne kontrolované príslušnými orgánmi.</p>
-                            <a href="" class="moreBtn">Viac</a>
+                            <h3 data-translate="slide_kid_dresses">Children's Dresses</h3>
+                            <p data-translate="slide_kid_description">Our children's dresses are designed to bring joy
+                                and elegance to your little ones.</p>
+                            <a href="#categories" class="moreBtn" data-translate="slide_more">Learn More</a>
                         </div>
                     </div>
                     <div class="col-md-6 rightSlidePart">
                         <div class="gradientBlock"></div>
                         <div class="modelImage">
-                            <img src="images/index/girlSlider2.png" loading="lazy" class="img-fluid" alt="modelImage">
+                            <img src="images/index/girlSlider2.png" loading="lazy" class="img-fluid"
+                                 alt="Model showcasing Children's Dresses" data-translate-alt="alt_model_image_2">
                         </div>
                         <div class="buyButton">
                             <div class="circle">
-                                <a href="#">Objednať</a>
+                                <a href="#" data-translate="slide_order">Order Now</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="slide">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-6 leftSlidePart">
                         <div class="slideHeading">
-                            <h3>Spoločenské šaty</h3>
-                            <p>Keďže interaktívne prototypy sú len súčasťou širšieho obrazu, len prispievajú k
-                                rozdeleniu frakcií a sú objektívne kontrolované príslušnými orgánmi.</p>
-                            <a href="" class="moreBtn">Viac</a>
+                            <h3 data-translate="slide_evening_dresses">Evening Dresses</h3>
+                            <p data-translate="slide_evening_description">Elegant evening gowns that make you shine at
+                                every event.</p>
+                            <a href="#categories" class="moreBtn" data-translate="slide_more">Learn More</a>
                         </div>
                     </div>
                     <div class="col-md-6 rightSlidePart">
                         <div class="gradientBlock"></div>
                         <div class="modelImage">
-                            <img src="images/index/girlSlider3.png" loading="lazy" class="img-fluid" alt="modelImage">
+                            <img src="images/index/girlSlider3.png" loading="lazy" class="img-fluid"
+                                 alt="Model showcasing Evening Dresses" data-translate-alt="alt_model_image_3">
                         </div>
                         <div class="buyButton">
                             <div class="circle">
-                                <a href="#">Objednať</a>
+                                <a href="#" data-translate="slide_order">Order Now</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="slide">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-6 leftSlidePart">
                         <div class="slideHeading">
-                            <h3>Dámsky kostým</h3>
-                            <p>Keďže interaktívne prototypy sú len súčasťou širšieho obrazu, len prispievajú k
-                                rozdeleniu frakcií a sú objektívne kontrolované príslušnými orgánmi.</p>
-                            <a href="" class="moreBtn">Viac</a>
+                            <h3 data-translate="slide_women_suits">Women's Suits</h3>
+                            <p data-translate="slide_women_suits_description">Sophisticated women's suits tailored for
+                                the modern professional.</p>
+                            <a href="#categories" class="moreBtn" data-translate="slide_more">Learn More</a>
                         </div>
                     </div>
                     <div class="col-md-6 rightSlidePart">
                         <div class="gradientBlock"></div>
                         <div class="modelImage">
-                            <img src="images/index/girlSlider4.png" loading="lazy" class="img-fluid" alt="modelImage">
+                            <img src="images/index/girlSlider4.png" loading="lazy" class="img-fluid"
+                                 alt="Model showcasing Women's Suits" data-translate-alt="alt_model_image_4">
                         </div>
                         <div class="buyButton">
                             <div class="circle">
-                                <a href="#">Objednať</a>
+                                <a href="#" data-translate="slide_order">Order Now</a>
                             </div>
                         </div>
                     </div>
@@ -247,9 +257,10 @@
     <div class="container d-flex flex-column justify-content-center">
         <div class="real-filters-container">
             <div class="filters-mobile">
-                <button class="filtersClick">
-                    <span>FILTERS</span>
-                    <img src="images/misc/chevron-down.svg" class="img-fluid" alt="">
+                <button class="filtersClick" data-translate="filters">
+                    <span data-translate="filters-text">FILTERS</span>
+                    <img src="images/misc/chevron-down.svg" class="img-fluid" alt="Show Filters"
+                         data-translate-alt="show-filters">
                 </button>
             </div>
             <!--CATEGORIES-->
@@ -258,33 +269,33 @@
                     <button class="nav-link active" id="wedding-dress-tab" data-toggle="pill"
                             data-target="#wedding-dress"
                             type="button" role="tab" data-filter="svadobne-saty" aria-controls="wedding-dress"
-                            aria-selected="false">Svadobné šaty
+                            aria-selected="false" data-translate="wedding-dress-category">Wedding Dresses
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="evening-dress-tab" data-toggle="pill"
                             data-target="#evening-dress"
                             type="button" role="tab" data-filter="vecerne-saty" aria-controls="evening-dress"
-                            aria-selected="true">
-                        Večerné šaty
+                            aria-selected="true" data-translate="evening-dress-category">
+                        Evening Dresses
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="childrens-dress-tab" data-toggle="pill" data-target="#childrens-dress"
                             type="button" role="tab" data-filter="detske-saty" aria-controls="childrens-dress"
-                            aria-selected="false">Detské šaty
+                            aria-selected="false" data-translate="childrens-dress-category">Children's Dresses
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="women-suit-tab" data-toggle="pill" data-target="#women-suit"
                             type="button" role="tab" data-filter="damsky-kostym" aria-controls="women-suit"
-                            aria-selected="false">Dámsky kostým
+                            aria-selected="false" data-translate="women-suit-category">Women's Suits
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="accesories-tab" data-toggle="pill" data-target="#accesories"
                             type="button" role="tab" data-filter="prislusenstvo" aria-controls="accesories"
-                            aria-selected="false">Príslušenstvo
+                            aria-selected="false" data-translate="accessories-category">Accessories
                     </button>
                 </li>
             </ul>
@@ -295,53 +306,52 @@
                  aria-labelledby="wedding-dress-tab">
                 <div class="container product-cards-cont">
                     <div class="row">
+                        <!-- Product cards go here -->
                     </div>
                     <div class="loadMoreButton d-flex justify-content-center">
-                        <button class="load-more">Load more</button>
+                        <button class="load-more" data-translate="load-more-button">Load More</button>
                     </div>
-
                 </div>
             </div>
             <div class="tab-pane fade" id="evening-dress">
                 <div class="container product-cards-cont">
                     <div class="row">
+                        <!-- Product cards go here -->
                     </div>
-
                 </div>
             </div>
             <div class="tab-pane fade" id="childrens-dress" role="tabpanel" aria-labelledby="childrens-dress-tab">
                 <div class="container product-cards-cont">
                     <div class="row">
+                        <!-- Product cards go here -->
                     </div>
-
                 </div>
             </div>
             <div class="tab-pane fade" id="women-suit" role="tabpanel" aria-labelledby="women-suit-tab">
                 <div class="container product-cards-cont">
                     <div class="row">
+                        <!-- Product cards go here -->
                     </div>
-
                 </div>
             </div>
             <div class="tab-pane fade" id="accesories" role="tabpanel" aria-labelledby="accesories-tab">
                 <div class="container product-cards-cont">
                     <div class="row">
+                        <!-- Product cards go here -->
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
-
 </section>
 <div class="back-image-sect">
     <div class="bg-image">
         <div class="container theflexes">
             <div class="logo">
-                <img src="images/misc/logo.svg" class="img-fluid" alt="Logo">
+                <img src="images/misc/logo.svg" class="img-fluid" alt="Company Logo" data-translate-alt="company-logo">
             </div>
             <div class="text-block">
-                <p>Pretože sú z Ukrajiny</p>
+                <p data-translate="hero-text">Embracing Heritage and Craftsmanship from Ukraine</p>
             </div>
         </div>
     </div>
@@ -351,18 +361,19 @@
         <div class="row">
             <div class="col-md-6 order-md-1 col-12 order-2">
                 <div class="photo-wrapper">
-                    <img src="images/about/aboutAnastasi.png" class="img-fluid" alt="photo of Nastia">
+                    <img src="images/about/aboutAnastasi.png" class="img-fluid" alt="Photo of Anastasia"
+                         data-translate-alt="nastia-photo">
                 </div>
             </div>
             <div class="col-md-6 col-12 d-flex align-items-center">
                 <div class="contact-info">
-                    <h4>Contact Information</h4>
+                    <h4 data-translate="contact-info-title">Contact Information</h4>
                     <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor dui sit amet tincidunt
-                        suscipit. Donec id eros id dolor tincidunt congue vitae vel sapien.</p>
-                    <p>Telephone: 123-456-7890</p>
-                    <p>Email: your-email@example.com</p>
-                    <p>Address: 123 Main St, Anytown, USA</p>
+                    <p data-translate="contact-description">Connect with us to bring your dream dress to life. Our
+                        dedicated team is here to assist you every step of the way.</p>
+                    <p data-translate="telephone-label">Telephone: +4218729128</p>
+                    <p data-translate="email-label">Email: fajna@gmail.com</p>
+                    <p data-translate="address-label">Address: Bratislava, Slovakia</p>
                 </div>
             </div>
         </div>
@@ -373,34 +384,24 @@
         <div class="row">
             <div class="col-md-12 order-md-2 col-12 order-1">
                 <div class="block-text-1">
-                    <h4 class="text-center">Natasha Azariy je slovenská módna značka svadobných, spoločenských a
-                        detských šiat, ktorá pôsobí na celom Slovensku, v Poľsku ale aj v Českej republike už od roku
-                        2012, keď sa v malej dielni ušili prvé svadobné šaty NATASHA AZARIY.</h4>
-                    <p>- Tím profesionálnych dizajnérov a krajčírov.
-                        - Súkromná výstavba vzorov a individuálny prístup.
-                        - Navrhovanie a šitie šiat podľa predstáv zákazníkov.
-                        - Kvalitné látky a šitie za dostupnú cenu, ktorú si môže dovoliť každý.
-                        - Individuálny výber látok z celého sveta pre každého zákazníka.
-                        - Bezplatné poradenstvo, záruka kvality a zodpovednosť za výsledok.
-                        - Služba "sos nevesta" - v nepredvídaných situáciách a iných živloch Vám ušijeme šaty do 48
-                        hodín.
+                    <h4 class="text-center" data-translate="brand-description-title">Fajna is a Ukrainian fashion brand
+                        specializing in wedding, evening, and children's dresses, proudly serving customers
+                        throughout Slovakia, Austria, Ukraine since 2012, when the first FAJNA wedding dress
+                        was crafted
+                        in our small atelier.</h4>
 
-                        Svadobné šaty od Natasha Azariy si objednáte on-line cez internet. Prípadne osobne na pobočke:
-                        Bratislava, Svidník, alebo na partnerskom mieste v Hlohovci.
+                    <ul class="extra-text">
 
-                        Zákazník k nám môže prísť s konkrétnou predstavou svojich vysnívaných šiat, alebo má možnosť
-                        vybrať si niektoré z našich už navrhnutých modelov, prípadne nakombinovať si jednotlivé modely
-                        presne podľa svojho želania a vkusu. Konečný model ušijeme presne na mieru.
-
-                        Ak sa rozhodnete vytvoriť si unikátny image a jedinečné svadobné šaty, tak táto voľba je pre
-                        Vás.</p>
+                    </ul>
+                    <p data-translate="brand-description-details">
+                    </p>
                 </div>
-                <div class="block-text-2">
-                    <h4>Heading 2</h4>
-                </div>
-                <div class="image-end-page">
-                    <img src="your-photo-url.jpg" alt="Your Photo">
-                </div>
+                <!--                <div class="block-text-2">-->
+                <!--                    <h4 data-translate="secondary-heading"></h4>-->
+                <!--                </div>-->
+                <!--                <div class="image-end-page">-->
+                <!--                    <img src="your-photo-url.jpg" alt="Your Photo" data-translate-alt="end-page-photo">-->
+                <!--                </div>-->
             </div>
         </div>
     </div>
@@ -410,26 +411,28 @@
         <div class="footer-content">
             <div class="logoIcon">
                 <a href="index.html">
-                    <img src="images/misc/logo.svg" loading="lazy" class="img-fluid" alt="WebsiteLogo">
+                    <img src="images/misc/logo.svg" loading="lazy" class="img-fluid" alt="WebsiteLogo"
+                         data-translate-alt="website-logo">
                 </a>
             </div>
             <div class="SocialMedias">
                 <ul class="socialsList d-flex flex-direction-row">
                     <li><a href="#"><img src="images/misc/facebook.svg" loading="lazy" class="img-fluid"
-                                         alt="WebsiteLogo"></a></li>
+                                         alt="Facebook" data-translate-alt="facebook-link"></a></li>
                     <li><a href="#"><img src="images/misc/instagram.svg" loading="lazy" class="img-fluid"
-                                         alt="WebsiteLogo"></a></li>
+                                         alt="Instagram" data-translate-alt="instagram-link"></a></li>
                     <li><a href="#"><img src="images/misc/telegram.svg" loading="lazy" class="img-fluid"
-                                         alt="WebsiteLogo"></a></li>
+                                         alt="Telegram" data-translate-alt="telegram-link"></a></li>
                     <li><a href="#"><img src="images/misc/whataspp.svg" loading="lazy" class="img-fluid"
-                                         alt="WebsiteLogo"></a></li>
+                                         alt="WhatsApp" data-translate-alt="whatsapp-link"></a></li>
                     <li><a href="#"><img src="images/misc/viber.svg" loading="lazy" class="img-fluid"
-                                         alt="WebsiteLogo"></a></li>
+                                         alt="Viber" data-translate-alt="viber-link"></a></li>
                 </ul>
             </div>
         </div>
-
     </div>
 </footer>
 </body>
 </html>
+
+<!--HERE I STARTED CHANGE-->

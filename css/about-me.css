@@ -29,12 +29,13 @@ li p {
   z-index: 0;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
+  height: auto;
   width: 100%;
   max-width: 100%;
   display: flex;
   align-items: center;
   background-size: cover;
+  background-image: url("../images/about/bg-section-image.png");
 }
 .back-image-sect .bg-image:before {
   background: rgba(66, 69, 72, 0.72);
@@ -54,12 +55,14 @@ li p {
 }
 .back-image-sect .container.theflexes .logo {
   width: 55%;
+  padding-top: 1rem;
 }
 .back-image-sect .container.theflexes .text-block p {
   font-family: "Alex Brush", cursive;
   color: #FFFFFF;
   font-size: 6.25rem;
   text-align: center;
+  padding-bottom: 1rem;
 }
 
 .about-section {
@@ -99,6 +102,27 @@ li p {
 .additional-section p {
   font-weight: 300;
   white-space: pre-line;
+}
+.additional-section ul.extra-text {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+.additional-section ul.extra-text span {
+  font-weight: bold;
+}
+.additional-section ul.extra-text li {
+  padding-left: 1em;
+  text-indent: -1em;
+  margin-bottom: 1rem;
+}
+.additional-section ul.extra-text li:last-child {
+  margin-bottom: 0;
+}
+.additional-section ul.extra-text li:before {
+  content: "-";
+  padding-right: 5px;
 }
 .additional-section .image-end-page {
   display: flex;

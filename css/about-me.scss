@@ -42,12 +42,13 @@ li p {
     z-index: 0;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    height: auto;
     width: 100%;
     max-width: 100%;
     display: flex;
     align-items: center;
     background-size: cover;
+    background-image: url("../images/about/bg-section-image.png");
 
     &:before {
       background: $overlay-color;
@@ -69,6 +70,7 @@ li p {
 
     .logo {
       width: 55%;
+      padding-top: 1rem;
     }
 
     .text-block {
@@ -77,6 +79,7 @@ li p {
         color: $white-color;
         font-size: 6.25rem; // 100px
         text-align: center;
+        padding-bottom: 1rem;
       }
     }
   }
@@ -129,6 +132,31 @@ li p {
     white-space: pre-line;
   }
 
+  ul.extra-text {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 2rem;
+
+    span{
+      font-weight: bold;
+    }
+    li {
+      padding-left: 1em;
+      text-indent: -1em;
+      margin-bottom: 1rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &:before {
+        content: "-";
+        padding-right: 5px;
+      }
+    }
+  }
+
+
   .image-end-page {
     display: flex;
     justify-content: center;
@@ -137,7 +165,7 @@ li p {
 
 // Media Queries
 @media only screen and (max-width: 768px) {
-  .back-image-sect .container.theflexes .text-block p{
+  .back-image-sect .container.theflexes .text-block p {
     font-size: 5rem;
   }
 }

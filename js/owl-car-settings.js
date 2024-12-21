@@ -6,5 +6,6 @@ $(document).ready(function () {
         animateOut: 'fadeOutUp',
         animateIn: 'fadeInDown',
         smartSpeed: 100,
+        mouseDrag: false,
     });
 });
