@@ -3,20 +3,26 @@ import {translations} from "./translations-arrays.js";
 //--------------------------
 //INDEX PAGE FIELDS
 //--------------------------
-const everyDataTranslate = document.querySelectorAll("[data-translate]");
-
 function checkPageAndChangeContent() {
     const {pageName, languageId} = searchChecker();
     const matchingPageKey = Object.keys(translations).find(key => key === pageName);
     const matchingPage = translations[matchingPageKey];
-    const currentLanguage = matchingPage[languageId]
+    const currentLanguage = matchingPage[languageId];
 
     if (matchingPage && currentLanguage) {
+        document.querySelectorAll('[data-translate]').forEach(element => {
+            const attributeOfTheElement = element.getAttribute("data-translate");
+            if (currentLanguage[attributeOfTheElement]) {
+                if (element.tagName.toLowerCase() === 'input' && element.hasAttribute('placeholder')) {
+                    // Change the placeholder for input elements
+                    element.setAttribute('placeholder', currentLanguage[attributeOfTheElement]);
+                } else {
+                    // Change the text content for other elements
+                    element.textContent = currentLanguage[attributeOfTheElement];
+                }
+            }
+        });
         if (pageName === "index") {
-            everyDataTranslate.forEach(element => {
-                const attributeOfTheElement = element.getAttribute("data-translate");
-                element.textContent = currentLanguage[attributeOfTheElement];
-            });
             const listContainer = document.querySelector(".extra-text"); // Target the container
             if (listContainer) {
                 listContainer.innerHTML = ""; // Clear any previous content
@@ -33,14 +39,18 @@ function checkPageAndChangeContent() {
                 }
             }
         }
-        if (pageName === "order-page") {
-
-        }
-        if (pageName === "product-page") {
-
-        }
-        if (pageName === "about-me") {
-
+        const headerTranslations = translations.header?.[languageId];
+        if (headerTranslations) {
+            document.querySelectorAll('.header-nav-bar [data-translate]').forEach(element => {
+                const attributeOfTheElement = element.getAttribute("data-translate");
+                if (headerTranslations[attributeOfTheElement]) {
+                    if (element.tagName.toLowerCase() === 'input' && element.hasAttribute('placeholder')) {
+                        element.setAttribute('placeholder', headerTranslations[attributeOfTheElement]);
+                    } else {
+                        element.textContent = headerTranslations[attributeOfTheElement];
+                    }
+                }
+            });
         }
     }
 }
@@ -61,7 +71,7 @@ function searchChecker() {
 }
 
 function addLanguagePrefixToLinks() {
-    const { languageId } = searchChecker();
+    const {languageId} = searchChecker();
     const linksToPrefix = document.querySelectorAll("[data-lang-link]");
     linksToPrefix.forEach(link => {
         const currentHref = link.href;
@@ -70,4 +80,5 @@ function addLanguagePrefixToLinks() {
         }
     });
 }
+
 export {checkPageAndChangeContent, searchChecker, addLanguagePrefixToLinks};

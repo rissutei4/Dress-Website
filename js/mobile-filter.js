@@ -1,21 +1,24 @@
+'use strict'
 //Mobile Filters
-if (window.innerWidth <= 426) {
-    const filterBlock = document.querySelector('.filters-mobile');
-    const filterButton = document.querySelector('.filtersClick');
-    const filterDropdownContent = document.querySelector('.filters-mobile-cont');
-    const liItem = document.querySelectorAll('.filters-mobile-cont > li');
-    const filterOptions = document.querySelectorAll('.filters-mobile-cont button');
+const filterBlock = document.querySelector('.filters-mobile');
+const filterButton = document.querySelector('.filtersClick');
+const filterDropdownContent = document.querySelector('.filters-mobile-cont');
+const liItem = document.querySelectorAll('.filters-mobile-cont > li');
 
+
+if (window.innerWidth <= 426) {
     filterButton.addEventListener('click', () => {
         filterBlock.classList.toggle('show-mobile');
         filterButton.classList.toggle('show-mobile');
         filterDropdownContent.classList.toggle('show-mobile');
     });
 
+    const filterOptions = document.querySelectorAll('.filters-mobile-cont button');
     filterOptions.forEach(option => {
         option.addEventListener('click', () => {
-            const selectedFilter = option.dataset.filter;
-            filterButton.querySelector('span').textContent = selectedFilter;
+            const selectedFilter = option;
+            filterButton.querySelector('span').textContent = option.textContent.trim();
+
             filterBlock.classList.remove('show-mobile');
             filterButton.classList.remove('show-mobile');
             filterDropdownContent.classList.remove('show-mobile');
@@ -26,13 +29,6 @@ if (window.innerWidth <= 426) {
                     item.classList.remove('d-none');
                 }
             });
-        });
-    });
-
-    const filterMobileCont = document.querySelector('.filters-mobile-cont');
-    filterOptions.forEach(option => {
-        option.addEventListener('click', () => {
-            filterMobileCont.style.bottom = '-274px';
         });
     });
 }

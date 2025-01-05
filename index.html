@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/about-me.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/media-query.css">
     <!--Javascript-->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"
             integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous" defer></script>
@@ -25,10 +24,10 @@
             crossorigin="anonymous" defer></script>
     <script defer src="js/owl.carousel.min.js"></script>
     <script defer src="./js/owl-car-settings.js"></script>
-    <script defer src="./js/mobile-filter.js"></script>
     <script defer type="module" src="js/header.js"></script>
     <script defer type="module" src="./js/product-arrays.js"></script>
     <script defer type="module" src="js/index.js"></script>
+    <script defer src="./js/mobile-filter.js"></script>
     <title>Fajna - your dress stop!</title>
 </head>
 <body>
@@ -77,7 +76,8 @@
         <div class="menu-container-wrapper">
             <ul class="nav-list-container">
                 <li class="nav-items">
-                    <a data-lang-link href="index.html" data-translate="evening-dress-category">Evening Dresses</a>
+                    <a data-lang-link href="#evening-dress-tab" data-translate="evening-dress-category">Evening
+                        Dresses</a>
                     <div class="mobile-menu-dress-pic">
                         <picture>
                             <source srcset="images/index/girlSlider.png" media="(max-width: 490px)"
@@ -88,7 +88,8 @@
                     </div>
                 </li>
                 <li class="nav-items">
-                    <a data-lang-link href="index.html" data-translate="wedding-dress-category">Wedding Dresses</a>
+                    <a data-lang-link href="#wedding-dress-tab" data-translate="wedding-dress-category">Wedding
+                        Dresses</a>
                     <div class="mobile-menu-dress-pic">
                         <picture>
                             <source srcset="images/index/girlSlider2.png" media="(max-width: 490px)"
@@ -99,7 +100,7 @@
                     </div>
                 </li>
                 <li class="nav-items">
-                    <a data-lang-link href="index.html" data-translate="childrens-dress-category">Children's
+                    <a data-lang-link href="#childrens-dress-tab" data-translate="childrens-dress-category">Children's
                         Dresses</a>
                     <div class="mobile-menu-dress-pic">
                         <picture>
@@ -111,7 +112,7 @@
                     </div>
                 </li>
                 <li class="nav-items">
-                    <a data-lang-link href="index.html" data-translate="women-suit-category">Women's Suits</a>
+                    <a data-lang-link href="#women-suit-tab" data-translate="women-suit-category">Women's Suits</a>
                     <div class="mobile-menu-dress-pic">
                         <picture>
                             <source srcset="images/index/girlSlider4.png" media="(max-width: 490px)"
@@ -122,7 +123,7 @@
                     </div>
                 </li>
                 <li class="nav-items">
-                    <a data-lang-link href="index.html" data-translate="accessories-category">Accessories</a>
+                    <a data-lang-link href="#accessories-tab" data-translate="accessories-category">Accessories</a>
                     <div class="mobile-menu-dress-pic">
                         <picture>
                             <source srcset="images/index/Prislusenstvo.png" media="(max-width: 490px)"
@@ -257,7 +258,7 @@
     <div class="container d-flex flex-column justify-content-center">
         <div class="real-filters-container">
             <div class="filters-mobile">
-                <button class="filtersClick" data-translate="filters">
+                <button class="filtersClick">
                     <span data-translate="filters-text">FILTERS</span>
                     <img src="images/misc/chevron-down.svg" class="img-fluid" alt="Show Filters"
                          data-translate-alt="show-filters">
@@ -266,18 +267,18 @@
             <!--CATEGORIES-->
             <ul class="nav nav-pills mb-3 filters-mobile-cont" id="pills-tabs" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="wedding-dress-tab" data-toggle="pill"
-                            data-target="#wedding-dress"
-                            type="button" role="tab" data-filter="svadobne-saty" aria-controls="wedding-dress"
-                            aria-selected="false" data-translate="wedding-dress-category">Wedding Dresses
-                    </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="evening-dress-tab" data-toggle="pill"
+                    <button class="nav-link active" id="evening-dress-tab" data-toggle="pill"
                             data-target="#evening-dress"
                             type="button" role="tab" data-filter="vecerne-saty" aria-controls="evening-dress"
                             aria-selected="true" data-translate="evening-dress-category">
                         Evening Dresses
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="wedding-dress-tab" data-toggle="pill"
+                            data-target="#wedding-dress"
+                            type="button" role="tab" data-filter="svadobne-saty" aria-controls="wedding-dress"
+                            aria-selected="false" data-translate="wedding-dress-category">Wedding Dresses
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
@@ -293,8 +294,8 @@
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="accesories-tab" data-toggle="pill" data-target="#accesories"
-                            type="button" role="tab" data-filter="prislusenstvo" aria-controls="accesories"
+                    <button class="nav-link" id="accessories-tab" data-toggle="pill" data-target="#accessories"
+                            type="button" role="tab" data-filter="prislusenstvo" aria-controls="accessories"
                             aria-selected="false" data-translate="accessories-category">Accessories
                     </button>
                 </li>
@@ -302,22 +303,20 @@
         </div>
         <!--CATEGORIES CONTENT-->
         <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="wedding-dress" role="tabpanel"
+            <div class="tab-pane fade  show active" id="evening-dress">
+                <div class="container product-cards-cont">
+                    <div class="row">
+                        <!-- Product cards go here -->
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="wedding-dress" role="tabpanel"
                  aria-labelledby="wedding-dress-tab">
                 <div class="container product-cards-cont">
                     <div class="row">
                         <!-- Product cards go here -->
                     </div>
-                    <div class="loadMoreButton d-flex justify-content-center">
-                        <button class="load-more" data-translate="load-more-button">Load More</button>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="evening-dress">
-                <div class="container product-cards-cont">
-                    <div class="row">
-                        <!-- Product cards go here -->
-                    </div>
+
                 </div>
             </div>
             <div class="tab-pane fade" id="childrens-dress" role="tabpanel" aria-labelledby="childrens-dress-tab">
@@ -334,7 +333,7 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="accesories" role="tabpanel" aria-labelledby="accesories-tab">
+            <div class="tab-pane fade" id="accessories" role="tabpanel" aria-labelledby="accessories-tab">
                 <div class="container product-cards-cont">
                     <div class="row">
                         <!-- Product cards go here -->

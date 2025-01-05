@@ -1,47 +1,7 @@
-@import "disable.css";
+@import "./disable.css";
+@import "./variables.scss";
 @import "./header-footer.css";
 
-// Variables
-$background-color: #101010;
-$font-family: 'Rubik', sans-serif;
-$white-color: #FFFFFF;
-$light-gray: #FFFEFE;
-$accent-color: #81D8D0;
-$accent-color-de: #81D8D0DE;
-$accent-color-e3: #81D8D0E3;
-$accent-color-translucent: rgba(140, 231, 222, 0.89);
-$box-shadow-color: rgba(253, 239, 239, 0.25);
-$font-color-gray: #5E5E5E;
-$font-color-light-gray: #F3E9E9;
-$font-color-off-white: #FFFCFC;
-$mobile-background-color: #EFEBEB;
-$mobile-font-color-dark-gray: #4C5251;
-$mobile-font-color-gray: #606564;
-$mobile-accent-color: #639A95;
-
-// Global Styles
-body {
-  margin: 0;
-  padding: 0;
-  background-color: $background-color;
-  font-family: $font-family;
-}
-
-h3 {
-  font-weight: 600;
-}
-
-h4 {
-  font-weight: 400;
-}
-
-p {
-  font-weight: 500;
-}
-
-li p {
-  font-weight: 300;
-}
 .hidden{
   display: none;
 }
@@ -148,7 +108,7 @@ li p {
                 color: $white-color;
                 display: block;
                 margin-bottom: 0.625rem; // 10px
-                font-family: $font-family;
+                font-family: $font-family-primary;
                 text-transform: capitalize;
               }
 
@@ -167,7 +127,7 @@ li p {
                   box-sizing: border-box;
 
                   &.color-gold {
-                    background: #D8B69A;
+                    background: $color-gold;
                   }
 
                   &.color-yellow {
@@ -230,7 +190,7 @@ li p {
                 margin-bottom: 0.75rem; // 12px
 
                 p {
-                  font-family: $font-family;
+                  font-family: $font-family-primary;
                   font-weight: 300;
                   font-size: 1.5625rem; // 25px
                   color: $white-color;
@@ -245,7 +205,7 @@ li p {
         border: 0.0625rem solid $accent-color-translucent; // 1px
         padding: 1.5rem 5.875rem; // 24px, 94px
         background: $accent-color-e3;
-        font-family: $font-family;
+        font-family: $font-family-primary;
         font-weight: 300;
         font-size: 1.625rem; // 26px
         transition: 0.3s linear;

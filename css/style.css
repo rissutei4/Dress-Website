@@ -1,6 +1,6 @@
-@import "media-query.css";
-@import "./about-me.css";
+@import "./disable.css";
 @import "./header-footer.css";
+@import "./about-me.css";
 body {
   margin: 0;
   padding: 0;
@@ -22,6 +22,10 @@ p {
 
 li p {
   font-weight: 300;
+}
+
+a {
+  text-decoration: none;
 }
 
 .CarouselSection {
@@ -169,7 +173,7 @@ li p {
   margin-bottom: 7.8125rem;
   height: 32.5rem;
 }
-.ItemsInStock .container #pills-tabContent .product-cards-cont .product-card.hidden-prod {
+.ItemsInStock .container #pills-tabContent .product-cards-cont .product-card.hide-card {
   display: none;
 }
 .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .shownCards {
@@ -180,7 +184,6 @@ li p {
 }
 .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-image {
   max-width: 21.25rem;
-  position: relative;
   width: 100%;
   height: 32.5rem;
   overflow: hidden;
@@ -194,8 +197,8 @@ li p {
 .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay {
   width: 100%;
   position: absolute;
-  top: 60%;
-  height: 40%;
+  top: 50%;
+  height: 50%;
   padding: 1.125rem 1.875rem;
   background: rgba(16, 16, 16, 0.76);
   opacity: 0;
@@ -249,6 +252,318 @@ li p {
 }
 .ItemsInStock .container #pills-tabContent button.load-more:hover {
   background-color: #81D8D0;
+}
+
+/*Media querries*/
+@media only screen and (max-width: 2570px) {
+  .CarouselSection .owl-carousel .owl-dots {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    position: absolute;
+    bottom: 54%;
+    left: -4%;
+  }
+}
+@media only screen and (max-width: 1356px) {
+  .CarouselSection .owl-carousel .owl-dots {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    position: absolute;
+    left: -9% !important;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .CarouselSection .owl-carousel .owl-dots {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    position: absolute;
+    bottom: 54%;
+    left: -11%;
+  }
+}
+@media only screen and (max-width: 1230px) {
+  .CarouselSection .owl-carousel .owl-dots {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    position: absolute;
+    left: -13% !important;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .CarouselSection .owl-carousel .slide .rightSlidePart .buyButton .circle {
+    left: 43%;
+    top: 43%;
+  }
+  .CarouselSection .owl-carousel .owl-dots {
+    left: -15%;
+  }
+  .ItemsInStock #pills-tabContent .product-cards-cont .product-card .product-overlay {
+    padding: 1.125rem 1.375rem !important;
+    top: 50% !important;
+    height: 50% !important;
+  }
+  .ItemsInStock #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading {
+    margin-bottom: 0.625rem !important;
+  }
+  .ItemsInStock #pills-tabContent .product-cards-cont .product-card .product-image {
+    max-width: 17.5rem !important;
+    width: 100%;
+  }
+  .ItemsInStock .container ul li.nav-item {
+    margin-right: 3.125rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .CarouselSection .owl-carousel .slide {
+    padding: 2.6875rem 0;
+    overflow: hidden;
+  }
+  .CarouselSection .owl-carousel .slide .leftSlidePart .slideHeading h3 {
+    margin-bottom: 2.625rem;
+  }
+  .CarouselSection .owl-carousel .slide .leftSlidePart .slideHeading p {
+    margin-bottom: 5.8125rem;
+  }
+  .CarouselSection .owl-carousel .slide .rightSlidePart .modelImage {
+    height: 100%;
+  }
+  .CarouselSection .owl-carousel .slide .rightSlidePart .buyButton .circle {
+    left: 38%;
+    top: 43%;
+    width: 12.75rem;
+    height: 12.75rem;
+  }
+  .CarouselSection .owl-carousel .owl-dots {
+    left: -21% !important;
+    bottom: 56% !important;
+  }
+  .ItemsInStock .container ul.filters-mobile li.nav-item {
+    margin-right: 2.5rem;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .less-col-pd {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+  }
+  .CarouselSection {
+    margin-bottom: 1.375rem;
+  }
+  .CarouselSection .owl-carousel .slide {
+    padding-bottom: 5.1875rem;
+  }
+  .CarouselSection .owl-carousel .slide .leftSlidePart {
+    width: 50%;
+  }
+  .CarouselSection .owl-carousel .slide .leftSlidePart h3 {
+    margin-bottom: 1.0625rem !important;
+  }
+  .CarouselSection .owl-carousel .slide .leftSlidePart p {
+    margin-bottom: 1.5625rem !important;
+  }
+  .CarouselSection .owl-carousel .slide .rightSlidePart {
+    width: 50%;
+  }
+  .CarouselSection .owl-carousel .slide .rightSlidePart .gradientBlock {
+    width: 2.125rem !important;
+    height: 3.375rem !important;
+  }
+  .CarouselSection .owl-carousel .slide .rightSlidePart .modelImage {
+    height: 13.6875rem !important;
+    margin-top: 1.8125rem;
+    width: 12.9375rem;
+  }
+  .CarouselSection .owl-carousel .slide .rightSlidePart .buyButton {
+    display: none;
+  }
+  .CarouselSection .owl-carousel .owl-dots {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    position: relative;
+    bottom: 0 !important;
+    left: 0 !important;
+    display: flex;
+    justify-content: center;
+  }
+  .CarouselSection .owl-carousel .owl-dots button {
+    margin: 0 1.8125rem 0 !important;
+  }
+  .CarouselSection .moreBtn {
+    margin-bottom: 2.9375rem;
+    padding: 0.75rem 2.1875rem !important;
+  }
+  .ItemsInStock {
+    padding-top: 2rem;
+  }
+  .ItemsInStock .container {
+    position: relative;
+  }
+  .ItemsInStock .container .filters-mobile {
+    display: block;
+    position: relative;
+  }
+  .ItemsInStock .container .filters-mobile img {
+    transition: 0.3s linear;
+  }
+  .ItemsInStock .container .filters-mobile.show-mobile img {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  .ItemsInStock .container .filters-mobile button.filtersClick {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.625rem 0.5rem;
+    width: 14rem;
+    position: relative;
+    border: none;
+    background: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    gap: 0.5rem;
+  }
+  .ItemsInStock .container .filters-mobile button.filtersClick.show-mobile {
+    background: #527471;
+    border-radius: 0.625rem 0.625rem 0 0;
+  }
+  .ItemsInStock .container .filters-mobile button.filtersClick span {
+    text-align: left;
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 1.25rem;
+  }
+  .ItemsInStock .container ul.filters-mobile-cont {
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 14rem;
+    display: none;
+    border-radius: 0 0 0.625rem 0.625rem;
+    z-index: 10;
+    padding-left: 0.625rem;
+    padding-right: 1.9375rem;
+    margin-bottom: 0 !important;
+  }
+  .ItemsInStock .container ul.filters-mobile-cont li.nav-item {
+    margin: 0;
+    padding: 0.625rem 0;
+  }
+  .ItemsInStock .container ul.filters-mobile-cont li.nav-item button {
+    text-align: left;
+    border-bottom: none !important;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+  .ItemsInStock .container ul.filters-mobile-cont.show-mobile {
+    display: flex !important;
+    background: #363333;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card {
+    margin-bottom: 2.9375rem;
+    overflow: hidden;
+    height: 16.25rem !important;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-image {
+    max-width: 10.4375rem !important;
+    height: 16.25rem !important;
+    width: 100% !important;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay {
+    top: 45% !important;
+    height: 56% !important;
+    padding: 0.3125rem !important;
+    opacity: 1 !important;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .divider {
+    border-left: 0.0625rem solid #FFFFFF;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading {
+    margin-top: 0.9375rem;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading h4 {
+    font-size: 0.89rem;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading p {
+    display: none;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .right-side {
+    display: flex;
+    align-items: center;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .right-side .price p {
+    font-size: 0.95rem;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .sizes {
+    padding-left: 0 !important;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .sizes h4 {
+    margin-top: 0;
+    margin-bottom: 0.375rem !important;
+    font-size: 0.75rem !important;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .sizes ul li {
+    font-size: 0.5625rem;
+    margin-right: 0.3125rem !important;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .CarouselSection {
+    margin-bottom: 0 !important;
+  }
+  .CarouselSection .owl-carousel .rightSlidePart .modelImage {
+    width: 11.3125rem !important;
+  }
+  .CarouselSection .owl-carousel .leftSlidePart .moreBtn {
+    padding: 0.75rem 1.1875rem !important;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-image {
+    max-width: 8.9375rem !important;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay {
+    top: 36% !important;
+    height: 64% !important;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .right-side p {
+    font-size: 0.82rem !important;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .product-heading h4 {
+    margin-top: 0.1875rem !important;
+    margin-bottom: 0.125rem !important;
+  }
+}
+@media only screen and (max-width: 361px) {
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-image {
+    width: 8.4375rem !important;
+  }
+  .CarouselSection .owl-carousel .slide {
+    padding-bottom: 3rem;
+  }
+  .CarouselSection .owl-carousel .slide .leftSlidePart .moreBtn {
+    padding: 0.75rem 0.5rem !important;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .sizes h4 {
+    font-size: 0.64rem !important;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .right-side p {
+    font-size: 0.61rem !important;
+  }
+  .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-overlay .right-side .product-heading h4 {
+    font-size: 0.79rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

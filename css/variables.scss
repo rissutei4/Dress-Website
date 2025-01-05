@@ -1,0 +1,99 @@
+// Variables
+$base-font-size: 16px;
+
+$background-color: #101010;
+$font-family-primary: 'Rubik', sans-serif;
+$font-family-secondary: 'Alex Brush', cursive;
+$white-color: #FFFFFF;
+$accent-color: rgba(129, 216, 208, 0.87);
+$overlay-color: rgba(66, 69, 72, 0.72);
+$additional-section-bg: #81D8D0DE;
+$header-bg-color-transparent: rgba(38, 34, 34, 0.73);
+$header-bg-color: rgb(38, 34, 34);
+
+//Header
+$light-accent-color: rgba(129, 216, 208, 0.58); // #81D8D094
+$dark-bg-color: rgba(5, 5, 5, 0.91); // #050505E8
+$mobile-bg-color: #0D0C0C;
+$submenu-bg-color: rgba(151, 145, 145, 0.06);
+$border-color: #000000;
+
+//Order
+$form-background-color: #151414;
+$border-color-order: #FFFEFE;
+$heading-color: rgba(235, 247, 246, 0.87);
+$text-color: #C3BABA;
+$input-background: #131313;
+$placeholder-color: #7B7575;
+$accent-border-color: rgba(140, 231, 222, 0.89);
+$accent-background-color: rgba(129, 216, 208, 0.87);
+$button-text-color: rgba(248, 255, 254, 0.87);
+
+
+//Product
+$light-gray: #FFFEFE;
+$accent-color: #81D8D0;
+$accent-color-de: #81D8D0DE;
+$accent-color-e3: #81D8D0E3;
+$accent-color-translucent: rgba(140, 231, 222, 0.89);
+$box-shadow-color: rgba(253, 239, 239, 0.25);
+$font-color-gray: #5E5E5E;
+$font-color-light-gray: #F3E9E9;
+$font-color-off-white: #FFFCFC;
+$mobile-background-color: #EFEBEB;
+$mobile-font-color-dark-gray: #4C5251;
+$mobile-font-color-gray: #606564;
+$mobile-accent-color: #639A95;
+
+//Product Colors
+$color-gold: #D8B69A;
+$color-yellow: #CDD89A;
+$color-blue: #9AB7D8;
+$color-black: #343434;
+$color-purple: #AC9AD8;
+
+//Style
+$light-gray-color: #FFFEFE;
+$lightest-gray-color: #FFF9F9;
+$gray-color: #5E5E5E;
+$light-blue-color: #F6FCFB;
+$light-pink-color: #FAEFEF;
+$off-white-color: #FFFAFA;
+$accent-color-hover: #81d8d0;
+$accent-color-opacity: rgba(129, 216, 208, 0.75);
+$accent-color-8F: rgba(129, 216, 208, 0.56); // #81D8D08F
+$secondary-color: #0DFCE6;
+$overlay-color-index: rgba(16, 16, 16, 0.76); // #101010C2
+
+//Media-querries
+$base-font-size: 16px;
+$dark-gray-color: #363333;
+$button-hover-background: #527471;
+
+// Base Styles
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+  font-family: $font-family-primary;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+h4 {
+  font-weight: 400;
+}
+
+p {
+  font-weight: 500;
+}
+
+li p {
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}

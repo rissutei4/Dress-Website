@@ -1,6 +1,7 @@
 "use strict";
 //Language Button
 import {searchChecker} from "./translation-manager.js";
+import {checkPageAndChangeContent, addLanguagePrefixToLinks} from "./translation-manager.js";
 //Language Switcher
 const langSwitcherbtn = document.querySelector('.langbtn');
 const dropdownContent = document.querySelector('.sub-menu');
@@ -14,14 +15,14 @@ const headerNavBar = document.querySelector('.header-nav-bar');
 const body = document.querySelector('body');
 const burgerLines = burgerIcon.querySelectorAll(".line");
 
-function isMobileResolution() {
+export function isMobileResolution() {
     return window.innerWidth < 440; // Dynamically check viewport size
 }
 
 if (isMobileResolution()) {
     headerParent.appendChild(menuItemsWrapper);
 }
-function toggleMenu() {
+export function toggleMenu() {
     if(isMobileResolution()) {
         body.classList.toggle("open-menu-container");
         headerNavBar.classList.remove('sticky-nav');
@@ -86,3 +87,6 @@ const languageSwitcher = function () {
 }
 
 languageSwitcher();
+
+addLanguagePrefixToLinks();
+checkPageAndChangeContent();

@@ -1,54 +1,9 @@
 @import "disable.css";
-
-
-// Variables
-$background-color: #101010;
-$font-family-primary: 'Rubik', sans-serif;
-$font-family-menu: 'Alex Brush', cursive;
-$white-color: #FFFFFF;
-$header-bg-color-transparent: rgba(38, 34, 34, 0.73);
-$header-bg-color: rgb(38, 34, 34);
-$accent-color: #81D8D0;
-$accent-color-de: #81D8D0DE;
-$light-accent-color: rgba(129, 216, 208, 0.58); // #81D8D094
-$dark-bg-color: rgba(5, 5, 5, 0.91); // #050505E8
-$mobile-bg-color: #0D0C0C;
-$submenu-bg-color: rgba(151, 145, 145, 0.06);
-$border-color: #000000;
-
-$base-font-size: 16px;
-
-// Global Styles
-body {
-  margin: 0;
-  padding: 0;
-  background-color: $background-color;
-  font-family: $font-family-primary;
-}
-
-h3 {
-  font-weight: 600;
-}
-
-h4 {
-  font-weight: 400;
-}
-
-p {
-  font-weight: 500;
-}
-
-li p {
-  font-weight: 300;
-}
-
-a {
-  text-decoration: none;
-}
-
+@import "./variables.scss";
 // Header Styles
 .sticky-nav {
   position: fixed;
+  top: 0;
 }
 
 header {
@@ -344,7 +299,7 @@ footer {
     align-items: center !important;
     justify-content: center !important;
     border: 0.0625rem solid $border-color !important; // 1px
-    font-family: $font-family-menu !important;
+    font-family: $font-family-secondary !important;
     font-weight: 400 !important;
     padding: 3.0625rem 0 !important; // 49px
     text-align: center !important;

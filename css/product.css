@@ -1,4 +1,4 @@
-@import "disable.css";
+@import "./disable.css";
 @import "./header-footer.css";
 body {
   margin: 0;
@@ -21,6 +21,10 @@ p {
 
 li p {
   font-weight: 300;
+}
+
+a {
+  text-decoration: none;
 }
 
 .hidden {

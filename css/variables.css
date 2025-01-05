@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #101010;
+  font-family: "Rubik", sans-serif;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+h4 {
+  font-weight: 400;
+}
+
+p {
+  font-weight: 500;
+}
+
+li p {
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=variables.css.map */

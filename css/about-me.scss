@@ -1,39 +1,6 @@
-@import "disable.css";
+@import "./disable.css";
+@import "./variables.scss";
 @import "./header-footer.css";
-
-// Variables
-$background-color: #101010;
-$font-family-primary: 'Rubik', sans-serif;
-$font-family-secondary: 'Alex Brush', cursive;
-$white-color: #FFFFFF;
-$overlay-color: rgba(66, 69, 72, 0.72);
-$accent-color: rgba(129, 216, 208, 0.87);
-$additional-section-bg: #81D8D0DE;
-
-// Base Styles
-body {
-  margin: 0;
-  padding: 0;
-  background-color: $background-color;
-  font-family: $font-family-secondary;
-  font-family: $font-family-primary;
-}
-
-h3 {
-  font-weight: 600;
-}
-
-h4 {
-  font-weight: 400;
-}
-
-p {
-  font-weight: 500;
-}
-
-li p {
-  font-weight: 300;
-}
 
 // Back Image Section
 .back-image-sect {

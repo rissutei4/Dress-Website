@@ -1,10 +1,9 @@
-@import "disable.css";
+@import "./disable.css";
 @import "./header-footer.css";
 body {
   margin: 0;
   padding: 0;
   background-color: #101010;
-  font-family: "Alex Brush", cursive;
   font-family: "Rubik", sans-serif;
 }
 
@@ -22,6 +21,10 @@ p {
 
 li p {
   font-weight: 300;
+}
+
+a {
+  text-decoration: none;
 }
 
 .back-image-sect .bg-image {
@@ -83,7 +86,7 @@ li p {
 .about-section .contact-info hr {
   width: 30%;
   height: 0.1875rem;
-  background: rgba(129, 216, 208, 0.87);
+  background: #81D8D0;
   margin-left: 0;
   margin-bottom: 1.375rem;
 }

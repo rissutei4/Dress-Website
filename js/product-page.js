@@ -3,7 +3,7 @@
 // Main Constants and DOM Elements
 // ====================================================
 //Imports
-import {weddingDresses} from './product-arrays.js';
+import {allProducts} from './product-arrays.js';
 import {translations} from "./translations-arrays.js";
 import {addLanguagePrefixToLinks, searchChecker} from "./translation-manager.js";
 
@@ -49,7 +49,6 @@ async function loadProductPage() {
                 return;
             }
 
-            const allProducts = [...weddingDresses];
             const product = allProducts.find(p => p.id === productId);
 
             if (!product) {
