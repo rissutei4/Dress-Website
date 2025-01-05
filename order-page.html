@@ -143,7 +143,7 @@
         <p data-translate="formSubHeader">Please leave your details so we can contact you about your order.</p>
     </div>
     <div class="contactForm">
-        <form action="https://api.web3forms.com/submit" onsubmit="return validateForm()">
+        <form action="https://api.web3forms.com/submit" method="POST" onsubmit="return validateForm()">
             <div class="row">
                 <div class="col-md-12">
                     <input type="hidden" name="access_key" value="process.env.WEB3FORMS_API_KEY">
