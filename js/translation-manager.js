@@ -6,7 +6,7 @@ import {translations} from "./translations-arrays.js";
 function checkPageAndChangeContent() {
     const {pageName, languageId} = searchChecker();
     const matchingPageKey = Object.keys(translations).find(key => key === pageName);
-    const matchingPage = translations[matchingPageKey];
+    const matchingPage = translations[matchingPageKey] || translations['index'];
     const currentLanguage = matchingPage[languageId];
 
     if (matchingPage && currentLanguage) {
