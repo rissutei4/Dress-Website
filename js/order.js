@@ -48,7 +48,12 @@ document.addEventListener("DOMContentLoaded", function () {
         .then((response) => response.json())
         .then((data) => {
             const accessKeyInput = document.getElementById("access_key");
-            accessKeyInput.value = data.apiKey.trim(); // Ensure there are no extra spaces
+
+            // Destructure `data.apiKey` to extract the first key if it's an array
+            const apiKey = Array.isArray(data.apiKey) ? data.apiKey[0] : data.apiKey;
+
+            // Assign the API key to the hidden input field
+            accessKeyInput.value = apiKey.trim(); // Ensure there are no extra spaces
         })
         .catch((error) => {
             console.error("Error fetching API key:", error);
