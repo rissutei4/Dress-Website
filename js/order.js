@@ -41,39 +41,3 @@ function validateForm() {
 
     return isValid;
 }
-
-async function submitForm(event) {
-    event.preventDefault(); // Prevent default form submission behavior
-
-    // Run form validation
-    if (!validateForm()) {
-        return; // If validation fails, stop the submission
-    }
-
-    // If validation passes, collect the form data
-    const formData = {
-        name: document.getElementById('nameInput').value.trim(),
-        phone: document.getElementById('phoneInput').value.trim(),
-        email: document.getElementById('emailInput').value.trim(),
-    };
-
-    try {
-        // Send the data to the serverless function
-        const response = await fetch('/.netlify/functions/submitForm', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(formData),
-        });
-
-        const data = await response.json();
-
-        if (response.ok) {
-            alert('Form submitted successfully!');
-        } else {
-            alert(`Error: ${data.message}`);
-        }
-    } catch (error) {
-        console.error('Error submitting form:', error);
-        alert('An error occurred. Please try again later.');
-    }
-}
