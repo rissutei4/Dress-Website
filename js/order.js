@@ -43,12 +43,15 @@ function validateForm() {
 }
 
 // Fetch the API key from the Netlify function
-fetch("/.netlify/functions/get-api-key")
-    .then((response) => response.json())
-    .then((data) => {
-        const apikeyInput = document.getElementById("apikey");
-        apikeyInput.value = data.apiKey; // Populate the API key
-    })
-    .catch((error) => {
-        console.error("Error fetching API key:", error)
-    });
+document.addEventListener("DOMContentLoaded", function () {
+    // Fetch the API key from the Netlify function
+    fetch("/.netlify/functions/get-api-key")
+        .then((response) => response.json())
+        .then((data) => {
+            const accessKeyInput = document.getElementById("access_key");
+            accessKeyInput.value = data.apiKey; // Populate the API key dynamically
+        })
+        .catch((error) => {
+            console.error("Error fetching API key:", error);
+        });
+});
