@@ -41,3 +41,14 @@ function validateForm() {
 
     return isValid;
 }
+
+// Fetch the API key from the Netlify function
+fetch("/.netlify/functions/get-api-key")
+    .then((response) => response.json())
+    .then((data) => {
+        const apikeyInput = document.getElementById("apikey");
+        apikeyInput.value = data.apiKey; // Populate the API key
+    })
+    .catch((error) => {
+        console.error("Error fetching API key:", error)
+    });
