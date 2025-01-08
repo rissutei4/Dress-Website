@@ -144,12 +144,13 @@
     </div>
     <div class="contactForm">
         <form id="order-form" action="https://api.web3forms.com/submit" method="POST" onsubmit="return validateForm()">
-            <input type="hidden" name="access_key" id="access_key" />
+            <input type="hidden" name="access_key" id="access_key"/>
             <div class="row">
                 <div class="col-md-12">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="nameInput" data-translate="full-name"
-                               placeholder="Your full name">
+                        <input type="text" class="form-control" id="nameInput"
+                               data-translate="full-name"
+                               placeholder="Your full name" name="full-name">
                         <div class="invalid-feedback" data-translate="nameError" id="nameError">Please enter your full
                             name
                             (first and last name).
@@ -157,7 +158,7 @@
                     </div>
                     <div class="form-group">
                         <input type="number" class="form-control" id="phoneInput" data-translate="phone-number"
-                               placeholder="Phone number">
+                               placeholder="Phone number" name="phone-number">
                         <div class="invalid-feedback" data-translate="phoneError" id="phoneError">Please enter a valid
                             phone
                             number (9 to 15
@@ -166,8 +167,9 @@
                     </div>
                     <div class="form-group">
                         <input type="email" class="form-control" data-translate="email-input" id="emailInput"
-                               placeholder="Email address">
-                        <div class="invalid-feedback" data-translate="emailError" id="emailError">Please enter a valid
+                               placeholder="Email address" name="email-input">
+                        <div class="invalid-feedback" data-translate="emailError" id="emailError"
+                        >Please enter a valid
                             email
                             address.
                         </div>
