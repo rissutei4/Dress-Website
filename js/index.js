@@ -1,9 +1,8 @@
 "use strict";
-import {allProducts} from "./product-arrays.js";
+import {initAllProducts, allProducts} from "./product-arrays.js";
 import {checkPageAndChangeContent, addLanguagePrefixToLinks} from "./translation-manager.js";
 import {toggleMenu, isMobileResolution} from "./header.js";
 
-console.log(allProducts)
 const MAX_VISIBLE_CARDS = 6;
 const categoriesSection = document.querySelector(".ItemsInStock");
 const filterButton = document.querySelector('.filtersClick span');
@@ -14,31 +13,36 @@ const loadMoreProductsBtn = `
    <button class="load-more" data-translate="load-more-button"></button>
 </div>`;
 
-
 /*-- LOADING OF THE PAGE*/
 //Load the product cards to corresponding dress categories.
-allProducts.forEach(dress => {
-    dress.placeCardInCategory(dress);
+(async function main() {
+    await initAllProducts();
+    allProducts.forEach(product => {
+        product.placeCardInCategory(product);
+    });
+    createLoadBtn();
     addLanguagePrefixToLinks();
-});
-
+    checkPageAndChangeContent();
+})();
 
 /* -- LOAD MORE BTN -- */
-//Create load more btn
-categoriesIds.forEach(id => {
-    const currentCategory = document.getElementById(id);
-    const currentCategoryRow = currentCategory.querySelector(".row");
-    const productCards = currentCategoryRow.querySelectorAll(".product-card");
 
-    //If there's more than the specified number add a load more btn
-    if (productCards.length > MAX_VISIBLE_CARDS) {
-        productCards.forEach((card, index) => {
-            if (index >= MAX_VISIBLE_CARDS) card.classList.add("hide-card");
-        });
-        currentCategoryRow.insertAdjacentHTML("afterend", loadMoreProductsBtn);
-    }
-    checkPageAndChangeContent();
-})
+//Create load more btn
+function createLoadBtn() {
+    categoriesIds.forEach(id => {
+        const currentCategory = document.getElementById(id);
+        const currentCategoryRow = currentCategory.querySelector(".row");
+        const productCards = currentCategoryRow.querySelectorAll(".product-card");
+
+        //If there's more than the specified number add a load more btn
+        if (productCards.length > MAX_VISIBLE_CARDS) {
+            productCards.forEach((card, index) => {
+                if (index >= MAX_VISIBLE_CARDS) card.classList.add("hide-card");
+            });
+            currentCategoryRow.insertAdjacentHTML("afterend", loadMoreProductsBtn);
+        }
+    })
+}
 
 // Function to handle "Load More" button clicks
 function handleLoadMoreClick(event) {

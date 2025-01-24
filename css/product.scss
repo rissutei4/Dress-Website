@@ -2,12 +2,14 @@
 @import "./variables.scss";
 @import "./header-footer.css";
 
-.hidden{
+.hidden {
   display: none;
 }
-.active{
+
+.active {
   display: block;
 }
+
 // Product Section
 .product {
   margin-top: 5.6875rem; // 91px
@@ -131,7 +133,7 @@
                   }
 
                   &.color-yellow {
-                    background: #CDD89A;
+                    background: $color-yellow;
                   }
 
                   &.color-white {
@@ -139,15 +141,52 @@
                   }
 
                   &.color-blue {
-                    background: #9AB7D8;
+                    background: $color-blue;
                   }
 
                   &.color-black {
-                    background: #343434;
+                    background: $color-black;
                   }
 
                   &.color-purple {
-                    background: #AC9AD8;
+                    background: $color-purple;
+                  }
+
+                  // New Colors
+                  &.color-red {
+                    background: $color-red;
+                  }
+
+                  &.color-ivory {
+                    background: $color-ivory;
+                  }
+
+                  &.color-silver {
+                    background: $color-silver;
+                  }
+
+                  &.color-champagne {
+                    background: $color-champagne;
+                  }
+
+                  &.color-navy {
+                    background: $color-navy;
+                  }
+
+                  &.color-pearl {
+                    background: $color-pearl;
+                  }
+
+                  &.color-green {
+                    background: $color-green;
+                  }
+
+                  &.color-pink {
+                    background: $color-pink;
+                  }
+
+                  &.color-blush {
+                    background: $color-blush;
                   }
                 }
               }

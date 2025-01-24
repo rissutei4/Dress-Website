@@ -1,0 +1,1115 @@
+{
+  "evening": [
+    {
+      "name": "Radiance Gown",
+      "price": 900,
+      "sizes": [
+        36,
+        38,
+        40,
+        42,
+        44,
+        46,
+        50
+      ],
+      "colors": [
+        "blue"
+      ],
+      "description": {
+        "ukr": "Сукня в підлогу небесно-блакитного кольору з тюлю, з корсетним ліфом та витонченою вишивкою квітів. Дизайн включає тонкі бретелі та об’ємну спідницю, яка додає казковий ефект.",
+        "eng": "A floor-length, sky-blue tulle ball gown featuring a corset-style bodice with intricate floral embroidery. The design includes spaghetti straps and a voluminous skirt that adds a dreamy, fairytale-like effect.",
+        "deu": "Ein bodenlanges Ballkleid aus himmelblauem Tüll mit einem Korsett-Oberteil und filigraner Blumenstickerei. Das Design umfasst Spaghettiträger und einen voluminösen Rock, der einen märchenhaften Effekt verleiht.",
+        "svk": "Dlhé spoločenské šaty z nebesky modrého tylu s korzetovým vrchným dielom a jemnou kvetinovou výšivkou. Dizajn zahŕňa tenké ramienka a objemnú sukňu, ktorá vytvára rozprávkový efekt."
+      },
+      "details": {
+        "eng": "Materials used: Tulle and satin.",
+        "ukr": "Матеріали: Тюль і атлас.",
+        "deu": "Material: Tüll und Satin.",
+        "svk": "Materiál: Tyl a satén."
+      },
+      "extra": {
+        "eng": "Perfect for prom or a gala, styled with silver jewellery and heels.",
+        "ukr": "Ідеально підходить для випускного або гала-вечора, доповнене срібними прикрасами та туфлями.",
+        "deu": "Perfekt für Ball oder Gala, kombiniert mit Silberschmuck und High Heels.",
+        "svk": "Ideálny na ples alebo galavečer, kombinovaný so striebornými šperkami a lodičkami."
+      },
+      "id": 584,
+      "mainImage": "./images/products/evening/dress1/photo_2025-01-03_23-16-39.jpg",
+      "otherImages": [
+        "./images/products/evening/dress1/photo_2025-01-03_23-16-40.jpg"
+      ],
+      "dressType": "evening-dress"
+    },
+    {
+      "name": "Sparkling Evening Dress",
+      "price": 950,
+      "sizes": [
+        36,
+        38,
+        40,
+        42,
+        44,
+        46,
+        50
+      ],
+      "colors": [
+        "pearl",
+        "ivory",
+        "silver",
+        "red",
+        "gold",
+        "champagne"
+      ],
+      "description": {
+        "ukr": "Приталена біла вечірня сукня з корсетним ліфом і бретелями у вигляді стрічок. Сукня прикрашена вишуканою мереживною вишивкою та високим розрізом із блискучими акцентами.",
+        "eng": "A form-fitting, white evening gown with a structured, corset-style bodice and ribbon-style shoulder straps. The gown features intricate lace embroidery and a thigh-high slit with glitter embellishments.",
+        "deu": "Ein figurbetontes weißes Abendkleid mit einem strukturierten Korsett-Oberteil und schulterfreien Bändern. Das Kleid ist mit filigraner Spitzenstickerei und einem hohen Beinschlitz mit Glitzerverzierungen versehen.",
+        "svk": "Priliehavé biele večerné šaty s korzetovým vrchným dielom a ramienkami vo forme stužiek. Šaty sú zdobené jemnou čipkovou výšivkou a vysokým rozparkom s trblietavými detailmi."
+      },
+      "details": {
+        "eng": "Materials used: Lace, satin, and glitter fabric.",
+        "ukr": "Матеріали: Мереживо, атлас і тканина з блиском.",
+        "deu": "Material: Spitze, Satin und Glitzerstoff.",
+        "svk": "Materiál: Čipka, satén a trblietavá látka."
+      },
+      "extra": {
+        "eng": "Elegant for high-end events, styled with statement earrings and heels.",
+        "ukr": "Елегантний для розкішних заходів, доповнений яскравими сережками та підборами.",
+        "deu": "Elegant für exklusive Anlässe, kombiniert mit auffälligen Ohrringen und High Heels.",
+        "svk": "Elegantné pre exkluzívne podujatia, kombinované s výraznými náušnicami a lodičkami."
+      },
+      "id": 234,
+      "mainImage": "./images/products/evening/dress2/photo_2025-01-03_23-16-42.jpg",
+      "otherImages": [
+        "./images/products/evening/dress2/photo_2025-01-03_23-16-43.jpg"
+      ],
+      "dressType": "evening-dress"
+    },
+    {
+      "name": "Twilight Grace Gown",
+      "price": 890,
+      "sizes": [
+        36,
+        38,
+        40,
+        42,
+        44,
+        46,
+        50
+      ],
+      "colors": [
+        "blue"
+      ],
+      "description": {
+        "ukr": "Коротка коктейльна сукня ніжно-блакитного кольору з пишними рукавами, спущеними на плечі, та корсетним ліфом. Сукня грайлива та жіночна з розкльошеною спідницею в формі літери А.",
+        "eng": "A short, powder-blue cocktail dress with puffed off-shoulder sleeves and a corset-inspired bodice. The dress is playful and feminine with a flared A-line skirt.",
+        "deu": "Ein kurzes, puderblaues Cocktailkleid mit puffigen schulterfreien Ärmeln und einem Korsett-inspirierten Oberteil. Das Kleid ist verspielt und feminin mit einem ausgestellten A-Linien-Rock.",
+        "svk": "Krátke koktailové šaty jemne modrej farby s nafúknutými rukávmi spustenými na ramená a korzetovým vrchným dielom. Šaty sú hravé a ženské s rozšírenou sukňou v tvare A."
+      },
+      "details": {
+        "eng": "Materials used: Satin and chiffon.",
+        "ukr": "Матеріали: Атлас і шифон.",
+        "deu": "Material: Satin und Chiffon.",
+        "svk": "Materiál: Satén a šifón."
+      },
+      "extra": {
+        "eng": "Chic and fun for semi-formal events, styled with a clutch and heels.",
+        "ukr": "Стильний і веселий для напівофіційних заходів, доповнений клатчем і туфлями.",
+        "deu": "Schick und fröhlich für halbformelle Anlässe, kombiniert mit einer Clutch und High Heels.",
+        "svk": "Štýlové a zábavné na polofomálne podujatia, kombinované s kabelkou a lodičkami."
+      },
+      "id": 345,
+      "mainImage": "./images/products/evening/dress3/photo_2025-01-03_23-16-45.jpg",
+      "otherImages": [
+        "./images/products/evening/dress3/photo_2025-01-03_23-16-46.jpg"
+      ],
+      "dressType": "evening-dress"
+    },
+    {
+      "name": "Golden Hour Evening Dress",
+      "price": 1100,
+      "sizes": [
+        36,
+        38,
+        40,
+        42,
+        44,
+        46,
+        50
+      ],
+      "colors": [
+        "white"
+      ],
+      "description": {
+        "ukr": "Біла вечірня сукня \"Золота година\" прикрашає будь-який вечір своїм сяйвом та витонченим дизайном.",
+        "eng": "A stunning white evening dress called \"Golden Hour,\" designed to light up any evening with its radiant and refined design.",
+        "deu": "Ein atemberaubendes weißes Abendkleid namens \"Goldene Stunde\", das jeden Abend mit seinem strahlenden und raffinierten Design erhellt.",
+        "svk": "Úžasné biele večerné šaty \"Zlatá hodina\", navrhnuté na rozžiarenie každého večera svojím žiarivým a prepracovaným dizajnom."
+      },
+      "details": {
+        "eng": "Materials used: Satin, gold thread embroidery.",
+        "ukr": "Матеріали: Атлас, вишивка золотими нитками.",
+        "deu": "Material: Satin, goldene Fadenstickerei.",
+        "svk": "Materiál: Satén, vyšívanie zlatou niťou."
+      },
+      "extra": {
+        "eng": "Elegant and timeless, perfect for weddings or formal galas.",
+        "ukr": "Елегантний і вічний, ідеальний для весіль чи формальних балів.",
+        "deu": "Elegant und zeitlos, perfekt für Hochzeiten oder formelle Galas.",
+        "svk": "Elegantné a nadčasové, ideálne na svadby alebo formálne plesy."
+      },
+      "id": 456,
+      "mainImage": "./images/products/evening/dress4/photo_2025-01-03_23-16-48.jpg",
+      "otherImages": [
+        "./images/products/evening/dress4/photo_2025-01-03_23-16-49.jpg"
+      ],
+      "dressType": "evening-dress"
+    },
+    {
+      "name": "Midnight Star Evening Gown",
+      "price": 1050,
+      "sizes": [
+        36,
+        38,
+        40,
+        42,
+        44,
+        46,
+        50
+      ],
+      "colors": [
+        "blue"
+      ],
+      "description": {
+        "ukr": "Сукня \"Нічна зірка\" створює враження чарівного образу завдяки розкішному дизайну та блискучим деталям.",
+        "eng": "\"Midnight Star\" gown creates an enchanting look with its luxurious design and sparkling details.",
+        "deu": "Das \"Mitternachtsstern\"-Kleid schafft mit seinem luxuriösen Design und funkelnden Details einen zauberhaften Look.",
+        "svk": "Šaty \"Polnočná hviezda\" vytvárajú očarujúci vzhľad vďaka svojmu luxusnému dizajnu a trblietavým detailom."
+      },
+      "details": {
+        "eng": "Materials used: Silk, sequins, metallic thread.",
+        "ukr": "Матеріали: Шовк, паєтки, металева нитка.",
+        "deu": "Material: Seide, Pailletten, Metallfaden.",
+        "svk": "Materiál: Hodváb, flitre, kovová niť."
+      },
+      "extra": {
+        "eng": "Ideal for evening galas, styled with metallic jewellery and high heels.",
+        "ukr": "Ідеальний для вечірніх балів, доповнений металевими прикрасами та високими підборами.",
+        "deu": "Ideal für Abendgalas, kombiniert mit metallischem Schmuck und High Heels.",
+        "svk": "Ideálny na večerné plesy, kombinovaný s kovovými šperkami a lodičkami."
+      },
+      "id": 564,
+      "mainImage": "./images/products/evening/dress5/photo_2025-01-03_23-16-50.jpg",
+      "otherImages": [
+        "./images/products/evening/dress5/photo_2025-01-03_23-16-51.jpg"
+      ],
+      "dressType": "evening-dress"
+    },
+    {
+      "name": "Scarlet Moon Evening Dress",
+      "price": 980,
+      "sizes": [
+        36,
+        38,
+        40,
+        42,
+        44,
+        46,
+        50
+      ],
+      "colors": [
+        "red",
+        "white",
+        "ivory"
+      ],
+      "description": {
+        "ukr": "Сукня \"Оксамитова місяць\" вирізняється елегантністю та ніжністю, що підкреслюють вашу унікальність.",
+        "eng": "The \"Scarlet Moon\" dress stands out with elegance and delicacy, highlighting your uniqueness.",
+        "deu": "Das \"Scharlachrote Mond\"-Kleid besticht durch Eleganz und Feinheit und unterstreicht Ihre Einzigartigkeit.",
+        "svk": "Šaty \"Šarlátový mesiac\" vynikajú eleganciou a jemnosťou, ktoré zvýrazňujú vašu jedinečnosť."
+      },
+      "details": {
+        "eng": "Materials used: Velvet, satin lining.",
+        "ukr": "Матеріали: Оксамит, атласна підкладка.",
+        "deu": "Material: Samt, Satinfutter.",
+        "svk": "Materiál: Zamat, saténová podšívka."
+      },
+      "extra": {
+        "eng": "Perfect for romantic evenings, styled with pearl accessories.",
+        "ukr": "Ідеальний для романтичних вечорів, доповнений перлинними аксесуарами.",
+        "deu": "Perfekt für romantische Abende, kombiniert mit Perlenaccessoires.",
+        "svk": "Ideálne na romantické večery, kombinované s perlovými doplnkami."
+      },
+      "id": 678,
+      "mainImage": "./images/products/evening/dress6/photo_2025-01-03_23-16-51.jpg",
+      "otherImages": [
+        "./images/products/evening/dress6/photo_2025-01-03_23-16-54.jpg"
+      ],
+      "dressType": "evening-dress"
+    }
+  ],
+  "wedding": [
+    {
+      "name": "Eternal Elegance Gown",
+      "price": 1800,
+      "sizes": [
+        6,
+        8,
+        12,
+        14
+      ],
+      "colors": [
+        "gold"
+      ],
+      "description": {
+        "ukr": "Сукня \"Вічна елегантність\" створена для нареченої, яка прагне поєднати традицію та сучасність. Вишуканий корсет з мереживом та шовкова спідниця створюють неперевершений образ.",
+        "eng": "The \"Eternal Elegance\" gown combines timeless beauty with modern details for a striking bridal look.",
+        "deu": "Das Kleid \"Ewige Eleganz\" verbindet zeitlose Schönheit mit modernen Details für einen atemberaubenden Brautlook.",
+        "svk": "Šaty \"Večná elegancia\" spájajú nadčasovú krásu s modernými detailmi na vytvorenie ohromujúceho svadobného vzhľadu."
+      },
+      "details": {
+        "eng": "Materials used: 100% silk, lace embellishments.",
+        "ukr": "Матеріали: 100% шовк, мереживні прикраси.",
+        "deu": "Material: 100% Seide, Spitzenverzierungen.",
+        "svk": "Materiál: 100% hodváb, čipkované ozdoby."
+      },
+      "extra": {
+        "eng": "Perfect for formal weddings, styled with a lace veil and diamond jewellery.",
+        "ukr": "Ідеально для офіційних весіль, доповнене мереживною фатою та діамантовими прикрасами.",
+        "deu": "Perfekt für formelle Hochzeiten, kombiniert mit einem Spitzenschleier und Diamantschmuck.",
+        "svk": "Ideálne na formálne svadby, kombinované s čipkovaným závojom a diamantovými šperkami."
+      },
+      "id": 43,
+      "mainImage": "./images/products/wedding/dress1/photo_2025-01-03_02-17-23.jpg",
+      "otherImages": [
+        "./images/products/wedding/dress1/photo_2025-01-03_02-17-24.jpg"
+      ],
+      "dressType": "wedding-dress"
+    },
+    {
+      "name": "Radiant Bride Gown",
+      "price": 2200,
+      "sizes": [
+        6,
+        8,
+        12,
+        14
+      ],
+      "colors": [
+        "ivory"
+      ],
+      "description": {
+        "ukr": "Сукня \"Сяюча наречена\" вирізняється блискучими деталями та ніжною вуаллю, що додає образу неповторного шарму.",
+        "eng": "The \"Radiant Bride\" gown is a vision of elegance with sparkling details and a soft, flowing train.",
+        "deu": "Das Kleid \"Strahlende Braut\" ist eine Vision von Eleganz mit funkelnden Details und einer weichen, fließenden Schleppe.",
+        "svk": "Šaty \"Žiarivá nevesta\" sú stelesnením elegancie so žiarivými detailmi a jemnou vlečkou."
+      },
+      "details": {
+        "eng": "Materials used: Satin, tulle, crystal embellishments.",
+        "ukr": "Матеріали: Атлас, тюль, кристалічні прикраси.",
+        "deu": "Materialien: Satin, Tüll, Kristallverzierungen.",
+        "svk": "Materiál: Satén, tyl, kryštálové ozdoby."
+      },
+      "extra": {
+        "eng": "Best paired with a crystal tiara and matching earrings for an unforgettable bridal look.",
+        "ukr": "Ідеально поєднується з кришталевою тіарою та відповідними сережками для неповторного образу.",
+        "deu": "Am besten kombiniert mit einer Kristalltiara und passenden Ohrringen für einen unvergesslichen Brautlook.",
+        "svk": "Najlepšie kombinované s kryštálovou tiarou a zodpovedajúcimi náušnicami na nezabudnuteľný svadobný vzhľad."
+      },
+      "id": 78,
+      "mainImage": "./images/products/wedding/dress2/photo_2025-01-03_02-18-01.jpg",
+      "otherImages": [
+        "./images/products/wedding/dress2/photo_2025-01-03_02-18-03.jpg"
+      ],
+      "dressType": "wedding-dress"
+    },
+    {
+      "name": "Timeless Grace Bridal Dress",
+      "price": 2500,
+      "sizes": [
+        6,
+        8,
+        12,
+        14
+      ],
+      "colors": [
+        "ivory"
+      ],
+      "description": {
+        "ukr": "Сукня \"Вічна грація\" поєднує в собі класичний дизайн та сучасні елементи, підкреслюючи природну красу нареченої.",
+        "eng": "The \"Timeless Grace\" dress blends classic design with modern elegance to highlight a bride’s natural beauty.",
+        "deu": "Das Kleid \"Zeitlose Anmut\" verbindet klassisches Design mit moderner Eleganz, um die natürliche Schönheit der Braut zu betonen.",
+        "svk": "Šaty \"Nadčasová grácia\" spájajú klasický dizajn s modernou eleganciou na zvýraznenie prirodzenej krásy nevesty."
+      },
+      "details": {
+        "eng": "Materials used: Organza, lace, pearl accents.",
+        "ukr": "Матеріали: Органза, мереживо, перлинні акценти.",
+        "deu": "Materialien: Organza, Spitze, Perlenakzente.",
+        "svk": "Materiál: Organza, čipka, perlové detaily."
+      },
+      "extra": {
+        "eng": "Perfect for garden weddings, styled with a pearl necklace and floral headpiece.",
+        "ukr": "Ідеально для весіль у саду, доповнене перлинним намистом та квітковим головним убором.",
+        "deu": "Perfekt für Gartenhochzeiten, kombiniert mit einer Perlenkette und einem Blumenhaarschmuck.",
+        "svk": "Ideálne na svadby v záhrade, kombinované s perlovým náhrdelníkom a kvetinovou ozdobou do vlasov."
+      },
+      "id": 121,
+      "mainImage": "./images/products/wedding/dress3/photo_2025-01-03_02-18-10.jpg",
+      "otherImages": [
+        "./images/products/wedding/dress3/photo_2025-01-03_02-18-11.jpg"
+      ],
+      "dressType": "wedding-dress"
+    },
+    {
+      "name": "Majestic Charm Wedding Gown",
+      "price": 1900,
+      "sizes": [
+        6,
+        8,
+        12,
+        14
+      ],
+      "colors": [
+        "ivory"
+      ],
+      "description": {
+        "ukr": "Сукня \"Магічний шарм\" створена для нареченої, яка бажає виглядати королівсько у свій особливий день.",
+        "eng": "The \"Majestic Charm\" gown exudes regal elegance with its intricate detailing and voluminous skirt.",
+        "deu": "Das Kleid \"Majestätischer Charme\" strahlt königliche Eleganz mit seiner aufwendigen Detailarbeit und voluminösem Rock aus.",
+        "svk": "Šaty \"Majestátny šarm\" vyžarujú kráľovskú eleganciu s prepracovanými detailmi a objemnou sukňou."
+      },
+      "details": {
+        "eng": "Materials used: Taffeta, lace appliqués, sequins.",
+        "ukr": "Матеріали: Тафта, мереживні аплікації, паєтки.",
+        "deu": "Materialien: Taft, Spitzenapplikationen, Pailletten.",
+        "svk": "Materiál: Taft, čipkované aplikácie, flitre."
+      },
+      "extra": {
+        "eng": "Best styled with a cathedral veil and sparkling silver jewellery.",
+        "ukr": "Найкраще поєднується з соборною фатою та блискучими срібними прикрасами.",
+        "deu": "Am besten kombiniert mit einem Kathedralschleier und funkelndem Silberschmuck.",
+        "svk": "Najlepšie kombinované s katedrálnym závojom a trblietavými striebornými šperkami."
+      },
+      "id": 342,
+      "mainImage": "./images/products/wedding/dress4/photo_2025-01-03_02-18-14.jpg",
+      "otherImages": [
+        "./images/products/wedding/dress4/photo_2025-01-03_02-18-15.jpg",
+        "./images/products/wedding/dress4/photo_2025-01-03_02-18-17.jpg"
+      ],
+      "dressType": "wedding-dress"
+    },
+    {
+      "name": "Whispering Love Bridal Dress",
+      "price": 2100,
+      "sizes": [
+        6,
+        8,
+        12,
+        14
+      ],
+      "colors": [
+        "gold"
+      ],
+      "description": {
+        "ukr": "Сукня \"Шепіт кохання\" відзначається ніжним дизайном та витонченими деталями, що підкреслюють жіночність нареченої.",
+        "eng": "The \"Whispering Love\" bridal dress captures femininity with its delicate beadwork and flowing chiffon.",
+        "deu": "Das Kleid \"Flüsternde Liebe\" fängt Weiblichkeit mit seiner filigranen Perlenarbeit und fließendem Chiffon ein.",
+        "svk": "Šaty \"Šepot lásky\" zachytávajú ženskosť vďaka jemnému zdobeniu korálkami a splývavému šifónu."
+      },
+      "details": {
+        "eng": "Materials used: Chiffon, lace, beadwork.",
+        "ukr": "Матеріали: Шифон, мереживо, бісер.",
+        "deu": "Materialien: Chiffon, Spitze, Perlenarbeit.",
+        "svk": "Materiál: Šifón, čipka, korálky."
+      },
+      "extra": {
+        "eng": "Ideal for intimate ceremonies, styled with simple jewellery and a floral bouquet.",
+        "ukr": "Ідеально для затишних церемоній, доповнене простими прикрасами та квітковим букетом.",
+        "deu": "Ideal für intime Zeremonien, kombiniert mit schlichtem Schmuck und einem Blumenstrauß.",
+        "svk": "Ideálne na komorné ceremónie, kombinované s jednoduchými šperkami a kvetinovou kyticou."
+      },
+      "id": 567,
+      "mainImage": "./images/products/wedding/dress5/photo_2025-01-03_02-18-20.jpg",
+      "otherImages": [],
+      "dressType": "wedding-dress"
+    },
+    {
+      "name": "Enchanted Dreams Gown",
+      "price": 2300,
+      "sizes": [
+        6,
+        8,
+        12,
+        14
+      ],
+      "colors": [
+        "white"
+      ],
+      "description": {
+        "ukr": "Сукня \"Зачаровані мрії\" приносить казкову атмосферу у ваш весільний день завдяки своїм чарівним деталям.",
+        "eng": "The \"Enchanted Dreams\" gown brings a fairy-tale atmosphere to your special day with its magical details.",
+        "deu": "Das Kleid \"Verzauberte Träume\" bringt mit seinen magischen Details eine Märchenatmosphäre in Ihren besonderen Tag.",
+        "svk": "Šaty \"Očarené sny\" prinášajú rozprávkovú atmosféru vášmu špeciálnemu dňu vďaka svojim čarovným detailom."
+      },
+      "details": {
+        "eng": "Materials used: Silk, tulle, Swarovski crystals.",
+        "ukr": "Матеріали: Шовк, тюль, кристали Swarovski.",
+        "deu": "Materialien: Seide, Tüll, Swarovski-Kristalle.",
+        "svk": "Materiál: Hodváb, tyl, kryštály Swarovski."
+      },
+      "extra": {
+        "eng": "Perfect for castle weddings, paired with a diamond tiara and crystal-embellished shoes.",
+        "ukr": "Ідеально для весіль у замку, доповнене діамантовою тіарою та туфлями з кришталевими прикрасами.",
+        "deu": "Perfekt für Schlosshochzeiten, kombiniert mit einer Diamanttiara und mit Kristallen verzierten Schuhen.",
+        "svk": "Ideálne na svadby na zámku, kombinované s diamantovou tiarou a topánkami zdobenými kryštálmi."
+      },
+      "id": 231,
+      "mainImage": "./images/products/wedding/dress6/photo_2025-01-03_02-18-22.jpg",
+      "otherImages": [
+        "./images/products/wedding/dress6/photo_2025-01-03_02-18-24.jpg"
+      ],
+      "dressType": "wedding-dress"
+    },
+    {
+      "name": "Celestial Harmony Bridal Dress",
+      "price": 2400,
+      "sizes": [
+        6,
+        8,
+        12,
+        14
+      ],
+      "colors": [
+        "ivory"
+      ],
+      "description": {
+        "ukr": "Сукня \"Небесна гармонія\" відзначається сяючими елементами, що додають образу неповторного блиску.",
+        "eng": "The \"Celestial Harmony\" dress features radiant elements that bring a unique sparkle to the bride’s look.",
+        "deu": "Das Kleid \"Himmlische Harmonie\" besticht durch strahlende Elemente, die dem Brautlook einen einzigartigen Glanz verleihen.",
+        "svk": "Šaty \"Nebeská harmónia\" sa vyznačujú žiarivými prvkami, ktoré dodávajú nevestinmu vzhľadu jedinečný lesk."
+      },
+      "details": {
+        "eng": "Materials used: Satin, lace, metallic thread embroidery.",
+        "ukr": "Матеріали: Атлас, мереживо, вишивка металевими нитками.",
+        "deu": "Materialien: Satin, Spitze, Stickerei mit Metallfäden.",
+        "svk": "Materiál: Satén, čipka, vyšívanie kovovou niťou."
+      },
+      "extra": {
+        "eng": "Perfect for starlit ceremonies, styled with silver jewellery and a celestial-inspired headpiece.",
+        "ukr": "Ідеально для церемоній під зоряним небом, доповнене срібними прикрасами та головним убором із зоряними мотивами.",
+        "deu": "Perfekt für Zeremonien unter dem Sternenhimmel, kombiniert mit Silberschmuck und einem himmlisch inspirierten Kopfschmuck.",
+        "svk": "Ideálne na ceremónie pod hviezdnym nebom, doplnené striebornými šperkami a ozdobou inšpirovanou hviezdami."
+      },
+      "id": 899,
+      "mainImage": "./images/products/wedding/dress7/photo_2025-01-03_02-18-26.jpg",
+      "otherImages": [
+        "./images/products/wedding/dress7/photo_2025-01-03_02-18-28.jpg"
+      ],
+      "dressType": "wedding-dress"
+    },
+    {
+      "name": "Blossoming Romance Gown",
+      "price": 2000,
+      "sizes": [
+        6,
+        8,
+        12,
+        14
+      ],
+      "colors": [
+        "white"
+      ],
+      "description": {
+        "ukr": "Сукня \"Квітуча романтика\" прикрашена квітковими мотивами, що символізують розквіт кохання.",
+        "eng": "The \"Blossoming Romance\" gown is adorned with floral motifs, symbolizing the blossoming of love.",
+        "deu": "Das Kleid \"Blühende Romantik\" ist mit Blumenmotiven verziert, die das Erblühen der Liebe symbolisieren.",
+        "svk": "Šaty \"Kvitnúca romanca\" sú zdobené kvetinovými motívmi, ktoré symbolizujú rozkvet lásky."
+      },
+      "details": {
+        "eng": "Materials used: Organza, floral lace, bead embellishments.",
+        "ukr": "Матеріали: Органза, квіткове мереживо, прикраси з бісеру.",
+        "deu": "Materialien: Organza, Blumen-Spitze, Perlenverzierungen.",
+        "svk": "Materiál: Organza, kvetinová čipka, korálkové ozdoby."
+      },
+      "extra": {
+        "eng": "Ideal for garden weddings, styled with a floral crown and dainty pearl jewellery.",
+        "ukr": "Ідеально для весіль у саду, доповнене квітковим вінком та ніжними перлинними прикрасами.",
+        "deu": "Ideal für Gartenhochzeiten, kombiniert mit einem Blumenkranz und zartem Perlenschmuck.",
+        "svk": "Ideálne na svadby v záhrade, doplnené kvetinovou korunou a jemnými perlovými šperkami."
+      },
+      "id": 432,
+      "mainImage": "./images/products/wedding/dress8/photo_2025-01-03_02-18-31.jpg",
+      "otherImages": [
+        "./images/products/wedding/dress8/photo_2025-01-03_02-18-32.jpg"
+      ],
+      "dressType": "wedding-dress"
+    },
+    {
+      "name": "Moonlit Glow Wedding Dress",
+      "price": 2700,
+      "sizes": [
+        6,
+        8,
+        12,
+        14
+      ],
+      "colors": [
+        "ivory"
+      ],
+      "description": {
+        "ukr": "Сукня \"Місячне сяйво\" створена для наречених, які прагнуть сяяти у свій великий день завдяки чарівним сріблястим відтінкам.",
+        "eng": "The \"Moonlit Glow\" wedding dress is crafted for brides who wish to shine on their big day with enchanting silvery tones.",
+        "deu": "Das Hochzeitskleid \"Mondschein-Glanz\" ist für Bräute gefertigt, die an ihrem großen Tag mit bezaubernden silbernen Tönen strahlen möchten.",
+        "svk": "Svadobné šaty \"Mesačný lesk\" sú vytvorené pre nevesty, ktoré chcú žiariť vo svoj veľký deň v očarujúcich strieborných tónoch."
+      },
+      "details": {
+        "eng": "Materials used: Satin, lace, Swarovski crystals.",
+        "ukr": "Матеріали: Атлас, мереживо, кристали Swarovski.",
+        "deu": "Materialien: Satin, Spitze, Swarovski-Kristalle.",
+        "svk": "Materiál: Satén, čipka, kryštály Swarovski."
+      },
+      "extra": {
+        "eng": "Perfect for evening weddings, styled with a shimmering veil and crystal jewellery.",
+        "ukr": "Ідеально для вечірніх весіль, доповнене мерехтливою фатою та кристалічними прикрасами.",
+        "deu": "Perfekt für Abendhochzeiten, kombiniert mit einem schimmernden Schleier und Kristallschmuck.",
+        "svk": "Ideálne na večerné svadby, doplnené trblietavým závojom a kryštálovými šperkami."
+      },
+      "id": 301,
+      "mainImage": "./images/products/wedding/dress9/photo_2025-01-03_02-18-35.jpg",
+      "otherImages": [
+        "./images/products/wedding/dress9/photo_2025-01-03_02-18-36.jpg"
+      ],
+      "dressType": "wedding-dress"
+    },
+    {
+      "name": "Obsidian Elegance Bridal Gown",
+      "price": 2500,
+      "sizes": [
+        6,
+        8,
+        12,
+        14
+      ],
+      "colors": [
+        "ivory"
+      ],
+      "description": {
+        "ukr": "Сукня \"Обсидіанова елегантність\" створена для сміливих наречених, які прагнуть виділитися унікальним образом.",
+        "eng": "The \"Obsidian Elegance\" bridal gown is made for bold brides looking to stand out with a unique look.",
+        "deu": "Das Brautkleid \"Obsidianschwarz Eleganz\" ist für mutige Bräute gedacht, die mit einem einzigartigen Look auffallen möchten.",
+        "svk": "Svadobné šaty \"Obsidiánová elegancia\" sú určené pre odvážne nevesty, ktoré chcú vyniknúť jedinečným vzhľadom."
+      },
+      "details": {
+        "eng": "Materials used: Velvet, lace, crystal embellishments.",
+        "ukr": "Матеріали: Оксамит, мереживо, кристалічні прикраси.",
+        "deu": "Materialien: Samt, Spitze, Kristallverzierungen.",
+        "svk": "Materiál: Zamat, čipka, kryštálové ozdoby."
+      },
+      "extra": {
+        "eng": "Ideal for modern weddings, styled with bold makeup and silver accessories.",
+        "ukr": "Ідеально для сучасних весіль, доповнене сміливим макіяжем та срібними аксесуарами.",
+        "deu": "Ideal für moderne Hochzeiten, kombiniert mit mutigem Make-up und silbernen Accessoires.",
+        "svk": "Ideálne na moderné svadby, kombinované s odvážnym make-upom a striebornými doplnkami."
+      },
+      "id": 762,
+      "mainImage": "./images/products/wedding/dress10/photo_2025-01-03_02-18-39.jpg",
+      "otherImages": [
+        "./images/products/wedding/dress10/photo_2025-01-03_02-18-40.jpg"
+      ],
+      "dressType": "wedding-dress"
+    },
+    {
+      "name": "Golden Glow Bridal Dress",
+      "price": 2800,
+      "sizes": [
+        6,
+        8,
+        12,
+        14
+      ],
+      "colors": [
+        "ivory"
+      ],
+      "description": {
+        "ukr": "Сукня \"Золотий блиск\" вирізняється королівським шармом та витонченими деталями для справжньої королеви.",
+        "eng": "The \"Golden Glow\" bridal dress radiates regal charm and intricate details for a true queen.",
+        "deu": "Das Brautkleid \"Goldener Glanz\" strahlt königlichen Charme und filigrane Details für eine wahre Königin aus.",
+        "svk": "Svadobné šaty \"Zlatý lesk\" vyžarujú kráľovský šarm a prepracované detaily pre skutočnú kráľovnú."
+      },
+      "details": {
+        "eng": "Materials used: Silk, gold thread embroidery, pearls.",
+        "ukr": "Матеріали: Шовк, вишивка золотими нитками, перлини.",
+        "deu": "Materialien: Seide, Goldfadenstickerei, Perlen.",
+        "svk": "Materiál: Hodváb, vyšívanie zlatou niťou, perly."
+      },
+      "extra": {
+        "eng": "Perfect for royal-themed weddings, styled with a golden tiara and pearl earrings.",
+        "ukr": "Ідеально для весіль із королівською темою, доповнене золотою тіарою та перлинними сережками.",
+        "deu": "Perfekt für Hochzeiten mit königlichem Thema, kombiniert mit einer goldenen Tiara und Perlenohrringen.",
+        "svk": "Ideálne na svadby s kráľovskou tematikou, kombinované so zlatou tiarou a perlovými náušnicami."
+      },
+      "id": 580,
+      "mainImage": "./images/products/wedding/dress11/photo_2025-01-03_02-18-43.jpg",
+      "otherImages": [
+        "./images/products/wedding/dress11/photo_2025-01-03_02-18-44.jpg"
+      ],
+      "dressType": "wedding-dress"
+    }
+  ],
+  "childrens-dress": [
+    {
+      "name": "Lavender Dreams",
+      "price": 350,
+      "sizes": [
+        30,
+        32,
+        34,
+        36
+      ],
+      "colors": [
+        "purple"
+      ],
+      "description": {
+        "ukr": "Сукня \"Принцеса Блосом\" для маленьких леді, які прагнуть виглядати як справжні принцеси.",
+        "eng": "The \"Lavender Dreams\" dress is perfect for little girls who dream of being true princesses.",
+        "deu": "Das Kleid \"Lavendelträume\" ist perfekt für kleine Mädchen, die davon träumen, echte Prinzessinnen zu sein.",
+        "svk": "Šaty \"Levanduľové sny\" sú ideálne pre malé dievčatká, ktoré snívajú o tom, že budú skutočnými princeznami."
+      },
+      "details": {
+        "eng": "Materials used: Tulle, lace.",
+        "ukr": "Матеріали: Тюль, мереживо.",
+        "deu": "Materialien: Tüll, Spitze.",
+        "svk": "Materiál: Tyl, čipka."
+      },
+      "extra": {
+        "eng": "Perfect for birthdays or special occasions, styled with a matching hair bow.",
+        "ukr": "Ідеально для днів народження або особливих подій, доповнене стрічкою у волоссі.",
+        "deu": "Perfekt für Geburtstage oder besondere Anlässe, kombiniert mit einer passenden Haarspange.",
+        "svk": "Ideálne na narodeniny alebo špeciálne príležitosti, doplnené ladiacou mašľou do vlasov."
+      },
+      "id": 19384,
+      "mainImage": "./images/products/children-dress/dress1/photo_2025-01-03_02-28-56.jpg",
+      "otherImages": [
+        "./images/products/children-dress/dress1/photo_2025-01-03_02-28-58.jpg"
+      ],
+      "dressType": "childrens-dress"
+    },
+    {
+      "name": "Dawn Gradient",
+      "price": 330,
+      "sizes": [
+        30,
+        32,
+        34,
+        36
+      ],
+      "colors": [
+        "pink"
+      ],
+      "description": {
+        "ukr": "Сукня \"Мрія Маргаритки\" для яскравих та активних свят маленьких модниць.",
+        "eng": "The \"Dawn Gradient\" dress is perfect for vibrant and active celebrations for young fashionistas.",
+        "deu": "Das Kleid \"Morgengrauen-Gradient\" ist perfekt für lebhafte und aktive Feiern junger Fashionistas.",
+        "svk": "Šaty \"Úsvitový gradient\" sú ideálne pre živé a aktívne oslavy malých módnych nadšenkýň."
+      },
+      "details": {
+        "eng": "Materials used: Cotton, chiffon.",
+        "ukr": "Матеріали: Бавовна, шифон.",
+        "deu": "Materialien: Baumwolle, Chiffon.",
+        "svk": "Materiál: Bavlna, šifón."
+      },
+      "extra": {
+        "eng": "Styled with light ballet flats for a playful yet elegant look.",
+        "ukr": "Поєднується з легкими балетками для грайливого, але елегантного вигляду.",
+        "deu": "Kombiniert mit leichten Ballerinas für einen verspielten, aber eleganten Look.",
+        "svk": "Kombinované s ľahkými balerínkami pre hravý, ale elegantný vzhľad."
+      },
+      "id": 78412,
+      "mainImage": "./images/products/children-dress/dress2/photo_2025-01-03_02-29-00.jpg",
+      "otherImages": [
+        "./images/products/children-dress/dress2/photo_2025-01-03_02-29-02.jpg"
+      ],
+      "dressType": "childrens-dress"
+    },
+    {
+      "name": "Sugar Plum Twirl",
+      "price": 400,
+      "sizes": [
+        30,
+        32,
+        34,
+        36
+      ],
+      "colors": [
+        "blush"
+      ],
+      "description": {
+        "ukr": "Сукня \"Зіркове сяйво\" з багатошаровою тюлевою спідницею і блискучими деталями.",
+        "eng": "The \"Sugar Plum Twirl\" dress features a multi-layered tulle skirt and shimmering accents.",
+        "deu": "Das Kleid \"Zuckerpflaumenwirbel\" verfügt über einen mehrschichtigen Tüllrock und schimmernde Akzente.",
+        "svk": "Šaty \"Cukrová slivka\" majú viacvrstvovú tylovú sukňu a trblietavé detaily."
+      },
+      "details": {
+        "eng": "Materials used: Tulle, sequins.",
+        "ukr": "Матеріали: Тюль, блискітки.",
+        "deu": "Materialien: Tüll, Pailletten.",
+        "svk": "Materiál: Tyl, flitre."
+      },
+      "extra": {
+        "eng": "Perfect for ballet recitals or festive events, paired with a glittery tiara.",
+        "ukr": "Ідеально для балетних виступів чи святкових подій, доповнене блискучою тіарою.",
+        "deu": "Perfekt für Ballettaufführungen oder festliche Veranstaltungen, kombiniert mit einer glitzernden Tiara.",
+        "svk": "Ideálne na baletné predstavenia alebo sviatočné udalosti, doplnené trblietavou tiarou."
+      },
+      "id": 42967,
+      "mainImage": "./images/products/children-dress/dress3/photo_2025-01-03_02-29-04.jpg",
+      "otherImages": [],
+      "dressType": "childrens-dress"
+    },
+    {
+      "name": "Sunny Day Princess",
+      "price": 370,
+      "sizes": [
+        30,
+        32,
+        34,
+        36
+      ],
+      "colors": [
+        "yellow"
+      ],
+      "description": {
+        "ukr": "Сукня \"Пелюстка троянди\" дарує ніжність та комфорт для будь-якого свята.",
+        "eng": "The \"Sunny Day Princess\" dress offers softness and comfort for any special occasion.",
+        "deu": "Das Kleid \"Sonnentag-Prinzessin\" bietet Weichheit und Komfort für jeden besonderen Anlass.",
+        "svk": "Šaty \"Princezná slnečného dňa\" poskytujú jemnosť a pohodlie na každú špeciálnu príležitosť."
+      },
+      "details": {
+        "eng": "Materials used: Cotton, lace.",
+        "ukr": "Матеріали: Бавовна, мереживо.",
+        "deu": "Materialien: Baumwolle, Spitze.",
+        "svk": "Materiál: Bavlna, čipka."
+      },
+      "extra": {
+        "eng": "Paired with a floral headband for a charming summer vibe.",
+        "ukr": "Поєднується з квітковим обручем для чарівного літнього настрою.",
+        "deu": "Kombiniert mit einem Blumenstirnband für ein charmantes Sommergefühl.",
+        "svk": "Kombinované s kvetinovou čelenkou pre očarujúcu letnú atmosféru."
+      },
+      "id": 98234,
+      "mainImage": "./images/products/children-dress/dress4/photo_2025-01-03_02-29-05.jpg",
+      "otherImages": [],
+      "dressType": "childrens-dress"
+    }
+  ],
+  "women-suits": [
+    {
+      "name": "Sky High Business",
+      "price": 650,
+      "sizes": [
+        36,
+        38,
+        40,
+        42,
+        44,
+        46
+      ],
+      "colors": [
+        "blue"
+      ],
+      "description": {
+        "ukr": "Костюм \"Небесна висота\" для жінок, які прагнуть виділитися сміливим образом.",
+        "eng": "The \"Sky High Business\" suit is designed for women who aim to stand out with a bold look.",
+        "deu": "Der Anzug \"Himmelhohe Geschäftigkeit\" ist für Frauen konzipiert, die mit einem mutigen Look auffallen möchten.",
+        "svk": "Oblek \"Nebeská výška\" je určený pre ženy, ktoré chcú vyniknúť odvážnym vzhľadom."
+      },
+      "details": {
+        "eng": "Materials used: Wool blend, silk lining.",
+        "ukr": "Матеріали: Суміш вовни, шовкова підкладка.",
+        "deu": "Materialien: Wollmischung, Seidenfutter.",
+        "svk": "Materiál: Zmes vlny, hodvábna podšívka."
+      },
+      "extra": {
+        "eng": "Perfect for business meetings or formal events, paired with pointed heels.",
+        "ukr": "Ідеально для ділових зустрічей або офіційних заходів, доповнене гостроносими туфлями.",
+        "deu": "Perfekt für Geschäftstreffen oder formelle Veranstaltungen, kombiniert mit spitzen Schuhen.",
+        "svk": "Ideálne na obchodné stretnutia alebo formálne podujatia, doplnené špicatými topánkami."
+      },
+      "id": 87234,
+      "mainImage": "./images/products/women-suit/dress1/photo_2025-01-03_02-35-52.jpg",
+      "otherImages": [
+        "./images/products/women-suit/dress1/photo_2025-01-03_02-35-54.jpg"
+      ],
+      "dressType": "women-suit"
+    },
+    {
+      "name": "Pure Sophistication",
+      "price": 700,
+      "sizes": [
+        36,
+        38,
+        40,
+        42,
+        44,
+        46
+      ],
+      "colors": [
+        "ivory"
+      ],
+      "description": {
+        "ukr": "Костюм \"Чиста вишуканість\" додає вашому образу класичного шарму.",
+        "eng": "The \"Pure Sophistication\" suit adds a touch of classic charm to your style.",
+        "deu": "Der Anzug \"Reine Raffinesse\" verleiht Ihrem Stil einen Hauch von klassischem Charme.",
+        "svk": "Oblek \"Čistá sofistikovanosť\" pridáva vášmu štýlu nádych klasického šarmu."
+      },
+      "details": {
+        "eng": "Materials used: Cotton blend, satin lining.",
+        "ukr": "Матеріали: Суміш бавовни, атласна підкладка.",
+        "deu": "Materialien: Baumwollmischung, Satinfutter.",
+        "svk": "Materiál: Bavlnená zmes, saténová podšívka."
+      },
+      "extra": {
+        "eng": "Best styled with minimal jewellery for an elegant and polished look.",
+        "ukr": "Найкраще поєднується з мінімальними прикрасами для елегантного вигляду.",
+        "deu": "Am besten kombiniert mit minimalem Schmuck für einen eleganten und gepflegten Look.",
+        "svk": "Najlepšie kombinované s minimálnymi šperkami pre elegantný a uhladený vzhľad."
+      },
+      "id": 39214,
+      "mainImage": "./images/products/women-suit/dress2/photo_2025-01-03_02-35-56.jpg",
+      "otherImages": [
+        "./images/products/women-suit/dress2/photo_2025-01-03_02-35-57.jpg"
+      ],
+      "dressType": "women-suit"
+    },
+    {
+      "name": "Sunset Success",
+      "price": 680,
+      "sizes": [
+        36,
+        38,
+        40,
+        42,
+        44,
+        46
+      ],
+      "colors": [
+        "yellow"
+      ],
+      "description": {
+        "ukr": "Костюм \"Міський шик\" для сучасної та ділової жінки.",
+        "eng": "The \"Sunset Success\" suit is ideal for the modern and professional woman.",
+        "deu": "Der Anzug \"Sonnenuntergang-Erfolg\" ist ideal für die moderne und professionelle Frau.",
+        "svk": "Oblek \"Západ slnka\" je ideálny pre modernú a profesionálnu ženu."
+      },
+      "details": {
+        "eng": "Materials used: Wool blend, polyester.",
+        "ukr": "Матеріали: Суміш вовни, поліестер.",
+        "deu": "Materialien: Wollmischung, Polyester.",
+        "svk": "Materiál: Zmes vlny, polyester."
+      },
+      "extra": {
+        "eng": "Styled with gold accessories for a confident and radiant appearance.",
+        "ukr": "Поєднується із золотими аксесуарами для впевненого вигляду.",
+        "deu": "Kombiniert mit goldenen Accessoires für ein selbstbewusstes und strahlendes Aussehen.",
+        "svk": "Kombinované so zlatými doplnkami pre sebavedomý a žiarivý vzhľad."
+      },
+      "id": 72818,
+      "mainImage": "./images/products/women-suit/dress3/photo_2025-01-03_02-36-00.jpg",
+      "otherImages": [],
+      "dressType": "women-suit"
+    },
+    {
+      "name": "Beige Brilliance",
+      "price": 750,
+      "sizes": [
+        36,
+        38,
+        40,
+        42,
+        44,
+        46
+      ],
+      "colors": [
+        "white",
+        "ivory",
+        "champagne"
+      ],
+      "description": {
+        "ukr": "Костюм \"Бежевий блиск\" для впевненого образу з ноткою елегантності.",
+        "eng": "The \"Beige Brilliance\" suit offers a confident look with a touch of elegance.",
+        "deu": "Der Anzug \"Beiger Glanz\" bietet einen selbstbewussten Look mit einem Hauch von Eleganz.",
+        "svk": "Oblek \"Béžová žiara\" ponúka sebavedomý vzhľad s nádychom elegancie."
+      },
+      "details": {
+        "eng": "Materials used: Velvet, silk lining.",
+        "ukr": "Матеріали: Оксамит, шовкова підкладка.",
+        "deu": "Materialien: Samt, Seidenfutter.",
+        "svk": "Materiál: Zamat, hodvábna podšívka."
+      },
+      "extra": {
+        "eng": "Perfect for evening events, paired with metallic heels and a clutch.",
+        "ukr": "Ідеально для вечірніх заходів, доповнене металевими туфлями та клатчем.",
+        "deu": "Perfekt für Abendveranstaltungen, kombiniert mit metallischen Schuhen und einer Clutch.",
+        "svk": "Ideálne na večerné podujatia, doplnené kovovými topánkami a kabelkou."
+      },
+      "id": 23498,
+      "mainImage": "./images/products/women-suit/dress4/photo_2025-01-03_02-36-02.jpg",
+      "otherImages": [],
+      "dressType": "women-suit"
+    },
+    {
+      "name": "Dark Romance",
+      "price": 600,
+      "sizes": [
+        36,
+        38,
+        40,
+        42,
+        44,
+        46,
+        50
+      ],
+      "colors": [
+        "green",
+        "black",
+        "red"
+      ],
+      "description": {
+        "ukr": "Жіночий костюм \"Темна романтика\" для витонченого та стильного образу.",
+        "eng": "The \"Dark Romance\" suit is designed for a refined and stylish look.",
+        "deu": "Der Anzug \"Dunkle Romantik\" ist für einen anspruchsvollen und stilvollen Look konzipiert.",
+        "svk": "Oblek \"Tmavá romanca\" je navrhnutý pre sofistikovaný a štýlový vzhľad."
+      },
+      "details": {
+        "eng": "Materials used: Cotton 100%.",
+        "ukr": "Матеріали: 100% бавовна.",
+        "deu": "Materialien: 100% Baumwolle.",
+        "svk": "Materiál: 100% bavlna."
+      },
+      "extra": {
+        "eng": "Perfect for cocktail parties, styled with statement jewellery.",
+        "ukr": "Ідеально для коктейльних вечірок, доповнене виразними прикрасами.",
+        "deu": "Perfekt für Cocktailpartys, kombiniert mit auffälligem Schmuck.",
+        "svk": "Ideálne na koktailové večierky, doplnené výraznými šperkami."
+      },
+      "id": 98147,
+      "mainImage": "./images/products/women-suit/dress5/photo_2025-01-03_02-36-04.jpg",
+      "otherImages": [],
+      "dressType": "women-suit"
+    },
+    {
+      "name": "Lace Legacy",
+      "price": 580,
+      "sizes": [
+        36,
+        38,
+        40,
+        42,
+        44,
+        46,
+        50
+      ],
+      "colors": [
+        "black",
+        "gold"
+      ],
+      "description": {
+        "ukr": "Жіночий костюм \"Спадок мережива\" створює неповторний образ для будь-якої події.",
+        "eng": "The \"Lace Legacy\" suit creates a unique look for any occasion.",
+        "deu": "Der Anzug \"Spitzen-Erbe\" schafft einen einzigartigen Look für jeden Anlass.",
+        "svk": "Oblek \"Čipkované dedičstvo\" vytvára jedinečný vzhľad na každú príležitosť."
+      },
+      "details": {
+        "eng": "Materials used: Cotton 100%.",
+        "ukr": "Матеріали: 100% бавовна.",
+        "deu": "Materialien: 100% Baumwolle.",
+        "svk": "Materiál: 100% bavlna."
+      },
+      "extra": {
+        "eng": "Perfect for gala dinners, paired with a bold clutch and stilettos.",
+        "ukr": "Ідеально для гала-вечерь, доповнене сміливим клатчем і туфлями на шпильках.",
+        "deu": "Perfekt für Galadinner, kombiniert mit einer auffälligen Clutch und Stilettos.",
+        "svk": "Ideálne na galavečere, doplnené výraznou kabelkou a lodičkami na ihličkách."
+      },
+      "id": 39475,
+      "mainImage": "./images/products/women-suit/dress6/photo_2025-01-03_02-36-05.jpg",
+      "otherImages": [
+        "./images/products/women-suit/dress6/photo_2025-01-03_02-36-06.jpg"
+      ],
+      "dressType": "women-suit"
+    },
+    {
+      "name": "Radiance Suit",
+      "price": 620,
+      "sizes": [
+        36,
+        38,
+        40,
+        42,
+        44,
+        46,
+        50
+      ],
+      "colors": [
+        "white"
+      ],
+      "description": {
+        "ukr": "Жіночий костюм \"Сяйво\" вирізняється витонченим дизайном та жіночністю.",
+        "eng": "The \"Radiance Suit\" stands out with its refined design and feminine charm.",
+        "deu": "Der Anzug \"Strahlender Glanz\" besticht durch sein raffiniertes Design und seinen femininen Charme.",
+        "svk": "Oblek \"Žiara\" vyniká svojím prepracovaným dizajnom a ženským šarmom."
+      },
+      "details": {
+        "eng": "Materials used: Cotton 100%.",
+        "ukr": "Матеріали: 100% бавовна.",
+        "deu": "Materialien: 100% Baumwolle.",
+        "svk": "Materiál: 100% bavlna."
+      },
+      "extra": {
+        "eng": "Perfect for formal gatherings, styled with pearl jewellery and stiletto heels.",
+        "ukr": "Ідеально для офіційних зустрічей, доповнене перлинними прикрасами та туфлями на шпильках.",
+        "deu": "Perfekt für formelle Zusammenkünfte, kombiniert mit Perlenschmuck und Stilettos.",
+        "svk": "Ideálne na formálne stretnutia, doplnené perlovými šperkami a lodičkami na ihličkách."
+      },
+      "id": 84719,
+      "mainImage": "./images/products/women-suit/dress7/photo_2025-01-03_02-36-08.jpg",
+      "otherImages": [
+        "./images/products/women-suit/dress7/photo_2025-01-03_02-36-09.jpg"
+      ],
+      "dressType": "women-suit"
+    }
+  ],
+  "accessories": [
+    {
+      "name": "Shining Star Bag",
+      "price": 200,
+      "sizes": [],
+      "colors": [
+        "gold",
+        "silver"
+      ],
+      "description": {
+        "ukr": "Сумка \"Сяюча зірка\" створена для яскравого акценту у вашому образі.",
+        "eng": "The \"Shining Star Bag\" is designed to add a dazzling touch to your outfit.",
+        "deu": "Die \"Leuchtende Sternen-Tasche\" wurde entwickelt, um Ihrem Outfit einen glänzenden Akzent zu verleihen.",
+        "svk": "Kabelka \"Žiariaca hviezda\" je navrhnutá tak, aby dodala vášmu outfitu oslnivý nádych."
+      },
+      "details": {
+        "eng": "Materials used: Metal, crystal embellishments.",
+        "ukr": "Матеріали: Метал, кристалічні прикраси.",
+        "deu": "Materialien: Metall, Kristallverzierungen.",
+        "svk": "Materiál: Kov, kryštálové ozdoby."
+      },
+      "extra": {
+        "eng": "Ideal for formal events or parties, paired with metallic or shimmering outfits.",
+        "ukr": "Ідеально для офіційних заходів чи вечірок, доповнене блискучим або металевим вбранням.",
+        "deu": "Ideal für formelle Anlässe oder Partys, kombiniert mit metallischen oder schimmernden Outfits.",
+        "svk": "Ideálne na formálne podujatia alebo párty, kombinované s trblietavými alebo kovovými outfitmi."
+      },
+      "id": 91823,
+      "mainImage": "./images/products/accessories/accessory1/photo12.png",
+      "otherImages": [],
+      "dressType": "accessories"
+    }
+  ]
+}

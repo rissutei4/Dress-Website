@@ -151,6 +151,33 @@ a {
 .product .prod-container .product-description .colors-sizes .colors .color-group .color .color-circle span.color-purple {
   background: #AC9AD8;
 }
+.product .prod-container .product-description .colors-sizes .colors .color-group .color .color-circle span.color-red {
+  background: #8f3352;
+}
+.product .prod-container .product-description .colors-sizes .colors .color-group .color .color-circle span.color-ivory {
+  background: #d0d0d0;
+}
+.product .prod-container .product-description .colors-sizes .colors .color-group .color .color-circle span.color-silver {
+  background: #C0C0C0;
+}
+.product .prod-container .product-description .colors-sizes .colors .color-group .color .color-circle span.color-champagne {
+  background: #F7E7CE;
+}
+.product .prod-container .product-description .colors-sizes .colors .color-group .color .color-circle span.color-navy {
+  background: #001F54;
+}
+.product .prod-container .product-description .colors-sizes .colors .color-group .color .color-circle span.color-pearl {
+  background: #FDEEF4;
+}
+.product .prod-container .product-description .colors-sizes .colors .color-group .color .color-circle span.color-green {
+  background: #1E5631;
+}
+.product .prod-container .product-description .colors-sizes .colors .color-group .color .color-circle span.color-pink {
+  background: #FFC0CB;
+}
+.product .prod-container .product-description .colors-sizes .colors .color-group .color .color-circle span.color-blush {
+  background: #F9A5AA;
+}
 .product .prod-container .product-description .colors-sizes .sizes {
   max-width: 38.5rem;
 }
