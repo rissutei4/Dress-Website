@@ -157,7 +157,8 @@ header .menu-container-wrapper.open-menu-container {
   left: 0;
   z-index: 30;
   display: flex;
-  padding-left: 2rem;
+  padding-left: 0;
+  padding-bottom: 20px;
   background-color: #0D0C0C;
 }
 header .menu-container-wrapper .nav-list-container {
