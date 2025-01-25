@@ -1,7 +1,6 @@
 "use strict";
 //Language Button
-import {searchChecker} from "./translation-manager.js";
-import {checkPageAndChangeContent, addLanguagePrefixToLinks} from "./translation-manager.js";
+import {languageId, initTranslations, checkPageAndChangeContent, addLanguagePrefixToLinks} from "./translation-manager.js";
 //Language Switcher
 const langSwitcherbtn = document.querySelector('.langbtn');
 const dropdownContent = document.querySelector('.sub-menu');
@@ -59,16 +58,16 @@ handleScroll();
 
 const languageSwitcher = function () {
     // Set initial button text to the currently active language
-    let {languageId} = searchChecker();
-    if (!languageId) {
+    let languageSwitchId = languageId
+    if (!languageSwitchId) {
         const setLanguage = Array.from(dropdownLinks).find(li => li.textContent.trim() === "ENG");
         if (setLanguage) {
             setLanguage.classList.add('active');
             langSwitcherbtn.textContent = setLanguage.textContent;
         }
     } else {
-        languageId = languageId.toUpperCase();
-        const currentLanguage = Array.from(dropdownLinks).find(li => li.textContent.trim() === languageId);
+        languageSwitchId = languageSwitchId.toUpperCase();
+        const currentLanguage = Array.from(dropdownLinks).find(li => li.textContent.trim() === languageSwitchId);
         currentLanguage.classList.add("active");
         langSwitcherbtn.textContent = currentLanguage.textContent;
     }
@@ -87,6 +86,6 @@ const languageSwitcher = function () {
 }
 
 languageSwitcher();
-
+await initTranslations();
 addLanguagePrefixToLinks();
 checkPageAndChangeContent();

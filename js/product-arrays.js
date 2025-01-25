@@ -1,6 +1,5 @@
 "use strict"
-import {translations} from "./translations-arrays.js";
-import {searchChecker} from "./translation-manager.js";
+import {languageId, translations} from "./translation-manager.js";
 
 let allProducts = [];
 
@@ -38,7 +37,6 @@ class Dress extends Product {
 }
 
 function createProductCard(product) {
-    const {languageId} = searchChecker(); // Get the current language
     const clothesTranslations = translations.productsTranslations[languageId];
 
     const translatedDressType = clothesTranslations[product.dressType];

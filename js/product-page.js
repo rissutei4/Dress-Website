@@ -1,7 +1,6 @@
 "use strict"
 import {initAllProducts, allProducts} from './product-arrays.js';
-import {translations} from "./translations-arrays.js";
-import {addLanguagePrefixToLinks, searchChecker} from "./translation-manager.js";
+import {translations, initTranslations, addLanguagePrefixToLinks, languageId} from "./translation-manager.js";
 
 const colors = document.querySelector('.colors');
 const colorGroup = document.querySelector('.color-group');
@@ -24,10 +23,28 @@ let currentImageIndex = 0;
 let allImages = [];
 let initialPrimaryImageSrc = '';
 
+document.addEventListener("DOMContentLoaded", async () => {
+    try {
+        await initTranslations();
+        await initAllProducts();
+        await loadProductPage();
+
+        setupAdditionalImagesClick();
+        initializeCarousel();
+        activateColor();
+        adjustCarouselDotsPosition();
+        adjustTabsForMobile();
+        updateColorsVisibility();
+        addLanguagePrefixToLinks();
+
+    } catch (err) {
+        console.error("Error loading page:", err);
+    }
+});
+
 function loadProductPage() {
     return new Promise((resolve, reject) => {
         try {
-            const {languageId} = searchChecker();
             const clothTranslations = translations.productsTranslations[languageId];
             const productColorTranslations = clothTranslations.colors;
             const urlParams = new URLSearchParams(window.location.search);
@@ -112,28 +129,6 @@ function loadProductPage() {
         }
     });
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-    initAllProducts()
-        .then(() => {
-            loadProductPage()
-                .then(() => {
-                    setupAdditionalImagesClick();
-                    initializeCarousel();
-                    activateColor();
-                    adjustCarouselDotsPosition();
-                    adjustTabsForMobile();
-                    updateColorsVisibility();
-                })
-                .catch(error => {
-                    console.error("Error loading product page:", error);
-                });
-        })
-        .catch(err => {
-            console.error(err);
-        });
-});
-
 function initializeCarousel() {
     const additionalImages = Array.from(document.querySelectorAll('img.secondary'));
     const additionalImageSources = additionalImages.map(img => img.src);

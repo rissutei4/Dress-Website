@@ -1,84 +1,105 @@
-"use strict"
-import {translations} from "./translations-arrays.js";
-//--------------------------
-//INDEX PAGE FIELDS
-//--------------------------
-function checkPageAndChangeContent() {
-    const {pageName, languageId} = searchChecker();
-    const matchingPageKey = Object.keys(translations).find(key => key === pageName);
-    const matchingPage = translations[matchingPageKey] || translations['index'];
-    const currentLanguage = matchingPage[languageId];
+"use strict";
+export let { pageName, languageId } = searchChecker();
+export let translations = {};
 
-    if (matchingPage && currentLanguage) {
-        document.querySelectorAll('[data-translate]').forEach(element => {
-            const attributeOfTheElement = element.getAttribute("data-translate");
-            if (currentLanguage[attributeOfTheElement]) {
-                if (element.tagName.toLowerCase() === 'input' && element.hasAttribute('placeholder')) {
-                    // Change the placeholder for input elements
-                    element.setAttribute('placeholder', currentLanguage[attributeOfTheElement]);
+export async function initTranslations() {
+    try {
+        const response = await fetch("./data/page-translations.json");
+        if (!response.ok) {
+            throw new Error("Failed to fetch translations JSON.");
+        }
+        translations = await response.json();
+        return translations;
+    } catch (err) {
+        console.error(err);
+    }
+}
+
+export function checkPageAndChangeContent() {
+    const matchingPageKey = Object.keys(translations).find(key => key === pageName);
+    const matchingPage = matchingPageKey ? translations[matchingPageKey] : translations["index"];
+    const currentLanguage = matchingPage?.[languageId];
+
+    if (!matchingPage) {
+        console.error(`No page data found for "${pageName}". Using "index" as fallback.`);
+        return;
+    }
+
+    if (!currentLanguage) {
+        console.error(`No "${languageId}" translations found for page "${pageName}".`);
+        return;
+    }
+
+    document.querySelectorAll("[data-translate]").forEach(element => {
+        const attributeOfTheElement = element.getAttribute("data-translate");
+        const textValue = currentLanguage[attributeOfTheElement];
+        if (textValue) {
+            if (element.tagName.toLowerCase() === "input" && element.hasAttribute("placeholder")) {
+                element.setAttribute("placeholder", textValue);
+            } else {
+                element.textContent = textValue;
+            }
+        }
+    });
+
+    if (pageName === "index") {
+        const listContainer = document.querySelector(".extra-text");
+        if (listContainer) {
+            listContainer.innerHTML = "";
+            const descriptionLists = currentLanguage.extra?.descriptionLists;
+            if (descriptionLists && Array.isArray(descriptionLists)) {
+                descriptionLists.forEach(item => {
+                    const listItem = document.createElement("li");
+                    listItem.innerHTML = item;
+                    listContainer.appendChild(listItem);
+                });
+            }
+        }
+    }
+
+    const headerTranslations = translations.header?.[languageId];
+    if (headerTranslations) {
+        document.querySelectorAll(".header-nav-bar [data-translate]").forEach(element => {
+            const attr = element.getAttribute("data-translate");
+            const headerValue = headerTranslations[attr];
+            if (headerValue) {
+                if (element.tagName.toLowerCase() === "input" && element.hasAttribute("placeholder")) {
+                    element.setAttribute("placeholder", headerValue);
                 } else {
-                    // Change the text content for other elements
-                    element.textContent = currentLanguage[attributeOfTheElement];
+                    element.textContent = headerValue;
                 }
             }
         });
-        if (pageName === "index") {
-            const listContainer = document.querySelector(".extra-text"); // Target the container
-            if (listContainer) {
-                listContainer.innerHTML = ""; // Clear any previous content
-
-                // Access the localized description list
-                const descriptionLists = currentLanguage.extra?.descriptionLists;
-
-                if (descriptionLists && Array.isArray(descriptionLists)) {
-                    descriptionLists.forEach(item => {
-                        const listItem = document.createElement("li");
-                        listItem.innerHTML = item; // Preserve HTML tags like <span>
-                        listContainer.appendChild(listItem);
-                    });
-                }
-            }
-        }
-        const headerTranslations = translations.header?.[languageId];
-        if (headerTranslations) {
-            document.querySelectorAll('.header-nav-bar [data-translate]').forEach(element => {
-                const attributeOfTheElement = element.getAttribute("data-translate");
-                if (headerTranslations[attributeOfTheElement]) {
-                    if (element.tagName.toLowerCase() === 'input' && element.hasAttribute('placeholder')) {
-                        element.setAttribute('placeholder', headerTranslations[attributeOfTheElement]);
-                    } else {
-                        element.textContent = headerTranslations[attributeOfTheElement];
-                    }
-                }
-            });
-        }
     }
 }
 
-function searchChecker() {
-    const urlParams = new URLSearchParams(window.location.search);
-    let languageId = urlParams.get('lang');
+export function searchChecker() {
+    let urlParams = new URLSearchParams(window.location.search);
+    let languageId = urlParams.get("lang");
 
+    if (!languageId && window.location.hash.includes("?lang=")) {
+        const hashParams = new URLSearchParams(window.location.hash.split("?")[1]);
+        languageId = hashParams.get("lang");
+    }
     if (!languageId) {
-        console.log("No language ID found in URL.");
+        console.log("No language ID found in URL, defaulting to 'eng'.");
         languageId = "eng";
     }
-    const path = window.location.pathname; // Get the file path, e.g., /Dress-website/index.html
-    const fileName = path.split('/').pop(); // Extract the file name, e.g., index.html
-    const pageName = fileName.split('.').slice(0, -1).join('.'); // Remove .html
 
-    return {pageName, languageId};
+    const path = window.location.pathname;
+    const fileName = path.split("/").pop();
+    const pageName = fileName.split(".").slice(0, -1).join(".");
+
+    return { pageName, languageId };
 }
 
-function addLanguagePrefixToLinks() {
-    const {languageId} = searchChecker();
+
+export function addLanguagePrefixToLinks() {
     const linksToPrefix = document.querySelectorAll("[data-lang-link]");
     linksToPrefix.forEach(link => {
         const currentHref = link.href;
         if (!currentHref.includes("lang=")) {
-            link.href = currentHref + (currentHref.includes('?') ? '&' : '?') + "lang=" + languageId;
+            link.href = currentHref + (currentHref.includes("?") ? "&" : "?") + "lang=" + languageId;
         }
     });
 }
-
-export {checkPageAndChangeContent, searchChecker, addLanguagePrefixToLinks};

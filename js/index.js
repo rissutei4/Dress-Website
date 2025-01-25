@@ -1,6 +1,6 @@
 "use strict";
 import {initAllProducts, allProducts} from "./product-arrays.js";
-import {checkPageAndChangeContent, addLanguagePrefixToLinks} from "./translation-manager.js";
+import {initTranslations, checkPageAndChangeContent, addLanguagePrefixToLinks} from "./translation-manager.js";
 import {toggleMenu, isMobileResolution} from "./header.js";
 
 const MAX_VISIBLE_CARDS = 6;
@@ -21,6 +21,7 @@ const loadMoreProductsBtn = `
         product.placeCardInCategory(product);
     });
     createLoadBtn();
+    await initTranslations();
     addLanguagePrefixToLinks();
     checkPageAndChangeContent();
 })();
