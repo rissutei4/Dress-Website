@@ -150,8 +150,7 @@ header {
       left: 0;
       z-index: 30;
       display: flex;
-      padding-left: 0;
-      padding-bottom: 20px;
+      padding-left: 2rem;
       background-color: $mobile-bg-color;
     }
 
@@ -287,6 +286,8 @@ footer {
       width: 100% !important;
       height: 90vh !important;
       top: 0 !important;
+      padding-left: 0 !important;
+      padding-bottom: 20px;
     }
 
     ul.nav-list-container {
