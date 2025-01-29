@@ -99,7 +99,7 @@ document.querySelectorAll('.nav-list-container a').forEach(navLink => {
         // Update active state for mobile nav links
         document.querySelectorAll('.filters-mobile-cont .nav-link')
             .forEach(link => link.classList.remove('active'));
-        const categoryTab = document.querySelector(`[data-target="${targetId}"]`);
+        const categoryTab = document.querySelector(`[data-bs-target="${targetId}"]`);
         if (categoryTab) {
             categoryTab.classList.add('active');
             if (isMobileResolution()) {
