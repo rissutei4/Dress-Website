@@ -19,7 +19,6 @@ const orderProdBtn = document.querySelector('.order-btn');
 const isMobile = window.innerWidth <= 432;
 
 let colorDivs = [];
-let currentImageIndex = 0;
 let allImages = [];
 let initialPrimaryImageSrc = '';
 
@@ -32,7 +31,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         setupAdditionalImagesClick();
         initializeCarousel();
         activateColor();
-        adjustCarouselDotsPosition();
         adjustTabsForMobile();
         updateColorsVisibility();
         addLanguagePrefixToLinks();
@@ -129,6 +127,7 @@ function loadProductPage() {
         }
     });
 }
+
 function initializeCarousel() {
     const additionalImages = Array.from(document.querySelectorAll('img.secondary'));
     const additionalImageSources = additionalImages.map(img => img.src);
@@ -146,7 +145,6 @@ function initializeCarousel() {
     }
     createCarouselDots();
     setupCarouselDots();
-    adjustCarouselDotsPosition();
 }
 
 function moveImagesToContainer() {
@@ -244,15 +242,6 @@ function updateColorsVisibility() {
 
 window.addEventListener('resize', updateColorsVisibility);
 
-function adjustCarouselDotsPosition() {
-    if (!primaryImageContainer || !carouselDotsContainer) return;
-    const carouselRect = primaryImageContainer.getBoundingClientRect();
-    const calculatedRight = Math.max(-carouselRect.width * 0.18, -50);
-    carouselDotsContainer.style.right = `${calculatedRight}px`;
-}
-
-window.addEventListener('load', adjustCarouselDotsPosition);
-window.addEventListener('resize', adjustCarouselDotsPosition);
 
 function toggleMobileView() {
     if (window.innerWidth <= 440) {

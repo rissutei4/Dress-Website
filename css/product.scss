@@ -428,11 +428,14 @@
     }
 
     .carousel-mobile-dots {
-      display: block !important;
+      display: flex !important;
+      flex-direction: column;
       position: absolute;
       top: 45%;
-      right: -27%;
-      transform: rotateZ(90deg);
+      right: 0;
+      margin-right: 0;
+      z-index: 10;
+      gap: 1.5rem;
     }
 
     .product-description {
@@ -446,7 +449,6 @@
       width: 100%;
 
       &.active {
-        // Active state styles if needed
       }
 
       .mob-chevron-button {
@@ -671,12 +673,6 @@
     p {
       font-weight: 400;
     }
-  }
-}
-
-@media only screen and (max-width: 376px) {
-  .carousel-mobile-dots {
-    right: -30%;
   }
 }
 
