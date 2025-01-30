@@ -485,6 +485,7 @@ a {
   .CarouselSection .swiper .swiper-pagination {
     top: -42%;
     gap: 2.5rem;
+    width: 100% !important;
   }
   .ItemsInStock .container #pills-tabContent .product-cards-cont .product-card .product-image {
     max-width: 8.9375rem !important;
