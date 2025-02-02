@@ -38,7 +38,7 @@ a {
   display: flex;
   align-items: center;
   background-size: cover;
-  background-image: url("../images/about/bg-section-image.png");
+  background-image: url("https://res.cloudinary.com/dtntxfdf6/image/upload/f_auto,q_auto/v1738364384/bg-section-image_pczvv9.png");
 }
 .back-image-sect .bg-image:before {
   background: rgba(66, 69, 72, 0.72);

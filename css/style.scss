@@ -440,6 +440,8 @@
         top: -43%;
         margin-left: 0;
         justify-content: center;
+        gap: 2.5rem;
+        width: 100% !important;
       }
     }
 
@@ -621,8 +623,6 @@
 
       .swiper-pagination {
         top: -42%;
-        gap: 2.5rem;
-        width: 100% !important;
       }
     }
   }

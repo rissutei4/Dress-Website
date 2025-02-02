@@ -3,18 +3,8 @@
     {
       "name": "Radiance Gown",
       "price": 900,
-      "sizes": [
-        36,
-        38,
-        40,
-        42,
-        44,
-        46,
-        50
-      ],
-      "colors": [
-        "blue"
-      ],
+      "sizes": [36, 38, 40, 42, 44, 46, 50],
+      "colors": ["blue"],
       "description": {
         "ukr": "Сукня в підлогу небесно-блакитного кольору з тюлю, з корсетним ліфом та витонченою вишивкою квітів. Дизайн включає тонкі бретелі та об’ємну спідницю, яка додає казковий ефект.",
         "eng": "A floor-length, sky-blue tulle ball gown featuring a corset-style bodice with intricate floral embroidery. The design includes spaghetti straps and a voluminous skirt that adds a dreamy, fairytale-like effect.",
@@ -34,37 +24,22 @@
         "svk": "Ideálny na ples alebo galavečer, kombinovaný so striebornými šperkami a lodičkami."
       },
       "id": 584,
-      "mainImage": "./images/products/evening/dress1/photo_2025-01-03_23-16-39.jpg",
+      "mainImage": "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364380/photo_2025-01-03_23-16-39_kkwi9p.jpg",
       "otherImages": [
-        "./images/products/evening/dress1/photo_2025-01-03_23-16-40.jpg"
+        "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364381/photo_2025-01-03_23-16-40_tnq9ja.jpg"
       ],
       "dressType": "evening-dress"
     },
     {
       "name": "Sparkling Evening Dress",
       "price": 950,
-      "sizes": [
-        36,
-        38,
-        40,
-        42,
-        44,
-        46,
-        50
-      ],
-      "colors": [
-        "pearl",
-        "ivory",
-        "silver",
-        "red",
-        "gold",
-        "champagne"
-      ],
+      "sizes": [36, 38, 40, 42, 44, 46, 50],
+      "colors": ["pearl", "ivory", "silver", "red", "gold", "champagne"],
       "description": {
         "ukr": "Приталена біла вечірня сукня з корсетним ліфом і бретелями у вигляді стрічок. Сукня прикрашена вишуканою мереживною вишивкою та високим розрізом із блискучими акцентами.",
         "eng": "A form-fitting, white evening gown with a structured, corset-style bodice and ribbon-style shoulder straps. The gown features intricate lace embroidery and a thigh-high slit with glitter embellishments.",
         "deu": "Ein figurbetontes weißes Abendkleid mit einem strukturierten Korsett-Oberteil und schulterfreien Bändern. Das Kleid ist mit filigraner Spitzenstickerei und einem hohen Beinschlitz mit Glitzerverzierungen versehen.",
-        "svk": "Priliehavé biele večerné šaty s korzetovým vrchným dielom a ramienkami vo forme stužiek. Šaty sú zdobené jemnou čipkovou výšivkou a vysokým rozparkom s trblietavými detailmi."
+        "svk": "Priliehavé biele večerné šaty s korzetovým vrchným dielom a ramienkami vo forme stužiek. Šaty sú zdobené jemnou čipkovою výšivkou a високим розparком s trblietavými detailmi."
       },
       "details": {
         "eng": "Materials used: Lace, satin, and glitter fabric.",
@@ -79,27 +54,17 @@
         "svk": "Elegantné pre exkluzívne podujatia, kombinované s výraznými náušnicami a lodičkami."
       },
       "id": 234,
-      "mainImage": "./images/products/evening/dress2/photo_2025-01-03_23-16-42.jpg",
+      "mainImage": "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364381/photo_2025-01-03_23-16-42_opf569.jpg",
       "otherImages": [
-        "./images/products/evening/dress2/photo_2025-01-03_23-16-43.jpg"
+        "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364382/photo_2025-01-03_23-16-43_l9i3oi.jpg"
       ],
       "dressType": "evening-dress"
     },
     {
       "name": "Twilight Grace Gown",
       "price": 890,
-      "sizes": [
-        36,
-        38,
-        40,
-        42,
-        44,
-        46,
-        50
-      ],
-      "colors": [
-        "blue"
-      ],
+      "sizes": [36, 38, 40, 42, 44, 46, 50],
+      "colors": ["blue"],
       "description": {
         "ukr": "Коротка коктейльна сукня ніжно-блакитного кольору з пишними рукавами, спущеними на плечі, та корсетним ліфом. Сукня грайлива та жіночна з розкльошеною спідницею в формі літери А.",
         "eng": "A short, powder-blue cocktail dress with puffed off-shoulder sleeves and a corset-inspired bodice. The dress is playful and feminine with a flared A-line skirt.",
@@ -119,27 +84,17 @@
         "svk": "Štýlové a zábavné na polofomálne podujatia, kombinované s kabelkou a lodičkami."
       },
       "id": 345,
-      "mainImage": "./images/products/evening/dress3/photo_2025-01-03_23-16-45.jpg",
+      "mainImage": "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364382/photo_2025-01-03_23-16-45_ctitya.jpg",
       "otherImages": [
-        "./images/products/evening/dress3/photo_2025-01-03_23-16-46.jpg"
+        "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364381/photo_2025-01-03_23-16-46_mihlrx.jpg"
       ],
       "dressType": "evening-dress"
     },
     {
       "name": "Golden Hour Evening Dress",
       "price": 1100,
-      "sizes": [
-        36,
-        38,
-        40,
-        42,
-        44,
-        46,
-        50
-      ],
-      "colors": [
-        "white"
-      ],
+      "sizes": [36, 38, 40, 42, 44, 46, 50],
+      "colors": ["white"],
       "description": {
         "ukr": "Біла вечірня сукня \"Золота година\" прикрашає будь-який вечір своїм сяйвом та витонченим дизайном.",
         "eng": "A stunning white evening dress called \"Golden Hour,\" designed to light up any evening with its radiant and refined design.",
@@ -159,27 +114,17 @@
         "svk": "Elegantné a nadčasové, ideálne na svadby alebo formálne plesy."
       },
       "id": 456,
-      "mainImage": "./images/products/evening/dress4/photo_2025-01-03_23-16-48.jpg",
+      "mainImage": "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364382/photo_2025-01-03_23-16-48_mffdg2.jpg",
       "otherImages": [
-        "./images/products/evening/dress4/photo_2025-01-03_23-16-49.jpg"
+        "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364382/photo_2025-01-03_23-16-49_d5g7nh.jpg"
       ],
       "dressType": "evening-dress"
     },
     {
       "name": "Midnight Star Evening Gown",
       "price": 1050,
-      "sizes": [
-        36,
-        38,
-        40,
-        42,
-        44,
-        46,
-        50
-      ],
-      "colors": [
-        "blue"
-      ],
+      "sizes": [36, 38, 40, 42, 44, 46, 50],
+      "colors": ["blue"],
       "description": {
         "ukr": "Сукня \"Нічна зірка\" створює враження чарівного образу завдяки розкішному дизайну та блискучим деталям.",
         "eng": "\"Midnight Star\" gown creates an enchanting look with its luxurious design and sparkling details.",
@@ -199,29 +144,17 @@
         "svk": "Ideálny na večerné plesy, kombinovaný s kovovými šperkami a lodičkami."
       },
       "id": 564,
-      "mainImage": "./images/products/evening/dress5/photo_2025-01-03_23-16-50.jpg",
+      "mainImage": "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364383/photo_2025-01-03_23-16-50_xmdwra.jpg",
       "otherImages": [
-        "./images/products/evening/dress5/photo_2025-01-03_23-16-51.jpg"
+        "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364383/photo_2025-01-03_23-16-51_qd6eoo.jpg"
       ],
       "dressType": "evening-dress"
     },
     {
       "name": "Scarlet Moon Evening Dress",
       "price": 980,
-      "sizes": [
-        36,
-        38,
-        40,
-        42,
-        44,
-        46,
-        50
-      ],
-      "colors": [
-        "red",
-        "white",
-        "ivory"
-      ],
+      "sizes": [36, 38, 40, 42, 44, 46, 50],
+      "colors": ["red", "white", "ivory"],
       "description": {
         "ukr": "Сукня \"Оксамитова місяць\" вирізняється елегантністю та ніжністю, що підкреслюють вашу унікальність.",
         "eng": "The \"Scarlet Moon\" dress stands out with elegance and delicacy, highlighting your uniqueness.",
@@ -241,9 +174,9 @@
         "svk": "Ideálne na romantické večery, kombinované s perlovými doplnkami."
       },
       "id": 678,
-      "mainImage": "./images/products/evening/dress6/photo_2025-01-03_23-16-51.jpg",
+      "mainImage": "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364383/photo_2025-01-03_23-16-51_qd6eoo.jpg",
       "otherImages": [
-        "./images/products/evening/dress6/photo_2025-01-03_23-16-54.jpg"
+        "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364383/photo_2025-01-03_23-16-54_u2mys6.jpg"
       ],
       "dressType": "evening-dress"
     }
@@ -252,15 +185,8 @@
     {
       "name": "Eternal Elegance Gown",
       "price": 1800,
-      "sizes": [
-        6,
-        8,
-        12,
-        14
-      ],
-      "colors": [
-        "gold"
-      ],
+      "sizes": [6, 8, 12, 14],
+      "colors": ["gold"],
       "description": {
         "ukr": "Сукня \"Вічна елегантність\" створена для нареченої, яка прагне поєднати традицію та сучасність. Вишуканий корсет з мереживом та шовкова спідниця створюють неперевершений образ.",
         "eng": "The \"Eternal Elegance\" gown combines timeless beauty with modern details for a striking bridal look.",
@@ -280,24 +206,17 @@
         "svk": "Ideálne na formálne svadby, kombinované s čipkovaným závojom a diamantovými šperkami."
       },
       "id": 43,
-      "mainImage": "./images/products/wedding/dress1/photo_2025-01-03_02-17-23.jpg",
+      "mainImage": "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364386/photo_2025-01-03_02-17-23_xzlape.jpg",
       "otherImages": [
-        "./images/products/wedding/dress1/photo_2025-01-03_02-17-24.jpg"
+        "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364386/photo_2025-01-03_02-17-24_qpd61u.jpg"
       ],
       "dressType": "wedding-dress"
     },
     {
       "name": "Radiant Bride Gown",
       "price": 2200,
-      "sizes": [
-        6,
-        8,
-        12,
-        14
-      ],
-      "colors": [
-        "ivory"
-      ],
+      "sizes": [6, 8, 12, 14],
+      "colors": ["ivory"],
       "description": {
         "ukr": "Сукня \"Сяюча наречена\" вирізняється блискучими деталями та ніжною вуаллю, що додає образу неповторного шарму.",
         "eng": "The \"Radiant Bride\" gown is a vision of elegance with sparkling details and a soft, flowing train.",
@@ -317,24 +236,17 @@
         "svk": "Najlepšie kombinované s kryštálovou tiarou a zodpovedajúcimi náušnicami na nezabudnuteľný svadobný vzhľad."
       },
       "id": 78,
-      "mainImage": "./images/products/wedding/dress2/photo_2025-01-03_02-18-01.jpg",
+      "mainImage": "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364388/photo_2025-01-03_02-18-01_vkcklv.jpg",
       "otherImages": [
-        "./images/products/wedding/dress2/photo_2025-01-03_02-18-03.jpg"
+        "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364388/photo_2025-01-03_02-18-03_vcfexx.jpg"
       ],
       "dressType": "wedding-dress"
     },
     {
       "name": "Timeless Grace Bridal Dress",
       "price": 2500,
-      "sizes": [
-        6,
-        8,
-        12,
-        14
-      ],
-      "colors": [
-        "ivory"
-      ],
+      "sizes": [6, 8, 12, 14],
+      "colors": ["ivory"],
       "description": {
         "ukr": "Сукня \"Вічна грація\" поєднує в собі класичний дизайн та сучасні елементи, підкреслюючи природну красу нареченої.",
         "eng": "The \"Timeless Grace\" dress blends classic design with modern elegance to highlight a bride’s natural beauty.",
@@ -354,24 +266,17 @@
         "svk": "Ideálne na svadby v záhrade, kombinované s perlovým náhrdelníkom a kvetinovou ozdobou do vlasov."
       },
       "id": 121,
-      "mainImage": "./images/products/wedding/dress3/photo_2025-01-03_02-18-10.jpg",
+      "mainImage": "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364388/photo_2025-01-03_02-18-10_cv0dlf.jpg",
       "otherImages": [
-        "./images/products/wedding/dress3/photo_2025-01-03_02-18-11.jpg"
+        "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364388/photo_2025-01-03_02-18-11_luyodd.jpg"
       ],
       "dressType": "wedding-dress"
     },
     {
       "name": "Majestic Charm Wedding Gown",
       "price": 1900,
-      "sizes": [
-        6,
-        8,
-        12,
-        14
-      ],
-      "colors": [
-        "ivory"
-      ],
+      "sizes": [6, 8, 12, 14],
+      "colors": ["ivory"],
       "description": {
         "ukr": "Сукня \"Магічний шарм\" створена для нареченої, яка бажає виглядати королівсько у свій особливий день.",
         "eng": "The \"Majestic Charm\" gown exudes regal elegance with its intricate detailing and voluminous skirt.",
@@ -391,25 +296,18 @@
         "svk": "Najlepšie kombinované s katedrálnym závojom a trblietavými striebornými šperkami."
       },
       "id": 342,
-      "mainImage": "./images/products/wedding/dress4/photo_2025-01-03_02-18-14.jpg",
+      "mainImage": "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364389/photo_2025-01-03_02-18-14_ja1ewr.jpg",
       "otherImages": [
-        "./images/products/wedding/dress4/photo_2025-01-03_02-18-15.jpg",
-        "./images/products/wedding/dress4/photo_2025-01-03_02-18-17.jpg"
+        "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364389/photo_2025-01-03_02-18-15_pupq41.jpg",
+        "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364390/photo_2025-01-03_02-18-17_ke88fl.jpg"
       ],
       "dressType": "wedding-dress"
     },
     {
       "name": "Whispering Love Bridal Dress",
       "price": 2100,
-      "sizes": [
-        6,
-        8,
-        12,
-        14
-      ],
-      "colors": [
-        "gold"
-      ],
+      "sizes": [6, 8, 12, 14],
+      "colors": ["gold"],
       "description": {
         "ukr": "Сукня \"Шепіт кохання\" відзначається ніжним дизайном та витонченими деталями, що підкреслюють жіночність нареченої.",
         "eng": "The \"Whispering Love\" bridal dress captures femininity with its delicate beadwork and flowing chiffon.",
@@ -429,22 +327,15 @@
         "svk": "Ideálne na komorné ceremónie, kombinované s jednoduchými šperkami a kvetinovou kyticou."
       },
       "id": 567,
-      "mainImage": "./images/products/wedding/dress5/photo_2025-01-03_02-18-20.jpg",
+      "mainImage": "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364389/photo_2025-01-03_02-18-20_jbkgyz.jpg",
       "otherImages": [],
       "dressType": "wedding-dress"
     },
     {
       "name": "Enchanted Dreams Gown",
       "price": 2300,
-      "sizes": [
-        6,
-        8,
-        12,
-        14
-      ],
-      "colors": [
-        "white"
-      ],
+      "sizes": [6, 8, 12, 14],
+      "colors": ["white"],
       "description": {
         "ukr": "Сукня \"Зачаровані мрії\" приносить казкову атмосферу у ваш весільний день завдяки своїм чарівним деталям.",
         "eng": "The \"Enchanted Dreams\" gown brings a fairy-tale atmosphere to your special day with its magical details.",
@@ -464,24 +355,17 @@
         "svk": "Ideálne na svadby na zámku, kombinované s diamantovou tiarou a topánkami zdobenými kryštálmi."
       },
       "id": 231,
-      "mainImage": "./images/products/wedding/dress6/photo_2025-01-03_02-18-22.jpg",
+      "mainImage": "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364389/photo_2025-01-03_02-18-22_kbumqq.jpg",
       "otherImages": [
-        "./images/products/wedding/dress6/photo_2025-01-03_02-18-24.jpg"
+        "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364390/photo_2025-01-03_02-18-24_r2cijr.jpg"
       ],
       "dressType": "wedding-dress"
     },
     {
       "name": "Celestial Harmony Bridal Dress",
       "price": 2400,
-      "sizes": [
-        6,
-        8,
-        12,
-        14
-      ],
-      "colors": [
-        "ivory"
-      ],
+      "sizes": [6, 8, 12, 14],
+      "colors": ["ivory"],
       "description": {
         "ukr": "Сукня \"Небесна гармонія\" відзначається сяючими елементами, що додають образу неповторного блиску.",
         "eng": "The \"Celestial Harmony\" dress features radiant elements that bring a unique sparkle to the bride’s look.",
@@ -501,24 +385,17 @@
         "svk": "Ideálne na ceremónie pod hviezdnym nebom, doplnené striebornými šperkami a ozdobou inšpirovanou hviezdami."
       },
       "id": 899,
-      "mainImage": "./images/products/wedding/dress7/photo_2025-01-03_02-18-26.jpg",
+      "mainImage": "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364390/photo_2025-01-03_02-18-26_m2ml3u.jpg",
       "otherImages": [
-        "./images/products/wedding/dress7/photo_2025-01-03_02-18-28.jpg"
+        "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364391/photo_2025-01-03_02-18-28_v104lb.jpg"
       ],
       "dressType": "wedding-dress"
     },
     {
       "name": "Blossoming Romance Gown",
       "price": 2000,
-      "sizes": [
-        6,
-        8,
-        12,
-        14
-      ],
-      "colors": [
-        "white"
-      ],
+      "sizes": [6, 8, 12, 14],
+      "colors": ["white"],
       "description": {
         "ukr": "Сукня \"Квітуча романтика\" прикрашена квітковими мотивами, що символізують розквіт кохання.",
         "eng": "The \"Blossoming Romance\" gown is adorned with floral motifs, symbolizing the blossoming of love.",
@@ -538,24 +415,17 @@
         "svk": "Ideálne na svadby v záhrade, doplnené kvetinovou korunou a jemnými perlovými šperkami."
       },
       "id": 432,
-      "mainImage": "./images/products/wedding/dress8/photo_2025-01-03_02-18-31.jpg",
+      "mainImage": "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364391/photo_2025-01-03_02-18-31_segirc.jpg",
       "otherImages": [
-        "./images/products/wedding/dress8/photo_2025-01-03_02-18-32.jpg"
+        "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364390/photo_2025-01-03_02-18-32_preeqi.jpg"
       ],
       "dressType": "wedding-dress"
     },
     {
       "name": "Moonlit Glow Wedding Dress",
       "price": 2700,
-      "sizes": [
-        6,
-        8,
-        12,
-        14
-      ],
-      "colors": [
-        "ivory"
-      ],
+      "sizes": [6, 8, 12, 14],
+      "colors": ["ivory"],
       "description": {
         "ukr": "Сукня \"Місячне сяйво\" створена для наречених, які прагнуть сяяти у свій великий день завдяки чарівним сріблястим відтінкам.",
         "eng": "The \"Moonlit Glow\" wedding dress is crafted for brides who wish to shine on their big day with enchanting silvery tones.",
@@ -575,24 +445,17 @@
         "svk": "Ideálne na večerné svadby, doplnené trblietavým závojom a kryštálovými šperkami."
       },
       "id": 301,
-      "mainImage": "./images/products/wedding/dress9/photo_2025-01-03_02-18-35.jpg",
+      "mainImage": "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364391/photo_2025-01-03_02-18-35_i8zwwc.jpg",
       "otherImages": [
-        "./images/products/wedding/dress9/photo_2025-01-03_02-18-36.jpg"
+        "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364391/photo_2025-01-03_02-18-36_s3vzfy.jpg"
       ],
       "dressType": "wedding-dress"
     },
     {
       "name": "Obsidian Elegance Bridal Gown",
       "price": 2500,
-      "sizes": [
-        6,
-        8,
-        12,
-        14
-      ],
-      "colors": [
-        "ivory"
-      ],
+      "sizes": [6, 8, 12, 14],
+      "colors": ["ivory"],
       "description": {
         "ukr": "Сукня \"Обсидіанова елегантність\" створена для сміливих наречених, які прагнуть виділитися унікальним образом.",
         "eng": "The \"Obsidian Elegance\" bridal gown is made for bold brides looking to stand out with a unique look.",
@@ -612,24 +475,17 @@
         "svk": "Ideálne na moderné svadby, kombinované s odvážnym make-upom a striebornými doplnkami."
       },
       "id": 762,
-      "mainImage": "./images/products/wedding/dress10/photo_2025-01-03_02-18-39.jpg",
+      "mainImage": "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364387/photo_2025-01-03_02-18-39_sesdaw.jpg",
       "otherImages": [
-        "./images/products/wedding/dress10/photo_2025-01-03_02-18-40.jpg"
+        "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364387/photo_2025-01-03_02-18-40_nvydbn.jpg"
       ],
       "dressType": "wedding-dress"
     },
     {
       "name": "Golden Glow Bridal Dress",
       "price": 2800,
-      "sizes": [
-        6,
-        8,
-        12,
-        14
-      ],
-      "colors": [
-        "ivory"
-      ],
+      "sizes": [6, 8, 12, 14],
+      "colors": ["ivory"],
       "description": {
         "ukr": "Сукня \"Золотий блиск\" вирізняється королівським шармом та витонченими деталями для справжньої королеви.",
         "eng": "The \"Golden Glow\" bridal dress radiates regal charm and intricate details for a true queen.",
@@ -649,9 +505,9 @@
         "svk": "Ideálne na svadby s kráľovskou tematikou, kombinované so zlatou tiarou a perlovými náušnicami."
       },
       "id": 580,
-      "mainImage": "./images/products/wedding/dress11/photo_2025-01-03_02-18-43.jpg",
+      "mainImage": "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364387/photo_2025-01-03_02-18-43_sfqdee.jpg",
       "otherImages": [
-        "./images/products/wedding/dress11/photo_2025-01-03_02-18-44.jpg"
+        "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364387/photo_2025-01-03_02-18-44_shimvd.jpg"
       ],
       "dressType": "wedding-dress"
     }
@@ -660,15 +516,8 @@
     {
       "name": "Lavender Dreams",
       "price": 350,
-      "sizes": [
-        30,
-        32,
-        34,
-        36
-      ],
-      "colors": [
-        "purple"
-      ],
+      "sizes": [30, 32, 34, 36],
+      "colors": ["purple"],
       "description": {
         "ukr": "Сукня \"Принцеса Блосом\" для маленьких леді, які прагнуть виглядати як справжні принцеси.",
         "eng": "The \"Lavender Dreams\" dress is perfect for little girls who dream of being true princesses.",
@@ -688,24 +537,17 @@
         "svk": "Ideálne na narodeniny alebo špeciálne príležitosti, doplnené ladiacou mašľou do vlasov."
       },
       "id": 19384,
-      "mainImage": "./images/products/children-dress/dress1/photo_2025-01-03_02-28-56.jpg",
+      "mainImage": "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364378/photo_2025-01-03_02-28-56_h1i7ns.jpg",
       "otherImages": [
-        "./images/products/children-dress/dress1/photo_2025-01-03_02-28-58.jpg"
+        "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364379/photo_2025-01-03_02-28-58_vaogc8.jpg"
       ],
       "dressType": "childrens-dress"
     },
     {
       "name": "Dawn Gradient",
       "price": 330,
-      "sizes": [
-        30,
-        32,
-        34,
-        36
-      ],
-      "colors": [
-        "pink"
-      ],
+      "sizes": [30, 32, 34, 36],
+      "colors": ["pink"],
       "description": {
         "ukr": "Сукня \"Мрія Маргаритки\" для яскравих та активних свят маленьких модниць.",
         "eng": "The \"Dawn Gradient\" dress is perfect for vibrant and active celebrations for young fashionistas.",
@@ -725,24 +567,17 @@
         "svk": "Kombinované s ľahkými balerínkami pre hravý, ale elegantný vzhľad."
       },
       "id": 78412,
-      "mainImage": "./images/products/children-dress/dress2/photo_2025-01-03_02-29-00.jpg",
+      "mainImage": "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364380/photo_2025-01-03_02-29-00_x4odsa.jpg",
       "otherImages": [
-        "./images/products/children-dress/dress2/photo_2025-01-03_02-29-02.jpg"
+        "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364380/photo_2025-01-03_02-29-02_undksj.jpg"
       ],
       "dressType": "childrens-dress"
     },
     {
       "name": "Sugar Plum Twirl",
       "price": 400,
-      "sizes": [
-        30,
-        32,
-        34,
-        36
-      ],
-      "colors": [
-        "blush"
-      ],
+      "sizes": [30, 32, 34, 36],
+      "colors": ["blush"],
       "description": {
         "ukr": "Сукня \"Зіркове сяйво\" з багатошаровою тюлевою спідницею і блискучими деталями.",
         "eng": "The \"Sugar Plum Twirl\" dress features a multi-layered tulle skirt and shimmering accents.",
@@ -762,22 +597,15 @@
         "svk": "Ideálne na baletné predstavenia alebo sviatočné udalosti, doplnené trblietavou tiarou."
       },
       "id": 42967,
-      "mainImage": "./images/products/children-dress/dress3/photo_2025-01-03_02-29-04.jpg",
+      "mainImage": "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364380/photo_2025-01-03_02-29-04_sc2dpl.jpg",
       "otherImages": [],
       "dressType": "childrens-dress"
     },
     {
       "name": "Sunny Day Princess",
       "price": 370,
-      "sizes": [
-        30,
-        32,
-        34,
-        36
-      ],
-      "colors": [
-        "yellow"
-      ],
+      "sizes": [30, 32, 34, 36],
+      "colors": ["yellow"],
       "description": {
         "ukr": "Сукня \"Пелюстка троянди\" дарує ніжність та комфорт для будь-якого свята.",
         "eng": "The \"Sunny Day Princess\" dress offers softness and comfort for any special occasion.",
@@ -797,7 +625,7 @@
         "svk": "Kombinované s kvetinovou čelenkou pre očarujúcu letnú atmosféru."
       },
       "id": 98234,
-      "mainImage": "./images/products/children-dress/dress4/photo_2025-01-03_02-29-05.jpg",
+      "mainImage": "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364380/photo_2025-01-03_02-29-05_xgiqez.jpg",
       "otherImages": [],
       "dressType": "childrens-dress"
     }
@@ -806,17 +634,8 @@
     {
       "name": "Sky High Business",
       "price": 650,
-      "sizes": [
-        36,
-        38,
-        40,
-        42,
-        44,
-        46
-      ],
-      "colors": [
-        "blue"
-      ],
+      "sizes": [36, 38, 40, 42, 44, 46],
+      "colors": ["blue"],
       "description": {
         "ukr": "Костюм \"Небесна висота\" для жінок, які прагнуть виділитися сміливим образом.",
         "eng": "The \"Sky High Business\" suit is designed for women who aim to stand out with a bold look.",
@@ -836,26 +655,17 @@
         "svk": "Ideálne na obchodné stretnutia alebo formálne podujatia, doplnené špicatými topánkami."
       },
       "id": 87234,
-      "mainImage": "./images/products/women-suit/dress1/photo_2025-01-03_02-35-52.jpg",
+      "mainImage": "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364391/photo_2025-01-03_02-35-52_aqzhep.jpg",
       "otherImages": [
-        "./images/products/women-suit/dress1/photo_2025-01-03_02-35-54.jpg"
+        "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364391/photo_2025-01-03_02-35-54_fp2qmm.jpg"
       ],
       "dressType": "women-suit"
     },
     {
       "name": "Pure Sophistication",
       "price": 700,
-      "sizes": [
-        36,
-        38,
-        40,
-        42,
-        44,
-        46
-      ],
-      "colors": [
-        "ivory"
-      ],
+      "sizes": [36, 38, 40, 42, 44, 46],
+      "colors": ["ivory"],
       "description": {
         "ukr": "Костюм \"Чиста вишуканість\" додає вашому образу класичного шарму.",
         "eng": "The \"Pure Sophistication\" suit adds a touch of classic charm to your style.",
@@ -875,26 +685,17 @@
         "svk": "Najlepšie kombinované s minimálnymi šperkami pre elegantný a uhladený vzhľad."
       },
       "id": 39214,
-      "mainImage": "./images/products/women-suit/dress2/photo_2025-01-03_02-35-56.jpg",
+      "mainImage": "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364391/photo_2025-01-03_02-35-56_rsieum.jpg",
       "otherImages": [
-        "./images/products/women-suit/dress2/photo_2025-01-03_02-35-57.jpg"
+        "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364391/photo_2025-01-03_02-35-57_lbfpdn.jpg"
       ],
       "dressType": "women-suit"
     },
     {
       "name": "Sunset Success",
       "price": 680,
-      "sizes": [
-        36,
-        38,
-        40,
-        42,
-        44,
-        46
-      ],
-      "colors": [
-        "yellow"
-      ],
+      "sizes": [36, 38, 40, 42, 44, 46],
+      "colors": ["yellow"],
       "description": {
         "ukr": "Костюм \"Міський шик\" для сучасної та ділової жінки.",
         "eng": "The \"Sunset Success\" suit is ideal for the modern and professional woman.",
@@ -914,26 +715,15 @@
         "svk": "Kombinované so zlatými doplnkami pre sebavedomý a žiarivý vzhľad."
       },
       "id": 72818,
-      "mainImage": "./images/products/women-suit/dress3/photo_2025-01-03_02-36-00.jpg",
+      "mainImage": "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364392/photo_2025-01-03_02-36-00_ffixuf.jpg",
       "otherImages": [],
       "dressType": "women-suit"
     },
     {
       "name": "Beige Brilliance",
       "price": 750,
-      "sizes": [
-        36,
-        38,
-        40,
-        42,
-        44,
-        46
-      ],
-      "colors": [
-        "white",
-        "ivory",
-        "champagne"
-      ],
+      "sizes": [36, 38, 40, 42, 44, 46],
+      "colors": ["white", "ivory", "champagne"],
       "description": {
         "ukr": "Костюм \"Бежевий блиск\" для впевненого образу з ноткою елегантності.",
         "eng": "The \"Beige Brilliance\" suit offers a confident look with a touch of elegance.",
@@ -953,27 +743,15 @@
         "svk": "Ideálne na večerné podujatia, doplnené kovovými topánkami a kabelkou."
       },
       "id": 23498,
-      "mainImage": "./images/products/women-suit/dress4/photo_2025-01-03_02-36-02.jpg",
+      "mainImage": "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364392/photo_2025-01-03_02-36-02_cj1fsd.jpg",
       "otherImages": [],
       "dressType": "women-suit"
     },
     {
       "name": "Dark Romance",
       "price": 600,
-      "sizes": [
-        36,
-        38,
-        40,
-        42,
-        44,
-        46,
-        50
-      ],
-      "colors": [
-        "green",
-        "black",
-        "red"
-      ],
+      "sizes": [36, 38, 40, 42, 44, 46, 50],
+      "colors": ["green", "black", "red"],
       "description": {
         "ukr": "Жіночий костюм \"Темна романтика\" для витонченого та стильного образу.",
         "eng": "The \"Dark Romance\" suit is designed for a refined and stylish look.",
@@ -993,26 +771,15 @@
         "svk": "Ideálne na koktailové večierky, doplnené výraznými šperkami."
       },
       "id": 98147,
-      "mainImage": "./images/products/women-suit/dress5/photo_2025-01-03_02-36-04.jpg",
+      "mainImage": "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364392/photo_2025-01-03_02-36-04_almfzn.jpg",
       "otherImages": [],
       "dressType": "women-suit"
     },
     {
       "name": "Lace Legacy",
       "price": 580,
-      "sizes": [
-        36,
-        38,
-        40,
-        42,
-        44,
-        46,
-        50
-      ],
-      "colors": [
-        "black",
-        "gold"
-      ],
+      "sizes": [36, 38, 40, 42, 44, 46, 50],
+      "colors": ["black", "gold"],
       "description": {
         "ukr": "Жіночий костюм \"Спадок мережива\" створює неповторний образ для будь-якої події.",
         "eng": "The \"Lace Legacy\" suit creates a unique look for any occasion.",
@@ -1032,27 +799,17 @@
         "svk": "Ideálne na galavečere, doplnené výraznou kabelkou a lodičkami na ihličkách."
       },
       "id": 39475,
-      "mainImage": "./images/products/women-suit/dress6/photo_2025-01-03_02-36-05.jpg",
+      "mainImage": "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364393/photo_2025-01-03_02-36-05_gyxtar.jpg",
       "otherImages": [
-        "./images/products/women-suit/dress6/photo_2025-01-03_02-36-06.jpg"
+        "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364392/photo_2025-01-03_02-36-06_ouvecl.jpg"
       ],
       "dressType": "women-suit"
     },
     {
       "name": "Radiance Suit",
       "price": 620,
-      "sizes": [
-        36,
-        38,
-        40,
-        42,
-        44,
-        46,
-        50
-      ],
-      "colors": [
-        "white"
-      ],
+      "sizes": [36, 38, 40, 42, 44, 46, 50],
+      "colors": ["white"],
       "description": {
         "ukr": "Жіночий костюм \"Сяйво\" вирізняється витонченим дизайном та жіночністю.",
         "eng": "The \"Radiance Suit\" stands out with its refined design and feminine charm.",
@@ -1072,9 +829,9 @@
         "svk": "Ideálne na formálne stretnutia, doplnené perlovými šperkami a lodičkami na ihličkách."
       },
       "id": 84719,
-      "mainImage": "./images/products/women-suit/dress7/photo_2025-01-03_02-36-08.jpg",
+      "mainImage": "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364392/photo_2025-01-03_02-36-08_zdruyy.jpg",
       "otherImages": [
-        "./images/products/women-suit/dress7/photo_2025-01-03_02-36-09.jpg"
+        "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364393/photo_2025-01-03_02-36-09_o7ezuu.jpg"
       ],
       "dressType": "women-suit"
     }
@@ -1084,10 +841,7 @@
       "name": "Shining Star Bag",
       "price": 200,
       "sizes": [],
-      "colors": [
-        "gold",
-        "silver"
-      ],
+      "colors": ["gold", "silver"],
       "description": {
         "ukr": "Сумка \"Сяюча зірка\" створена для яскравого акценту у вашому образі.",
         "eng": "The \"Shining Star Bag\" is designed to add a dazzling touch to your outfit.",
@@ -1107,7 +861,7 @@
         "svk": "Ideálne na formálne podujatia alebo párty, kombinované s trblietavými alebo kovovými outfitmi."
       },
       "id": 91823,
-      "mainImage": "./images/products/accessories/accessory1/photo12.png",
+      "mainImage": "https://res.cloudinary.com/dtntxfdf6/image/upload/w_auto,f_auto,q_auto/v1738364380/photo12_jubcsh.png",
       "otherImages": [],
       "dressType": "accessories"
     }

@@ -110,9 +110,6 @@ a {
   .forms-container .contactForm .form-group input::placeholder {
     color: #7B7575 !important;
   }
-  .forms-container .contactForm .form-group button {
-    padding: 0.6875rem 0.5rem;
-  }
 }
 
 /*# sourceMappingURL=order.css.map */
