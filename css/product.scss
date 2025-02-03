@@ -430,10 +430,10 @@
     .carousel-mobile-dots {
       display: flex !important;
       flex-direction: column;
+      align-items: flex-end;
       position: absolute;
-      top: 45%;
+      top: 25%;
       right: 0;
-      margin-right: 0;
       z-index: 10;
       gap: 1.5rem;
     }
@@ -679,5 +679,8 @@
 @media only screen and (max-width: 360px) {
   .product-description {
     padding: 0.9375rem 1.875rem 2.5rem; // 15px, 30px, 40px
+  }
+  .carousel-mobile-dots{
+    top: 20% !important;
   }
 }

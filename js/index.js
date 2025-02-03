@@ -72,53 +72,70 @@ document.addEventListener("click", event => {
     }
 });
 
-/*HEADER CLICK*/
-// Event listener for clicks on nav links
+// Function to handle both navbar clicks and swiper "Read More" clicks
+function handleNavClick(event, href) {
+    const match = href.match(/.*(#.*-tab).*/);
+    const targetIdWithTab = match ? match[1] : null;
+
+    if (!targetIdWithTab) {
+        console.error(`Invalid tab ID in href: ${href}`);
+        return (window.location.href = href);
+    }
+
+    event.preventDefault();
+
+    const targetId = targetIdWithTab.replace('-tab', '');
+    const targetElement = document.querySelector(targetId);
+
+    if (!targetElement) {
+        console.error(`Element not found for ID: ${targetId}`);
+        return;
+    }
+
+    // Update active state for mobile nav links
+    document.querySelectorAll('.filters-mobile-cont .nav-link')
+        .forEach(link => link.classList.remove('active'));
+
+    const categoryTab = document.querySelector(`[data-bs-target="${targetId}"]`);
+    if (categoryTab) {
+        categoryTab.classList.add('active');
+        if (isMobileResolution()) {
+            filterButton.textContent = categoryTab.textContent;
+            liItemCategoriesFilter.forEach(li => li.classList.remove('d-none'));
+            categoryTab.closest('li')?.classList.add('d-none');
+        }
+    }
+
+    // Update active state for tab contents
+    document.querySelectorAll('.tab-content .tab-pane')
+        .forEach(content => content.classList.remove('active', 'show'));
+    targetElement.classList.add('active', 'show');
+
+    // Scroll to categories section
+    const offset = isMobileResolution() ? 970 : 320;
+    const targetPosition = categoriesSection.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({top: targetPosition, behavior: 'smooth'});
+}
+
+// Attach event listeners to navigation links
+
 document.querySelectorAll('.nav-list-container a').forEach(navLink => {
-    navLink.addEventListener('click', event => {
-        const href = navLink.getAttribute('href');
-        const match = href.match(/.*(#.*-tab).*/);
-        const targetIdWithTab = match ? match[1] : null;
+        navLink.addEventListener('click', event => {
+            handleNavClick(event, navLink.getAttribute('href'));
+            toggleMenu();
+        })
+    }
+)
 
-        if (!targetIdWithTab) {
-            // Redirect if no valid tab ID is found
-            console.error(`Invalid tab ID in href: ${href}`);
-            return (window.location.href = href);
-        }
-
-        event.preventDefault();
-
-        const targetId = targetIdWithTab.replace('-tab', '');
-        const targetElement = document.querySelector(targetId);
-
-        if (!targetElement) {
-            console.error(`Element not found for ID: ${targetId}`);
-            return;
-        }
-
-        // Update active state for mobile nav links
-        document.querySelectorAll('.filters-mobile-cont .nav-link')
-            .forEach(link => link.classList.remove('active'));
-        const categoryTab = document.querySelector(`[data-bs-target="${targetId}"]`);
-        if (categoryTab) {
-            categoryTab.classList.add('active');
-            if (isMobileResolution()) {
-                filterButton.textContent = categoryTab.textContent;
-                liItemCategoriesFilter.forEach(li => li.classList.remove('d-none'));
-                categoryTab.closest('li')?.classList.add('d-none');
-            }
-        }
-
-        // Update active state for tab contents
-        document.querySelectorAll('.tab-content .tab-pane')
-            .forEach(content => content.classList.remove('active', 'show'));
-        targetElement.classList.add('active', 'show');
-
-        // Scroll to categories section
-        const offset = isMobileResolution() ? 970 : 320;
-        const targetPosition = categoriesSection.getBoundingClientRect().top + window.scrollY - offset;
-        window.scrollTo({top: targetPosition, behavior: 'smooth'});
-
-        toggleMenu();
-    });
+//Read MORE btn Carousel
+document.querySelectorAll('.swiper-slide .moreBtn').forEach(btn => {
+    btn.addEventListener('click', handleSwiperReadMore);
 });
+
+function handleSwiperReadMore(event) {
+    event.preventDefault();
+
+    const href = event.currentTarget.getAttribute('href');
+    handleNavClick(event, href);
+}
+
