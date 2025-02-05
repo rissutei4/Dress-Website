@@ -316,6 +316,9 @@ a {
   .CarouselSection {
     margin-bottom: 1.375rem;
   }
+  .CarouselSection .swiper {
+    height: 450px;
+  }
   .CarouselSection .swiper .swiper-slide {
     padding-bottom: 5.1875rem;
   }
@@ -345,7 +348,7 @@ a {
   }
   .CarouselSection .swiper .swiper-pagination {
     flex-direction: row;
-    top: -43%;
+    top: -5%;
     margin-left: 0;
     justify-content: center;
     gap: 2.5rem;
