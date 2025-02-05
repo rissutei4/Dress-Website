@@ -50,6 +50,7 @@ a {
   text-transform: uppercase;
   color: rgba(235, 247, 246, 0.87);
   margin-bottom: 2.125rem;
+  text-align: center;
 }
 .forms-container .forms-heading p {
   font-weight: 300;

@@ -1,5 +1,5 @@
 "use strict";
-export let { pageName, languageId } = searchChecker();
+export let {pageName, languageId} = searchChecker();
 export let translations = {};
 
 export async function initTranslations() {
@@ -87,10 +87,13 @@ export function searchChecker() {
     }
 
     const path = window.location.pathname;
-    const fileName = path.split("/").pop();
+    let fileName = path.split("/").pop();
+    if (!fileName.includes(".")) {
+        fileName += ".html";  // Assume it's an HTML file if no extension is present
+    }
     const pageName = fileName.split(".").slice(0, -1).join(".");
 
-    return { pageName, languageId };
+    return {pageName, languageId};
 }
 
 

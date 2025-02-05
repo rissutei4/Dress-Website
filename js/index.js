@@ -112,7 +112,7 @@ function handleNavClick(event, href) {
     targetElement.classList.add('active', 'show');
 
     // Scroll to categories section
-    const offset = isMobileResolution() ? 970 : 320;
+    const offset = 300;
     const targetPosition = categoriesSection.getBoundingClientRect().top + window.scrollY - offset;
     window.scrollTo({top: targetPosition, behavior: 'smooth'});
 }
