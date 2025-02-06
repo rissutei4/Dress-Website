@@ -1,6 +1,6 @@
 # **Dress Website**
 
-Dress Website is an e-commerce template designed to showcase and sell dresses. The project is currently being refactored from PHP back to pure HTML, CSS, and JavaScript to enhance simplicity and maintainability. The original PHP version, tailored for WordPress, is available here: [Dress Template WP](https://github.com/rissutei4/dress-template-wp).
+Dress Website is an e-commerce template designed to showcase and sell dresses. The project is currently being refactored from PHP back to pure HTML, CSS, and JavaScript to enhance simplicity and maintainability. The original PHP version, tailored for WordPress, is unmaintained and now set as a private visibility.
 
 **You can preview the current version of the project here:**  
 [fajna-dress.netlify.app](https://fajna-dress.netlify.app/)
